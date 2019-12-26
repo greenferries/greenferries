@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  city_a: one
+  city_b: one
+  distance_km: 
+
+two:
+  city_a: two
+  city_b: two
+  distance_km: 
