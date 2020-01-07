@@ -12,6 +12,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'devise', '>= 4.7.1'
 gem 'activeadmin', '~> 2.6.0'
 gem 'country_select', '~> 4.0.0'
+gem "http"
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
