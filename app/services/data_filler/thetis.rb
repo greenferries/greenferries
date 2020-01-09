@@ -1,4 +1,4 @@
-class FillMissingDataFromThetisJob < ActiveJob::Base
+class DataFiller::Thetis
   def perform
     Ship.where(g_co2_per_mile_pax: nil).where.not(imo: nil).find_each do |ship|
       thetis_data = ThetisApi.get_ship_by_imo(ship.imo)

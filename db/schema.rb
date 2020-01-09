@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_26_194829) do
+ActiveRecord::Schema.define(version: 2020_01_09_105045) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -65,6 +65,7 @@ ActiveRecord::Schema.define(version: 2019_12_26_194829) do
     t.integer "distance_km"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.float "distance_nms"
     t.index ["city_a_id"], name: "index_routes_on_city_a_id"
     t.index ["city_b_id"], name: "index_routes_on_city_b_id"
   end
@@ -74,6 +75,7 @@ ActiveRecord::Schema.define(version: 2019_12_26_194829) do
     t.bigint "route_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.float "g_co2_per_pax"
     t.index ["route_id"], name: "index_ship_routes_on_route_id"
     t.index ["ship_id"], name: "index_ship_routes_on_ship_id"
   end

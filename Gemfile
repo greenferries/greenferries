@@ -12,7 +12,10 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'devise', '>= 4.7.1'
 gem 'activeadmin', '~> 2.6.0'
 gem 'country_select', '~> 4.0.0'
-gem "http"
+gem "http", '~> 4.2.0'
+gem 'blueprinter', '~> 0.22.0'
+gem 'geokit-rails', '~> 2.3.1'
+gem 'rack-cors', '~> 1.1.1'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
