@@ -5,7 +5,7 @@ ActiveAdmin.register Company do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-  permit_params :name, :imo, :wikipedia_url, :country
+  permit_params :name, :imo, :wikipedia_url, :country, :logo
   #
   # or
   #
@@ -15,4 +15,26 @@ ActiveAdmin.register Company do
   #   permitted
   # end
 
+  show do
+    attributes_table do
+      row :name
+      row :imo
+      row :wikipedia_url
+      row :country
+      row :created_at
+      row :updated_at
+      row :logo do |r|
+        image_tag url_for(r.logo) if r.logo.attached?
+      end
+    end
+  end
+
+  form do |f|
+    f.semantic_errors
+    f.inputs
+    f.inputs do
+      f.input :logo, as: :file, hint: f.object.logo.attached? ? image_tag(url_for(f.object.logo)) : nil
+    end
+    f.actions
+  end
 end

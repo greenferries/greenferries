@@ -16,6 +16,7 @@ gem "http", '~> 4.2.0'
 gem 'blueprinter', '~> 0.22.0'
 gem 'geokit-rails', '~> 2.3.1'
 gem 'rack-cors', '~> 1.1.1'
+gem 'cloudinary', '~> 1.13.1'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

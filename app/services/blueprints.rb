@@ -18,7 +18,12 @@ module Blueprints
 
   class Company < Blueprinter::Base
     identifier :id
-    fields :name, :imo,  :wikipedia_url,  :country
+    fields :name, :imo, :wikipedia_url, :country
+    field :logo_url do |company|
+      if company.logo.attached?
+        Rails.application.routes.url_helpers.rails_blob_url(company.logo)
+      end
+    end
   end
 
   class Ship < Blueprinter::Base

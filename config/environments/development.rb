@@ -28,6 +28,10 @@ Rails.application.configure do
     config.cache_store = :null_store
   end
 
+  config.action_controller.default_url_options = {
+    host: 'http://localhost:5000'
+  }
+
   # Store uploaded files on the local file system (see config/storage.yml for options).
   config.active_storage.service = :local
 
@@ -60,3 +64,5 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 end
+
+Rails.application.routes.default_url_options[:host] = 'localhost:5000'
