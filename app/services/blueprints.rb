@@ -28,7 +28,7 @@ module Blueprints
 
   class Ship < Blueprinter::Base
     identifier :id
-    fields :imo, :name, :company_id, :capacity_pax, :wikipedia_url, :g_co2_per_mile_pax, :data_source
+    fields :imo, :name, :company_id, :capacity_pax, :wikipedia_url, :wikipedia_thumb_url, :g_co2_per_mile_pax, :data_source
     association :ship_routes, blueprint: ShipRoute
     association :company, blueprint: Company
   end
