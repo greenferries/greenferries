@@ -1,7 +1,7 @@
 module Blueprints
   class City < Blueprinter::Base
     identifier :id
-    fields :name, :country, :latitude, :longitude
+    fields :name, :country, :latitude, :longitude, :target_airport_code
   end
 
   class Route < Blueprinter::Base
