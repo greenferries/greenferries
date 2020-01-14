@@ -21,7 +21,7 @@ module Blueprints
     fields :name, :imo, :wikipedia_url, :country
     field :logo_url do |company|
       if company.logo.attached?
-        company.logo.service_url
+        Rails.env.development? ? Rails.application.routes.url_helpers.rails_blob_path(company.logo) : company.logo.service_url
       end
     end
   end
