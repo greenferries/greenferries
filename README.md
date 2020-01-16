@@ -8,6 +8,22 @@ Live website: [admin.greenferries.org](http://admin.greenferries.org)
 
 This admin is a very simple CRUD backend for the GreenFerries database
 
+## Local Setup
+
+Make sure you're running Ruby 2.6.5+
+
+```
+gem install bundler
+bundle install
+rails db:create db:migrate db:seed
+```
+
+## Local Development
+
+```
+heroku local
+```
+
 ## Ecosystem
 
 - [greenferries-www](https://github.com/adipasquale/greenferries-www): The

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_13_104346) do
+ActiveRecord::Schema.define(version: 2020_01_16_175957) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -79,6 +79,7 @@ ActiveRecord::Schema.define(version: 2020_01_13_104346) do
     t.string "country"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "official_url"
   end
 
   create_table "routes", force: :cascade do |t|
@@ -105,7 +106,7 @@ ActiveRecord::Schema.define(version: 2020_01_13_104346) do
   create_table "ships", force: :cascade do |t|
     t.integer "imo"
     t.string "name"
-    t.bigint "company_id", null: false
+    t.bigint "company_id"
     t.integer "capacity_pax"
     t.string "wikipedia_url"
     t.float "g_co2_per_mile_pax"
