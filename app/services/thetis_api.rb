@@ -1,5 +1,5 @@
 class ThetisApi
-  BASE_URL = 'http://data.greenferries.org/data/thetis_mrv_2019_12_24.json'
+  BASE_URL = 'http://data.greenferries.org/greenferries/thetis.json'
   def self.get_ship_by_imo(imo)
     url = BASE_URL + "?imo__exact=#{imo}&_shape=objects"
     puts "getting #{url} ..."
