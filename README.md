@@ -26,11 +26,13 @@ heroku local
 
 ## Ecosystem
 
-- [greenferries-www](https://github.com/adipasquale/greenferries-www): The
+- [greenferries-www](https://github.com/greenferries/greenferries-www): The
 public website that uses the data maintained through this admin
-- [greenferries-data](https://github.com/adipasquale/greenferries-data):
+- [greenferries-data](https://github.com/greenferries/greenferries-data):
 datasets, APIs and iPython notebooks to explore the different original data
 sources that were used to create the GreenFerries database
+- [greenferries-scrapers](https://github.com/greenferries/greenferries-scrapers):
+Scrapers used to populate data from ferries booking websites
 
 ## Resources
 
