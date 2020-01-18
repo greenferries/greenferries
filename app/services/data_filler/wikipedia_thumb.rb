@@ -4,9 +4,9 @@ class DataFiller::WikipediaThumb
       thumb_url = WikipediaApi.new(ship.wikipedia_url).get_thumb_url(300)
       if thumb_url.nil?
         puts "no image found for #{ship.wikipedia_url}"
-        return
+      else
+        ship.update!(wikipedia_thumb_url: thumb_url)
       end
-      ship.update!(wikipedia_thumb_url: thumb_url)
     end
   end
 end
