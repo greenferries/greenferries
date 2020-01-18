@@ -6,7 +6,7 @@ ActiveAdmin.register City do
     f.semantic_errors
     f.inputs
     f.inputs do
-      f.input :geonames_id, as: :string, label: 'GeoNames ID'
+      f.input :geonames_id, label: 'GeoNames ID'
     end
     f.actions
   end
