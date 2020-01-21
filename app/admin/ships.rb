@@ -1,20 +1,6 @@
 ActiveAdmin.register Ship do
 
-  # See permitted parameters documentation:
-  # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
-  #
-  # Uncomment all parameters which should be permitted for assignment
-  #
-  permit_params :imo, :name, :company_id, :capacity_pax, :wikipedia_url, :g_co2_per_mile_pax, :data_source, ship_routes_attributes: [:id, :route_id, :_destroy]
-
-  #
-  # or
-  #
-  # permit_params do
-  #   permitted = [:imo, :name, :company_id, :capacity_pax, :wikipedia_url, :g_co2_per_mile_pax, :data_source]
-  #   permitted << :other if params[:action] == 'create' && current_user.admin?
-  #   permitted
-  # end
+  permit_params :imo, :name, :company_id, :capacity_pax, :wikipedia_url, :g_co2_per_mile_pax, :data_source, :unknown_routes, :out_of_scope, :wikipedia_thumb_url, ship_routes_attributes: [:id, :route_id, :_destroy]
 
   form do |f|
     f.semantic_errors
@@ -27,4 +13,24 @@ ActiveAdmin.register Ship do
     f.actions
   end
 
+  sidebar :wikipedia, partial: 'wikipedia_sidebar', class: 'wikipedia', only: [:edit, :show]
+
+  controller do
+    def update
+      update! do |format|
+        return super unless request.referer.include?("filling_data")
+        next_ship = Ship.
+          where(out_of_scope: [nil, false]).
+          where(unknown_routes: [nil, false]).
+          joins('left outer join ship_routes on ship_routes.ship_id = ships.id').
+          group('ships.id').
+          having('count(ship_routes.id) = 0').
+          first(10).
+          sample(1).first
+        if next_ship.present? && resource.valid?
+          format.html { redirect_to edit_admin_ship_path(next_ship, filling_data: true) }
+        end
+      end
+    end
+  end
 end

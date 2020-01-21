@@ -37,4 +37,6 @@ ActiveAdmin.register Company do
     end
     f.actions
   end
+
+  sidebar :wikipedia, partial: 'wikipedia_sidebar', class: 'wikipedia', only: [:edit, :show]
 end

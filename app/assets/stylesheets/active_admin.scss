@@ -15,3 +15,21 @@
 // For example, to change the default status-tag color:
 //
 //   .status_tag { background: #6090DB; }
+
+.admin_ships.edit, .admin_ships.show,
+.admin_companies.edit, .admin_companies.show {
+  #active_admin_content #main_content_wrapper #main_content {
+    margin-right: 530px;
+  }
+  #active_admin_content #sidebar {
+    width: 500px;
+    margin-left: -500px;
+    iframe {
+      width: 640px;
+      border: 0;
+      min-height: 900px;
+      transform: scale(0.75);
+      transform-origin: 0 0;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+<form action='#' class='js-geonames-search'>
+  <label for='geonames_city_name_search'>
+    search cities with name:
+    <input type='text' name='geonames_city_name_search'>
+  </label>
+  <input type='submit' value='Search'>
+</form>
+
+<form class='js-geonames-results' style='display: none; margin-top:20px;'>
+  <select></select>
+  <input type='submit' value='Use values'>
+</form>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const geonamesForm = document.querySelector('.js-geonames-search');
+  const resultsForm = document.querySelector('.js-geonames-results')
+  const resultsSelect = resultsForm.querySelector('select');
+  const mainForm = document.querySelector('#main_content form')
+
+  resultsForm.addEventListener('submit', e => {
+    e.preventDefault();
+    e.returnValue = false;
+    const selectedOption = resultsSelect.querySelector('option:checked')
+    console.log('selected option', selectedOption);
+    ['latitude', 'longitude', 'name', 'country', 'geonames_id'].forEach(field => {
+      const input = mainForm.querySelector(`[name="city[${field}]"`)
+      input.value = selectedOption.getAttribute(`data-${field}`);
+    });
+  })
+
+  geonamesForm.addEventListener('submit', async e => {
+    e.preventDefault()
+    e.returnValue = false;
+    const val = document.querySelector('input[name=geonames_city_name_search]').value;
+    const url = `http://api.geonames.org/searchJSON?q=${val}&maxRows=10&username=adipasquale&featureClass=P`
+    const res = await fetch(url);
+    const data = await res.json();
+    const options = data.geonames.map(r => `
+      <option
+        value='${r.geonameId}'
+        data-geonames_id='${r.geonameId}'
+        data-latitude='${r.lat}'
+        data-name='${r.name}'
+        data-country='${r.countryCode}'
+        data-longitude='${r.lat}'>
+        ${r.name} - ${r.countryCode} - pop. ${r.population}
+      </option>
+    `);
+    resultsSelect.innerHTML = options.join('\n');
+    resultsForm.style.display = 'block';
+  })
+})
+</script>

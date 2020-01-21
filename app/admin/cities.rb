@@ -11,4 +11,5 @@ ActiveAdmin.register City do
     f.actions
   end
 
+  sidebar :city, partial: 'city_sidebar', class: 'city', only: [:edit, :new]
 end
