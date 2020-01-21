@@ -22,6 +22,7 @@ ActiveAdmin.register Ship do
         next_ship = Ship.
           where(out_of_scope: [nil, false]).
           where(unknown_routes: [nil, false]).
+          where.not(wikipedia_url: nil).
           joins('left outer join ship_routes on ship_routes.ship_id = ships.id').
           group('ships.id').
           having('count(ship_routes.id) = 0').
