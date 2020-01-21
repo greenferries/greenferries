@@ -7,7 +7,7 @@ ActiveAdmin.register Ship do
     f.inputs
     f.inputs do
       f.has_many :ship_routes, heading: "Routes", allow_destroy: true do |r|
-        r.input :route
+        r.input :route, input_html: {class: 'js-select2'}, collection: Route.human_ordered
       end
     end
     f.actions

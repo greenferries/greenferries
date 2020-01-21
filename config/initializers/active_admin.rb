@@ -327,3 +327,16 @@ ActiveAdmin.setup do |config|
   # config.order_clause = MyOrderClause
 
 end
+
+
+module AdminPageLayoutOverride
+  def build_page(*args)
+    within body(class: body_classes) do
+      render partial: 'layouts/admin_additional'
+    end
+
+    super
+  end
+end
+
+ActiveAdmin::Views::Pages::Base.send :prepend, AdminPageLayoutOverride
