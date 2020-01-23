@@ -1,10 +1,22 @@
 class DataFiller::Distance
+  def initialize(scope='missing')
+    @scope = scope
+  end
+
   def perform
-    Route.where(distance_km: nil).
-      or(Route.where(distance_nms: nil)).
-      find_each { |route| recompute_route(route) }
+    routes.find_each { |route| recompute_route(route) }
     Ship.includes(:routes).find_each do |ship|
       ship.ship_routes.each { |sr| recompute_ship_routes(sr) }
+    end
+  end
+
+  private
+
+  def routes
+    if @scope == 'all'
+      return Route.all
+    elsif @scope == 'missing'
+      Route.where(distance_km: nil).or(Route.where(distance_nms: nil))
     end
   end
 
