@@ -6,7 +6,7 @@ module Blueprints
 
   class Route < Blueprinter::Base
     identifier :id
-    fields :distance_km
+    fields :distance_km, :ships_count
     association :city_a, blueprint: City
     association :city_b, blueprint: City
   end
@@ -28,7 +28,7 @@ module Blueprints
 
   class Ship < Blueprinter::Base
     identifier :id
-    fields :imo, :name, :company_id, :capacity_pax, :wikipedia_url, :wikipedia_thumb_url, :g_co2_per_mile_pax, :data_source
+    fields :imo, :name, :company_id, :capacity_pax, :wikipedia_url, :wikipedia_thumb_url, :g_co2_per_mile_pax, :data_source, :routes_count
     association :ship_routes, blueprint: ShipRoute
     association :company, blueprint: Company
   end

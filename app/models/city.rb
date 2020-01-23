@@ -3,7 +3,17 @@ class City < ApplicationRecord
 
   validates_uniqueness_of :geonames_id
 
+  scope :human_ordered, -> { order(:country, :name) }
+
   def to_s
-    "[#{country}] #{name}"
+    "#{country} - #{name}"
+  end
+
+  def self.collection_for_select
+    c = {}
+    City.human_ordered.each do |city|
+      c[city.to_s] = city.id
+    end
+    c
   end
 end
