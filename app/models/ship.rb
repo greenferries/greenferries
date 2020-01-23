@@ -6,7 +6,8 @@ class Ship < ApplicationRecord
 
   scope :in_scope, -> { where(out_of_scope: [nil, false]) }
   scope :not_unknown_routes, -> { where(unknown_routes: [nil, false]) }
-  scope :with_wikipedia_url, -> { where.not(wikipedia_url: nil) }
+  scope :with_wikipedia_url, -> { where.not(wikipedia_url: [nil, '']) }
+  scope :with_g_co2_per_mile_pax, -> { where.not(with_g_co2_per_mile_pax: nil) }
   scope :treatable, -> { in_scope.not_unknown_routes.with_wikipedia_url }
 
   scope :with_routes, -> { where('routes_count > 0') }

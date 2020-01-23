@@ -19,7 +19,11 @@ ActiveAdmin.register Ship do
     def update
       update! do |format|
         return super unless request.referer.include?("filling_data")
-        next_ship = Ship.treatable.without_routes.first(10).sample(1).first
+        next_ship = Ship.
+          treatable.
+          with_g_co2_per_mile_pax.
+          without_routes.
+          first(10).sample(1).first
         if next_ship.present? && resource.valid?
           format.html { redirect_to edit_admin_ship_path(next_ship, filling_data: true) }
         end
