@@ -19,15 +19,7 @@ ActiveAdmin.register Ship do
     def update
       update! do |format|
         return super unless request.referer.include?("filling_data")
-        next_ship = Ship.
-          where(out_of_scope: [nil, false]).
-          where(unknown_routes: [nil, false]).
-          where.not(wikipedia_url: nil).
-          joins('left outer join ship_routes on ship_routes.ship_id = ships.id').
-          group('ships.id').
-          having('count(ship_routes.id) = 0').
-          first(10).
-          sample(1).first
+        next_ship = Ship.treatable.without_routes.first(10).sample(1).first
         if next_ship.present? && resource.valid?
           format.html { redirect_to edit_admin_ship_path(next_ship, filling_data: true) }
         end

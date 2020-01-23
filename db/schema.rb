@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_19_213253) do
+ActiveRecord::Schema.define(version: 2020_01_23_094804) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -90,6 +90,7 @@ ActiveRecord::Schema.define(version: 2020_01_19_213253) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.float "distance_nms"
+    t.integer "ships_count"
     t.index ["city_a_id"], name: "index_routes_on_city_a_id"
     t.index ["city_b_id"], name: "index_routes_on_city_b_id"
   end
@@ -117,6 +118,7 @@ ActiveRecord::Schema.define(version: 2020_01_19_213253) do
     t.string "wikipedia_thumb_url"
     t.boolean "out_of_scope"
     t.boolean "unknown_routes"
+    t.integer "routes_count"
     t.index ["company_id"], name: "index_ships_on_company_id"
   end
 
