@@ -16,6 +16,10 @@ class Route < ApplicationRecord
     "#{city_a} - #{city_b}"
   end
 
+  def slug
+    "#{city_a.name}-#{city_a.country}-#{city_b.name}-#{city_b.country}".parameterize
+  end
+
   def unique?
     if Route.where(city_a_id: city_a_id, city_b_id: city_b_id).
         or(Route.where(city_a_id: city_b_id, city_b_id: city_a)).

@@ -6,7 +6,7 @@ module Blueprints
 
   class Route < Blueprinter::Base
     identifier :id
-    fields :distance_km, :ships_count
+    fields :distance_km, :ships_count, :slug
     association :city_a, blueprint: City
     association :city_b, blueprint: City
   end
