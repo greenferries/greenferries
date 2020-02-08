@@ -28,4 +28,11 @@ class Route < ApplicationRecord
       errors.add(:city_a, 'Route already exists for these cities')
     end
   end
+
+  def opposite_direction
+    r = Route.new(attributes)
+    r.city_a = city_b
+    r.city_b = city_a
+    r
+  end
 end
