@@ -20,4 +20,8 @@ class Ship < ApplicationRecord
   def edit_url
     "http://admin.greenferries.org/ships/#{id}/edit"
   end
+
+  def slug
+    "#{name}-#{imo}".parameterize
+  end
 end
