@@ -12,8 +12,9 @@ class Ship < ApplicationRecord
 
   scope :with_routes, -> { where('routes_count > 0') }
   scope :without_routes, -> { where(routes_count: 0) }
-
   scope :displayed, -> { in_scope.not_unknown_routes.with_routes }
+  scope :with_company, -> { where.not(company: nil) }
+  scope :in_scope, -> { where(out_of_scope: nil).or(where(out_of_scope: false)) }
 
   include HasWikipediaUrl
 
