@@ -24,6 +24,15 @@ rails db:create db:migrate db:seed
 heroku local
 ```
 
+## Deploy to Dokku
+
+⚠️ you'll need to have SSH access to the DO droplet where this app is hosted
+
+```
+git remote add dokku dokku@142.93.142.9:greenferries-admin
+git push dokku master
+```
+
 ## Glossary for THETIS and Transport Ships Industry
 
 - Laden vs ballast voyages: a 'ballast voyage' is a voyage without any cargo
