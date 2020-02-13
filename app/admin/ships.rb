@@ -1,6 +1,6 @@
 ActiveAdmin.register Ship do
 
-  permit_params :imo, :name, :company_id, :capacity_pax, :wikipedia_url, :g_co2_per_mile_pax, :data_source, :unknown_routes, :out_of_scope, :wikipedia_thumb_url, ship_routes_attributes: [:id, :route_id, :_destroy]
+  permit_params :imo, :name, :company_id, :capacity_pax, :wikipedia_url, :data_source, :unknown_routes, :out_of_scope, :wikipedia_thumb_url, ship_routes_attributes: [:id, :route_id, :_destroy]
 
   form do |f|
     f.semantic_errors

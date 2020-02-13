@@ -12,7 +12,7 @@ class CreateMissingShipsJob < ActiveJob::Base
       company: company,
       imo: data['imo'],
       name: data['name_wiki'] || data['name_thetis'],
-      g_co2_per_mile_pax: data['annual_average_co2_emissions_per_transport_work_pax'],
+      thetis_average_co2_per_pax: data['annual_average_co2_emissions_per_transport_work_pax'],
       data_source: "THETIS-MRV-2019",
       wikipedia_url: data['wikipedia_url'],
       capacity_pax: data['capacity_pax']

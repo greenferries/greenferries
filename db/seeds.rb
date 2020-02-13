@@ -3,7 +3,7 @@ ajaccio = City.create!(name: "Ajaccio", country: "FR", latitude: 41.9272300, lon
 
 corsica_ferries = Company.create!(name: "Corsica Ferries", country: "FR", wikipedia_url: "https://fr.wikipedia.org/wiki/Corsica_Ferries_-_Sardinia_Ferries")
 
-mega_andrea = Ship.create!(name: "Mega Andrea", imo: 8306498, company: corsica_ferries, g_co2_per_mile_pax: 75.54, data_source: 'THETIS-MRV-2019', wikipedia_url: 'https://fr.wikipedia.org/wiki/Mega_Andrea')
+mega_andrea = Ship.create!(name: "Mega Andrea", imo: 8306498, company: corsica_ferries, thetis_average_co2_per_pax: 75.54, data_source: 'THETIS-MRV-2019', wikipedia_url: 'https://fr.wikipedia.org/wiki/Mega_Andrea')
 
 route_toulon_ajaccio = Route.create!(city_a: toulon, city_b: ajaccio, distance_km: 432)
 

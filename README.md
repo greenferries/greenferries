@@ -24,6 +24,17 @@ rails db:create db:migrate db:seed
 heroku local
 ```
 
+## Glossary for THETIS and Transport Ships Industry
+
+- Laden vs ballast voyages: a 'ballast voyage' is a voyage without any cargo
+loaded whereas a laden is one with cargo loaded. Laden means the cargo.
+- DWT : DeadWeight Tonnage is the max weight a cargo can carry (WITHOUT the
+ship's weight). It's sometimes abusively used to mean the weight of the actual
+currently loaded cargo, not the max one.
+- pax means persons
+- freight: in the context of passenger ferries, I believe it means the vehicles
+loaded
+
 ## Ecosystem
 
 - [greenferries-www](https://github.com/greenferries/greenferries-www): The

@@ -1,6 +1,6 @@
 class DataDumpsController < ActionController::Base
   def show
-    ships = Ship.with_company.in_scope.order(:g_co2_per_mile_pax).all
+    ships = Ship.with_company.in_scope.order(:thetis_average_co2_per_pax).all
     routes_original_direction = Route.human_ordered.select{ |r| r.ships.with_company.count > 0}
     routes_reverse_direction = routes_original_direction.map(&:opposite_direction)
     all_routes = routes_original_direction + routes_reverse_direction

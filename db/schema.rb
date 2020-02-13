@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_09_152502) do
+ActiveRecord::Schema.define(version: 2020_02_13_154805) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -112,7 +112,7 @@ ActiveRecord::Schema.define(version: 2020_02_09_152502) do
     t.bigint "company_id"
     t.integer "capacity_pax"
     t.string "wikipedia_url"
-    t.float "g_co2_per_mile_pax"
+    t.float "thetis_average_co2_per_pax"
     t.string "data_source"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -120,6 +120,22 @@ ActiveRecord::Schema.define(version: 2020_02_09_152502) do
     t.boolean "out_of_scope"
     t.boolean "unknown_routes"
     t.integer "routes_count"
+    t.boolean "thetis_monitoring_method_a"
+    t.boolean "thetis_monitoring_method_b"
+    t.boolean "thetis_monitoring_method_c"
+    t.boolean "thetis_monitoring_method_d"
+    t.float "thetis_annual_co2_pax"
+    t.float "thetis_annual_co2_freight"
+    t.float "thetis_annual_co2_total"
+    t.float "thetis_average_co2_per_freight"
+    t.float "thetis_average_co2_per_distance"
+    t.float "thetis_annual_hours_at_sea"
+    t.float "thetis_annual_computed_distance"
+    t.float "thetis_annual_computed_distance_km"
+    t.float "thetis_annual_computed_pax"
+    t.float "thetis_annual_computed_freight"
+    t.float "thetis_annual_computed_average_speed"
+    t.float "thetis_annual_computed_ratio_co2_from_pax"
     t.index ["company_id"], name: "index_ships_on_company_id"
   end
 

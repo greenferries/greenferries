@@ -28,7 +28,28 @@ module Blueprints
 
   class Ship < Blueprinter::Base
     identifier :id
-    fields :imo, :name, :company_id, :capacity_pax, :wikipedia_url, :wikipedia_thumb_url, :g_co2_per_mile_pax, :data_source, :routes_count, :slug
+    fields(
+      :imo, :slug, :name, :company_id, :capacity_pax,
+      :data_source, :routes_count,
+      :wikipedia_url, :wikipedia_thumb_url,
+      :thetis_average_co2_per_pax,
+      :thetis_monitoring_method_a,
+      :thetis_monitoring_method_b,
+      :thetis_monitoring_method_c,
+      :thetis_monitoring_method_d,
+      :thetis_annual_co2_pax,
+      :thetis_annual_co2_freight,
+      :thetis_annual_co2_total,
+      :thetis_average_co2_per_freight,
+      :thetis_average_co2_per_distance,
+      :thetis_annual_hours_at_sea,
+      :thetis_annual_computed_distance,
+      :thetis_annual_computed_distance_km,
+      :thetis_annual_computed_pax,
+      :thetis_annual_computed_freight,
+      :thetis_annual_computed_average_speed,
+      :thetis_annual_computed_ratio_co2_from_pax
+    )
     association :ship_routes, blueprint: ShipRoute
     association :company, blueprint: Company
   end
