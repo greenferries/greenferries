@@ -31,6 +31,7 @@ class Route < ApplicationRecord
 
   def opposite_direction
     r = Route.new(attributes)
+    r.id += 10000 # or indexeddb doesn't store it
     r.city_a = city_b
     r.city_b = city_a
     r

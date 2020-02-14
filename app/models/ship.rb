@@ -43,4 +43,8 @@ class Ship < ApplicationRecord
       self.thetis_annual_computed_ratio_co2_from_pax = thetis_annual_co2_pax / thetis_annual_co2_total
     end
   end
+
+  def ship_routes_with_opposite_direction
+    ship_routes + ship_routes.map(&:opposite_direction)
+  end
 end

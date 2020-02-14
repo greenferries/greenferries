@@ -50,7 +50,7 @@ module Blueprints
       :thetis_annual_computed_average_speed,
       :thetis_annual_computed_ratio_co2_from_pax
     )
-    association :ship_routes, blueprint: ShipRoute
+    association :ship_routes_with_opposite_direction, name: :ship_routes, blueprint: ShipRoute
     association :company, blueprint: Company
   end
 end
