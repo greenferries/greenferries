@@ -1,0 +1,24 @@
+.inactive-map:hover .inactive-map-overlay {
+  display: block;
+}
+
+.data-table {
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+.data-table td, .data-table th {
+  border: 1px solid #666;
+  padding: 5px;
+}
+.data-table th {
+  background-color: #ccc;
+  /* font-weight: bold; */
+}
+.data-table td {
+  word-break: break-word;
+}
+
+
+.docs-markdown img {
+  max-width: 100%;
+}

@@ -28,9 +28,16 @@ heroku local
 
 ⚠️ you'll need to have SSH access to the DO droplet where this app is hosted
 
+
+
 ```
+# from the monorepo's root folder
 git remote add dokku dokku@142.93.142.9:greenferries-admin
 git push dokku master
+
+git subtree push --prefix admin dokku master
+# or with --force
+git push dokku `git subtree split --prefix admin master`:master --force
 ```
 
 ## Glossary for THETIS and Transport Ships Industry
@@ -43,16 +50,6 @@ currently loaded cargo, not the max one.
 - pax means persons
 - freight: in the context of passenger ferries, I believe it means the vehicles
 loaded
-
-## Ecosystem
-
-- [greenferries-www](https://github.com/greenferries/greenferries-www): The
-public website that uses the data maintained through this admin
-- [greenferries-data](https://github.com/greenferries/greenferries-data):
-datasets, APIs and iPython notebooks to explore the different original data
-sources that were used to create the GreenFerries database
-- [greenferries-scrapers](https://github.com/greenferries/greenferries-scrapers):
-Scrapers used to populate data from ferries booking websites
 
 ## Resources
 
