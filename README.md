@@ -2,7 +2,10 @@
 
 *Improve passenger ships environmental impact transparency*
 
+Live website: [greenferries.org](https://www.greenferries.org)
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/214d136b-2a50-41c0-b028-643e8352c1b6/deploy-status)](https://app.netlify.com/sites/greenferries/deploys)
+![Lint Standard JS](https://github.com/greenferries/greenferries/workflows/Lint%20Standard%20JS/badge.svg)
 
 ## Ecosystem
 
