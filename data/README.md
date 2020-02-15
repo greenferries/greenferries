@@ -1,4 +1,4 @@
-# Greenferries - data
+# Greenferries Data Platform
 
 Live website to explore the data from the GreenFerries project: [data.greenferries.org](data.greenferries.org)
 

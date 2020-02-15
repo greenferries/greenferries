@@ -1,4 +1,4 @@
-# GreenFerries
+# GreenFerries Website
 
 *Improve passenger ships environmental impact transparency*
 
