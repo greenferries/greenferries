@@ -1,0 +1,15 @@
+{
+  "name": "directferries-scraper",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@sindresorhus/slugify": "^0.9.1",
+    "async": "^3.1.0",
+    "mongoose": "^5.8.7",
+    "puppeteer": "^2.0.0",
+    "puppeteer-extra": "^3.1.9",
+    "puppeteer-extra-plugin-stealth": "^2.4.9",
+    "standard": "^14.3.1"
+  }
+}
