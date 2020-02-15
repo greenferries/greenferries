@@ -40,7 +40,7 @@ const Footer = () => (
         <ListItem>
           <Stack direction='row' spacing={3} flexWrap='wrap'>
             <Box>External:</Box>
-            <Link href='https://github.com/adipasquale/greenferries-www'>
+            <Link href='https://github.com/greenferries/greenferries'>
               GitHub <Icon name='external-link' />
             </Link>
             <Link href='mailto:admin@greenferries.org'>Contact ✉️</Link>
