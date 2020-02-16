@@ -22,3 +22,7 @@ sources that were used to create the GreenFerries database
 
 - [Scrapers](https://github.com/greenferries/greenferries/tree/master/scrapers#greenferries-scrapers):
 Scrapers used to populate data from ferries booking websites
+
+## Screenshot
+
+![GreenFerries](https://i.imgur.com/7RVgLVD.jpg)
