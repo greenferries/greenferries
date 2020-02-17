@@ -33,11 +33,10 @@ heroku local
 ```
 # from the monorepo's root folder
 git remote add dokku dokku@142.93.142.9:greenferries-admin
-git push dokku master
+make deploy_admin
 
-git subtree push --prefix admin dokku master
 # or with --force
-git push dokku `git subtree split --prefix admin master`:master --force
+make deploy_admin_force
 ```
 
 ## Glossary for THETIS and Transport Ships Industry

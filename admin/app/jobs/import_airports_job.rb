@@ -1,6 +1,7 @@
 class ImportAirportsJob < ActiveJob::Base
 
-  URL = "http://127.0.0.1:8001/airports/airports.json?_shape=objects&_size=1000"
+  # URL = "http://127.0.0.1:8001/airports/airports.json?_shape=objects&_size=1000"
+  URL = "https://data.greenferries.org/airports/airports.json?_shape=objects&_size=1000"
 
   def perform
     Airport.delete_all

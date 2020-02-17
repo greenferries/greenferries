@@ -21,6 +21,6 @@ create_csv_dbs:
 	csvs-to-sqlite -t airports airports.filtered.csv airports.db
 
 deploy:
-	datasette package greenferries.db thetis.db wikidata.db scrapings.db --tag greenferries/datasette:$(VERSION)
+	datasette package greenferries.db thetis.db wikidata.db scrapings.db airports.db --tag greenferries/datasette:$(VERSION)
 	docker push greenferries/datasette:$(VERSION)
 	ssh -T root@142.93.142.9 'docker pull greenferries/datasette:$(VERSION) && docker tag greenferries/datasette:$(VERSION) dokku/greenferries-data:$(VERSION) && dokku tags:deploy greenferries-data $(VERSION)'
