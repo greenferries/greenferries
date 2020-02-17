@@ -1,29 +1,47 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import FlightDistanceCalculator from './FlightDistanceCalculator'
-import { Box, Divider } from '@chakra-ui/core'
+import { Box, Divider, Text } from '@chakra-ui/core'
 import ItineraryBuilder from './ItineraryBuilder'
-import transportModesgCo2PerKm from '../lib/transportModesgCo2PerKm'
+import transportModesgCo2PerKm from '../lib/transportModesGCo2PerKm'
+import { useLocation } from 'react-router'
 
-const ItinerariesComparator = ({ airports, selectedRoute, selectedShipRoute }) => {
+const ItinerariesComparator = ({ ships, airports, selectedRoute, selectedShipRoute, setSelectedShipRoute, setSelectedRoute }) => {
   const [planeDistanceKm, setPlaneDistanceKm] = useState(null)
-  const distanceKm = selectedRoute.distanceKm
+  const location = useLocation()
+
+  useEffect(() => {
+    if (selectedShipRoute || !ships) return
+    const query = new URLSearchParams(location.search)
+    const shipSlugFromQuery = query.get('ship')
+    if (!shipSlugFromQuery) return
+    const ship = ships.find(s => s.slug === shipSlugFromQuery)
+    if (!ship) return
+    const routeSlugFromQuery = query.get('route')
+    if (!routeSlugFromQuery) return
+    const foundShipRoute = ship.shipRoutes.find(sr => sr.route.slug === routeSlugFromQuery)
+    if (!foundShipRoute) return
+    setSelectedShipRoute(foundShipRoute)
+    setSelectedRoute(foundShipRoute.route)
+  }, [location, ships])
+
+  if (!selectedRoute || !(selectedShipRoute)) return null
+
   return (
-    <section>
-      <h3>Compare plane and ferry travel on this route</h3>
+    <Box p={{ base: 3, md: 5 }}>
+      <Text as='h3'>Compare plane and ferry travel on this route</Text>
       <Box display='flex'>
         <Box
           flexGrow={1}
           flexBasis={0}
-          backgroundColor='gray.100'
           p='4'
           borderRadius='lg'
         >
           <ItineraryBuilder
             mainModeName='ferry'
-            legTitle={`ferry ${selectedRoute.cityA.name} ↔ ${selectedRoute.cityB.name}`}
+            legTitle={`${selectedRoute.cityA.name} ↔ ${selectedRoute.cityB.name}`}
             mainModeIcon='🚢'
             mainModeGCo2PerPax={selectedShipRoute.gCo2PerPax}
-            mainModeDistanceKm={distanceKm}
+            mainModeDistanceKm={selectedRoute.distanceKm}
           />
         </Box>
         <Divider orientation='vertical' borderColor='gray.200' />
@@ -31,7 +49,6 @@ const ItinerariesComparator = ({ airports, selectedRoute, selectedShipRoute }) =
         <Box
           flexGrow={1}
           flexBasis={0}
-          backgroundColor='gray.100'
           p='4'
           borderRadius='lg'
         >
@@ -57,7 +74,7 @@ const ItinerariesComparator = ({ airports, selectedRoute, selectedShipRoute }) =
           Ademe
         </a>
       </small>
-    </section>
+    </Box>
   )
 }
 

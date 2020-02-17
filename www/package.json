@@ -1,6 +1,6 @@
 {
-  "name": "antd-demo",
-  "version": "0.1.0",
+  "name": "GreenFerries",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "@chakra-ui/core": "^0.5.2",

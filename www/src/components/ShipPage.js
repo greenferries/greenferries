@@ -24,7 +24,7 @@ const ShipPage = ({ ships, selectedShipRoute, setSelectedShipRoute, setSelectedR
     setSelectedRoute(foundShipRoute.route)
   }, [location, ship])
 
-  if (ships.length === 0) {
+  if (ships.length === 0 || !selectedShipRoute) {
     return <Box paddingY={20} textAlign='center'><Spinner /></Box>
   }
 
@@ -60,13 +60,20 @@ const ShipPage = ({ ships, selectedShipRoute, setSelectedShipRoute, setSelectedR
                 <EcoScore gCo2PerMilePax={ship.thetisAverageCo2PerPax} />
               </Box>
               {selectedShipRoute &&
-                <Box>
-                  <b>{Math.round(selectedShipRoute.gCo2PerPax / 1000)} kg·CO₂/passenger</b>
-                  {' '}
-                  will be emitted when travelling on this ship from
-                  {' '}
-                  {selectedShipRoute.route.cityA.name} to {selectedShipRoute.route.cityB.name}
-                </Box>}
+                <>
+                  <Box>
+                    <b>{Math.round(selectedShipRoute.gCo2PerPax / 1000)} kg·CO₂/passenger</b>
+                    {' '}
+                    will be emitted when travelling on this ship from
+                    {' '}
+                    {selectedShipRoute.route.cityA.name} to {selectedShipRoute.route.cityB.name}
+                  </Box>
+                  <Box>
+                    <Link as={ReactLink} to={`/itineraries-comparator?route=${selectedShipRoute.route.slug}&ship=${selectedShipRoute.ship.slug}`}>
+                      Compare itineraries ferry 🚢 vs plane ✈️
+                    </Link>
+                  </Box>
+                </>}
             </Stack>
             <Stack spacing={1}>
               <Text m={0}>

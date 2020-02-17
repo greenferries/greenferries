@@ -9,9 +9,8 @@ db.version(1).stores({
   companies: 'id,slug',
   routes: 'id,slug,cityA.name',
   countries: 'code',
-  airports: 'country,name'
+  airports: 'code,country'
 })
-
 const clearDb = async () => {
   await db.dataVersions.toCollection().delete()
   await db.ships.toCollection().delete()

@@ -2,13 +2,14 @@ import React, { useState } from 'react'
 import update from 'immutability-helper'
 import { Button, Box, Divider, Heading } from '@chakra-ui/core'
 import ItineraryLeg from './ItineraryLeg'
+import transportModesGCo2PerKm from '../lib/transportModesGCo2PerKm'
 
 const ItineraryBuilder = ({ mainModeName, mainModeIcon, configurator, mainModeGCo2PerPax, mainModeDistanceKm, legTitle }) => {
   const [legs, setLegs] = useState([])
   const totalGCo2PerPax = mainModeGCo2PerPax + legs.reduce((p, l) => p + l.gCo2PerPax, 0)
   return (
-    <Box display='flex' justifyContent='space-between' alignItems='center'>
-      <Box flexGrow='2'>
+    <Box>
+      <Box>
         <Heading as='h2' my='0' size='md'>
           {mainModeIcon}
           <small>&nbsp; {legTitle || mainModeName}</small>
@@ -36,23 +37,15 @@ const ItineraryBuilder = ({ mainModeName, mainModeIcon, configurator, mainModeGC
           width='100%'
           backgroundColor='white'
           onClick={() => {
-            setLegs([...legs, { mode: 'car', distanceKm: 100 }])
+            setLegs([...legs, { mode: 'car', distanceKm: 100, gCo2PerPax: 100 * transportModesGCo2PerKm.car }])
           }}
         >
           Add a leg
         </Button>
       </Box>
       <Divider borderColor='gray.400' orientation='vertical' />
-      <Box flexGrow='1'>
-        <Box textAlign='center'>
-          <b>Total</b>
-          <Box>
-            <div>
-              <b>{Math.round(totalGCo2PerPax / 1000)} kg</b>
-            </div>
-            <small>CO₂/passenger</small>
-          </Box>
-        </Box>
+      <Box textAlign='center'>
+        Total: <b>{Math.round(totalGCo2PerPax / 1000)} kg</b> CO₂/passenger
       </Box>
     </Box>
   )

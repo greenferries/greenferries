@@ -1,5 +1,5 @@
 dev:
-	datasette serve greenferries.db thetis.db wikidata.db scrapings.db --metadata metadata.json
+	datasette serve greenferries.db thetis.db wikidata.db scrapings.db airports.db --metadata metadata.json
 
 create_admin_db:
 	touch greenferries.db && rm greenferries.db
@@ -13,10 +13,12 @@ create_admin_db:
 	dropdb greenferries_prod_tmp
 
 create_csv_dbs:
+	touch thetis.db wikidata.db scrapings.db
 	rm thetis.db wikidata.db scrapings.db
 	csvs-to-sqlite -t ships thetis_mrv_2019_12_24.csv thetis.db
 	csvs-to-sqlite -t ships wikidata_ships_2020_01_16.csv wikidata.db
 	csvs-to-sqlite -t ship_routes scraped_ship_routes_2020_01_18.cleaned.csv scrapings.db
+	csvs-to-sqlite -t airports airports.filtered.csv airports.db
 
 deploy:
 	datasette package greenferries.db thetis.db wikidata.db scrapings.db --tag greenferries/datasette:$(VERSION)

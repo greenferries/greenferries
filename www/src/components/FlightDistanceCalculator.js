@@ -8,16 +8,18 @@ const flags = {
   IT: '🇮🇹'
 }
 
-const AirportSelect = ({ airports, placeholder, airport, setAirport }) => {
+const AirportSelect = ({ airports, country, placeholder, airport, setAirport }) => {
   const [value, setValue] = useState(airport && airport.code)
   useEffect(() => { if (airport) setValue(airport.code) }, [airport])
+  const countryAirports = airports.filter(a => a.country === country)
+  if (!countryAirports) return null
   return (
     <Select
       placeholder={placeholder}
       value={value || ''}
       onChange={event => setAirport(airports.find(a => a.code === event.currentTarget.value))}
     >
-      {airports.map(airport =>
+      {countryAirports.map(airport =>
         <option value={airport.code} key={airport.code}>
           {flags[airport.country]} {airport.name}
         </option>
@@ -44,6 +46,7 @@ const FlightDistanceCalculator = ({ airports, setDistanceKm, route }) => {
           placeholder='from'
           airport={departure}
           setAirport={setDeparture}
+          country={route.cityA.country}
         />
       </div>
       <Box textAlign='center'>
@@ -55,6 +58,7 @@ const FlightDistanceCalculator = ({ airports, setDistanceKm, route }) => {
           placeholder='to'
           airport={arrival}
           setAirport={setArrival}
+          country={route.cityB.country}
         />
       </div>
     </div>

@@ -17,6 +17,7 @@ import CompanyPage from './CompanyPage'
 import FaqEcoScore from './FaqEcoScore'
 import SitemapPage from './SitemapPage'
 import ComputedStatsPage from './ComputedStatsPage'
+import ItinerariesComparator from './ItinerariesComparator'
 
 const RouteSelectMap = lazy(() => import('./RouteSelectMap'))
 
@@ -31,7 +32,7 @@ const Layout = ({ resetRoute, children }) => (
 )
 
 const AppRoutesMobile = (allProps) => {
-  const { resetRoute, isLoading, ships, companies, routes, selectedRoute, setSelectedRoute, selectedShipRoute, setSelectedShipRoute } = allProps
+  const { resetRoute, isLoading, ships, companies, routes, airports, selectedRoute, setSelectedRoute, selectedShipRoute, setSelectedShipRoute } = allProps
   return (
     <Layout resetRoute={resetRoute}>
       <Switch>
@@ -87,6 +88,10 @@ const AppRoutesMobile = (allProps) => {
         </Route>
         <Route path='/companies/:companySlug'>
           <CompanyPage companies={companies} />
+        </Route>
+        <Route exact path='/itineraries-comparator'>
+          <RouteTitle selectedRoute={selectedRoute} setSelectedRoute={setSelectedRoute} setSelectedShipRoute={setSelectedShipRoute} />
+          <ItinerariesComparator ships={ships} airports={airports} selectedRoute={selectedRoute} selectedShipRoute={selectedShipRoute} setSelectedShipRoute={setSelectedShipRoute} setSelectedRoute={setSelectedRoute} />
         </Route>
         <Route exact path='/faq'>
           <Faq />
