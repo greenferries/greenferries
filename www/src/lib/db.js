@@ -11,6 +11,7 @@ db.version(1).stores({
   countries: 'code',
   airports: 'code,country'
 })
+
 const clearDb = async () => {
   await db.dataVersions.toCollection().delete()
   await db.ships.toCollection().delete()
@@ -36,7 +37,6 @@ const refreshData = async () => {
   ))
   await db.companies.bulkPut(companies)
   await db.dataVersions.put({ version: data.version })
-  console.log('data.countries is', data.countries)
   await db.countries.bulkPut(data.countries)
   await db.airports.bulkPut(data.airports)
 }

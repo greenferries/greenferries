@@ -28,7 +28,7 @@ const ItinerariesComparator = ({ ships, airports, selectedRoute, selectedShipRou
 
   return (
     <Box p={{ base: 3, md: 5 }}>
-      <Text as='h3'>Compare plane and ferry travel on this route</Text>
+      <Text as='h3'>Itineraries comparator</Text>
       <Box display='flex'>
         <Box
           flexGrow={1}
@@ -37,9 +37,9 @@ const ItinerariesComparator = ({ ships, airports, selectedRoute, selectedShipRou
           borderRadius='lg'
         >
           <ItineraryBuilder
-            mainModeName='ferry'
-            legTitle={`${selectedRoute.cityA.name} ↔ ${selectedRoute.cityB.name}`}
-            mainModeIcon='🚢'
+            mainMode='ferry'
+            mainModeTitle='With the ferry 🚢'
+            configurator={`${selectedRoute.cityA.name} ↔ ${selectedRoute.cityB.name}`}
             mainModeGCo2PerPax={selectedShipRoute.gCo2PerPax}
             mainModeDistanceKm={selectedRoute.distanceKm}
           />
@@ -53,8 +53,8 @@ const ItinerariesComparator = ({ ships, airports, selectedRoute, selectedShipRou
           borderRadius='lg'
         >
           <ItineraryBuilder
-            mainModeName='plane'
-            mainModeIcon='✈️'
+            mainMode='plane'
+            mainModeTitle='With the plane ✈️'
             configurator={
               <FlightDistanceCalculator
                 airports={airports}
