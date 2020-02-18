@@ -32,7 +32,7 @@ const Layout = ({ resetRoute, children }) => (
 )
 
 const AppRoutesMobile = (allProps) => {
-  const { resetRoute, isLoading, ships, companies, routes, airports, selectedRoute, setSelectedRoute, selectedShipRoute, setSelectedShipRoute } = allProps
+  const { resetRoute, isLoading, ships, companies, routes, airports, selectedRoute, setSelectedRoute, selectedShipRoute, setSelectedShipRoute, setSelectedShip, selectedShip } = allProps
   return (
     <Layout resetRoute={resetRoute}>
       <Switch>
@@ -90,8 +90,23 @@ const AppRoutesMobile = (allProps) => {
           <CompanyPage companies={companies} />
         </Route>
         <Route exact path='/itineraries-comparator'>
-          <RouteTitle selectedRoute={selectedRoute} setSelectedRoute={setSelectedRoute} setSelectedShipRoute={setSelectedShipRoute} />
-          <ItinerariesComparator ships={ships} airports={airports} selectedRoute={selectedRoute} selectedShipRoute={selectedShipRoute} setSelectedShipRoute={setSelectedShipRoute} setSelectedRoute={setSelectedRoute} />
+          <RouteTitle
+            selectedRoute={selectedRoute}
+            setSelectedRoute={setSelectedRoute}
+            setSelectedShipRoute={setSelectedShipRoute}
+            selectedShip={selectedShip}
+            withShip
+          />
+          <ItinerariesComparator
+            ships={ships}
+            airports={airports}
+            selectedRoute={selectedRoute}
+            setSelectedRoute={setSelectedRoute}
+            selectedShipRoute={selectedShipRoute}
+            setSelectedShipRoute={setSelectedShipRoute}
+            selectedShip={selectedShip}
+            setSelectedShip={setSelectedShip}
+          />
         </Route>
         <Route exact path='/faq'>
           <Faq />

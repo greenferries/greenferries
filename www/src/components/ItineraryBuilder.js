@@ -33,12 +33,12 @@ const ItineraryBuilder = ({ mainMode, mainModeTitle, configurator, mainModeGCo2P
           />
         ))}
       </Box>
-      <Box textAlign='right' paddingY={2} paddingRight={4}>
+      <Box textAlign='right' paddingY={2} paddingRight='25px'>
         Total: <b>{Math.round(totalGCo2PerPax / 1000)} kg</b><br />
         CO₂/passenger
       </Box>
-      <Box marginTop={3} display='flex' alignItems='center' justifyContent='space-between'>
-        <Box>Add a leg:</Box>
+      <Box marginTop={3} paddingRight='25px' display='flex' alignItems='center' justifyContent='space-between'>
+        <Box>New leg:</Box>
         <Box>
           <Select
             value={newLegMode}
@@ -58,7 +58,7 @@ const ItineraryBuilder = ({ mainMode, mainModeTitle, configurator, mainModeGCo2P
               setLegs([...legs, { mode: newLegMode, distanceKm: 100, gCo2PerPax: 100 * transportModesGCo2PerKm[newLegMode] }])
             }}
           >
-            Add a leg
+            Add
           </Button>
         </Box>
       </Box>

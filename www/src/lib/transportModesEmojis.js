@@ -1,6 +1,7 @@
 const transportModesEmojis = {
   ferry: '🚢',
   car: '🚗',
+  bus: '🚌',
   tgv: '🚅',
   plane: '✈️'
 }

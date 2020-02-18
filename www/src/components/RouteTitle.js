@@ -2,7 +2,7 @@ import React from 'react'
 import { useHistory } from 'react-router'
 import { Box, Button } from '@chakra-ui/core'
 
-const RouteTitle = ({ selectedRoute, setSelectedRoute, setSelectedShipRoute }) => {
+const RouteTitle = ({ selectedRoute, setSelectedRoute, setSelectedShipRoute, selectedShip, withShip }) => {
   const history = useHistory()
 
   if (!selectedRoute) return null
@@ -18,6 +18,7 @@ const RouteTitle = ({ selectedRoute, setSelectedRoute, setSelectedShipRoute }) =
         flexWrap='wrap'
         whiteSpace='nowrap'
         overflow='hidden'
+        alignItems='baseline'
       >
         <Box marginRight={2} marginTop={1} fontWeight='bold'>Current Route:</Box>
         <Box
@@ -41,7 +42,7 @@ const RouteTitle = ({ selectedRoute, setSelectedRoute, setSelectedShipRoute }) =
           </Box>
         </Box>
         <Box marginRight={2} marginTop={1}>({selectedRoute.distanceKm} km)</Box>
-        <Box marginTop={1}>
+        <Box>
           <Button
             variant='link'
             border={0}
@@ -60,6 +61,36 @@ const RouteTitle = ({ selectedRoute, setSelectedRoute, setSelectedShipRoute }) =
           </Button>
         </Box>
       </Box>
+      {withShip && selectedShip &&
+        <Box
+          display='flex'
+          flexWrap='wrap'
+          whiteSpace='nowrap'
+          overflow='hidden'
+          alignItems='baseline'
+        >
+          <Box marginRight={2} marginTop={1} fontWeight='bold'>Current Ship:</Box>
+          <Box marginRight={2} whiteSpace='nowrap' textOverflow='ellipsis' overflow='hidden'>
+            {selectedShip.name}
+          </Box>
+          <Box>
+            <Button
+              variant='link'
+              border={0}
+              m={0}
+              p={0}
+              backgroundColor='transparent'
+              color='green.500'
+              cursor='pointer'
+              onClick={() => {
+                setSelectedShipRoute(null)
+                history.push(`/routes/${selectedRoute.slug}`)
+              }}
+            >
+              Change Ship
+            </Button>
+          </Box>
+        </Box>}
     </Box>
   )
 }
