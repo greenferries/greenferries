@@ -22,13 +22,17 @@ import ItinerariesComparator from './ItinerariesComparator'
 const RouteSelectMap = lazy(() => import('./RouteSelectMap'))
 
 const Layout = ({ resetRoute, children }) => (
-  <>
+  <Box
+    minHeight='100vh'
+    display='flex'
+    flexDirection='column'
+  >
     <Header resetRoute={resetRoute} />
-    <Box paddingBottom={10}>
+    <Box paddingBottom={10} flexGrow={1}>
       {children}
     </Box>
-    <Footer />
-  </>
+    <Box><Footer /></Box>
+  </Box>
 )
 
 const AppRoutesMobile = (allProps) => {

@@ -19,11 +19,16 @@ import RouteTitle from './RouteTitle'
 import ItinerariesComparator from './ItinerariesComparator'
 
 const Layout = ({ children, resetRoute }) => (
-  <Box>
+  <Box
+    minHeight='100vh'
+    display='flex'
+    flexDirection='column'
+  >
     <Box
       backgroundImage={`url(${TextureBackground})`}
       paddingTop={10}
       paddingBottom={20}
+      flexGrow={1}
     >
       <Box
         margin='auto'

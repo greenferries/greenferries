@@ -86,12 +86,7 @@ const AppWrapper = () => {
   }
 
   return (
-    <Box
-      w='100%'
-      minHeight='100%'
-      display='flex'
-      flexDirection='column'
-    >
+    <Box w='100%'>
       <Media query='(max-width: 48em)'>
         {screenIsSmall =>
           screenIsSmall
