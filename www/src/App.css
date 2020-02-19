@@ -2,6 +2,12 @@
   display: block;
 }
 
+@media screen and (max-width: 48em) {
+  .data-table {
+    width: 100%;
+  }
+}
+
 .data-table {
   border-collapse: collapse;
   border-spacing: 0px;
@@ -12,6 +18,10 @@
 }
 .data-table th {
   background-color: #ccc;
+  /* font-weight: bold; */
+}
+.data-table tbody th {
+  text-align: right;
   /* font-weight: bold; */
 }
 .data-table td {

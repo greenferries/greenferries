@@ -17,44 +17,44 @@ You can find the published data on [THETIS publicly accessible platform](https:/
 
 ### Distance travelled
 
-\`TotDst = TotCO₂ / AvgCO₂Pax\`
+\`TotDst = TotCO₂ / AvgCO₂Dst\`
 
 *ie.* total emitted CO₂ / average CO₂ emitted per distance
 
-*eg.* for the [Sea Wind](/ships/m-s-sea-wind-7128332) ship in the picture:
+*eg.* for the [Armorique](/ships/armorique-9364980) ship:
 
-\`(12912.35 m tonnes * 1000) / (265.00 kg CO₂ / n mile) ~= 48725 n miles ~= 90239 km\`
+\`TotDst = (36649.07 m tonnes * 1000) / (517.37 kg CO₂ / n mile) ~= 70837 n miles ~= 131191 km\`
 
-### Persons transported
+### Average number of persons transported
 
-\`TotPax = TotCO₂Pax / (AvgCO₂PaxDst * TotDst)\`
+\`AvgPax = TotCO₂Pax / (AvgCO₂PaxDst * TotDst)\`
 
-*ie.* total emitted CO₂ assigned to persons transport / (average CO₂ emitted per distance per person * distance)
+*ie.* total emitted CO₂ assigned to persons transport / (average CO₂ emitted per distance per person * total distance travelled)
 
-*eg.* for the [Sea Wind](/ships/m-s-sea-wind-7128332) ship in the picture:
+*eg.* for the [Armorique](/ships/armorique-9364980) ship:
 
-\`(3085.35 m tonnes * 1000) / ((1873.44
-  g CO₂ / pax · n miles / 1000) * 48725 n miles) ~= 34 persons\`
+\`AvgPax = (14841.17 m tonnes * 1000) / ((398.98
+  g CO₂ / pax · n miles / 1000) * 70837 n miles) ~= 525 persons\`
 
-### Freight transported
+### Average freight transported
 
-\`TotFrt = TotCO₂Frt / (AvgCO₂FrtDst * TotDst)\`
+\`AvgFrt = TotCO₂Frt / (AvgCO₂FrtDst * TotDst)\`
 
-*ie.* total emitted CO₂ assigned to freight transport / (average CO₂ emitted per metric ton of freight * distance)
+*ie.* total emitted CO₂ assigned to freight transport / (average CO₂ emitted per metric ton of freight * total distance travelled)
 
-*eg.* for the [Sea Wind](/ships/m-s-sea-wind-7128332) ship in the picture:
+*eg.* for the [Armorique](/ships/armorique-9364980) ship:
 
-\`9157.98 m tonnes * 1000 / ((172.77 g CO₂ / m tonnes · n miles / 1000) * 48725 n miles) ~= 1088 m tonnes\`
+\`AvgFrt = 21807.89 m tonnes * 1000 / ((514.06 g CO₂ / m tonnes · n miles / 1000) * 70837 n miles) ~= 599 m tonnes\`
 
 ### Average speed
 
 \`AvgSpd = TotDst / H\`
 
-*ie.* distance travelled / hours at sea
+*ie.* total distance travelled / hours at sea
 
-*eg.* for the [Sea Wind](/ships/m-s-sea-wind-7128332) ship in the picture:
+*eg.* for the [Armorique](/ships/armorique-9364980) ship:
 
-\`90239 km / 3787.00 hours ~= 24 km/h \`
+\`131191 km / 4801.00 hours ~= 27 km/h\`
 
 ### Ratio of emitted CO₂ assigned to passengers
 
@@ -62,9 +62,9 @@ You can find the published data on [THETIS publicly accessible platform](https:/
 
 *ie.* total emitted CO₂ assigned to persons transport / total emitted CO₂
 
-*eg.* for the [Sea Wind](/ships/m-s-sea-wind-7128332) ship in the picture:
+*eg.* for the [Armorique](/ships/armorique-9364980) ship:
 
-\`3085.35 m tonnes / 12912.35 m tonnes ~= 24%\`
+\`14841.17 m tonnes / 36649.07 m tonnes ~= 40%\`
 
 # Code
 

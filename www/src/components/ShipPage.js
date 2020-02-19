@@ -38,7 +38,7 @@ const ShipPage = ({ ships, selectedShipRoute, setSelectedShipRoute, setSelectedR
 
   return (
     <>
-      <Box p={{ base: 3, md: 5 }}>
+      <Box paddingX={{ base: 3, md: 5 }}>
         <Link onClick={() => history.goBack()}>
         ◀️ go back
         </Link>
@@ -118,10 +118,7 @@ const ShipPage = ({ ships, selectedShipRoute, setSelectedShipRoute, setSelectedR
           </ul>
         </Box>
       </Box>
-      <Box p={{ base: 0, md: 5 }}>
-        <ShipThetisDataTable ship={ship} />
-      </Box>
-      <Box p={{ base: 3, md: 5 }}>
+      <Box paddingX={{ base: 3, md: 5 }}>
         <Alert status='warning' maxWidth='30rem'>
           <AlertIcon />
           <Box>
@@ -137,6 +134,9 @@ const ShipPage = ({ ships, selectedShipRoute, setSelectedShipRoute, setSelectedR
             </Text>
           </Box>
         </Alert>
+      </Box>
+      <Box p={{ base: 0, md: 5 }}>
+        <ShipThetisDataTable ship={ship} />
       </Box>
     </>
   )
