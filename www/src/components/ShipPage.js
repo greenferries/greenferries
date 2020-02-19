@@ -24,7 +24,7 @@ const ShipPage = ({ ships, selectedShipRoute, setSelectedShipRoute, setSelectedR
     setSelectedRoute(foundShipRoute.route)
   }, [location, ship])
 
-  if (ships.length === 0 || !selectedShipRoute) {
+  if (ships.length === 0) {
     return <Box paddingY={20} textAlign='center'><Spinner /></Box>
   }
 
