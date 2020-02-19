@@ -1,5 +1,5 @@
 update_data:
-	# curl https://admin.greenferries.org/data_dump > public/shipsCompaniesAndRoutes.json
+	curl https://admin.greenferries.org/data_dump > public/shipsCompaniesAndRoutes.json
 	jq '.version += 1' public/dataVersion.json -rc > public/newDataVersion.json
 	mv public/newDataVersion.json public/dataVersion.json
 	cat public/airportsArray.json | jq '{airports: .}' > public/airports.json

@@ -19,6 +19,7 @@ const AppWrapper = () => {
   // state - user selections
   const [selectedRoute, setSelectedRoute] = useState(null)
   const [selectedCountry, setSelectedCountry] = useState()
+  const [selectedShip, setSelectedShip] = useState()
   const [selectedShipRoute, setSelectedShipRoute] = useState()
 
   const history = useHistory()
@@ -78,6 +79,8 @@ const AppWrapper = () => {
     selectedRouteShipRoutes,
     selectedShipRoute,
     setSelectedShipRoute,
+    selectedShip,
+    setSelectedShip,
     resetRoute,
     isLoading
   }

@@ -1,0 +1,30 @@
+const flags = {
+  AL: '🇦🇱',
+  AX: 'Åland Islands',
+  DE: '🇩🇪',
+  DK: '🇩🇰',
+  DZ: '🇩🇿',
+  EE: '🇪🇪',
+  ES: '🇪🇸',
+  FI: '🇫🇮',
+  FR: '🇫🇷',
+  GB: '🇬🇧',
+  GG: '🇬🇬',
+  GR: '🇬🇷',
+  GS: '🇬🇧',
+  HR: '🇭🇺',
+  IE: '🇮🇪',
+  IM: '🇮🇲',
+  IT: '🇮🇹',
+  JE: '🇯🇪',
+  LV: '🇱🇻',
+  MA: '🇲🇦',
+  NL: '🇳🇱',
+  NO: '🇳🇴',
+  PL: '🇵🇱',
+  RU: '🇷🇺',
+  SE: '🇸🇪',
+  TN: '🇹🇳'
+}
+
+export default flags

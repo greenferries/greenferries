@@ -1,27 +1,25 @@
 import React, { useState, useEffect } from 'react'
 import { Select, Box } from '@chakra-ui/core'
 import { getDistance } from 'geolib'
+import flags from '../lib/flags'
+import { db } from '../lib/db'
 
-const flags = {
-  FR: '🇫🇷',
-  GB: '🇬🇧',
-  IT: '🇮🇹'
-}
-
-const AirportSelect = ({ airports, country, placeholder, airport, setAirport }) => {
+const AirportSelect = ({ country, placeholder, airport, setAirport }) => {
+  const [airports, setAirports] = useState()
   const [value, setValue] = useState(airport && airport.code)
   useEffect(() => { if (airport) setValue(airport.code) }, [airport])
-  const countryAirports = airports.filter(a => a.country === country)
-  if (!countryAirports) return null
+  useEffect(() => {
+    db.airports.where('country').equals(country).sortBy('name').then(setAirports)
+  }, [])
   return (
     <Select
       placeholder={placeholder}
       value={value || ''}
       onChange={event => setAirport(airports.find(a => a.code === event.currentTarget.value))}
     >
-      {countryAirports.map(airport =>
+      {airports && airports.map(airport =>
         <option value={airport.code} key={airport.code}>
-          {flags[airport.country]} {airport.name}
+          {airport.name} {flags[airport.country]}
         </option>
       )}
     </Select>
@@ -31,16 +29,19 @@ const AirportSelect = ({ airports, country, placeholder, airport, setAirport }) 
 const FlightDistanceCalculator = ({ airports, setDistanceKm, route }) => {
   const [departure, setDeparture] = useState(null)
   const [arrival, setArrival] = useState(null)
-  const distanceKm = departure && arrival && getDistance(departure, arrival) / 1000
   useEffect(() => {
     if (!route || !airports) return
     setDeparture(airports.find(a => a.code === route.cityA.targetAirportCode))
     setArrival(airports.find(a => a.code === route.cityB.targetAirportCode))
   }, [airports, route])
-  useEffect(() => setDistanceKm(distanceKm), [distanceKm, setDistanceKm])
+  useEffect(() => {
+    if (!departure || !arrival) return
+    setDistanceKm(getDistance(departure, arrival) / 1000)
+  }, [departure, arrival])
+  if (!airports || !setDeparture || !route) return null
   return (
-    <div>
-      <div>
+    <Box>
+      <Box>
         <AirportSelect
           airports={airports}
           placeholder='from'
@@ -48,11 +49,11 @@ const FlightDistanceCalculator = ({ airports, setDistanceKm, route }) => {
           setAirport={setDeparture}
           country={route.cityA.country}
         />
-      </div>
+      </Box>
       <Box textAlign='center'>
         <span role='img' aria-label='between'>↕️</span>
       </Box>
-      <div>
+      <Box>
         <AirportSelect
           airports={airports}
           placeholder='to'
@@ -60,8 +61,8 @@ const FlightDistanceCalculator = ({ airports, setDistanceKm, route }) => {
           setAirport={setArrival}
           country={route.cityB.country}
         />
-      </div>
-    </div>
+      </Box>
+    </Box>
   )
 }
 
