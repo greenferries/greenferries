@@ -73,7 +73,9 @@ const RouteSelectDropdowns = ({
       <Text as='h2' fontWeight={700} fontSize={{ base: '2xl', md: '4xl' }}>
         Find ferries that emit
         {' '}
-        <Text m={0} display='inline' color='#5897ca'>less than planes</Text>
+        <Text m={0} display='inline' color='#5897ca'>less CO₂ than planes</Text>
+        {' '}
+        (per person and km)
       </Text>
 
       {isLoading && <Box textAlign='center'><Spinner /></Box>}

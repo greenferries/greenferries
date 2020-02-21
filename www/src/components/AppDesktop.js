@@ -18,51 +18,55 @@ const AppDesktop = (allProps) => {
     setVisibleMap(true)
   }
   return (
-    <Box display='flex' overflow='hidden' p={{ base: 3, md: 5 }}>
-      <Box marginRight={5} overflow='hidden'>
-        <RouteSelectDropdowns {...allProps} />
-        {selectedRoute && <RouteShipsCards {...allProps} />}
-        {!selectedRoute &&
-          <Box marginTop={10}>
-            <Divider marginBottom={5} />
-            <HomeNavigationOptions ships={ships} companies={companies} />
-          </Box>}
-      </Box>
-      <Box
-        display={{ base: 'none', md: 'initial' }}
-        width='400px'
-      >
-        {visibleMap &&
-          <Suspense fallback={<div>Loading...</div>}>
-            <RouteSelectMap {...allProps} />
-          </Suspense>}
-        {!visibleMap &&
-          <Box
-            display='flex'
-            flexDirection='row'
-            height='100%'
-            width={400}
-            alignItems='center'
-            justifyContent='space-around'
-            backgroundImage={`url(${MapImage})`}
-            backgroundSize='cover'
-            className='inactive-map'
-            cursor='pointer'
-            onClick={() => doSetVisibleMap()}
-          >
+    <Box>
+      <Box display='flex' overflow='hidden' p={{ base: 3, md: 5 }}>
+        <Box marginRight={5} overflow='hidden'>
+          <RouteSelectDropdowns {...allProps} />
+          {!selectedRoute &&
+            <Box marginTop={10}>
+              <Divider marginBottom={5} />
+              <HomeNavigationOptions ships={ships} companies={companies} />
+            </Box>}
+        </Box>
+        <Box
+          display={{ base: 'none', md: 'initial' }}
+          width='400px'
+        >
+          {visibleMap &&
+            <Suspense fallback={<div>Loading...</div>}>
+              <RouteSelectMap {...allProps} />
+            </Suspense>}
+          {!visibleMap &&
             <Box
-              textAlign='center'
-              backgroundColor='rgba(255,255,255,0.8)'
-              p={5}
-              borderRadius={5}
-              maxWidth='80%'
-              display='none'
-              className='inactive-map-overlay'
+              display='flex'
+              flexDirection='row'
+              height='100%'
+              width={400}
+              alignItems='center'
+              justifyContent='space-around'
+              backgroundImage={`url(${MapImage})`}
+              backgroundSize='cover'
+              className='inactive-map'
+              cursor='pointer'
+              onClick={() => doSetVisibleMap()}
             >
-              <Text>Click to load the map</Text>
-              <Text>(it's not loaded by default as it uses a lot of bandwidth)</Text>
-            </Box>
-          </Box>}
+              <Box
+                textAlign='center'
+                backgroundColor='rgba(255,255,255,0.8)'
+                p={5}
+                borderRadius={5}
+                maxWidth='80%'
+                display='none'
+                className='inactive-map-overlay'
+              >
+                <Text>Click to load the map</Text>
+                <Text>(it's not loaded by default as it uses a lot of bandwidth)</Text>
+              </Box>
+            </Box>}
+        </Box>
+      </Box>
+      <Box paddingX={5} marginY={3}>
+        {selectedRoute && <RouteShipsCards {...allProps} />}
       </Box>
     </Box>
   )
