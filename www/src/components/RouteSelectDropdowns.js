@@ -3,7 +3,7 @@ import { Select, Box, Text, Spinner, Button } from '@chakra-ui/core'
 import { useHistory } from 'react-router'
 
 const RouteSelectDropdowns = ({
-  routes, selectedRoute, setSelectedRoute,
+  routes, selectedRoute, setSelectedRoute, resetRoute,
   countries, selectedCountry, setSelectedCountry,
   selectedCountryRoutes, isLoading
 }) => {
@@ -24,8 +24,8 @@ const RouteSelectDropdowns = ({
         maxWidth={500}
         placeholder=' '
         onChange={event => {
+          resetRoute()
           setSelectedCountry(countries.find(c => c.code === event.currentTarget.value))
-          setSelectedRoute(null)
         }}
         value={selectedCountry ? selectedCountry.code : ''}
       >
