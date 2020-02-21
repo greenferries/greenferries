@@ -113,7 +113,7 @@ const ShipThetisDataTable = ({ ship }) => (
         <AlertIcon />
         <Box>
           <Text m={0}>
-            FigureCells with the <Icon name='info-outline' /> icon were computed based on the published data. You can find computation details
+            Figures with the <Icon name='info-outline' /> icon were computed based on the published data. You can find computation details
             {' '}
             <Link as={ReactLink} to='/computed-statistics'>
               on this page
