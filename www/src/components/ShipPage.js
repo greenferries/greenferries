@@ -7,11 +7,16 @@ import ShipPhoto from './ShipPhoto'
 import EcoScore from './EcoScore'
 import ShipThetisDataTable from './ShipThetisDataTable'
 
-const ShipPage = ({ ships, selectedShip, selectedShipRoute, setSelectedShipRoute, setSelectedRoute }) => {
+const ShipPage = ({ ships, selectedShip, setSelectedShip, selectedShipRoute, setSelectedShipRoute, setSelectedRoute }) => {
   const history = useHistory()
   const location = useLocation()
   const { shipSlug: slugFromParams } = useParams()
   const ship = ships.find(s => s.slug === slugFromParams)
+
+  useEffect(() => {
+    if (selectedShip || !ship) return
+    setSelectedShip(ship)
+  }, [ship])
 
   useEffect(() => {
     if (selectedShipRoute || !ship) return
@@ -45,36 +50,18 @@ const ShipPage = ({ ships, selectedShip, selectedShipRoute, setSelectedShipRoute
         <Text as='h1' fontSize='xl' fontWeight='bold'>
           {ship.name}
         </Text>
-        <Box display='flex' flexWrap='wrap'>
-          <Box marginRight={5} marginBottom={2}>
-            <ShipPhoto
-              ship={ship}
-              objectFit='cover'
-              width='300px'
-              maxWidth='100%'
-            />
-          </Box>
-          <Box>
-            <Stack spacing={2} marginBottom={4}>
-              <Box>
-                <EcoScore gCo2PerMilePax={ship.thetisAverageCo2PerPax} />
-              </Box>
-              {selectedShipRoute && selectedShip &&
-                <Stack spacing={2}>
-                  <Box>
-                    <b>{Math.round(selectedShipRoute.gCo2PerPax / 1000)} kg·CO₂/passenger</b>
-                    {' '}
-                    will be emitted when travelling on this ship from
-                    {' '}
-                    {selectedShipRoute.route.cityA.name} to {selectedShipRoute.route.cityB.name}
-                  </Box>
-                  <Box>
-                    <Link as={ReactLink} to={`/itineraries-comparator?route=${selectedShipRoute.route.slug}&ship=${selectedShip.slug}`}>
-                      Compare with flying ✈️
-                    </Link>
-                  </Box>
-                </Stack>}
-            </Stack>
+      </Box>
+      <Stack spacing={6}>
+        <Box paddingX={{ base: 3, md: 5 }}>
+          <Box display='flex' flexWrap='wrap'>
+            <Box marginRight={5} marginBottom={2}>
+              <ShipPhoto
+                ship={ship}
+                objectFit='cover'
+                width='300px'
+                maxWidth='100%'
+              />
+            </Box>
             <Stack spacing={1}>
               <Text m={0}>
                 Operator:{' '}
@@ -90,54 +77,79 @@ const ShipPage = ({ ships, selectedShip, selectedShipRoute, setSelectedShipRoute
                 IMO Number: {ship.imo}
               </Text>
               {ship.wikipediaUrl &&
-                <Link isExternal href={ship.wikipediaUrl} marginTop={5}>
-                  Wikipedia ship page <Icon name='external-link' />
-                </Link>}
+                <Box>
+                  <Link isExternal href={ship.wikipediaUrl}>
+                    Wikipedia ship page <Icon name='external-link' />
+                  </Link>
+                </Box>}
             </Stack>
           </Box>
+          <Stack spacing={2}>
+            <Box>
+              <EcoScore gCo2PerMilePax={ship.thetisAverageCo2PerPax} />
+            </Box>
+            {selectedShipRoute && selectedShip &&
+              <Stack spacing={2}>
+                <Box>
+                  <b>{Math.round(selectedShipRoute.gCo2PerPax / 1000)} kg·CO₂/passenger</b>
+                  {' '}
+                  will be emitted when travelling on this ship from
+                  {' '}
+                  {selectedShipRoute.route.cityA.name} to {selectedShipRoute.route.cityB.name}
+                </Box>
+                <Box>
+                  <Link as={ReactLink} to={`/itineraries-comparator?route=${selectedShipRoute.route.slug}&ship=${selectedShip.slug}`}>
+                    Compare with flying ✈️
+                  </Link>
+                </Box>
+              </Stack>}
+          </Stack>
         </Box>
         <Box>
-          <Text as='h3'>
-            {ship.shipRoutes.length === 0 &&
-              <>Unknown frequent routes</>}
-            {ship.shipRoutes.length === 1 &&
-              <>Frequently travels on a single route</>}
-            {ship.shipRoutes.length > 1 &&
-              <>Frequently travels on {ship.shipRoutes.length} routes</>}
-          </Text>
-          <ul>
-            {ship.shipRoutes.map(shipRoute =>
-              <li key={shipRoute.route.slug}>
-                <Link to={`/routes/${shipRoute.route.slug}`} as={ReactLink}>
-                  {shipRoute.route.cityA.name} [{shipRoute.route.cityA.country}] - {shipRoute.route.cityB.name} [{shipRoute.route.cityB.country}]
-                </Link>
-                {' '}
-                ({shipRoute.route.distanceKm} km)
-              </li>
-            )}
-          </ul>
-        </Box>
-      </Box>
-      <Box paddingX={{ base: 3, md: 5 }}>
-        <Alert status='warning' maxWidth='30rem'>
-          <AlertIcon />
-          <Box>
-            <Text m={0}>
-              Do you know of a route that this ship frequently travels but is not listed? Or have you noticed an error?
+          <Box paddingX={{ base: 3, md: 5 }}>
+            <Text as='h3' fontSize='md'>
+              {ship.shipRoutes.length === 0 &&
+                <>Unknown frequent routes</>}
+              {ship.shipRoutes.length === 1 &&
+                <>Frequently travels on a single route</>}
+              {ship.shipRoutes.length > 1 &&
+                <>Frequently travels on {ship.shipRoutes.length} routes</>}
             </Text>
-            <Text marginTop={1} marginBottom={0}>
-              Please help by
-              {' '}
-              <a href='mailto:contact@greenferries.org'>
-                letting us know
-              </a>, thank you 🙇🏽‍♀️
-            </Text>
+            <ul>
+              {ship.shipRoutes.map(shipRoute =>
+                <li key={shipRoute.route.slug}>
+                  <Link to={`/routes/${shipRoute.route.slug}`} as={ReactLink}>
+                    {shipRoute.route.cityA.name} [{shipRoute.route.cityA.country}] - {shipRoute.route.cityB.name} [{shipRoute.route.cityB.country}]
+                  </Link>
+                  {' '}
+                  ({shipRoute.route.distanceKm} km)
+                </li>
+              )}
+            </ul>
           </Box>
-        </Alert>
-      </Box>
-      <Box p={{ base: 0, md: 5 }}>
-        <ShipThetisDataTable ship={ship} />
-      </Box>
+          <Box paddingX={{ base: 0, md: 5 }}>
+            <Alert status='warning' maxWidth='30rem'>
+              <AlertIcon />
+              <Box>
+                <Text m={0}>
+                  Do you know of a route that this ship frequently travels but is not listed? Or have you noticed an error?
+                </Text>
+                <Text marginTop={1} marginBottom={0}>
+                  Please help by
+                  {' '}
+                  <a href='mailto:contact@greenferries.org'>
+                    letting us know
+                  </a>, thank you 🙇🏽‍♀️
+                </Text>
+              </Box>
+            </Alert>
+          </Box>
+        </Box>
+        <Box paddingX={{ base: 0, md: 5 }}>
+          <Text as='h3' fontSize='md'>Ship Statistics:</Text>
+          <ShipThetisDataTable ship={ship} />
+        </Box>
+      </Stack>
     </>
   )
 }

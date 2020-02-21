@@ -54,7 +54,7 @@ const EcoScore = ({ gCo2PerMilePax, short = false }) => {
   const image = images[scoreIdx]
   const hint = getHint(gCo2PerMilePax)
   return (
-    <Stack spacing={2} direction='row' alignItems='center'>
+    <Stack spacing={2} direction='row' alignItems='center' justifyContent='flex-start'>
       <Image
         src={image}
         alt={`EcoScore ${score} - ${hint}`}
@@ -62,10 +62,13 @@ const EcoScore = ({ gCo2PerMilePax, short = false }) => {
         width={short ? 'initial' : '75px'}
         height={short ? '25px' : 'initial'}
       />
-      <Text m={0}>{hint}</Text>
+      <Text m={0}>
+        {hint}
+        {!short && ' (on average kg·CO₂/passenger/km)'}
+      </Text>
       {!short &&
         <Link as={ReactLink} to='/ecoscore' fontSize='sm'>
-          <Text display='inline' m={0} fontStyle='italic'><Icon name='info-outline' /> what is that score?</Text>
+          <Text display='inline' m={0}><Icon name='info-outline' /> EcoScore documentation</Text>
         </Link>}
     </Stack>
   )

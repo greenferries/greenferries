@@ -85,7 +85,7 @@ const AppRoutesMobile = (allProps) => {
         </Route>
         <Route path='/ships/:shipSlug'>
           <RouteTitle selectedRoute={selectedRoute} setSelectedRoute={setSelectedRoute} setSelectedShipRoute={setSelectedShipRoute} />
-          <ShipPage ships={ships} selectedRoute={selectedRoute} setSelectedRoute={setSelectedRoute} setSelectedShipRoute={setSelectedShipRoute} selectedShipRoute={selectedShipRoute} selectedShip={selectedShip} />
+          <ShipPage ships={ships} selectedRoute={selectedRoute} setSelectedRoute={setSelectedRoute} setSelectedShipRoute={setSelectedShipRoute} selectedShipRoute={selectedShipRoute} selectedShip={selectedShip} setSelectedShip={setSelectedShip} />
         </Route>
         <Route exact path='/companies'>
           <CompanySearch companies={companies} />

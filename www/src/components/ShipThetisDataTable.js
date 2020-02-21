@@ -24,91 +24,85 @@ const FigureCell = ({ value, unit, computed = false }) => {
 const ShipThetisDataTable = ({ ship }) => (
   <Stack spacing={3}>
     <Box>
-      <Text as='h3' paddingX={{ base: 3, md: 0 }}>Ship Statistics:</Text>
+      <table className='data-table'>
+        <thead>
+          <tr><th colSpan={4}>2018 yearly CO₂ Emissions</th></tr>
+          <tr>
+            <th>assigned to</th>
+            <th>total</th>
+            <th>average</th>
+            <th>ratio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>persons 🙎‍♀️</th>
+            <FigureCell value={ship.thetisAnnualCo2Pax} unit='tonnes CO₂' />
+            <FigureCell value={ship.thetisAverageCo2PerPax} unit='g·CO₂/pax/n.mile' />
+            <FigureCell value={ship.thetisAnnualComputedRatioCo2FromPax * 100} unit='%' />
+          </tr>
+          <tr>
+            <th>freight 🚛</th>
+            <FigureCell value={ship.thetisAnnualCo2Freight} unit='tonnes CO₂' />
+            <FigureCell value={ship.thetisAverageCo2PerFreight} unit='kg·CO₂/m tonne/n.mile' />
+            <FigureCell value={(1 - ship.thetisAnnualComputedRatioCo2FromPax) * 100} unit='%' computed />
+          </tr>
+          <tr>
+            <th>total</th>
+            <FigureCell value={ship.thetisAnnualCo2Total} unit='tonnes CO₂' />
+
+            <FigureCell value={ship.thetisAverageCo2PerDistance} unit='kg·CO₂/n.mile' />
+            {/* <br /> */}
+            {/* or {Math.round(ship.thetisAverageCo2PerDistance / 1.852001)} kg·CO₂/km */}
+
+            <td>100%</td>
+          </tr>
+        </tbody>
+      </table>
     </Box>
-    <Stack spacing={3}>
-      <Box>
-        <table className='data-table'>
-          <thead>
-            <tr><th colSpan={4}>2018 yearly CO₂ Emissions</th></tr>
-            <tr>
-              <th>assigned to</th>
-              <th>total</th>
-              <th>average</th>
-              <th>ratio</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th>persons 🙎‍♀️</th>
-              <FigureCell value={ship.thetisAnnualCo2Pax} unit='tonnes CO₂' />
-              <FigureCell value={ship.thetisAverageCo2PerPax} unit='g·CO₂/pax/n.mile' />
-              <FigureCell value={ship.thetisAnnualComputedRatioCo2FromPax * 100} unit='%' />
-            </tr>
-            <tr>
-              <th>freight 🚛</th>
-              <FigureCell value={ship.thetisAnnualCo2Freight} unit='tonnes CO₂' />
-              <FigureCell value={ship.thetisAverageCo2PerFreight} unit='kg·CO₂/m tonne/n.mile' />
-              <FigureCell value={(1 - ship.thetisAnnualComputedRatioCo2FromPax) * 100} unit='%' computed />
-            </tr>
-            <tr>
-              <th>total</th>
-              <FigureCell value={ship.thetisAnnualCo2Total} unit='tonnes CO₂' />
-
-              <FigureCell value={ship.thetisAverageCo2PerDistance} unit='kg·CO₂/n.mile' />
-              {/* <br /> */}
-              {/* or {Math.round(ship.thetisAverageCo2PerDistance / 1.852001)} kg·CO₂/km */}
-
-              <td>100%</td>
-            </tr>
-          </tbody>
-        </table>
-      </Box>
-      <Box>
-        <table className='data-table'>
-          <thead>
-            <tr>
-              <th colSpan={2}>2018 yearly statistics</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th>distance travelled</th>
-              <FigureCell value={ship.thetisAnnualComputedDistanceKm} unit='km' computed />
-            </tr>
-            <tr>
-              <th>time at sea</th>
-              <FigureCell value={ship.thetisAnnualHoursAtSea} unit='hours' />
-            </tr>
-          </tbody>
-        </table>
-      </Box>
-      <Box>
-        <table className='data-table'>
-          <thead>
-            <tr>
-              <th colSpan={2}>2018 average statistics per journey</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th>average persons transported 🙎‍♀️</th>
-              <FigureCell value={ship.thetisAnnualComputedPax} unit='persons' computed />
-            </tr>
-            <tr>
-              <th>average freight transported 🚛</th>
-              <FigureCell value={ship.thetisAnnualComputedFreight} unit='metric tonnes' computed />
-            </tr>
-            <tr>
-              <th>average speed</th>
-              <FigureCell value={ship.thetisAnnualComputedAverageSpeed} unit='km/h' computed />
-            </tr>
-          </tbody>
-        </table>
-      </Box>
-    </Stack>
-
-    <Box p={{ base: 3, md: 0 }}>
+    <Box>
+      <table className='data-table'>
+        <thead>
+          <tr>
+            <th colSpan={2}>2018 yearly statistics</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>distance travelled</th>
+            <FigureCell value={ship.thetisAnnualComputedDistanceKm} unit='km' computed />
+          </tr>
+          <tr>
+            <th>time at sea</th>
+            <FigureCell value={ship.thetisAnnualHoursAtSea} unit='hours' />
+          </tr>
+        </tbody>
+      </table>
+    </Box>
+    <Box>
+      <table className='data-table'>
+        <thead>
+          <tr>
+            <th colSpan={2}>2018 average statistics per journey</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>average persons transported 🙎‍♀️</th>
+            <FigureCell value={ship.thetisAnnualComputedPax} unit='persons' computed />
+          </tr>
+          <tr>
+            <th>average freight transported 🚛</th>
+            <FigureCell value={ship.thetisAnnualComputedFreight} unit='metric tonnes' computed />
+          </tr>
+          <tr>
+            <th>average speed</th>
+            <FigureCell value={ship.thetisAnnualComputedAverageSpeed} unit='km/h' computed />
+          </tr>
+        </tbody>
+      </table>
+    </Box>
+    <Box>
       <Alert status='info' maxWidth='30rem'>
         <AlertIcon />
         <Box>
