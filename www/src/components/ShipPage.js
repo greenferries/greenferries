@@ -7,7 +7,7 @@ import ShipPhoto from './ShipPhoto'
 import EcoScore from './EcoScore'
 import ShipThetisDataTable from './ShipThetisDataTable'
 
-const ShipPage = ({ ships, selectedShipRoute, setSelectedShipRoute, setSelectedRoute }) => {
+const ShipPage = ({ ships, selectedShip, selectedShipRoute, setSelectedShipRoute, setSelectedRoute }) => {
   const history = useHistory()
   const location = useLocation()
   const { shipSlug: slugFromParams } = useParams()
@@ -38,7 +38,7 @@ const ShipPage = ({ ships, selectedShipRoute, setSelectedShipRoute, setSelectedR
 
   return (
     <>
-      <Box paddingX={{ base: 3, md: 5 }}>
+      <Box paddingTop={3} paddingX={{ base: 3, md: 5 }}>
         <Link onClick={() => history.goBack()}>
         ◀️ go back
         </Link>
@@ -59,7 +59,7 @@ const ShipPage = ({ ships, selectedShipRoute, setSelectedShipRoute, setSelectedR
               <Box>
                 <EcoScore gCo2PerMilePax={ship.thetisAverageCo2PerPax} />
               </Box>
-              {selectedShipRoute &&
+              {selectedShipRoute && selectedShip &&
                 <Stack spacing={2}>
                   <Box>
                     <b>{Math.round(selectedShipRoute.gCo2PerPax / 1000)} kg·CO₂/passenger</b>
@@ -69,7 +69,7 @@ const ShipPage = ({ ships, selectedShipRoute, setSelectedShipRoute, setSelectedR
                     {selectedShipRoute.route.cityA.name} to {selectedShipRoute.route.cityB.name}
                   </Box>
                   <Box>
-                    <Link as={ReactLink} to={`/itineraries-comparator?route=${selectedShipRoute.route.slug}&ship=${selectedShipRoute.ship.slug}`}>
+                    <Link as={ReactLink} to={`/itineraries-comparator?route=${selectedShipRoute.route.slug}&ship=${selectedShip.slug}`}>
                       Compare with flying ✈️
                     </Link>
                   </Box>

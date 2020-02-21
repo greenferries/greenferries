@@ -4,7 +4,7 @@ import ShipCard from './ShipCard'
 import ShipCardsContainer from './ShipCardsContainer'
 import { useHistory } from 'react-router'
 
-const RouteShipsCards = ({ selectedRoute, selectedRouteShipRoutes, selectedShipRoute, setSelectedShipRoute }) => {
+const RouteShipsCards = ({ selectedRoute, selectedRouteShipRoutes, selectedShip, setSelectedShipRoute }) => {
   const history = useHistory()
   if (!selectedRouteShipRoutes) return null
   return (
@@ -23,7 +23,7 @@ const RouteShipsCards = ({ selectedRoute, selectedRouteShipRoutes, selectedShipR
           selectedRouteShipRoutes.map(shipRoute =>
             <ShipCard
               ship={shipRoute.ship}
-              selected={selectedShipRoute && shipRoute.ship.id === selectedShipRoute.ship.id}
+              selected={selectedShip && shipRoute.ship.id === selectedShip.id}
               key={shipRoute.ship.id}
               onClick={() => {
                 setSelectedShipRoute(shipRoute)
