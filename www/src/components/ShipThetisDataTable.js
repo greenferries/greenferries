@@ -10,6 +10,17 @@ const ComputedIcon = () => (
   </Tooltip>
 )
 
+const FigureCell = ({ value, unit, computed = false }) => {
+  if (!value) {
+    return <td style={{ backgroundColor: '#eee', color: '#333' }}>N/A</td>
+  }
+  return (
+    <td>
+      {smartRound(value)} {unit} {computed ? <ComputedIcon /> : ''}
+    </td>
+  )
+}
+
 const ShipThetisDataTable = ({ ship }) => (
   <Stack spacing={3}>
     <Box>
@@ -30,23 +41,24 @@ const ShipThetisDataTable = ({ ship }) => (
           <tbody>
             <tr>
               <th>persons 🙎‍♀️</th>
-              <td>{smartRound(ship.thetisAnnualCo2Pax)} tonnes CO₂</td>
-              <td>{smartRound(ship.thetisAverageCo2PerPax)} g·CO₂/pax/n.mile</td>
-              <td>{smartRound(ship.thetisAnnualComputedRatioCo2FromPax * 100)}% <ComputedIcon /></td>
+              <FigureCell value={ship.thetisAnnualCo2Pax} unit='tonnes CO₂' />
+              <FigureCell value={ship.thetisAverageCo2PerPax} unit='g·CO₂/pax/n.mile' />
+              <FigureCell value={ship.thetisAnnualComputedRatioCo2FromPax * 100} unit='%' />
             </tr>
             <tr>
               <th>freight 🚛</th>
-              <td>{smartRound(ship.thetisAnnualCo2Freight)} tonnes CO₂</td>
-              <td>{smartRound(ship.thetisAverageCo2PerFreight)} kg·CO₂/m tonne/n.mile</td>
-              <td>{smartRound((1 - ship.thetisAnnualComputedRatioCo2FromPax) * 100)}% <ComputedIcon /></td>
+              <FigureCell value={ship.thetisAnnualCo2Freight} unit='tonnes CO₂' />
+              <FigureCell value={ship.thetisAverageCo2PerFreight} unit='kg·CO₂/m tonne/n.mile' />
+              <FigureCell value={(1 - ship.thetisAnnualComputedRatioCo2FromPax) * 100} unit='%' computed />
             </tr>
             <tr>
               <th>total</th>
-              <td>{smartRound(ship.thetisAnnualCo2Total)} tonnes CO₂</td>
-              <td>
-                {smartRound(ship.thetisAverageCo2PerDistance)} kg·CO₂/n.mile<br />
-                {/* or {Math.round(ship.thetisAverageCo2PerDistance / 1.852001)} kg·CO₂/km */}
-              </td>
+              <FigureCell value={ship.thetisAnnualCo2Total} unit='tonnes CO₂' />
+
+              <FigureCell value={ship.thetisAverageCo2PerDistance} unit='kg·CO₂/n.mile' />
+              {/* <br /> */}
+              {/* or {Math.round(ship.thetisAverageCo2PerDistance / 1.852001)} kg·CO₂/km */}
+
               <td>100%</td>
             </tr>
           </tbody>
@@ -62,11 +74,11 @@ const ShipThetisDataTable = ({ ship }) => (
           <tbody>
             <tr>
               <th>distance travelled</th>
-              <td>{smartRound(ship.thetisAnnualComputedDistanceKm)} km <ComputedIcon /></td>
+              <FigureCell value={ship.thetisAnnualComputedDistanceKm} unit='km' computed />
             </tr>
             <tr>
               <th>time at sea</th>
-              <td>{smartRound(ship.thetisAnnualHoursAtSea)} hours</td>
+              <FigureCell value={ship.thetisAnnualHoursAtSea} unit='hours' />
             </tr>
           </tbody>
         </table>
@@ -81,15 +93,15 @@ const ShipThetisDataTable = ({ ship }) => (
           <tbody>
             <tr>
               <th>average persons transported 🙎‍♀️</th>
-              <td>{smartRound(ship.thetisAnnualComputedPax)} persons <ComputedIcon /></td>
+              <FigureCell value={ship.thetisAnnualComputedPax} unit='persons' computed />
             </tr>
             <tr>
               <th>average freight transported 🚛</th>
-              <td>{smartRound(ship.thetisAnnualComputedFreight)} metric tonnes <ComputedIcon /></td>
+              <FigureCell value={ship.thetisAnnualComputedFreight} unit='metric tonnes' computed />
             </tr>
             <tr>
               <th>average speed</th>
-              <td>{smartRound(ship.thetisAnnualComputedAverageSpeed)} km/h <ComputedIcon /></td>
+              <FigureCell value={ship.thetisAnnualComputedAverageSpeed} unit='km/h' computed />
             </tr>
           </tbody>
         </table>
@@ -101,7 +113,7 @@ const ShipThetisDataTable = ({ ship }) => (
         <AlertIcon />
         <Box>
           <Text m={0}>
-            Figures with the <Icon name='info-outline' /> icon were computed based on the published data. You can find computation details
+            FigureCells with the <Icon name='info-outline' /> icon were computed based on the published data. You can find computation details
             {' '}
             <Link as={ReactLink} to='/computed-statistics'>
               on this page
