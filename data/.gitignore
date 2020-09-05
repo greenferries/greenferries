@@ -1,4 +1,4 @@
 .~lock*
 .ipynb_checkpoints/
-*.db
+datasette/dbs/*.db
 venv

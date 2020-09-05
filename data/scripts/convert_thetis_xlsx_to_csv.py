@@ -1,22 +1,28 @@
-# python3 ./prepare-thetis.py "2018-v127-24122019-EU MRV Publication of information.xlsx"
+# python3 scripts/convert_thetis_xlsx_to_csv.py files_original/original.thetis.export_2018.2019_12_24.xlsx files_computed/thetis_mrv_2019_12_24.csv
 
 from openpyxl import load_workbook
 import openpyxl
 import csv
 import sys
+import os
+DIRNAME = os.path.dirname(__file__)
+MAPPING_CSV_PATH = os.path.join(
+    DIRNAME,
+    '../files_original/original.greenferries.thetis_columns_mapping.csv'
+)
 
 def get_reformatted_columns():
-    with open('thetis_columns_mapping.csv', 'r') as f:
+    with open(MAPPING_CSV_PATH, 'r') as f:
         mapping_csv = csv.DictReader(f)
         return [{'name': r['reformatted_column'], 'data_type': r['data_type']} for r in mapping_csv]
 
 
-def prepare(path):
+def prepare(xlsx_path, csv_path):
     reformatted_columns = get_reformatted_columns()
-    workbook = load_workbook(filename=path)
+    workbook = load_workbook(filename=xlsx_path)
     for sheetname in workbook.sheetnames:
         sheet = workbook[sheetname]
-        with open(f"{path.split('.')[0]}.csv", 'w') as f:
+        with open(csv_path, 'w') as f:
             c = csv.writer(f)
             c.writerow([r['name'] for r in reformatted_columns])
             for row_idx, row in enumerate(sheet.rows):
@@ -35,5 +41,4 @@ def prepare(path):
 
 
 if __name__ == "__main__":
-    print("coucou")
-    prepare(sys.argv[1])
+    prepare(sys.argv[1], sys.argv[2])

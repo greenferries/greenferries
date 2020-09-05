@@ -1,7 +1,7 @@
-dev:
-	datasette greenferries.db thetis.db wikidata.db scrapings.db airports.db --metadata metadata.yml --static static:datasette_static/ --reload
+datasette_dev:
+	datasette datasette/dbs/*.db --metadata datasette/metadata.yml --static static:datasette/static/ --reload
 
-create_admin_db:
+create_datasette_greenferries_db_from_prod:
 	touch greenferries.db && rm greenferries.db
 	ssh -T root@dokku-host 'dokku postgres:export greenferries-admin > greenferries_prod.sql'
 	scp root@droplet:/root/greenferries_prod.sql ./greenferries_prod.sql
@@ -12,15 +12,15 @@ create_admin_db:
 	db-to-sqlite --skip admin_users --skip active_storage_attachments --skip active_storage_blobs --skip schema_migrations --skip ar_internal_metadata --all "postgresql://localhost/greenferries_prod_tmp" greenferries.db
 	dropdb greenferries_prod_tmp
 
-create_csv_dbs:
-	touch thetis.db wikidata.db scrapings.db
-	rm thetis.db wikidata.db scrapings.db
-	csvs-to-sqlite -t ships thetis_mrv_2019_12_24.csv thetis.db
-	csvs-to-sqlite -t ships wikidata_ships_2020_01_16.csv wikidata.db
-	csvs-to-sqlite -t ship_routes scraped_ship_routes_2020_01_18.cleaned.csv scrapings.db
-	csvs-to-sqlite -t airports airports.filtered.csv airports.db
+create_datasette_dbs_from_csvs:
+	touch datasette/dbs/thetis.db datasette/dbs/wikidata.db datasette/dbs/scrapings.db datasette/dbs/airports.db
+	rm datasette/dbs/thetis.db datasette/dbs/wikidata.db datasette/dbs/scrapings.db datasette/dbs/airports.db
+	csvs-to-sqlite -t ships files_computed/thetis_mrv_2019_12_24.csv datasette/dbs/thetis.db
+	csvs-to-sqlite -t ships files_computed/wikidata_ships_2020_01_16.csv datasette/dbs/wikidata.db
+	csvs-to-sqlite -t ship_routes files_computed/scraped_ship_routes_cleaned.2020_01_18.csv datasette/dbs/scrapings.db
+	csvs-to-sqlite -t airports files_computed/airports.csv datasette/dbs/airports.db
 
-deploy:
-	datasette package greenferries.db thetis.db wikidata.db scrapings.db airports.db --metadata metadata.yml --static static:datasette_static/ --tag greenferries/datasette:$(VERSION)
+datasette_deploy:
+	datasette package datasette/dbs/*.db --metadata datasette/metadata.yml --static static:datasette/static/ --tag greenferries/datasette:$(VERSION)
 	docker push greenferries/datasette:$(VERSION)
 	ssh -T root@dokku-host 'docker pull greenferries/datasette:$(VERSION) && docker tag greenferries/datasette:$(VERSION) dokku/greenferries-data:$(VERSION) && dokku tags:deploy greenferries-data $(VERSION)'
