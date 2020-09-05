@@ -1,11 +1,11 @@
 dev:
-	datasette serve greenferries.db thetis.db wikidata.db scrapings.db airports.db --metadata metadata.json
+	datasette greenferries.db thetis.db wikidata.db scrapings.db airports.db --metadata metadata.yml --static static:datasette_static/ --reload
 
 create_admin_db:
 	touch greenferries.db && rm greenferries.db
-	ssh -T root@142.93.142.9 'dokku postgres:export greenferries-admin > greenferries_prod.sql'
+	ssh -T root@dokku-host 'dokku postgres:export greenferries-admin > greenferries_prod.sql'
 	scp root@droplet:/root/greenferries_prod.sql ./greenferries_prod.sql
-	ssh -T root@142.93.142.9 'rm greenferries_prod.sql'
+	ssh -T root@dokku-host 'rm greenferries_prod.sql'
 	createdb greenferries_prod_tmp
 	pg_restore -d greenferries_prod_tmp ./greenferries_prod.sql || true
 	rm ./greenferries_prod.sql
@@ -21,6 +21,6 @@ create_csv_dbs:
 	csvs-to-sqlite -t airports airports.filtered.csv airports.db
 
 deploy:
-	datasette package greenferries.db thetis.db wikidata.db scrapings.db airports.db --tag greenferries/datasette:$(VERSION)
+	datasette package greenferries.db thetis.db wikidata.db scrapings.db airports.db --metadata metadata.yml --static static:datasette_static/ --tag greenferries/datasette:$(VERSION)
 	docker push greenferries/datasette:$(VERSION)
-	ssh -T root@142.93.142.9 'docker pull greenferries/datasette:$(VERSION) && docker tag greenferries/datasette:$(VERSION) dokku/greenferries-data:$(VERSION) && dokku tags:deploy greenferries-data $(VERSION)'
+	ssh -T root@dokku-host 'docker pull greenferries/datasette:$(VERSION) && docker tag greenferries/datasette:$(VERSION) dokku/greenferries-data:$(VERSION) && dokku tags:deploy greenferries-data $(VERSION)'

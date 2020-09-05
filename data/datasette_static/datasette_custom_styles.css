@@ -1,0 +1,16 @@
+body.db::before, body.table::before{
+  background-color: #eee;
+  content: "data.greenferries.org | Greenferries 🚢 | Data & API platform";
+  padding: 0.2em 0.8em;
+  display: block;
+  font-size: 1.2rem;
+}
+.metadata-description {
+  max-width: 40rem;
+}
+.ft {
+  background-color: #eee;
+  font-size: 1rem;
+  margin-bottom: 0;
+  padding-bottom: 1rem;
+}

@@ -13,7 +13,11 @@ Feel free to open issues on this repository or come and discuss on the public ch
 
 ## Install
 
-`pip3 install -r requirements.txt -r requirements-dev.txt`
+```
+python3 -m venv venv
+source venv/bin/activate
+pip3 install -r requirements.txt -r requirements-dev.txt
+```
 
 ##
 
