@@ -3,20 +3,20 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.1'
 
-gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
-gem 'pg', '~> 1.2.0'
-gem 'puma', '~> 4.1'
+gem 'rails', '~> 6'
+gem 'pg', '~> 1'
+gem 'puma', '~> 4'
 gem 'sass-rails', '>= 6'
 gem 'webpacker', '~> 4.0'
 gem 'bootsnap', '>= 1.4.2', require: false
-gem 'devise', '>= 4.7.1'
-gem 'activeadmin', '~> 2.6.0'
-gem 'country_select', '~> 4.0.0'
+gem 'devise', '>= 4'
+gem 'activeadmin', '~> 2'
+gem 'country_select', '~> 4'
 gem "http", '~> 4'
-gem 'blueprinter', '~> 0.22.0'
-gem 'geokit-rails', '~> 2.3.1'
-gem 'rack-cors', '~> 1.1.1'
-gem 'cloudinary', '~> 1.13.1'
+gem 'blueprinter', '~> 0'
+gem 'geokit-rails', '~> 2'
+gem 'rack-cors', '~> 1'
+gem 'cloudinary', '~> 1'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
