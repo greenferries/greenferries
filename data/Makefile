@@ -13,9 +13,8 @@ create_datasette_greenferries_db_from_prod:
 	dropdb greenferries_prod_tmp
 
 create_datasette_dbs_from_csvs:
-	touch datasette/dbs/thetis.db datasette/dbs/wikidata.db datasette/dbs/scrapings.db datasette/dbs/airports.db
-	rm datasette/dbs/thetis.db datasette/dbs/wikidata.db datasette/dbs/scrapings.db datasette/dbs/airports.db
-	csvs-to-sqlite -t ships files_computed/thetis_mrv_2019_12_24.csv datasette/dbs/thetis.db
+	touch datasette/dbs/wikidata.db datasette/dbs/scrapings.db datasette/dbs/airports.db
+	rm datasette/dbs/wikidata.db datasette/dbs/scrapings.db datasette/dbs/airports.db
 	csvs-to-sqlite -t ships files_computed/wikidata_ships_2020_01_16.csv datasette/dbs/wikidata.db
 	csvs-to-sqlite -t ship_routes files_computed/scraped_ship_routes_cleaned.2020_01_18.csv datasette/dbs/scrapings.db
 	csvs-to-sqlite -t airports files_computed/airports.csv datasette/dbs/airports.db

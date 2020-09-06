@@ -28,8 +28,7 @@ You'll find the raw original files data in the `files_original` folder.
 - `original.greenferries.scraped_ship_routes` : from [Greenferries](https://github.com/greenferries/greenferries/tree/master/scrapers) scrapers
 - `original.greenferries.thetis_columns_mapping.csv` : manually created 2020/01
 - `original.our_airports.csv` : from [ourairports.com](https://ourairports.com/data/)
-- `original.registre-navire-pro-?.csv` : ?
-- `original.thetis.export_20?.?.csv` : from [THETIS](https://mrv.emsa.europa.eu/#public/emission-report) ⭐️ main data source ⭐️
+- `original.thetis.export_20??.csv` : from [THETIS](https://mrv.emsa.europa.eu/#public/emission-report) ⭐️ main data source ⭐️
 - `original.wikidata.ships.?.csv` : from [wikidata](https://www.wikidata.org/), see below
 - `original.wikidata.wikipedia_urls.?.csv` : from [wikidata](https://www.wikidata.org/), see below
 
