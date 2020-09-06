@@ -26,7 +26,7 @@ class DataFiller::Thetis
       thetis_average_co2_per_freight: thetis_data["annual_average_co2_emissions_per_transport_work_freight"],
       thetis_average_co2_per_distance: thetis_data["annual_average_co2_emissions_per_distance"],
       thetis_annual_hours_at_sea: thetis_data["annual_monitoring_total_time_spent_at_sea"],
-      data_source: "THETIS-MRV-2019"
+      data_source: "THETIS-MRV-#{thetis_data['reporting_period']}"
     )
   end
 end

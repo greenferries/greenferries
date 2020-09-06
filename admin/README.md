@@ -28,11 +28,9 @@ heroku local
 
 ⚠️ you'll need to have SSH access to the DO droplet where this app is hosted
 
-
-
 ```
 # from the monorepo's root folder
-git remote add dokku dokku@142.93.142.9:greenferries-admin
+git remote add dokku dokku@dokku-host:greenferries-admin
 make deploy_admin
 
 # or with --force
