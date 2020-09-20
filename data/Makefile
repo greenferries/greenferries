@@ -4,7 +4,7 @@ datasette_dev:
 create_datasette_greenferries_db_from_prod:
 	touch greenferries.db && rm greenferries.db
 	ssh -T root@dokku-host 'dokku postgres:export greenferries-admin > greenferries_prod.sql'
-	scp root@droplet:/root/greenferries_prod.sql ./greenferries_prod.sql
+	scp root@dokku-host:/root/greenferries_prod.sql ./greenferries_prod.sql
 	ssh -T root@dokku-host 'rm greenferries_prod.sql'
 	createdb greenferries_prod_tmp
 	pg_restore -d greenferries_prod_tmp ./greenferries_prod.sql || true
