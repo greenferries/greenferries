@@ -3,8 +3,12 @@ import re
 import os
 import json
 import sys
+import datetime
+from refresh_original_wikidata_ships_file import RefreshOriginalWikidataShipsFile
+from refresh_original_wikidata_urls_file import RefreshOriginalWikidataUrlsFile
 
 # ex python3 scripts/refresh_original_files.py thetis_2019
+# ex python3 scripts/refresh_original_files.py wikidata_ships
 
 THETIS_FILENAME_REGEX = r"%s\-(v\d+)\-(\d{2})(\d{2})(\d{4})\-.*"
 DIRNAME = os.path.dirname(__file__)
@@ -21,7 +25,7 @@ def get_filename_from_content_disposition_header(cdh):
 
 class Refresher():
     def __init__(self, data_source):
-        if not re.match(r"thetis_(\d{4})", data_source):
+        if not re.match(r"thetis_(\d{4})", data_source) and not data_source in ["wikidata_ships", "wikidata_urls"]:
             raise "unsupported options"
 
         self.data_source = data_source
@@ -44,6 +48,28 @@ class Refresher():
         open(filepath, 'wb').write(res.content)
         print(f"√ wrote {filepath}")
 
+    def fetch_wikidata_ships_files(self):
+        filekey = f"wikidata.ships"
+        filename = f"original.{filekey}.csv"
+        filepath = os.path.join(DIRNAME, "..", "files_original", filename)
+        print("refreshing original wikidata ships file...")
+        RefreshOriginalWikidataShipsFile(filepath).run()
+        self.metadata[filekey] = {
+            "date": datetime.datetime.now().strftime("%Y-%m-%d"),
+            "filename": filename
+        }
+
+    def fetch_wikidata_urls_files(self):
+        filekey = f"wikidata.urls"
+        filename = f"original.{filekey}.csv"
+        filepath = os.path.join(DIRNAME, "..", "files_original", filename)
+        print("refreshing original wikidata urls file...")
+        RefreshOriginalWikidataUrlsFile(filepath).run()
+        self.metadata[filekey] = {
+            "date": datetime.datetime.now().strftime("%Y-%m-%d"),
+            "filename": filename
+        }
+
     def write_metadata(self):
         print("outputting metadata...")
         filepath = os.path.join(DIRNAME, "..", "files_original", "metadata.json")
@@ -57,6 +83,10 @@ class Refresher():
         match = re.match(r"thetis_(\d{4})", self.data_source)
         if match:
             self.fetch_thetis_file(match.groups()[0])
+        elif self.data_source == "wikidata_ships":
+            self.fetch_wikidata_ships_files()
+        elif self.data_source == "wikidata_urls":
+            self.fetch_wikidata_urls_files()
         self.write_metadata()
         print("done!")
 

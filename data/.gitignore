@@ -3,3 +3,4 @@
 datasette/dbs/*.db
 venv
 **/__pycache__
+.env

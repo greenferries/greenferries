@@ -12,14 +12,16 @@ create_datasette_greenferries_db_from_prod:
 	db-to-sqlite --skip admin_users --skip active_storage_attachments --skip active_storage_blobs --skip schema_migrations --skip ar_internal_metadata --all "postgresql://localhost/greenferries_prod_tmp" greenferries.db
 	dropdb greenferries_prod_tmp
 
-create_datasette_dbs_from_csvs:
-	touch datasette/dbs/wikidata.db datasette/dbs/scrapings.db datasette/dbs/airports.db
-	rm datasette/dbs/wikidata.db datasette/dbs/scrapings.db datasette/dbs/airports.db
-	csvs-to-sqlite -t ships files_computed/wikidata_ships_2020_01_16.csv datasette/dbs/wikidata.db
+convert_ship_routes_scrapings_csv_to_sqlite_db:
+	touch datasette/dbs/scrapings.db
+	rm datasette/dbs/scrapings.db
 	csvs-to-sqlite -t ship_routes files_computed/scraped_ship_routes_cleaned.2020_01_18.csv datasette/dbs/scrapings.db
+
+convert_airports_csv_to_sqlite_db:
+	touch datasette/dbs/airports.db
+	rm datasette/dbs/airports.db
 	csvs-to-sqlite -t airports files_computed/airports.csv datasette/dbs/airports.db
 
 datasette_deploy:
-	datasette package datasette/dbs/*.db --metadata datasette/metadata.yml --static static:datasette/static/ --tag greenferries/datasette:$(VERSION)
-	docker push greenferries/datasette:$(VERSION)
-	ssh -T root@dokku-host 'docker pull greenferries/datasette:$(VERSION) && docker tag greenferries/datasette:$(VERSION) dokku/greenferries-data:$(VERSION) && dokku tags:deploy greenferries-data $(VERSION)'
+	scp -r data/datasette/* root@zagreb:/var/lib/dokku/data/storage/greenferries-data/
+	ssh -T root@dokku-host 'dokku ps:restart greenferries-data'

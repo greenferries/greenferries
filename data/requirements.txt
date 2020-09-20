@@ -1,2 +1,12 @@
 datasette==0.46
 requests
+wikidataintegrator
+python-dotenv
+openpyxl==3.0.2
+csvs-to-sqlite==1.0
+notebook
+pandas
+xlrd
+matplotlib
+awesome-slugify
+db-to-sqlite[postgresql]

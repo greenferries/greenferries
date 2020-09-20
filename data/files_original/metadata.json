@@ -8,5 +8,13 @@
     "date": "2020-09-05",
     "filename": "original.thetis.export_2019.xlsx",
     "version": "v54"
+  },
+  "wikidata.ships": {
+    "date": "2020-09-20",
+    "filename": "original.wikidata.ships.csv"
+  },
+  "wikidata.urls": {
+    "date": "2020-09-20",
+    "filename": "original.wikidata.urls.csv"
   }
 }
