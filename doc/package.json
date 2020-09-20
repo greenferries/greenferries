@@ -1,0 +1,19 @@
+{
+  "name": "greenferries-doc",
+  "version": "0.0.1",
+  "description": "Greenferries Documentation",
+  "main": "index.js",
+  "authors": {
+    "name": "Adrien Di Pasquale",
+    "email": "contact@greenferries.org"
+  },
+  "repository": "https://github.com/greenferries/greenferries/greenferries-doc",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
