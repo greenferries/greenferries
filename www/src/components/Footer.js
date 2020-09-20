@@ -19,8 +19,12 @@ const Footer = () => (
         <ListItem>
           <Stack direction='row' spacing={3} flexWrap='wrap'>
             <Box>Docs:</Box>
-            <Link as={ReactLink} to='/faq'>FAQ</Link>
-            <Link as={ReactLink} to='/ecoscore'>EcoScore</Link>
+            <Link href='https://doc.greenferries.org/'>
+              FAQ <Icon name='external-link' />
+            </Link>
+            <Link href='https://doc.greenferries.org/ecoscore'>
+              EcoScore <Icon name='external-link' />
+            </Link>
             <Link href='https://data.greenferries.org'>
               API and dumps <Icon name='external-link' />
             </Link>

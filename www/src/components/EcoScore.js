@@ -1,6 +1,5 @@
 import React from 'react'
 import { Box, Image, Text, Link, Icon, Stack } from '@chakra-ui/core'
-import { Link as ReactLink } from 'react-router-dom'
 import ImgFullA from '../images/score_a_150.png'
 import ImgFullB from '../images/score_b_150.png'
 import ImgFullC from '../images/score_c_150.png'
@@ -67,7 +66,7 @@ const EcoScore = ({ gCo2PerMilePax, short = false }) => {
         {!short && ' (on average kg·CO₂/passenger/km)'}
       </Text>
       {!short &&
-        <Link as={ReactLink} to='/ecoscore' fontSize='sm'>
+        <Link href='https://doc.greenferries.org/ecoscore' fontSize='sm'>
           <Text display='inline' m={0}><Icon name='info-outline' /> EcoScore documentation</Text>
         </Link>}
     </Stack>

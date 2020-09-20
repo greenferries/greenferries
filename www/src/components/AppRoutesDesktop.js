@@ -2,7 +2,6 @@ import React from 'react'
 import { Box } from '@chakra-ui/core'
 import { Route, Redirect, Switch } from 'react-router-dom'
 
-import Faq from './Faq'
 import RouteSetterFromParams from './RouteSetterFromParams'
 import Header from './Header'
 import Footer from './Footer'
@@ -10,10 +9,8 @@ import ShipSearch from './ShipSearch'
 import ShipPage from './ShipPage'
 import CompanySearch from './CompanySearch'
 import CompanyPage from './CompanyPage'
-import FaqEcoScore from './FaqEcoScore'
 import SitemapPage from './SitemapPage'
 import AppDesktop from './AppDesktop'
-import ComputedStatsPage from './ComputedStatsPage'
 import TextureBackground from '../images/lines-texture-small.png'
 import RouteTitle from './RouteTitle'
 import ItinerariesComparator from './ItinerariesComparator'
@@ -89,15 +86,6 @@ const AppRoutesDesktop = (allProps) => {
             selectedShip={selectedShip}
             setSelectedShip={setSelectedShip}
           />
-        </Route>
-        <Route exact path='/faq'>
-          <Faq />
-        </Route>
-        <Route exact path='/ecoscore'>
-          <FaqEcoScore />
-        </Route>
-        <Route exact path='/computed-statistics'>
-          <ComputedStatsPage />
         </Route>
         <Route exact path='/sitemap'>
           <SitemapPage ships={ships} companies={companies} routes={routes} />

@@ -5,7 +5,6 @@ import { Link as ReactLink, Route, Redirect, Switch } from 'react-router-dom'
 import RouteSelectDropdowns from './RouteSelectDropdowns'
 import RouteShipsCards from './RouteShipsCards'
 import RouteTitle from './RouteTitle'
-import Faq from './Faq'
 import RouteSetterFromParams from './RouteSetterFromParams'
 import Header from './Header'
 import Footer from './Footer'
@@ -14,9 +13,7 @@ import ShipPage from './ShipPage'
 import HomeNavigationOptions from './HomeNavigationOptions'
 import CompanySearch from './CompanySearch'
 import CompanyPage from './CompanyPage'
-import FaqEcoScore from './FaqEcoScore'
 import SitemapPage from './SitemapPage'
-import ComputedStatsPage from './ComputedStatsPage'
 import ItinerariesComparator from './ItinerariesComparator'
 
 const RouteSelectMap = lazy(() => import('./RouteSelectMap'))
@@ -111,15 +108,6 @@ const AppRoutesMobile = (allProps) => {
             selectedShip={selectedShip}
             setSelectedShip={setSelectedShip}
           />
-        </Route>
-        <Route exact path='/faq'>
-          <Faq />
-        </Route>
-        <Route exact path='/ecoscore'>
-          <FaqEcoScore />
-        </Route>
-        <Route exact path='/computed-statistics'>
-          <ComputedStatsPage />
         </Route>
         <Route exact path='/sitemap'>
           <SitemapPage ships={ships} companies={companies} routes={routes} />

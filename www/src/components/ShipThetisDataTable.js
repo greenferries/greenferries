@@ -1,6 +1,5 @@
 import React from 'react'
 import { Box, Text, Icon, Tooltip, Link, Stack, Alert, AlertIcon } from '@chakra-ui/core'
-import { Link as ReactLink } from 'react-router-dom'
 
 import smartRound from '../lib/smartRound'
 
@@ -109,7 +108,7 @@ const ShipThetisDataTable = ({ ship }) => (
           <Text m={0}>
             Figures with the <Icon name='info-outline' /> icon were computed based on the published data. You can find computation details
             {' '}
-            <Link as={ReactLink} to='/computed-statistics'>
+            <Link href='https://doc.greenferries.org/computed_stats'>
               on this page
             </Link>
           </Text>

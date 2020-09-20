@@ -1,6 +1,5 @@
 import React from 'react'
 import { Box, Text, Image, Link, Alert, AlertIcon, Stack } from '@chakra-ui/core'
-import { Link as ReactLink } from 'react-router-dom'
 import ScoreImg from '../images/score_b_150.png'
 
 const EcoScoreExplanation = () => {
@@ -21,7 +20,7 @@ const EcoScoreExplanation = () => {
               {' '}
             </Text>
             <Box>
-              <Link as={ReactLink} to='/ecoscore'>More…</Link>
+              <Link href='https://doc.greenferries.org/ecoscore'>More…</Link>
             </Box>
           </Stack>
         </Box>

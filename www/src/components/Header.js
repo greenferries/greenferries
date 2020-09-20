@@ -1,9 +1,8 @@
 import React from 'react'
 import logoShip from '../images/logo-ship.png'
 import logoGreenferries from '../images/logo-greenferries.png'
-import { Box, Image } from '@chakra-ui/core'
+import { Box, Icon, Image } from '@chakra-ui/core'
 import Link from './Link'
-import { Link as ReactLink } from 'react-router-dom'
 
 const Header = ({ resetRoute }) => {
   return (
@@ -29,8 +28,8 @@ const Header = ({ resetRoute }) => {
             </Link>
           </Box>
           <Box marginLeft={5}>
-            <Link as={ReactLink} to='/faq' color='black'>
-              FAQ
+            <Link href='https://doc.greenferries.org/' color='black'>
+              FAQ <Icon name='external-link' />
             </Link>
           </Box>
         </Box>
