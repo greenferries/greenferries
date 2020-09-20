@@ -1,6 +1,6 @@
 class DataFiller::Thetis
-  def perform(recompute_all=false)
-    ships = recompute_all ? Ship.all : Ship.where(thetis_average_co2_per_pax: nil) # TODO
+  def perform(recompute_all = false)
+    ships = recompute_all ? Ship.all : Ship.where(thetis_average_co2_per_pax: nil)
     ships.where.not(imo: nil).find_each { |ship| treat_ship(ship) }
   end
 
@@ -15,6 +15,13 @@ class DataFiller::Thetis
 
     puts "storing THETIS data for ship #{ship.name} ..."
     ship.update!(
+      **map_thetis_to_admin_db_schema(thetis_data),
+      data_source: "THETIS-MRV-#{thetis_data['reporting_period']}"
+    )
+  end
+
+  def map_thetis_to_admin_db_schema(thetis_data)
+    {
       thetis_monitoring_method_a: thetis_data["monitoring_method_a"],
       thetis_monitoring_method_b: thetis_data["monitoring_method_b"],
       thetis_monitoring_method_c: thetis_data["monitoring_method_c"],
@@ -26,7 +33,6 @@ class DataFiller::Thetis
       thetis_average_co2_per_freight: thetis_data["annual_average_co2_emissions_per_transport_work_freight"],
       thetis_average_co2_per_distance: thetis_data["annual_average_co2_emissions_per_distance"],
       thetis_annual_hours_at_sea: thetis_data["annual_monitoring_total_time_spent_at_sea"],
-      data_source: "THETIS-MRV-#{thetis_data['reporting_period']}"
-    )
+    }
   end
 end
