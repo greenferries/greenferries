@@ -5,6 +5,6 @@ class ThetisApi
   def self.get_ship_by_imo(imo)
     url = BASE_URL + "?imo__exact=#{imo}&_shape=objects&_sort_desc=reporting_period"
     puts "getting #{url} ..."
-    HTTP.get(url).parse['rows'][0]
+    HTTP.get(url).parse('application/json')['rows'][0]
   end
 end
