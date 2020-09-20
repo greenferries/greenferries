@@ -8,6 +8,6 @@ class WikipediaApi
   def get_thumb_url(size)
     # cf https://stackoverflow.com/a/20311613
     url = "https://#{@lang}.wikipedia.org/w/api.php?action=query&titles=#{@title}&prop=pageimages&format=json&pithumbsize=#{size}"
-    HTTP.get(url).parse['query']['pages'].values.first.dig('thumbnail', 'source')
+    JSON.parse(Excon.get(url).body)['query']['pages'].values.first.dig('thumbnail', 'source')
   end
 end

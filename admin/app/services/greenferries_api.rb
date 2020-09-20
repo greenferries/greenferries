@@ -21,7 +21,7 @@ class GreenferriesApi
 END_SQL
 
   def self.get_all_ships
-    res = HTTP.get("http://data.greenferries.org/greenferries.json?sql=#{URI.encode_www_form_component(SQL)}&_shape=objects")
-    res.parse['rows']
+    url = "http://data.greenferries.org/greenferries.json?sql=#{URI.encode_www_form_component(SQL)}&_shape=objects"
+    JSON.parse(Excon.get(url).body)["rows"]
   end
 end

@@ -12,7 +12,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'devise', '>= 4'
 gem 'activeadmin', '~> 2'
 gem 'country_select', '~> 4'
-gem "http", '~> 5.0.0.pre3'
+gem "excon"
 gem 'blueprinter', '~> 0'
 gem 'geokit-rails', '~> 2'
 gem 'rack-cors', '~> 1'

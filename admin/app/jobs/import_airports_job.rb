@@ -5,8 +5,7 @@ class ImportAirportsJob < ActiveJob::Base
 
   def perform
     Airport.delete_all
-    res = HTTP.get(URL)
-    res.parse['rows'].each do |raw_airport|
+    JSON.parse(Excon.get(URL).body)['rows'].each do |raw_airport|
       Airport.create!(raw_airport.slice("country", "code", "name", "latitude", "longitude"))
     end
   end
