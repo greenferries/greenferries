@@ -1,0 +1,34 @@
+<ul class="mt-4 grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+  {% for ship in ships %}
+    <li class="">
+      <a href="/ships/{{ ship.slug }}" class="block lg:flex">
+        <div
+          class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden bg-gray-200"
+          style="background-image: url('{{ ship.wikipediaThumbUrl }}')"
+          title="Ferry {{ ship.name }}"
+        >
+        </div>
+        <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+          <div class="mb-4">
+            <div class="text-gray-900 font-bold text-xl mb-2">
+              {{ ship.name }}
+            </div>
+            <p class="text-gray-700 text-base">
+              {{ ship.company.name }}
+            </p>
+          </div>
+          <div class="flex items-center">
+            <img
+              src="/img/score_{{ ship.ecoscore.score }}_letter.png"
+              alt="Ecoscore {{ ship.ecoscore.score }}"
+              class="h-8 mr-2"
+            />
+            <div>
+              {{ ship.ecoscore.hint }}
+            </div>
+          </div>
+        </div>
+      </a>
+    </li>
+  {% endfor %}
+</ul>

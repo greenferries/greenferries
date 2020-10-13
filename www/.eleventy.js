@@ -58,4 +58,6 @@ module.exports = function (eleventyConfig) {
       HR: "🇭🇺",
     }[code]
   })
+
+  eleventyConfig.addFilter('extractShips', routes => routes.map(i => i.ship))
 }

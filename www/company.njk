@@ -33,13 +33,7 @@ permalink: "companies/{{ company.slug }}/"
     {% endif %}
 
     <h4 class="text-l font-bold mb-3">{{ company.shipsCount }} ships</h4>
-    <ul class="mt-4 flex flex-wrap justify-around sm:justify-start">
-      {% for ship in company.ships %}
-        {% include "_includes/ship_card.njk" %}
-      {% endfor %}
-    </ul>
+    {% set ships = company.ships %}
+    {% include "_includes/ship_cards.njk" %}
   </div>
-
-  {# <pre class="hidden" id="js-debug">{{ company | jsonify }}</pre> #}
-  {# <script>console.log(document.getElementById("js-debug").innerHTML)</script> #}
 {% endblock %}

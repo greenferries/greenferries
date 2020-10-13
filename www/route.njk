@@ -21,14 +21,7 @@ permalink: "routes/{{ route.slug }}/"
 
     <p>{{ route.shipsCount }} ships often travel on this route</p>
 
-    <ul class="mt-4 flex flex-wrap justify-around sm:justify-start">
-      {% for shipRoute in route.shipRoutes %}
-        {% set ship = shipRoute.ship %}
-        {% include "_includes/ship_card.njk" %}
-      {% endfor %}
-    </ul>
+    {% set ships = route.shipRoutes | extractShips %}
+    {% include "_includes/ship_cards.njk" %}
   </div>
-
-  <pre class="hidden" id="js-debug">{{ route | jsonify }}</pre>
-  <script>console.log(document.getElementById("js-debug").innerHTML)</script>
 {% endblock %}
