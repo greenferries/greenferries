@@ -1,0 +1,13 @@
+{% extends "_includes/layout.njk" %}
+
+{% block title %}GreenFerries - All {{ ships | length }} ferries {% endblock %}
+
+{% block content %}
+  <div class="container mx-auto mb-4 p-2">
+    <ul class="mt-4 flex flex-wrap justify-around sm:justify-start">
+      {% for ship in ships %}
+        {% include "_includes/ship_card.njk" %}
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock %}

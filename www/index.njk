@@ -1,0 +1,64 @@
+{% extends "_includes/layout.njk" %}
+
+{% block title %}GreenFerries{% endblock %}
+
+{% block content %}
+  <div class="container mx-auto p-3 sm:p-0 flex-grow flex flex-wrap sm:flex-no-wrap">
+    <div class="my-3 flex-grow" style="max-width: 30rem;">
+      <div class="mb-4">
+        <h2 class="text-xl font-semibold mb-3">
+          Find ferries that emit
+          <span class="text-blue-700">less CO₂ than planes</span>
+          (per person and km)
+        </h2>
+
+        <form href="#" method="GET" id="js-route-form" class="js-collapse-map">
+          <label for="route" class="block text-m font-semibold mb-2">
+            Route
+          </label>
+          <select name="route" class="mb-2 select" id="js-route-select">
+            {% for route in routes %}
+              <option
+                value="{{ route.slug }}"
+                data-name="{{ route | fullRouteName }}"
+                data-ships-count="{{ route.shipsCount }}"
+                data-distance-km="{{ route.distanceKm }}"
+                data-coordinates-json="{{ route | routeCoordinates | jsonify | safe }}">
+                {{ route | fullRouteName }}
+                -
+                {{ route.shipsCount }} ships
+              </option>
+            {% endfor %}
+          </select>
+
+          <div class="my-3 text-right sm:hidden">
+            <a class="link js-collapse" href="#" data-target=".js-collapse-map" id="js-show-map">
+              🗺 show map…
+            </a>
+          </div>
+
+          <input type="submit" value="Compare Ferries" class="button block border-0" />
+        </form>
+      </div>
+
+      <hr class="mb-4 js-collapse-map" />
+
+      <div class="js-collapse-map">
+        {% include "_includes/homepage_all_links.njk" %}
+      </div>
+    </div>
+
+    <div class="hidden sm:block sm:ml-3 min-w-map flex-grow js-collapse-map">
+      <div id="map" class="h-60vh sm:h-full"></div>
+    </div>
+  </div>
+
+  <div class="container mx-auto p-3 sm:p-0 js-collapse-map hidden mt-3">
+    <hr class="mb-3" />
+    {% include "_includes/homepage_all_links.njk" %}
+  </div>
+
+  <script src="js/leaflet_1.7.1.js"></script>
+  <script src="js/homepage.js"></script>
+  <link rel="stylesheet" href="css/leaflet_1.7.1.css" />
+{% endblock %}

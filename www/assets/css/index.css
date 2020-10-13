@@ -1,0 +1,30 @@
+@tailwind base;
+
+.change {
+  color: transparent;
+}
+
+@tailwind components;
+
+@tailwind utilities;
+
+.link {
+  @apply underline;
+}
+
+.button {
+  @apply bg-blue-500 text-white py-2 px-4 rounded cursor-pointer;
+}
+.button:hover { @apply bg-blue-700; }
+
+.select {
+  @apply block w-full bg-white border border-gray-400 px-4 py-2 pr-8 rounded shadow leading-tight cursor-pointer;
+}
+
+.stats-table td, .stats-table th {
+  border: 1px solid #666;
+  padding: 5px;
+}
+.stats-table th {
+  @apply font-bold bg-gray-400;
+}

@@ -1,0 +1,193 @@
+---
+pagination:
+    data: ships
+    size: 1
+    alias: ship
+permalink: "ships/{{ ship.slug }}/"
+---
+{% extends "_includes/layout.njk" %}
+
+{% block title %}
+  GreenFerries - {{ ship.name }} ({{ ship.company.name }})
+{% endblock %}
+
+{% block content %}
+  <div class="container mx-auto mb-4 p-2">
+    <h2 class="text-xl font-bold mb-4">
+      {{ ship.name }}
+    </h2>
+
+    <div class="flex mb-3">
+      <div class="mr-3">
+        <img
+          src="{{ ship.wikipediaThumbUrl }}"
+          alt="Ferry {{ ship.name }}"
+          style="max-height: 300px"
+        />
+      </div>
+      <div>
+        <p>
+          Operator:
+          <a href="/companies/{{ ship.company.slug }}">
+            {{ ship.company.name }}
+          </a>
+        </p>
+        <p>
+          Capacity:
+          {% if ship.capacityPax %}
+            {{ ship.capacityPax }} persons
+          {% else %}
+            N/A
+          {% endif %}
+        </p>
+        <p>
+          IMO number:
+          <span class="font-mono">{{ ship.imo }}</span>
+        </p>
+        {% if ship.wikipediaUrl %}
+          <p>
+            <a class="link" href="{{ ship.wikipediaUrl }}">
+              Wikipedia ship page ↗
+            </a>
+          </p>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="flex items-center mb-3">
+      <img
+        src="/img/score_{{ ship.ecoscore.score }}_150.png"
+        alt="Ecoscore {{ ship.ecoscore.score }}"
+        class="h-10 mr-2"
+      />
+      <div>
+        {{ ship.ecoscore.hint }}
+        (on average kg·CO₂/passenger/km)
+      </div>
+    </div>
+
+    <h4 class="font-ml font-semibold mb-2">
+      Often travels on {{ ship.shipRoutes | length }} routes
+    </h4>
+    <ul class="ml-4 list-disc">
+      {% for shipRoute in ship.shipRoutes %}
+        <li>
+          <a class="link" href="/routes/{{ shipRoute.route.slug }}">
+            {{ shipRoute.route | fullRouteName }}
+          </a>
+          - {{ shipRoute.route.distanceKm }} km
+          - {{ shipRoute.route.shipsCount - 1 }} other ship(s)
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="bg-orange-200 mb-3">
+    <div class="container flex items-center mx-auto p-2">
+      <div class="text-lg mr-3">
+        ⚠️
+      </div>
+      <div>
+        Do you know of a route that this ship frequently travels but is not listed? Or have you noticed an error?
+        <br />
+        Please help by
+        <a href="mailto:contact@greenferries.org" class="link">letting us know</a>,
+        thank you 🙇🏽‍♀️
+      </div>
+    </div>
+  </div>
+
+  <div class="container mx-auto mb-4">
+    <h4 class="font-ml font-semibold mb-2">Ship Statistics</h4>
+
+    <div class="lg:flex">
+      <table class="stats-table w-full lg:w-auto lg:ml-3 first:ml-0">
+        <thead>
+          <tr>
+            <th colspan="4">2018 yearly CO₂ Emissions</th>
+          </tr>
+          <tr>
+            <th class="text-right">assigned to</th>
+            <th>total</th>
+            <th>average</th>
+            <th>ratio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="text-right">persons 🙎‍♀️</th>
+            <td>{{ { value: ship.thetisAnnualCo2Pax, unit: "tonnes CO₂" } | figureCell | safe }}</td>
+            <td>{{ { value: ship.thetisAverageCo2PerPax, unit: "g·CO₂/pax/n.mile" } | figureCell | safe }}</td>
+            <td>{{ { value: ship.thetisAnnualComputedRatioCo2FromPax * 100, unit: "%", computed: true } | figureCell | safe }}</td>
+          </tr>
+          <tr>
+            <th class="text-right">freight 🚛</th>
+              <td>{{ { value: ship.thetisAnnualCo2Freight, unit: 'tonnes CO₂' } | figureCell | safe }}</td>
+              <td>{{ { value: ship.thetisAverageCo2PerFreight, unit: 'kg·CO₂/m tonne/n.mile' } | figureCell | safe }}</td>
+              <td>{{ { value: (1 - ship.thetisAnnualComputedRatioCo2FromPax) * 100, unit: '%', computed: true } | figureCell | safe }}</td>
+          </tr>
+          <tr>
+            <th class="text-right">total</th>
+            <td>{{ { value: ship.thetisAnnualCo2Total, unit: 'tonnes CO₂' } | figureCell | safe }}</td>
+            <td>{{ { value: ship.thetisAverageCo2PerDistance, unit: 'kg·CO₂/n.mile' } | figureCell | safe }}</td>
+            <td>100%</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class='stats-table w-full lg:w-auto lg:ml-3 first:ml-0'>
+        <thead>
+          <tr>
+            <th colspan="2">2018 yearly statistics</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="text-right">distance travelled</th>
+            <td>{{ { value: ship.thetisAnnualComputedDistanceKm, unit: 'km', computed: true } | figureCell | safe }}</td>
+          </tr>
+          <tr>
+            <th class="text-right">time at sea</th>
+            <td>{{ { value: ship.thetisAnnualHoursAtSea, unit: 'hours' } | figureCell | safe }}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class='stats-table w-full lg:w-auto lg:ml-3 first:ml-0'>
+        <thead>
+          <tr>
+            <th colspan="2">2018 average statistics per journey</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="text-right">average persons transported 🙎‍♀️</th>
+            <td>{{ { value: ship.thetisAnnualComputedPax, unit: 'persons', computed: true } | figureCell | safe }}</td>
+          </tr>
+          <tr>
+            <th class="text-right">average freight transported 🚛</th>
+            <td>{{ { value: ship.thetisAnnualComputedFreight, unit: 'metric tons', computed: true } | figureCell | safe }}</td>
+          </tr>
+          <tr>
+            <th class="text-right">average speed</th>
+            <td>{{ { value: ship.thetisAnnualComputedAverageSpeed, unit: 'km/h', computed: true } | figureCell | safe }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="bg-blue-200 mb-3">
+    <div class="container flex items-center mx-auto p-2">
+      <div class="text-lg mr-3">ℹ️</div>
+      <div>
+        Figures with the icon ⚙️ were computed based on the published data.
+        You can find computation details on
+        <a class="link" href="https://doc.greenferries.org/computed_stats">this page ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <pre class="hidden" id="js-debug">{{ ship | jsonify }}</pre>
+  {# <script>console.log(document.getElementById("js-debug").innerHTML)</script> #}
+{% endblock %}

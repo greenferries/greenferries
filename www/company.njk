@@ -1,0 +1,45 @@
+---
+pagination:
+    data: companies
+    size: 1
+    alias: company
+permalink: "companies/{{ company.slug }}/"
+---
+{% extends "_includes/layout.njk" %}
+
+{% block title %}
+  GreenFerries - {{ company.name }}
+{% endblock %}
+
+{% block content %}
+  <div class="container mx-auto mb-4 p-2">
+    <h2 class="text-xl font-bold mb-4 flex items-center">
+      <div>
+        {{ company.name }}
+        -
+        {{ company.country | countryCodeToFlag }}
+      </div>
+      <div class="ml-4">
+        <img src="{{ company.logoUrl }}" class="h-12 w-64" />
+      </div>
+    </h2>
+
+    {% if company.wikipediaUrl %}
+      <p class="mb-4">
+        <a href="{{ company.wikipediaUrl }}" class="link">
+          See on Wikipedia ↗
+        </a>
+      </p>
+    {% endif %}
+
+    <h4 class="text-l font-bold mb-3">{{ company.shipsCount }} ships</h4>
+    <ul class="mt-4 flex flex-wrap justify-around sm:justify-start">
+      {% for ship in company.ships %}
+        {% include "_includes/ship_card.njk" %}
+      {% endfor %}
+    </ul>
+  </div>
+
+  {# <pre class="hidden" id="js-debug">{{ company | jsonify }}</pre> #}
+  {# <script>console.log(document.getElementById("js-debug").innerHTML)</script> #}
+{% endblock %}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      {% block title %}Does it work?{% endblock %}
+    </title>
+    <meta charset="UTF-8"/>
+    {% if description %}
+      <meta name="description" content="{{description}}"/>
+    {% endif %}
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+    <link rel="stylesheet" href="/css/index.css?v={% version %}"/>
+    {% block head %}{% endblock %}
+  </head>
+  <body class="min-h-100vh">
+
+    <!-- HEADER -->
+    <div class="flex flex-col min-h-100vh">
+      <div class="border-b border-blue-700 pb-2">
+        <div class="container mx-auto p-1 h-16 overflow-hidden flex justify-between items-center">
+          <a href="/">
+            <img src="/img/logo-ship.png" alt="Logo GreenFerries Ship" style="max-width: 50px;" />
+          </a>
+          <a href="/">
+            <img src="/img/logo-greenferries.png" alt="Logo GreenFerries Text"  style="max-width: 250px;" />
+          </a>
+          <div>
+            <div class="hidden sm:block">
+              <a class="link mx-1" href="/">Routes</a>
+              <a class="link mx-1" href="/ships">Ferries</a>
+              <a class="link mx-1" href="/companies">Companies</a>
+              <a class="link mx-1" href="https://doc.greenferries.org">FAQ ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-grow flex flex-col">
+        {% block content %}
+        {% endblock %}
+      </div>
+
+      <!-- FOOTER -->
+      <div class="bg-blue-700 text-white">
+        <div class="container mx-auto p-2 py-3">
+          <p class="italic py-2">
+            GreenFerries is a hobby project, all the data shown here has no official value. It is Open Source, so you can double check and modify it.
+          </p>
+
+          <div class="py-4 flex items-center">
+            <div class="flex-none">
+              <img src="/img/score_B_150_transparent.png" alt="Ecoscore B" class="inline mr-2 h-12" />
+            </div>
+            <div>
+              The Ecoscore compares
+              <b>average CO₂ emissions per passenger per km</b>.
+              <div>
+                <i>‟emits like 2.1 planes”</i> means that the ferry emits more than twice what an average plane would on the same distance for one passenger.
+              </div>
+            </div>
+          </div>
+
+          <p class="py-2">
+            <a class="link mx-1" href="/ships">Explore all {{ ships | length }} Ferries 🚢</a>
+            <a class="link mx-1" href="/companies">Explore all {{ companies | length }} Companies 🏢</a>
+          </p>
+          <p class="py-2">
+            Docs:
+              <a class="link mx-1" href="https://doc.greenferries.org">FAQ ↗</a>
+              <a class="link mx-1" href="https://doc.greenferries.org/ecoscore">EcoScore</a>
+              <a class="link mx-1" href="https://data.greenferries.org">API & Dumps</a>
+          </p>
+          <p class="py-2">
+            Data Sources:
+              <a class="link mx-1" href="https://mrv.emsa.europa.eu/#public/emission-report">EU 🇪🇺 Thetis-MRV Report ↗</a>
+              <a class="link mx-1" href="https://www.wikipedia.org/">Wikipedia ↗</a>
+          </p>
+          <p class="py-2">
+            Community:
+              <a class="link mx-1" href="https://github.com/greenferries/greenferries">GitHub ↗</a>
+              <a class="link mx-1" href="mailto:admin@greenferries.org">Contact ✉️</a>
+              <a class="link mx-1" href="https://riot.im/app/#/room/!ucRHvaqIzPZzjYnfTo:matrix.org?via=matrix.org">Discuss with us on Riot/Matrix.org ↗</a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

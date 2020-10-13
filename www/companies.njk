@@ -1,0 +1,24 @@
+{% extends "_includes/layout.njk" %}
+
+{% block title %}GreenFerries - All {{ company | length }} companies {% endblock %}
+
+{% block content %}
+  <div class="container mx-auto mb-4 p-2">
+    <div class="flex flex-wrap justify-evenly">
+      {% for company in companies %}
+        <a href="/companies/{{ company.slug }}" class="flex items-center w-64 h-24 mb-3">
+          <div
+            class="w-24 h-full flex-shrink-0 bg-contain bg-no-repeat bg-center bg-gray-200"
+            style="background-image: url('{{ company.logoUrl }}')">
+          </div>
+          <div class="p-3 border border-gray-300 h-full flex flex-col justify-center">
+            <div>
+              <span class="link">{{ company.name }}</span>
+              - {{ { word: "ship", count: company.shipsCount } | countPlural }}
+            </div>
+          </div>
+        </a>
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock %}
