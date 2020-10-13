@@ -29,5 +29,5 @@ Come discuss this project development on the public chat room `#greenferries-dev
 
 ## Resources
 
-- [Create React app](https://github.com/facebook/create-react-app)
-- [Chakra UI](https://chakra-ui.com/)
+- [Eleventy - Static Site Generator](https://www.11ty.dev/docs/)
+- [TailwindCSS](https://tailwindcss.com/)
