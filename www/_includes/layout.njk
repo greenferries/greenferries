@@ -2,12 +2,10 @@
 <html lang="en">
   <head>
     <title>
-      {% block title %}Does it work?{% endblock %}
+      {% block title %}Greenferries{% endblock %}
     </title>
     <meta charset="UTF-8"/>
-    {% if description %}
-      <meta name="description" content="{{description}}"/>
-    {% endif %}
+    <meta name="description" content="Greenferries - Find ferries that emit less CO2 than planes"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
     <link rel="stylesheet" href="/css/index.css?v={% version %}"/>
@@ -18,7 +16,7 @@
     <!-- HEADER -->
     <div class="flex flex-col min-h-100vh">
       <div class="border-b border-blue-700 pb-2">
-        <div class="container mx-auto p-1 h-16 overflow-hidden flex justify-between items-center">
+        <div class="container mx-auto p-3 sm:p-0 h-16 overflow-hidden flex justify-between items-center">
           <a href="/">
             <img src="/img/logo-ship.png" alt="Logo GreenFerries Ship" style="max-width: 50px;" />
           </a>
@@ -43,7 +41,7 @@
 
       <!-- FOOTER -->
       <div class="bg-blue-700 text-white">
-        <div class="container mx-auto p-2 py-3">
+        <div class="container mx-auto px-3 sm:px-0 py-3">
           <p class="italic py-2">
             GreenFerries is a hobby project, all the data shown here has no official value. It is Open Source, so you can double check and modify it.
           </p>

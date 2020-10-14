@@ -12,24 +12,28 @@ permalink: "ships/{{ ship.slug }}/"
 {% endblock %}
 
 {% block content %}
-  <div class="container mx-auto mb-4 p-2">
+  <div class="container mx-auto mb-4 py-2 px-3 sm:px-0">
     <h2 class="text-xl font-bold mb-4">
       {{ ship.name }}
     </h2>
 
-    <div class="flex mb-3">
+    <div class="flex flex-col sm:flex-row mb-3">
       <div class="mr-3">
         <img
-          src="{{ ship.wikipediaThumbUrl }}"
+          src="{{ ship.thumbPath }}"
           alt="Ferry {{ ship.name }}"
           style="max-height: 300px"
+          class="w-full sm:w-auto"
         />
       </div>
-      <div>
-        <p>
-          Operator:
-          <a href="/companies/{{ ship.company.slug }}">
-            {{ ship.company.name }}
+      <div class="mt-3 sm:mt-0">
+        <p class="flex items-center">
+          <span>Operator:</span>
+          <a href="/companies/{{ ship.company.slug }}" class="flex flex-wrap items-center ml-1">
+            <span class="link">{{ ship.company.name }}</span>
+            {% if ship.company.logoPath %}
+              <img src="{{ ship.company.logoPath }}" class="ml-3 h-12" />
+            {% endif %}
           </a>
         </p>
         <p>
@@ -83,7 +87,7 @@ permalink: "ships/{{ ship.slug }}/"
   </div>
 
   <div class="bg-orange-200 mb-3">
-    <div class="container flex items-center mx-auto p-2">
+    <div class="container flex items-center mx-auto py-2 px-3 sm:px-0">
       <div class="text-lg mr-3">
         ⚠️
       </div>
@@ -97,11 +101,11 @@ permalink: "ships/{{ ship.slug }}/"
     </div>
   </div>
 
-  <div class="container mx-auto mb-4">
+  <div class="container mx-auto mb-4 px-3 sm:px-0">
     <h4 class="font-ml font-semibold mb-2">Ship Statistics</h4>
 
     <div class="lg:flex">
-      <table class="stats-table w-full lg:w-auto lg:ml-3 first:ml-0">
+      <table class="stats-table w-full lg:w-auto mt-3 lg:mt-0">
         <thead>
           <tr>
             <th colspan="4">2018 yearly CO₂ Emissions</th>
@@ -135,7 +139,7 @@ permalink: "ships/{{ ship.slug }}/"
         </tbody>
       </table>
 
-      <table class='stats-table w-full lg:w-auto lg:ml-3 first:ml-0'>
+      <table class='stats-table w-full lg:w-auto lg:ml-3 first:ml-0 mt-3 lg:mt-0'>
         <thead>
           <tr>
             <th colspan="2">2018 yearly statistics</th>
@@ -153,7 +157,7 @@ permalink: "ships/{{ ship.slug }}/"
         </tbody>
       </table>
 
-      <table class='stats-table w-full lg:w-auto lg:ml-3 first:ml-0'>
+      <table class='stats-table w-full lg:w-auto lg:ml-3 first:ml-0 mt-3 lg:mt-0'>
         <thead>
           <tr>
             <th colspan="2">2018 average statistics per journey</th>
@@ -178,7 +182,7 @@ permalink: "ships/{{ ship.slug }}/"
   </div>
 
   <div class="bg-blue-200 mb-3">
-    <div class="container flex items-center mx-auto p-2">
+    <div class="container flex items-center mx-auto py-2 px-3 sm:px-0">
       <div class="text-lg mr-3">ℹ️</div>
       <div>
         Figures with the icon ⚙️ were computed based on the published data.

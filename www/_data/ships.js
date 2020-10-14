@@ -1,10 +1,12 @@
 const { dbQueryAll, getTablesColumns } = require('../lib/db_query')
 const { sliceRow, hydrateRows } = require('../lib/hydrate')
-const { augmentShip, augmentRoute } = require('../lib/augmenters')
+const { augmentShip, augmentRoute, augmentCompany } = require('../lib/augmenters')
 
 const hydrateRow = async (row) => {
-  const ship = await sliceRow(row, 'ships')
-  const company = await sliceRow(row, 'companies', 'company_')
+  const ship = augmentShip(await sliceRow(row, 'ships'))
+  const rawCompany = await sliceRow(row, 'companies', 'company_')
+  rawCompany.logoKey = row.companyLogoKey
+  const company = augmentCompany(rawCompany)
   const shipRoute = await sliceRow(row, 'ship_routes', 'ship_route_')
   const hasShipRoute = !Object.values(shipRoute).every(k => k == null)
   if (hasShipRoute) {
@@ -13,11 +15,7 @@ const hydrateRow = async (row) => {
     shipRoute.route.cityB = await sliceRow(row, 'cities', 'city_b_')
     shipRoute.route = augmentRoute(shipRoute.route)
   }
-  return {
-    ...augmentShip(ship),
-    company,
-    shipRoutes: hasShipRoute ? [shipRoute] : []
-  }
+  return { ...ship, company, shipRoutes: hasShipRoute ? [shipRoute] : [] }
 }
 
 const getRows = async () => {
@@ -29,9 +27,13 @@ const getRows = async () => {
       ${tablesColumns.ship_routes.map(col => `ship_routes.${col} AS ship_route_${col}`).join(', ')},
       ${tablesColumns.routes.map(col => `routes.${col} AS route_${col}`).join(', ')},
       ${tablesColumns.cities.map(col => `cities_a.${col} AS city_a_${col}`).join(', ')},
-      ${tablesColumns.cities.map(col => `cities_b.${col} AS city_b_${col}`).join(', ')}
+      ${tablesColumns.cities.map(col => `cities_b.${col} AS city_b_${col}`).join(', ')},
+      as_blobs.key AS companyLogoKey
     FROM ships
     INNER JOIN companies ON companies.id = ships.company_id
+    LEFT JOIN active_storage_attachments as_attachments
+      ON as_attachments.record_id = companies.id AND as_attachments.record_type = 'Company'
+    LEFT JOIN active_storage_blobs as_blobs ON as_blobs.id = as_attachments.blob_id
     LEFT JOIN ship_routes ON ship_routes.ship_id = ships.id
     LEFT JOIN routes ON routes.id = ship_routes.route_id
     LEFT JOIN cities AS cities_a ON cities_a.id = routes.city_a_id
