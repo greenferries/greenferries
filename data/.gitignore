@@ -1,6 +1,5 @@
 .~lock*
 .ipynb_checkpoints/
-datasette/dbs/*.db
 venv
 **/__pycache__
 .env
