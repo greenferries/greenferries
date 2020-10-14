@@ -1,15 +1,15 @@
 const slug = require('slug')
 const { dbQueryAll, getTablesColumns } = require('../lib/db_query')
 const { sliceRow, hydrateRows } = require('../lib/hydrate')
-const { augmentShip } = require("../lib/augmenters")
+const { augmentShip } = require('../lib/augmenters')
 
 const hydrateRow = async (row) => {
-  const company = await sliceRow(row, "companies")
+  const company = await sliceRow(row, 'companies')
   return {
     ...company,
     logoUrl: `https://res.cloudinary.com/outofscreen/image/upload/${row.logoKey}.png`,
     slug: slug(`${row.name}-${row.country}`),
-    ships: [augmentShip(await sliceRow(row, "ships", "ship_"))]
+    ships: [augmentShip(await sliceRow(row, 'ships', 'ship_'))]
   }
 }
 
@@ -19,7 +19,7 @@ const getRows = async () => {
     SELECT
       companies.*,
       asb.key AS logoKey,
-      ${tablesColumns.ships.map(col => `ships.${col} AS ship_${col}`).join(", ")}
+      ${tablesColumns.ships.map(col => `ships.${col} AS ship_${col}`).join(', ')}
     FROM companies
     LEFT JOIN ships ON ships.company_id = companies.id
     LEFT JOIN active_storage_attachments asa
@@ -29,7 +29,7 @@ const getRows = async () => {
   `)
 }
 
-module.exports = async function() {
+module.exports = async function () {
   const companies = await hydrateRows(await getRows(), hydrateRow)
   return companies
 }

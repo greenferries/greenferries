@@ -2,19 +2,19 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        change: "transparent"
+        change: 'transparent'
       }
     },
     minWidth: {
-      '0': '0',
-      'map': '300px',
-      'full': '100%'
+      0: '0',
+      map: '300px',
+      full: '100%'
     },
     minHeight: {
-      '0': '0',
-      'map': '300px',
+      0: '0',
+      map: '300px',
       '100vh': '100vh',
-      'full': '100%'
+      full: '100%'
     }
   },
   variants: {},
@@ -24,7 +24,7 @@ module.exports = {
       './**/*.js',
       './**/*.11ty.js',
       './**/*.html',
-      './**/*.njk',
-    ],
-  },
+      './**/*.njk'
+    ]
+  }
 }
