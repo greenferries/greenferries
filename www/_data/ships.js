@@ -1,5 +1,5 @@
-const { dbQueryAll } = require('../lib/db_query')
-const { sliceRow, hydrateRows, getTablesColumns } = require('../lib/hydrate');
+const { dbQueryAll, getTablesColumns } = require('../lib/db_query')
+const { sliceRow, hydrateRows } = require('../lib/hydrate');
 const { augmentShip, augmentRoute } = require("../lib/augmenters");
 
 const hydrateRow = async (row) => {
