@@ -10,8 +10,9 @@ const hydrateRows = async (rows, hydrateRow) => {
     const item = await hydrateRow(row, tablesColumns)
     if (itemsById[item.id] === undefined) itemsById[item.id] = item
     else {
-      if (item.shipRoutes !== undefined) { itemsById[item.id].shipRoutes.push(item.shipRoutes[0]) }
-      if (item.ships !== undefined) { itemsById[item.id].ships.push(item.ships[0]) }
+      if (item.shipRoutes && item.shipRoutes.length > 0) { itemsById[item.id].shipRoutes.push(item.shipRoutes[0]) }
+      if (item.ships && item.ships.length > 0) { itemsById[item.id].ships.push(item.ships[0]) }
+      if (item.thetis && item.thetis !== null) { Object.assign(itemsById[item.id].thetis, item.thetis) }
     }
   }
   return initialIds.map(id => itemsById[id])

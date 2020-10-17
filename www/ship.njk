@@ -104,81 +104,13 @@ permalink: "ships/{{ ship.slug }}/"
   <div class="container mx-auto mb-4 px-3 sm:px-0">
     <h4 class="font-ml font-semibold mb-2">Ship Statistics</h4>
 
-    <div class="lg:flex">
-      <table class="stats-table w-full lg:w-auto mt-3 lg:mt-0">
-        <thead>
-          <tr>
-            <th colspan="4">2018 yearly CO₂ Emissions</th>
-          </tr>
-          <tr>
-            <th class="text-right">assigned to</th>
-            <th>total</th>
-            <th>average</th>
-            <th>ratio</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th class="text-right">persons 🙎‍♀️</th>
-            <td>{{ { value: ship.thetisAnnualCo2Pax, unit: "tonnes CO₂" } | figureCell | safe }}</td>
-            <td>{{ { value: ship.thetisAverageCo2PerPax, unit: "g·CO₂/pax/n.mile" } | figureCell | safe }}</td>
-            <td>{{ { value: ship.thetisAnnualComputedRatioCo2FromPax * 100, unit: "%", computed: true } | figureCell | safe }}</td>
-          </tr>
-          <tr>
-            <th class="text-right">freight 🚛</th>
-              <td>{{ { value: ship.thetisAnnualCo2Freight, unit: 'tonnes CO₂' } | figureCell | safe }}</td>
-              <td>{{ { value: ship.thetisAverageCo2PerFreight, unit: 'kg·CO₂/m tonne/n.mile' } | figureCell | safe }}</td>
-              <td>{{ { value: (1 - ship.thetisAnnualComputedRatioCo2FromPax) * 100, unit: '%', computed: true } | figureCell | safe }}</td>
-          </tr>
-          <tr>
-            <th class="text-right">total</th>
-            <td>{{ { value: ship.thetisAnnualCo2Total, unit: 'tonnes CO₂' } | figureCell | safe }}</td>
-            <td>{{ { value: ship.thetisAverageCo2PerDistance, unit: 'kg·CO₂/n.mile' } | figureCell | safe }}</td>
-            <td>100%</td>
-          </tr>
-        </tbody>
-      </table>
+    {%- set year = '2019' %}
+    {% include "_includes/ship_thetis_stats.njk" %}
 
-      <table class='stats-table w-full lg:w-auto lg:ml-3 first:ml-0 mt-3 lg:mt-0'>
-        <thead>
-          <tr>
-            <th colspan="2">2018 yearly statistics</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th class="text-right">distance travelled</th>
-            <td>{{ { value: ship.thetisAnnualComputedDistanceKm, unit: 'km', computed: true } | figureCell | safe }}</td>
-          </tr>
-          <tr>
-            <th class="text-right">time at sea</th>
-            <td>{{ { value: ship.thetisAnnualHoursAtSea, unit: 'hours' } | figureCell | safe }}</td>
-          </tr>
-        </tbody>
-      </table>
+    <hr class="my-3" />
 
-      <table class='stats-table w-full lg:w-auto lg:ml-3 first:ml-0 mt-3 lg:mt-0'>
-        <thead>
-          <tr>
-            <th colspan="2">2018 average statistics per journey</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th class="text-right">average persons transported 🙎‍♀️</th>
-            <td>{{ { value: ship.thetisAnnualComputedPax, unit: 'persons', computed: true } | figureCell | safe }}</td>
-          </tr>
-          <tr>
-            <th class="text-right">average freight transported 🚛</th>
-            <td>{{ { value: ship.thetisAnnualComputedFreight, unit: 'metric tons', computed: true } | figureCell | safe }}</td>
-          </tr>
-          <tr>
-            <th class="text-right">average speed</th>
-            <td>{{ { value: ship.thetisAnnualComputedAverageSpeed, unit: 'km/h', computed: true } | figureCell | safe }}</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    {%- set year = '2018' %}
+    {% include "_includes/ship_thetis_stats.njk" %}
   </div>
 
   <div class="bg-blue-200 mb-3">

@@ -26,7 +26,8 @@ const getTablesColumns = async () => {
     ship_routes: await getColsPromise(db, 'ship_routes'),
     companies: await getColsPromise(db, 'companies'),
     routes: await getColsPromise(db, 'routes'),
-    cities: await getColsPromise(db, 'cities')
+    cities: await getColsPromise(db, 'cities'),
+    thetis: await getColsPromise(db, 'thetis')
   }
   db.close()
   return columnsByTable

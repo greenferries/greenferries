@@ -15,7 +15,14 @@ const hydrateRow = async (row) => {
     shipRoute.route.cityB = await sliceRow(row, 'cities', 'city_b_')
     shipRoute.route = augmentRoute(shipRoute.route)
   }
-  return { ...ship, company, shipRoutes: hasShipRoute ? [shipRoute] : [] }
+  const thetis = await sliceRow(row, 'thetis', 'thetis_')
+  const hasThetis = !Object.values(thetis).every(k => k == null)
+  return {
+    ...ship,
+    company,
+    shipRoutes: hasShipRoute ? [shipRoute] : [],
+    thetis: hasThetis ? { [thetis.reportingPeriod]: thetis } : {}
+  }
 }
 
 const getRows = async () => {
@@ -28,6 +35,7 @@ const getRows = async () => {
       ${tablesColumns.routes.map(col => `routes.${col} AS route_${col}`).join(', ')},
       ${tablesColumns.cities.map(col => `cities_a.${col} AS city_a_${col}`).join(', ')},
       ${tablesColumns.cities.map(col => `cities_b.${col} AS city_b_${col}`).join(', ')},
+      ${tablesColumns.thetis.map(col => `thetis.${col} AS thetis_${col}`).join(', ')},
       as_blobs.key AS companyLogoKey
     FROM ships
     INNER JOIN companies ON companies.id = ships.company_id
@@ -38,6 +46,7 @@ const getRows = async () => {
     LEFT JOIN routes ON routes.id = ship_routes.route_id
     LEFT JOIN cities AS cities_a ON cities_a.id = routes.city_a_id
     LEFT JOIN cities AS cities_b ON cities_b.id = routes.city_b_id
+    LEFT JOIN thetis ON thetis.imo = ships.imo
     ORDER BY ships.name`
   )
 }

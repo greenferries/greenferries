@@ -29,6 +29,5 @@ const getRows = async () => {
 
 module.exports = async function () {
   const companies = await hydrateRows(await getRows(), hydrateRow)
-  // console.log('companies is ', companies)
   return companies
 }
