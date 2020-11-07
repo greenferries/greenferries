@@ -10,11 +10,7 @@ Live website: [greenferries.org](https://www.greenferries.org)
 ## Ecosystem
 
 - [Public Website](https://github.com/greenferries/greenferries/tree/master/www#greenferries-website): The
-main public-facing website. Uses React and Chakra-UI
-
-- [Admin Website](https://github.com/greenferries/greenferries/tree/master/admin#greenferries-admin):
-The backend interface to update the underlying database powering the public
-website
+main public-facing static website. Uses the [EleventyJS framework](https://www.11ty.dev/) and [TailwindCSS](https://tailwindcss.com/)
 
 - [Data platform](https://github.com/greenferries/greenferries/tree/master/data#greenferries-data-platform):
 datasets, APIs and iPython notebooks to explore the different original data
