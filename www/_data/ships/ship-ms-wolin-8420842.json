@@ -1,0 +1,15 @@
+{
+  "slug": "ms-wolin-8420842",
+  "imo": 8420842,
+  "name": "MS Wolin",
+  "company": "unity-line-pl",
+  "capacityPax": null,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MS_Wolin",
+  "thumbFileName": "300px-MF_Wolin.jpg",
+  "outOfScope": false,
+  "unknownRoutes": true,
+  "routes": [
+    "trelleborg-se-swinoujscie-pl",
+    "ystad-se-swinoujscie-pl"
+  ]
+}

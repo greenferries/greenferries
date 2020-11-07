@@ -2,10 +2,12 @@
 pagination:
     data: companies
     size: 1
-    alias: company
-permalink: "companies/{{ company.slug }}/"
+    alias: rawCompany
+    resolve: values
+permalink: "companies/{{ rawCompany.slug }}/"
 ---
 {% extends "_includes/layout.njk" %}
+{%- set company = hydratedBySlug.companies[rawCompany.slug] %}
 
 {% block title %}
   GreenFerries - {{ company.name }}
@@ -19,9 +21,11 @@ permalink: "companies/{{ company.slug }}/"
         -
         {{ company.country | countryCodeToFlag }}
       </div>
-      <div class="ml-4">
-        <img src="{{ company.logoUrl }}" class="h-12 w-64" />
-      </div>
+      {% if company.logoFileName %}
+        <div class="ml-4">
+          <img src="/img/company_logos/{{ company.logoFileName }}" class="h-12 w-64" />
+        </div>
+      {% endif %}
     </h2>
 
     {% if company.wikipediaUrl %}
@@ -32,7 +36,7 @@ permalink: "companies/{{ company.slug }}/"
       </p>
     {% endif %}
 
-    <h4 class="text-l font-bold mb-3">{{ company.shipsCount }} ships</h4>
+    <h4 class="text-l font-bold mb-3">{{ company.ships | length }} ships</h4>
     {% set ships = company.ships %}
     {% include "_includes/ship_cards.njk" %}
   </div>

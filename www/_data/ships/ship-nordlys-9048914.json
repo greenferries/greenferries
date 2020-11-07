@@ -1,0 +1,14 @@
+{
+  "slug": "nordlys-9048914",
+  "imo": 9048914,
+  "name": "Nordlys",
+  "company": "hurtigruten-group-no",
+  "capacityPax": null,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MS_Nordlys_(1994)",
+  "thumbFileName": "300px-MS_Nordlys_i_Molde_havnebasseng.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "bergen-no-kirkenes-no"
+  ]
+}

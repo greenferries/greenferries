@@ -1,0 +1,18 @@
+{
+  "slug": "spl-princess-anastasia-8414582",
+  "imo": 8414582,
+  "name": "SPL Princess Anastasia",
+  "company": "st-peter-line-fi",
+  "capacityPax": 2500,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/SPL_Princess_Anastasia_(1986)",
+  "thumbFileName": "300px-Princess_anastasia.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "tallinn-ee-stockholm-se",
+    "helsinki-fi-tallinn-ee",
+    "st-petersburg-ru-helsinki-fi",
+    "helsinki-fi-stockholm-se",
+    "st-petersburg-ru-stockholm-se"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "euroferry-olympia-9010175",
+  "imo": 9010175,
+  "name": "Euroferry Olympia",
+  "company": "finnlines-fi",
+  "capacityPax": 114,
+  "wikipediaUrl": "https://de.wikipedia.org/wiki/Euroferry_Olympia",
+  "thumbFileName": "300px-Finnlines_Transeuropa_Baltic_Sea_20100917.JPG",
+  "outOfScope": false,
+  "unknownRoutes": true,
+  "routes": [
+
+  ]
+}

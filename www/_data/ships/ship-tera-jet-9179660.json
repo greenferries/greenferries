@@ -1,0 +1,14 @@
+{
+  "slug": "tera-jet-9179660",
+  "imo": 9179660,
+  "name": "Tera Jet",
+  "company": "seajets-gr",
+  "capacityPax": 1800,
+  "wikipediaUrl": "https://it.wikipedia.org/wiki/Tera_Jet",
+  "thumbFileName": "300px-Tera_Jet_-_Seajets_-_Christiana_-_2016.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "heraklion-gr-santorini-emporeio-gr"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "ms-amorella-8601915",
+  "imo": 8601915,
+  "name": "MS Amorella",
+  "company": "viking-line-fi",
+  "capacityPax": 2480,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MS_Amorella",
+  "thumbFileName": "300px-Ferry_viking_line_amorella_20050823_001.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "lumparland-ax-stockholm-se",
+    "turku-fi-mariehamn-ax"
+  ]
+}

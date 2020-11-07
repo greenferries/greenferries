@@ -1,0 +1,14 @@
+{
+  "slug": "ms-stena-jutlandica-9125944",
+  "imo": 9125944,
+  "name": "MS Stena Jutlandica",
+  "company": "stena-line-se",
+  "capacityPax": 1500,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MS_Stena_Jutlandica",
+  "thumbFileName": "300px-Stena_Jutlandica5001.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "frederikshavn-dk-goteborg-se"
+  ]
+}

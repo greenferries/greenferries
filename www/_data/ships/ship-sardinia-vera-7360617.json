@@ -1,0 +1,14 @@
+{
+  "slug": "sardinia-vera-7360617",
+  "imo": 7360617,
+  "name": "Sardinia Vera",
+  "company": "corsica-ferries-sardinia-ferries-fr",
+  "capacityPax": 1460,
+  "wikipediaUrl": "https://fr.wikipedia.org/wiki/Sardinia_Vera",
+  "thumbFileName": "300px-SARDINIA_VERA.jpg",
+  "outOfScope": null,
+  "unknownRoutes": null,
+  "routes": [
+    "nice-fr-ile-rousse-fr"
+  ]
+}

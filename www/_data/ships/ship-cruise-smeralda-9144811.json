@@ -1,0 +1,16 @@
+{
+  "slug": "cruise-smeralda-9144811",
+  "imo": 9144811,
+  "name": "Cruise Smeralda",
+  "company": "grimaldi-lines-it",
+  "capacityPax": null,
+  "wikipediaUrl": "https://it.wikipedia.org/wiki/Cruise_Smeralda",
+  "thumbFileName": "300px-20081115-Patras-IkarusPalace.JPG",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "savona-it-tanger-med-ma",
+    "barcelone-es-tanger-med-ma",
+    "savona-it-barcelone-es"
+  ]
+}

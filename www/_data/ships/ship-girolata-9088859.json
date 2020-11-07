@@ -1,0 +1,15 @@
+{
+  "slug": "girolata-9088859",
+  "imo": 9088859,
+  "name": "Girolata",
+  "company": "la-meridionale-fr",
+  "capacityPax": 816,
+  "wikipediaUrl": "https://fr.wikipedia.org/wiki/Girolata_(navire)",
+  "thumbFileName": "300px-Giro22072018AJ.jpg",
+  "outOfScope": null,
+  "unknownRoutes": null,
+  "routes": [
+    "marseille-fr-ajaccio-fr",
+    "civitavecchia-it-palerme-it"
+  ]
+}

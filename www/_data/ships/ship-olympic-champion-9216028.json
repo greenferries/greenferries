@@ -1,0 +1,16 @@
+{
+  "slug": "olympic-champion-9216028",
+  "imo": 9216028,
+  "name": "Olympic Champion",
+  "company": "anek-lines-gr",
+  "capacityPax": null,
+  "wikipediaUrl": "https://fr.wikipedia.org/wiki/Olympic_Champion",
+  "thumbFileName": "300px-Port_of_Ancona_Anek_Lines.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "ancona-it-igoumenitsa-gr",
+    "ancona-it-patras-gr",
+    "patras-gr-igoumenitsa-gr"
+  ]
+}

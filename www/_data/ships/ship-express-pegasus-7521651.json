@@ -1,0 +1,14 @@
+{
+  "slug": "express-pegasus-7521651",
+  "imo": 7521651,
+  "name": "Express Pegasus",
+  "company": "hellenic-seaways-gr",
+  "capacityPax": 1300,
+  "wikipediaUrl": "https://de.wikipedia.org/wiki/Express_Pegasus",
+  "thumbFileName": "300px-%22Express_Pegasus%22_-_Piraeus.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "le-piree-gr-santorini-emporeio-gr"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "ms-bremen-8907424",
+  "imo": 8907424,
+  "name": "MS Bremen",
+  "company": "hapag-lloyd-de",
+  "capacityPax": 155,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MS_Bremen",
+  "thumbFileName": "300px-MS_Bremen_-_Ushuaia.JPG",
+  "outOfScope": true,
+  "unknownRoutes": false,
+  "routes": [
+
+  ]
+}

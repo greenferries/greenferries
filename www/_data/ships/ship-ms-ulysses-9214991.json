@@ -1,0 +1,14 @@
+{
+  "slug": "ms-ulysses-9214991",
+  "imo": 9214991,
+  "name": "MS Ulysses",
+  "company": "irish-ferries-us",
+  "capacityPax": 1875,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MV_Ulysses_(2000)",
+  "thumbFileName": "300px-Ulysses_Arriving_In_Dublin.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "dublin-ie-holyhead-gb"
+  ]
+}

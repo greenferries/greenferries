@@ -1,0 +1,14 @@
+{
+  "slug": "m-s-europalink-9319454",
+  "imo": 9319454,
+  "name": "M/S Europalink",
+  "company": "finnlines-fi",
+  "capacityPax": null,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/M/S_Europalink",
+  "thumbFileName": "300px-M_cursiva.gif",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "travemunde-de-malmo-se"
+  ]
+}

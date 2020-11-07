@@ -1,0 +1,14 @@
+{
+  "slug": "m-s-aurora-8020599",
+  "imo": 8020599,
+  "name": "M/S Aurora",
+  "company": "transfennica-fi",
+  "capacityPax": null,
+  "wikipediaUrl": "https://fi.wikipedia.org/wiki/M/S_Aurora",
+  "thumbFileName": "",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "rostock-de-hanko-fi"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "slug": "mv-clansman-9158953",
+  "imo": 9158953,
+  "name": "MV Clansman",
+  "company": "caledonian-maritime-assets-gb",
+  "capacityPax": null,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MV_Clansman",
+  "thumbFileName": "300px-MV_Clansman_2019.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "oban-gb-colonsay-gb",
+    "oban-gb-scarinish-gb",
+    "oban-gb-coll-gb",
+    "oban-gb-castlebay-gb"
+  ]
+}

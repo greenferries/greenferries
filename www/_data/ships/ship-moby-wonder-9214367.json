@@ -1,0 +1,15 @@
+{
+  "slug": "moby-wonder-9214367",
+  "imo": 9214367,
+  "name": "Moby Wonder",
+  "company": "moby-lines-it",
+  "capacityPax": null,
+  "wikipediaUrl": "https://fr.wikipedia.org/wiki/Moby_Wonder",
+  "thumbFileName": "300px-Moby_Wonder_07_IMO_9214367_%40chesi.JPG",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "piombino-it-olbia-it",
+    "livorno-it-olbia-it"
+  ]
+}

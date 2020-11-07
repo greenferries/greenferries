@@ -1,0 +1,15 @@
+{
+  "slug": "cap-finistere-9198927",
+  "imo": 9198927,
+  "name": "Cap Finistère",
+  "company": "brittany-ferries-fr",
+  "capacityPax": 1608,
+  "wikipediaUrl": "https://fr.wikipedia.org/wiki/MV_Cap_Finist%C3%A8re",
+  "thumbFileName": "300px-Cap_Finist%C3%A8re.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "portsmouth-gb-santander-es",
+    "portsmouth-gb-bilbao-es"
+  ]
+}

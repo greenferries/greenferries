@@ -1,0 +1,14 @@
+{
+  "slug": "disney-magic-9126807",
+  "imo": 9126807,
+  "name": "Disney Magic",
+  "company": "disney-cruise-line-us",
+  "capacityPax": 3600,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Disney_Magic",
+  "thumbFileName": "300px-Disney_Magic_logo.svg.png",
+  "outOfScope": true,
+  "unknownRoutes": false,
+  "routes": [
+
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "ms-kronprins-frederik-7803205",
+  "imo": 7803205,
+  "name": "MS Kronprins Frederik",
+  "company": "dsb-dk",
+  "capacityPax": null,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MS_Kronprins_Frederik",
+  "thumbFileName": "300px-Scandlines_FS_Kronprins_Frederik_Warnem%C3%BCnde_%2807%29.JPG",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "puttgarden-de-rodby-dk"
+  ]
+}

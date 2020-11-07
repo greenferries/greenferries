@@ -1,0 +1,14 @@
+{
+  "slug": "hsc-manannan-9176072",
+  "imo": 9176072,
+  "name": "HSC Manannan",
+  "company": "isle-of-man-steam-packet-company-gb",
+  "capacityPax": null,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/HSC_Manannan",
+  "thumbFileName": "300px-Hsc_manannan.png",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "liverpool-birkenhead-gb-douglas-im"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "elyros-ship-9178599",
+  "imo": 9178599,
+  "name": "Elyros (ship)",
+  "company": "anek-lines-gr",
+  "capacityPax": null,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Elyros_(ship)",
+  "thumbFileName": "300px-20080921-Piraeus-Elyros.JPG",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "chania-gr-le-piree-gr"
+  ]
+}

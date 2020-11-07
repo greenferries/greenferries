@@ -1,0 +1,14 @@
+{
+  "slug": "aurelia-7602120",
+  "imo": 7602120,
+  "name": "Aurelia",
+  "company": "tirrenia-it",
+  "capacityPax": null,
+  "wikipediaUrl": "https://it.wikipedia.org/wiki/Aurelia_(traghetto)",
+  "thumbFileName": "300px-MN_Aurelia%2C_18-04-2011%2C_Genova.JPG",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "ancona-it-split-hr"
+  ]
+}

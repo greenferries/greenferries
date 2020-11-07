@@ -1,0 +1,14 @@
+{
+  "slug": "mv-etretat-9420423",
+  "imo": 9420423,
+  "name": "MV Étretat",
+  "company": "brittany-ferries-fr",
+  "capacityPax": 375,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MV_Etretat",
+  "thumbFileName": "300px-MV_%C3%89tretat_%28Le_Havre%2C_2015%29.jpg",
+  "outOfScope": null,
+  "unknownRoutes": null,
+  "routes": [
+    "le-havre-fr-portsmouth-gb"
+  ]
+}

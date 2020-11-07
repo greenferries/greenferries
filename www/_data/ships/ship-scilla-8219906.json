@@ -1,0 +1,14 @@
+{
+  "slug": "scilla-8219906",
+  "imo": 8219906,
+  "name": "Scilla",
+  "company": "ferrovie-dello-stato-italiane-it",
+  "capacityPax": 1200,
+  "wikipediaUrl": "https://it.wikipedia.org/wiki/Scilla_(traghetto)",
+  "thumbFileName": "300px-Scilla_a_Civitavecchia.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "villa-san-giovanni-it-messina-it"
+  ]
+}

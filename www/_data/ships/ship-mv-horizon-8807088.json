@@ -1,0 +1,14 @@
+{
+  "slug": "mv-horizon-8807088",
+  "imo": 8807088,
+  "name": "MV Horizon",
+  "company": "royal-caribbean-international-us",
+  "capacityPax": 1875,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MV_Horizon",
+  "thumbFileName": "300px-MV_Horizon.JPG",
+  "outOfScope": true,
+  "unknownRoutes": false,
+  "routes": [
+
+  ]
+}

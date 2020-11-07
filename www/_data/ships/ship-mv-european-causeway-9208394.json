@@ -1,0 +1,14 @@
+{
+  "slug": "mv-european-causeway-9208394",
+  "imo": 9208394,
+  "name": "MV European Causeway",
+  "company": "p-o-ferries-gb",
+  "capacityPax": null,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MV_European_Causeway",
+  "thumbFileName": "300px-The_%22European_Causeway%22_at_Larne_-_geograph.org.uk_-_1196641.jpg",
+  "outOfScope": null,
+  "unknownRoutes": null,
+  "routes": [
+    "cairnryan-gb-larne-gb"
+  ]
+}

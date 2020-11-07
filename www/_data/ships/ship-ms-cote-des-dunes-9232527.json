@@ -1,0 +1,14 @@
+{
+  "slug": "ms-cote-des-dunes-9232527",
+  "imo": 9232527,
+  "name": "MS Côte des Dunes",
+  "company": "dfds-seaways-dk",
+  "capacityPax": null,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MS_C%C3%B4te_des_Dunes",
+  "thumbFileName": "300px-SeaFrance_Rodin.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "dover-gb-calais-fr"
+  ]
+}

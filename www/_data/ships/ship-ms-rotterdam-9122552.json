@@ -1,0 +1,14 @@
+{
+  "slug": "ms-rotterdam-9122552",
+  "imo": 9122552,
+  "name": "MS Rotterdam",
+  "company": "holland-america-line-us",
+  "capacityPax": 1320,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MS_Rotterdam",
+  "thumbFileName": "300px-Rostock_asv2018-05_img67_Warnemuende_port.jpg",
+  "outOfScope": true,
+  "unknownRoutes": false,
+  "routes": [
+
+  ]
+}

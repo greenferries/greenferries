@@ -1,0 +1,14 @@
+{
+  "slug": "ms-stena-saga-7911545",
+  "imo": 7911545,
+  "name": "MS Stena Saga",
+  "company": "stena-line-se",
+  "capacityPax": 2000,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MS_Stena_Saga",
+  "thumbFileName": "300px-MS_Stena_Saga_2014-09-25_001.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "oslo-no-frederikshavn-dk"
+  ]
+}

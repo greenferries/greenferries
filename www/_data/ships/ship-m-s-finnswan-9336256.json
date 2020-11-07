@@ -1,0 +1,14 @@
+{
+  "slug": "m-s-finnswan-9336256",
+  "imo": 9336256,
+  "name": "M/S Finnswan",
+  "company": "finnlines-fi",
+  "capacityPax": null,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/M/S_Nordlink",
+  "thumbFileName": "300px-M_cursiva.gif",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "naantali-fi-kapellskar-se"
+  ]
+}

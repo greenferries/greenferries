@@ -1,0 +1,14 @@
+{
+  "slug": "corsica-marina-seconda-7349039",
+  "imo": 7349039,
+  "name": "Corsica Marina Seconda",
+  "company": "corsica-ferries-sardinia-ferries-fr",
+  "capacityPax": 1500,
+  "wikipediaUrl": "https://fr.wikipedia.org/wiki/Corsica_Marina_Seconda",
+  "thumbFileName": "300px-Corsica_Marina_Seconda.jpg",
+  "outOfScope": null,
+  "unknownRoutes": null,
+  "routes": [
+    "livorno-it-bastia-fr"
+  ]
+}

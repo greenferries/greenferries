@@ -1,0 +1,14 @@
+{
+  "slug": "kalliste-9050618",
+  "imo": 9050618,
+  "name": "Kalliste",
+  "company": "la-meridionale-fr",
+  "capacityPax": 550,
+  "wikipediaUrl": "https://fr.wikipedia.org/wiki/Kalliste",
+  "thumbFileName": "300px-Kalliste_La_M%C3%A9ridionale_pict3.JPG",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "marseille-fr-propriano-fr"
+  ]
+}

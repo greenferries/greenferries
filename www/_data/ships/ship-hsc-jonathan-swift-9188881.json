@@ -1,0 +1,16 @@
+{
+  "slug": "hsc-jonathan-swift-9188881",
+  "imo": 9188881,
+  "name": "HSC Jonathan Swift",
+  "company": "balearia-es",
+  "capacityPax": 800,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/HSC_Cecilia_Payne",
+  "thumbFileName": "300px-Jswift2-1-.jpg",
+  "outOfScope": null,
+  "unknownRoutes": null,
+  "routes": [
+    "formentera-es-palma-es",
+    "denia-es-palma-es",
+    "denia-es-formentera-es"
+  ]
+}

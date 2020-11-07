@@ -1,0 +1,14 @@
+{
+  "slug": "barfleur-9007130",
+  "imo": 9007130,
+  "name": "Barfleur",
+  "company": "brittany-ferries-fr",
+  "capacityPax": 1212,
+  "wikipediaUrl": "https://fr.wikipedia.org/wiki/MV_Barfleur",
+  "thumbFileName": "300px-Brittany_Ferries_Barfleur_in_Poole_Harbour_-_geograph.org.uk_-_684737.jpg",
+  "outOfScope": null,
+  "unknownRoutes": null,
+  "routes": [
+    "cherbourg-fr-poole-gb"
+  ]
+}

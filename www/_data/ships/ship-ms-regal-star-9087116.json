@@ -1,0 +1,14 @@
+{
+  "slug": "ms-regal-star-9087116",
+  "imo": 9087116,
+  "name": "MS Regal Star",
+  "company": "tallink-ee",
+  "capacityPax": null,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MS_Regal_Star",
+  "thumbFileName": "",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "paldiski-ee-kapellskar-se"
+  ]
+}

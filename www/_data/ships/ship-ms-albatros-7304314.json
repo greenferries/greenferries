@@ -1,0 +1,14 @@
+{
+  "slug": "ms-albatros-7304314",
+  "imo": 7304314,
+  "name": "MS Albatros",
+  "company": "phoenix-reisen-de",
+  "capacityPax": 536,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MS_Albatros",
+  "thumbFileName": "300px-MS_Albatros.jpg",
+  "outOfScope": true,
+  "unknownRoutes": false,
+  "routes": [
+
+  ]
+}

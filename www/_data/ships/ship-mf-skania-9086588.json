@@ -1,0 +1,14 @@
+{
+  "slug": "mf-skania-9086588",
+  "imo": 9086588,
+  "name": "MF Skania",
+  "company": "unity-line-pl",
+  "capacityPax": null,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MS_Skania",
+  "thumbFileName": "300px-MF_Skania_2.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "ystad-se-swinoujscie-pl"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "mega-smeralda-8306486",
+  "imo": 8306486,
+  "name": "Mega Smeralda",
+  "company": "corsica-ferries-sardinia-ferries-fr",
+  "capacityPax": 2000,
+  "wikipediaUrl": "https://fr.wikipedia.org/wiki/Mega_Smeralda",
+  "thumbFileName": "300px-Mega_smeralda_bastia.JPG",
+  "outOfScope": null,
+  "unknownRoutes": null,
+  "routes": [
+    "toulon-fr-ajaccio-fr"
+  ]
+}

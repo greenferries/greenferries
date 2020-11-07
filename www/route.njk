@@ -2,11 +2,12 @@
 pagination:
     data: routes
     size: 1
-    alias: route
-permalink: "routes/{{ route.slug }}/"
+    alias: rawRoute
+    resolve: values
+permalink: "routes/{{ rawRoute.slug }}/"
 ---
-
 {% extends "_includes/layout.njk" %}
+{%- set route = hydratedBySlug.routes[rawRoute.slug] %}
 
 {% block title %}
   GreenFerries - {{ route.cityA.name }} ↔ {{ route.cityB.name }}

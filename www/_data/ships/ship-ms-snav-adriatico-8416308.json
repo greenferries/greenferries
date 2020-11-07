@@ -1,0 +1,14 @@
+{
+  "slug": "ms-snav-adriatico-8416308",
+  "imo": 8416308,
+  "name": "MS SNAV Adriatico",
+  "company": "trasmediterranea-es",
+  "capacityPax": null,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MS_SNAV_Adriatico",
+  "thumbFileName": "300px-SNAV_Adriatico.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "palma-es-valencia-es"
+  ]
+}

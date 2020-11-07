@@ -1,0 +1,14 @@
+{
+  "slug": "m-s-sea-wind-7128332",
+  "imo": 7128332,
+  "name": "M/S Sea Wind",
+  "company": "tallink-ee",
+  "capacityPax": null,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MS_Sea_Wind",
+  "thumbFileName": "300px-MS_Sea_Wind_Tallink.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "tallinn-ee-vuosaari-fi"
+  ]
+}

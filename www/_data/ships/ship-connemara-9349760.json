@@ -1,0 +1,15 @@
+{
+  "slug": "connemara-9349760",
+  "imo": 9349760,
+  "name": "Connemara",
+  "company": "brittany-ferries-fr",
+  "capacityPax": null,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MV_Connemara",
+  "thumbFileName": "300px-Norman_Asturias_being_turned_by_the_tugs_at_Poole_Quay_%2811133167735%29.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "roscoff-fr-ringaskiddy-ie",
+    "santander-es-ringaskiddy-ie"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "mv-artania-8201480",
+  "imo": 8201480,
+  "name": "MV Artania",
+  "company": "phoenix-reisen-de",
+  "capacityPax": 1260,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MV_Artania",
+  "thumbFileName": "300px-Artania_in_Port_of_Tallinn_18_May_2012_%28cropped%29.JPG",
+  "outOfScope": true,
+  "unknownRoutes": false,
+  "routes": [
+
+  ]
+}

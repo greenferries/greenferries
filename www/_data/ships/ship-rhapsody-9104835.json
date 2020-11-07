@@ -1,0 +1,14 @@
+{
+  "slug": "rhapsody-9104835",
+  "imo": 9104835,
+  "name": "Rhapsody",
+  "company": "grandi-navi-veloci-it",
+  "capacityPax": 2650,
+  "wikipediaUrl": "https://fr.wikipedia.org/wiki/Rhapsody_(cruise-ferry)",
+  "thumbFileName": "300px-Rhapsody_%28ship%2C_1996%29%2C_S%C3%A8te_cf01.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "genes-it-porto-torres-it"
+  ]
+}

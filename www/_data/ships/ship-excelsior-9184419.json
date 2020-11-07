@@ -1,0 +1,14 @@
+{
+  "slug": "excelsior-9184419",
+  "imo": 9184419,
+  "name": "Excelsior",
+  "company": "grandi-navi-veloci-it",
+  "capacityPax": null,
+  "wikipediaUrl": "https://fr.wikipedia.org/wiki/Excelsior_(ferry)",
+  "thumbFileName": "300px-Excelsior_%28ship%2C_1999%29%2C_S%C3%A8te_01.jpg",
+  "outOfScope": null,
+  "unknownRoutes": null,
+  "routes": [
+    "genes-it-tunis-tn"
+  ]
+}

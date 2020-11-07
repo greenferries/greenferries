@@ -1,0 +1,14 @@
+{
+  "slug": "asterion-ii-8922163",
+  "imo": 8922163,
+  "name": "Asterion II",
+  "company": "anek-lines-gr",
+  "capacityPax": null,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Asterion_II",
+  "thumbFileName": "300px-Asterion_II.png",
+  "outOfScope": null,
+  "unknownRoutes": null,
+  "routes": [
+    "igoumenitsa-gr-venise-it"
+  ]
+}

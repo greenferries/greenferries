@@ -1,0 +1,14 @@
+{
+  "slug": "stena-gothica-7826867",
+  "imo": 7826867,
+  "name": "Stena Gothica",
+  "company": "stena-line-se",
+  "capacityPax": 186,
+  "wikipediaUrl": "https://de.wikipedia.org/wiki/Stena_Gothica_(Schiff,_1982)",
+  "thumbFileName": "300px-MS_Ask_2015-06-19_001.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "liepaja-lv-travemunde-de"
+  ]
+}

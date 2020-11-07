@@ -1,0 +1,14 @@
+{
+  "slug": "ms-stena-danica-7907245",
+  "imo": 7907245,
+  "name": "MS Stena Danica",
+  "company": "stena-line-se",
+  "capacityPax": 2300,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MS_Stena_Danica",
+  "thumbFileName": "300px-Stena_Danica.jpg",
+  "outOfScope": null,
+  "unknownRoutes": null,
+  "routes": [
+    "frederikshavn-dk-goteborg-se"
+  ]
+}

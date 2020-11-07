@@ -1,0 +1,14 @@
+{
+  "slug": "ms-stena-scandinavica-9235517",
+  "imo": 9235517,
+  "name": "MS Stena Scandinavica",
+  "company": "stena-line-se",
+  "capacityPax": 900,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MS_Stena_Scandinavica_(2003)",
+  "thumbFileName": "300px-Stena_Scandinavica_2015-06-15_001.jpg",
+  "outOfScope": null,
+  "unknownRoutes": null,
+  "routes": [
+    "goteborg-se-kiel-de"
+  ]
+}

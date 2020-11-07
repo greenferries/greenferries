@@ -1,0 +1,16 @@
+{
+  "slug": "cruise-bonaria-9220330",
+  "imo": 9220330,
+  "name": "Cruise Bonaria",
+  "company": "grimaldi-lines-it",
+  "capacityPax": null,
+  "wikipediaUrl": "https://it.wikipedia.org/wiki/Cruise_Bonaria",
+  "thumbFileName": "300px-TIRRENIA.BONARIA.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "civitavecchia-it-cagliari-it",
+    "civitavecchia-it-olbia-it",
+    "genes-it-porto-torres-it"
+  ]
+}

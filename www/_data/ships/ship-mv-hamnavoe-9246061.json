@@ -1,0 +1,14 @@
+{
+  "slug": "mv-hamnavoe-9246061",
+  "imo": 9246061,
+  "name": "MV Hamnavoe",
+  "company": "northlink-ferries-gb",
+  "capacityPax": null,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MV_Hamnavoe",
+  "thumbFileName": "300px-Ham29.JPG",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "scrabster-gb-stromness-gb"
+  ]
+}

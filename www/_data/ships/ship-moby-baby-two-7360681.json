@@ -1,0 +1,14 @@
+{
+  "slug": "moby-baby-two-7360681",
+  "imo": 7360681,
+  "name": "Moby Baby Two",
+  "company": "moby-lines-it",
+  "capacityPax": null,
+  "wikipediaUrl": "https://it.wikipedia.org/wiki/Moby_Baby_Two",
+  "thumbFileName": "300px-Traghetto_Moby_Lally.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "piombino-it-portoferraio-it"
+  ]
+}

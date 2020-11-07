@@ -1,0 +1,15 @@
+{
+  "slug": "m-s-visby-9223784",
+  "imo": 9223784,
+  "name": "M/S Visby",
+  "company": "destination-gotland-au",
+  "capacityPax": null,
+  "wikipediaUrl": "https://sv.wikipedia.org/wiki/M/S_Visby_(2000)",
+  "thumbFileName": "",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "oskarshamn-se-visby-se",
+    "nynashamn-se-visby-se"
+  ]
+}

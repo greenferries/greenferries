@@ -1,0 +1,14 @@
+{
+  "slug": "euroferry-egnazia-9010151",
+  "imo": 9010151,
+  "name": "Euroferry Egnazia",
+  "company": "grimaldi-lines-it",
+  "capacityPax": 114,
+  "wikipediaUrl": "https://de.wikipedia.org/wiki/Euroferry_Egnazia",
+  "thumbFileName": "300px-Finnhansa_Travem%C3%BCnde_%282008%29.JPG",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "brindisi-it-patras-gr"
+  ]
+}

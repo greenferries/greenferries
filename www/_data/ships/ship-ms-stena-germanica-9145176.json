@@ -1,0 +1,14 @@
+{
+  "slug": "ms-stena-germanica-9145176",
+  "imo": 9145176,
+  "name": "MS Stena Germanica",
+  "company": "stena-line-se",
+  "capacityPax": 440,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MS_Stena_Germanica_(2001)",
+  "thumbFileName": "300px-GS001962.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "goteborg-se-kiel-de"
+  ]
+}

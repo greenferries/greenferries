@@ -1,0 +1,16 @@
+{
+  "slug": "cruise-europa-9351490",
+  "imo": 9351490,
+  "name": "Cruise Europa",
+  "company": "minoan-lines-gr",
+  "capacityPax": 2850,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MS_Cruise_Europa",
+  "thumbFileName": "300px-Cruise_Europa.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "patras-gr-igoumenitsa-gr",
+    "ancona-it-igoumenitsa-gr",
+    "ancona-it-patras-gr"
+  ]
+}

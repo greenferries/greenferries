@@ -1,0 +1,14 @@
+{
+  "slug": "ms-stena-nordica-9215505",
+  "imo": 9215505,
+  "name": "MS Stena Nordica",
+  "company": "stena-line-se",
+  "capacityPax": 450,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MS_Stena_Nordica_(2000)",
+  "thumbFileName": "300px-Stena_Nordica.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "gdynia-pl-karlskrona-se"
+  ]
+}

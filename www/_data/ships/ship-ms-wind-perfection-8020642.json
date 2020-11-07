@@ -1,0 +1,14 @@
+{
+  "slug": "ms-wind-perfection-8020642",
+  "imo": 8020642,
+  "name": "MS Wind Perfection",
+  "company": "moby-lines-it",
+  "capacityPax": 1500,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MS_Moby_Zaz%C3%A0",
+  "thumbFileName": "300px-Ferry_Christian_IV_in_Kristansand_Norway_2004_ubt.jpeg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "nice-fr-bastia-fr"
+  ]
+}

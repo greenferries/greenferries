@@ -1,0 +1,14 @@
+{
+  "slug": "cote-d-albatre-9320128",
+  "imo": 9320128,
+  "name": "Côte d'Albâtre",
+  "company": "dfds-seaways-dk",
+  "capacityPax": null,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MS_C%C3%B4te_D%27Alb%C3%A2tre",
+  "thumbFileName": "300px-C%C3%B4te_d%27Alb%C3%A2tre_ferry_le_havre.JPG",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "newhaven-gb-dieppe-fr"
+  ]
+}

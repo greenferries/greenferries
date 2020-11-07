@@ -1,0 +1,14 @@
+{
+  "slug": "ms-cruise-ausonia-9227429",
+  "imo": 9227429,
+  "name": "MS Cruise Ausonia",
+  "company": "grimaldi-lines-it",
+  "capacityPax": null,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MS_Cruise_Ausonia",
+  "thumbFileName": "300px-20100412_egine27.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "livorno-it-olbia-it"
+  ]
+}

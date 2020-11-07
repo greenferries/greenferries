@@ -1,0 +1,14 @@
+{
+  "slug": "mega-express-five-9035101",
+  "imo": 9035101,
+  "name": "Mega Express Five",
+  "company": "corsica-ferries-sardinia-ferries-fr",
+  "capacityPax": 1965,
+  "wikipediaUrl": "https://fr.wikipedia.org/wiki/Mega_Express_Five",
+  "thumbFileName": "300px-Maga_Express_Five_IMO_9035101_01_%40chesi.JPG",
+  "outOfScope": null,
+  "unknownRoutes": null,
+  "routes": [
+    "toulon-fr-ajaccio-fr"
+  ]
+}

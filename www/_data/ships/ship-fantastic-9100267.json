@@ -1,0 +1,14 @@
+{
+  "slug": "fantastic-9100267",
+  "imo": 9100267,
+  "name": "Fantastic",
+  "company": "grandi-navi-veloci-it",
+  "capacityPax": 1700,
+  "wikipediaUrl": "https://fr.wikipedia.org/wiki/Fantastic_(ferry)",
+  "thumbFileName": "300px-Barcelona_2016_-_Fantastic.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "civitavecchia-it-palerme-it"
+  ]
+}

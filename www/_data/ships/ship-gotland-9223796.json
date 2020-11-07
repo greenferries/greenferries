@@ -1,0 +1,15 @@
+{
+  "slug": "gotland-9223796",
+  "imo": 9223796,
+  "name": "Gotland",
+  "company": "destination-gotland-au",
+  "capacityPax": null,
+  "wikipediaUrl": "https://sv.wikipedia.org/wiki/M/S_Gotland_(2003)",
+  "thumbFileName": "",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "nynashamn-se-visby-se",
+    "oskarshamn-se-visby-se"
+  ]
+}

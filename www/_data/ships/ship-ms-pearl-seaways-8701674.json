@@ -1,0 +1,14 @@
+{
+  "slug": "ms-pearl-seaways-8701674",
+  "imo": 8701674,
+  "name": "MS Pearl Seaways",
+  "company": "dfds-seaways-dk",
+  "capacityPax": null,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MS_Pearl_Seaways",
+  "thumbFileName": "300px-Pearl_Seaways_Oslo.jpg",
+  "outOfScope": null,
+  "unknownRoutes": null,
+  "routes": [
+    "copenhague-dk-oslo-no"
+  ]
+}

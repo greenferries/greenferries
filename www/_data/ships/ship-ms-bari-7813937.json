@@ -1,0 +1,17 @@
+{
+  "slug": "ms-bari-7813937",
+  "imo": 7813937,
+  "name": "MS Bari",
+  "company": "stena-line-se",
+  "capacityPax": null,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MS_Bari",
+  "thumbFileName": "300px-Traghetto_Bari.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "bari-it-durres-al",
+    "corfu-gr-zakynthos-gr",
+    "corfu-gr-kefalonia-gr",
+    "corfu-gr-igoumenitsa-gr"
+  ]
+}

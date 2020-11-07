@@ -2,13 +2,15 @@
 pagination:
     data: ships
     size: 1
-    alias: ship
-permalink: "ships/{{ ship.slug }}/"
+    alias: rawShip
+    resolve: values
+permalink: "ships/{{ rawShip.slug }}/"
 ---
 {% extends "_includes/layout.njk" %}
+{%- set ship = hydratedBySlug.ships[rawShip.slug] %}
 
 {% block title %}
-  GreenFerries - {{ ship.name }} ({{ ship.company.name }})
+  GreenFerries - {{ ship.name }} ({{ ship.company }})
 {% endblock %}
 
 {% block content %}
@@ -16,23 +18,24 @@ permalink: "ships/{{ ship.slug }}/"
     <h2 class="text-xl font-bold mb-4">
       {{ ship.name }}
     </h2>
-
     <div class="flex flex-col sm:flex-row mb-3">
-      <div class="mr-3">
-        <img
-          src="{{ ship.thumbPath }}"
-          alt="Ferry {{ ship.name }}"
-          style="max-height: 300px"
-          class="w-full sm:w-auto"
-        />
-      </div>
+      {% if ship.thumbFileName %}
+        <div class="mr-3">
+          <img
+            src="/img/ship_thumbs/{{ ship.thumbFileName }}"
+            alt="Ferry {{ ship.name }}"
+            style="max-height: 300px"
+            class="w-full sm:w-auto"
+          />
+        </div>
+      {% endif %}
       <div class="mt-3 sm:mt-0">
         <p class="flex items-center">
           <span>Operator:</span>
           <a href="/companies/{{ ship.company.slug }}" class="flex flex-wrap items-center ml-1">
             <span class="link">{{ ship.company.name }}</span>
-            {% if ship.company.logoPath %}
-              <img src="{{ ship.company.logoPath }}" class="ml-3 h-12" />
+            {% if ship.company.logoFileName %}
+              <img src="/img/company_logos/{{ ship.company.logoFileName }}" class="ml-3 h-12" />
             {% endif %}
           </a>
         </p>
@@ -123,4 +126,9 @@ permalink: "ships/{{ ship.slug }}/"
       </div>
     </div>
   </div>
+{#
+<pre style="display: none;" id="json">{{ ship | jsonify }}</pre>
+<script>console.log("json is", JSON.parse(document.getElementById("json").innerHTML))</script>
+#}
+
 {% endblock %}

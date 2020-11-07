@@ -1,0 +1,14 @@
+{
+  "slug": "rosalind-franklin-9137997",
+  "imo": 9137997,
+  "name": "Rosalind Franklin",
+  "company": "balearia-es",
+  "capacityPax": 440,
+  "wikipediaUrl": "https://de.wikipedia.org/wiki/Rosalind_Franklin_(Schiff)",
+  "thumbFileName": "300px-ROSALIND_FRANKLIN_5695.jpg",
+  "outOfScope": false,
+  "unknownRoutes": true,
+  "routes": [
+
+  ]
+}

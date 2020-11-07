@@ -1,0 +1,14 @@
+{
+  "slug": "rms-queen-mary-2-9241061",
+  "imo": 9241061,
+  "name": "RMS Queen Mary 2",
+  "company": "cunard-line-gb",
+  "capacityPax": 2620,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/RMS_Queen_Mary_2",
+  "thumbFileName": "300px-RMS_Queen_Mary_2_%286973549904%29.jpg",
+  "outOfScope": true,
+  "unknownRoutes": false,
+  "routes": [
+
+  ]
+}

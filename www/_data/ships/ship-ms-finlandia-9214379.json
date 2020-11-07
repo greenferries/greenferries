@@ -1,0 +1,14 @@
+{
+  "slug": "ms-finlandia-9214379",
+  "imo": 9214379,
+  "name": "MS Finlandia",
+  "company": "eckero-line-fi",
+  "capacityPax": null,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MS_Finlandia_(2000)",
+  "thumbFileName": "300px-Finlandia_Starboard_Side_Tallinn_24_April_2014.JPG",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "helsinki-fi-tallinn-ee"
+  ]
+}

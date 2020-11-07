@@ -1,0 +1,14 @@
+{
+  "slug": "m-s-aurora-9007128",
+  "imo": 9007128,
+  "name": "M/S Aurora",
+  "company": "scandlines-dk",
+  "capacityPax": null,
+  "wikipediaUrl": "https://fi.wikipedia.org/wiki/M/S_Aurora_af_Helsingborg",
+  "thumbFileName": "",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "elsinore-dk-helsingborg-se"
+  ]
+}

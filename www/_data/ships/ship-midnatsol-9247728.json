@@ -1,0 +1,14 @@
+{
+  "slug": "midnatsol-9247728",
+  "imo": 9247728,
+  "name": "Midnatsol",
+  "company": "hurtigruten-group-no",
+  "capacityPax": null,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MS_Midnatsol_(2002)",
+  "thumbFileName": "300px-MS_Midnatsol_forfra.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "bergen-no-kirkenes-no"
+  ]
+}

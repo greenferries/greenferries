@@ -60,4 +60,6 @@ module.exports = function (eleventyConfig) {
   })
 
   eleventyConfig.addFilter('extractShips', routes => routes.map(i => i.ship))
+
+  eleventyConfig.addFilter('getValues', d => Object.values(d))
 }

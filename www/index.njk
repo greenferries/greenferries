@@ -2,6 +2,7 @@
 
 {% block title %}GreenFerries{% endblock %}
 
+
 {% block content %}
   <div class="container mx-auto p-3 sm:p-0 flex-grow flex flex-wrap sm:flex-no-wrap">
     <div class="my-3 flex-grow" style="max-width: 30rem;">
@@ -17,7 +18,7 @@
             Route
           </label>
           <select name="route" class="mb-2 select" id="js-route-select">
-            {% for route in routes %}
+            {% for route in hydrated.routes %}
               <option
                 value="{{ route.slug }}"
                 data-name="{{ route | fullRouteName }}"

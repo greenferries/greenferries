@@ -1,0 +1,14 @@
+{
+  "slug": "moby-dada-7911533",
+  "imo": 7911533,
+  "name": "Moby Dada",
+  "company": "moby-lines-it",
+  "capacityPax": null,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MS_Moby_Dada",
+  "thumbFileName": "300px-Moby_Dada_Nice_Juin_2017.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "nice-fr-bastia-fr"
+  ]
+}

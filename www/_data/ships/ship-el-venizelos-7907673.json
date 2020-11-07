@@ -1,0 +1,14 @@
+{
+  "slug": "el-venizelos-7907673",
+  "imo": 7907673,
+  "name": "El. Venizelos",
+  "company": "anek-lines-gr",
+  "capacityPax": 2100,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/El._Venizelos_(ship)",
+  "thumbFileName": "300px-Suda_F6D-16.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "chania-gr-le-piree-gr"
+  ]
+}

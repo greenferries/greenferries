@@ -1,0 +1,14 @@
+{
+  "slug": "seven-seas-mariner-9210139",
+  "imo": 9210139,
+  "name": "Seven Seas Mariner",
+  "company": "regent-seven-seas-cruises-us",
+  "capacityPax": 700,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Seven_Seas_Mariner",
+  "thumbFileName": "300px-Osaka_Seven-Seas-Mariner04s3200.jpg",
+  "outOfScope": true,
+  "unknownRoutes": false,
+  "routes": [
+
+  ]
+}

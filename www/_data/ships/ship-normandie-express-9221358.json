@@ -1,0 +1,15 @@
+{
+  "slug": "normandie-express-9221358",
+  "imo": 9221358,
+  "name": "Normandie Express",
+  "company": "brittany-ferries-fr",
+  "capacityPax": 856,
+  "wikipediaUrl": "https://fr.wikipedia.org/wiki/Normandie_Express",
+  "thumbFileName": "300px-HSC_Normandie_Express_2009.jpg",
+  "outOfScope": null,
+  "unknownRoutes": null,
+  "routes": [
+    "caen-ouistreham-fr-portsmouth-gb",
+    "cherbourg-fr-portsmouth-gb"
+  ]
+}

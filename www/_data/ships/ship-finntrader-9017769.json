@@ -1,0 +1,16 @@
+{
+  "slug": "finntrader-9017769",
+  "imo": 9017769,
+  "name": "Finntrader",
+  "company": "finnlines-fi",
+  "capacityPax": null,
+  "wikipediaUrl": "https://de.wikipedia.org/wiki/Finntrader",
+  "thumbFileName": "300px-MS_Finntrader_Travem%C3%BCnde.JPG",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "travemunde-de-malmo-se",
+    "lubeck-de-travemunde-de",
+    "lubeck-de-malmo-se"
+  ]
+}

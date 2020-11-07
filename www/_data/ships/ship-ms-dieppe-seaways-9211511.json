@@ -1,0 +1,14 @@
+{
+  "slug": "ms-dieppe-seaways-9211511",
+  "imo": 9211511,
+  "name": "MS Dieppe Seaways",
+  "company": "dfds-seaways-dk",
+  "capacityPax": null,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MS_Stena_Superfast_X",
+  "thumbFileName": "300px-SeaFrance_Moli%C3%A8re_light_cropped.jpg",
+  "outOfScope": null,
+  "unknownRoutes": null,
+  "routes": [
+    "cherbourg-fr-rosslare-ie"
+  ]
+}

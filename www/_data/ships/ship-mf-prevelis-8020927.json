@@ -1,0 +1,14 @@
+{
+  "slug": "mf-prevelis-8020927",
+  "imo": 8020927,
+  "name": "MF Prevelis",
+  "company": "anek-lines-gr",
+  "capacityPax": 1600,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MF_Prevelis",
+  "thumbFileName": "300px-Prevelis_Piraeus.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "le-piree-gr-santorini-emporeio-gr"
+  ]
+}

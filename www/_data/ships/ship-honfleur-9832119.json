@@ -1,0 +1,14 @@
+{
+  "slug": "honfleur-9832119",
+  "imo": 9832119,
+  "name": "Honfleur",
+  "company": "brittany-ferries-fr",
+  "capacityPax": 1680,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MV_Honfleur",
+  "thumbFileName": null,
+  "outOfScope": null,
+  "unknownRoutes": null,
+  "routes": [
+    "caen-ouistreham-fr-portsmouth-gb"
+  ]
+}

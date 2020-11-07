@@ -1,0 +1,14 @@
+{
+  "slug": "ms-star-9364722",
+  "imo": 9364722,
+  "name": "MS Star",
+  "company": "tallink-ee",
+  "capacityPax": 1900,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MS_Star",
+  "thumbFileName": "300px-190407_Star_Helsinki.jpg",
+  "outOfScope": null,
+  "unknownRoutes": null,
+  "routes": [
+    "helsinki-fi-tallinn-ee"
+  ]
+}

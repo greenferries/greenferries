@@ -1,0 +1,14 @@
+{
+  "slug": "moby-corse-7615414",
+  "imo": 7615414,
+  "name": "Moby Corse",
+  "company": "moby-lines-it",
+  "capacityPax": 1370,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MV_Moby_Corse",
+  "thumbFileName": "300px-Moby_Corse_01.JPG",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "roscoff-fr-plymouth-gb"
+  ]
+}

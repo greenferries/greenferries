@@ -1,0 +1,14 @@
+{
+  "slug": "mv-adonia-9210220",
+  "imo": 9210220,
+  "name": "MV Adonia",
+  "company": "princess-cruises-us",
+  "capacityPax": 688,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Azamara_Pursuit",
+  "thumbFileName": "300px-Azamara_pursuit.jpg",
+  "outOfScope": true,
+  "unknownRoutes": false,
+  "routes": [
+
+  ]
+}

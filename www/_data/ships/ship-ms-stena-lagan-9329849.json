@@ -1,0 +1,14 @@
+{
+  "slug": "ms-stena-lagan-9329849",
+  "imo": 9329849,
+  "name": "MS Stena Lagan",
+  "company": "stena-line-se",
+  "capacityPax": null,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MS_Stena_Lagan",
+  "thumbFileName": "300px-STENALAGAN.jpg",
+  "outOfScope": null,
+  "unknownRoutes": null,
+  "routes": [
+    "belfast-gb-liverpool-birkenhead-gb"
+  ]
+}

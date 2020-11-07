@@ -1,20 +1,20 @@
 {% extends "_includes/layout.njk" %}
 
-{% block title %}GreenFerries - All {{ company | length }} companies {% endblock %}
+{% block title %}GreenFerries - All {{ companies | length }} companies {% endblock %}
 
 {% block content %}
   <div class="container mx-auto mb-4 p-2">
     <div class="mt-4 grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
-      {% for company in companies %}
+      {% for company in hydrated.companies %}
         <a href="/companies/{{ company.slug }}" class="flex items-center h-24 mb-3">
           <div
             class="w-24 h-full flex-shrink-0 bg-contain bg-no-repeat bg-center bg-gray-200"
-            style="background-image: url('{{ company.logoUrl }}')">
+            style="background-image: url('/img/company_logos/{{ company.logoFileName }}')">
           </div>
           <div class="p-3 border border-gray-300 h-full flex flex-col justify-center">
             <div>
               <span class="link">{{ company.name }}</span>
-              - {{ { word: "ship", count: company.shipsCount } | countPlural }}
+              - {{ { word: "ship", count: company.ships | length } | countPlural }}
             </div>
           </div>
         </a>

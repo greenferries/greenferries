@@ -1,0 +1,14 @@
+{
+  "slug": "ms-wisteria-7637149",
+  "imo": 7637149,
+  "name": "MS Wisteria",
+  "company": "trasmediterranea-es",
+  "capacityPax": 1500,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MS_Vronskiy",
+  "thumbFileName": "300px-Princess_Beatrix.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "tanger-med-ma-algeciras-es"
+  ]
+}

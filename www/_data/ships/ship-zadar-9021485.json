@@ -1,0 +1,14 @@
+{
+  "slug": "zadar-9021485",
+  "imo": 9021485,
+  "name": "Zadar",
+  "company": "jadrolinija-hr",
+  "capacityPax": null,
+  "wikipediaUrl": "https://it.wikipedia.org/wiki/Zadar_(traghetto)",
+  "thumbFileName": "300px-JadrolinijaZadarAncona_gobeirne.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "zadar-hr-ancona-it"
+  ]
+}

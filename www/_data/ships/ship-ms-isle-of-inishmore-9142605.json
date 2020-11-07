@@ -1,0 +1,14 @@
+{
+  "slug": "ms-isle-of-inishmore-9142605",
+  "imo": 9142605,
+  "name": "MS Isle of Inishmore",
+  "company": "irish-ferries-us",
+  "capacityPax": 2200,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MS_Isle_of_Inishmore",
+  "thumbFileName": "300px-MS_Isle_of_Inishmore.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "rosslare-ie-pembroke-gb"
+  ]
+}

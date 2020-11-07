@@ -1,0 +1,14 @@
+{
+  "slug": "ms-liverpool-seaways-9136034",
+  "imo": 9136034,
+  "name": "MS Liverpool Seaways",
+  "company": "dfds-seaways-dk",
+  "capacityPax": null,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MS_Liverpool_Seaways",
+  "thumbFileName": "300px-Liverpool-seaways.gif",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "paldiski-ee-kapellskar-se"
+  ]
+}

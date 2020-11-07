@@ -1,0 +1,14 @@
+{
+  "slug": "mf-tycho-brahe-9007116",
+  "imo": 9007116,
+  "name": "MF Tycho Brahe",
+  "company": "scandlines-dk",
+  "capacityPax": null,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MF_Tycho_Brahe",
+  "thumbFileName": "300px-Scandlines.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "elsinore-dk-helsingborg-se"
+  ]
+}

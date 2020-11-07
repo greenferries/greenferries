@@ -1,0 +1,14 @@
+{
+  "slug": "ms-stena-vision-7907659",
+  "imo": 7907659,
+  "name": "MS Stena Vision",
+  "company": "stena-line-se",
+  "capacityPax": 1700,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MS_Stena_Vision",
+  "thumbFileName": "300px-Stena_vision.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "gdynia-pl-karlskrona-se"
+  ]
+}

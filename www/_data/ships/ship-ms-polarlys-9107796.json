@@ -1,0 +1,14 @@
+{
+  "slug": "ms-polarlys-9107796",
+  "imo": 9107796,
+  "name": "MS Polarlys",
+  "company": "hurtigruten-group-no",
+  "capacityPax": null,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MS_Polarlys_(1995)",
+  "thumbFileName": "300px-MS_Polarlys_-_Hurtigruten_-_Geirangerfiord.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "bergen-no-kirkenes-no"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "hsc-dublin-swift-9243227",
+  "imo": 9243227,
+  "name": "HSC Dublin Swift",
+  "company": "irish-ferries-us",
+  "capacityPax": 900,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/HSC_Dublin_Swift",
+  "thumbFileName": "300px-MV_Dublin_Swift.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "dublin-ie-holyhead-gb"
+  ]
+}

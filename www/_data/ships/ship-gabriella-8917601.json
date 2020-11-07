@@ -1,0 +1,14 @@
+{
+  "slug": "gabriella-8917601",
+  "imo": 8917601,
+  "name": "Gabriella",
+  "company": "viking-line-fi",
+  "capacityPax": 2400,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MS_Gabriella",
+  "thumbFileName": null,
+  "outOfScope": null,
+  "unknownRoutes": null,
+  "routes": [
+    "helsinki-fi-stockholm-se"
+  ]
+}

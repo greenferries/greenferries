@@ -1,0 +1,14 @@
+{
+  "slug": "ms-ben-my-chree-9170705",
+  "imo": 9170705,
+  "name": "MS Ben-my-Chree",
+  "company": "isle-of-man-steam-packet-company-gb",
+  "capacityPax": null,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MS_Ben-my-Chree",
+  "thumbFileName": "300px-Ben-my-chree_april_2010.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "douglas-im-heysham-gb"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "mv-isle-of-lewis-9085974",
+  "imo": 9085974,
+  "name": "MV Isle of Lewis",
+  "company": "caledonian-maritime-assets-gb",
+  "capacityPax": null,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MV_Isle_of_Lewis",
+  "thumbFileName": "300px-MV_Isle_of_Lewis_2019.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "oban-gb-castlebay-gb"
+  ]
+}

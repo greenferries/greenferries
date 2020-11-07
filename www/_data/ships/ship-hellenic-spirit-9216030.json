@@ -1,0 +1,15 @@
+{
+  "slug": "hellenic-spirit-9216030",
+  "imo": 9216030,
+  "name": "Hellenic Spirit",
+  "company": "anek-lines-gr",
+  "capacityPax": null,
+  "wikipediaUrl": "https://fr.wikipedia.org/wiki/Hellenic_Spirit",
+  "thumbFileName": "300px-Hellenic_Spirit_%28ANEK-Lines%29_2011.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "ancona-it-patras-gr",
+    "ancona-it-igoumenitsa-gr"
+  ]
+}

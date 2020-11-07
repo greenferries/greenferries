@@ -1,0 +1,15 @@
+{
+  "slug": "mv-sorolla-9217125",
+  "imo": 9217125,
+  "name": "MV Sorolla",
+  "company": "trasmediterranea-es",
+  "capacityPax": 1250,
+  "wikipediaUrl": "https://es.wikipedia.org/wiki/MV_Sorolla",
+  "thumbFileName": "300px-Ferri_MV_Sorolla.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "almeria-es-melilla-es",
+    "malaga-es-melilla-es"
+  ]
+}

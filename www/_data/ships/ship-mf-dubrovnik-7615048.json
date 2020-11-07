@@ -1,0 +1,14 @@
+{
+  "slug": "mf-dubrovnik-7615048",
+  "imo": 7615048,
+  "name": "MF Dubrovnik",
+  "company": "jadrolinija-hr",
+  "capacityPax": 1300,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MF_Dubrovnik",
+  "thumbFileName": "300px-Dubrovnik_%28ship%2C_1979%29_IMO_7615048%2C_in_Split%2C_2012-01-03_%281%29.jpg",
+  "outOfScope": false,
+  "unknownRoutes": false,
+  "routes": [
+    "ancona-it-split-hr"
+  ]
+}

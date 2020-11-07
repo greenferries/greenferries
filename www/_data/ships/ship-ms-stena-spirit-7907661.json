@@ -1,0 +1,14 @@
+{
+  "slug": "ms-stena-spirit-7907661",
+  "imo": 7907661,
+  "name": "MS Stena Spirit",
+  "company": "stena-line-se",
+  "capacityPax": 1700,
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/MS_Stena_Spirit",
+  "thumbFileName": "300px-Stena_Spirit_2011-08-05_001.jpg",
+  "outOfScope": null,
+  "unknownRoutes": null,
+  "routes": [
+    "gdynia-pl-karlskrona-se"
+  ]
+}
