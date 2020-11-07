@@ -1,5 +1,4 @@
 const { getEcoscore } = require('../lib/ecoscore')
-const { getThetisByImo } = require('../lib/thetis_by_imo')
 
 const bySlug = arr =>
   Object.fromEntries(arr.map(obj => [obj.slug, obj]))
@@ -17,7 +16,6 @@ module.exports = {
     const companies = Object.values(data.companies).map(x => ({ ...x }))
     const routes = Object.values(data.routes).map(x => ({ ...x }))
     const ships = Object.values(data.ships).map(x => ({ ...x }))
-    const thetisByImo = await getThetisByImo(ships.map(s => s.imo))
     const shipsByCompanySlug = groupBy(ships, 'company')
     const citiesBySlug = bySlug(cities)
     const routesBySlug = bySlug(routes)
@@ -36,7 +34,7 @@ module.exports = {
       route.shipsCount = route.shipRoutes.length
     }
     for (const ship of ships) {
-      ship.thetis = thetisByImo[ship.imo.toString()]
+      ship.thetis = data.thetis[`thetis-${ship.imo}`]
       ship.company = companiesBySlug[ship.company]
       ship.ecoscore = ship.thetis && ship.thetis['2019'] && getEcoscore(ship.thetis['2019'].annualAverageCo2EmissionsPerTransportWorkPax)
       ship.shipRoutes = ship.routes.map(routeSlug => {
