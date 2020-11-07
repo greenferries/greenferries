@@ -5,8 +5,12 @@ class City < ApplicationRecord
 
   scope :human_ordered, -> { order(:country, :name) }
 
+  def slug
+    to_s.parameterize
+  end
+
   def to_s
-    "#{country} - #{name}"
+    "#{country} - #{name} - #{geonames_id}"
   end
 
   def self.collection_for_select
