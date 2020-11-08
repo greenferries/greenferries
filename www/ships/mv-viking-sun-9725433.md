@@ -1,0 +1,15 @@
+---
+capacityPax: 1443
+company: viking-ocean-cruises-us
+imo: 9725433
+layout: ship
+name: MV Viking Sun
+outOfScope: null
+routes: []
+slug: mv-viking-sun-9725433
+tags:
+- ship
+thumbFileName: 300px-Viking_Sun_Starboard_Side_Port_of_Tallinn_2_August_2018.jpg
+unknownRoutes: null
+wikipediaUrl: https://en.wikipedia.org/wiki/MV_Viking_Sun
+---

@@ -1,0 +1,15 @@
+---
+capacityPax: 4350
+company: aida-cruises-de
+imo: 9636955
+layout: ship
+name: Aidaprima
+outOfScope: null
+routes: []
+slug: aidaprima-9636955
+tags:
+- ship
+thumbFileName: 300px-AIDAprima_2016-04a.jpg
+unknownRoutes: null
+wikipediaUrl: https://en.wikipedia.org/wiki/AIDAprima
+---

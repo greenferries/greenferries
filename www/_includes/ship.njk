@@ -1,0 +1,120 @@
+{% extends "_includes/layout.njk" %}
+
+{% block title %}
+  GreenFerries - {{ name }} ({{ company }})
+{% endblock %}
+
+{% block content %}
+  <div class="container mx-auto mb-4 py-2 px-3 sm:px-0">
+    <h2 class="text-xl font-bold mb-4">
+      {{ name }}
+    </h2>
+    <div class="flex flex-col sm:flex-row mb-3">
+      {% if thumbFileName %}
+        <div class="mr-3">
+          <img
+            src="/img/ship_thumbs/{{ thumbFileName }}"
+            alt="Ferry {{ name }}"
+            style="max-height: 300px"
+            class="w-full sm:w-auto"
+          />
+        </div>
+      {% endif %}
+      <div class="mt-3 sm:mt-0">
+        <p class="flex items-center">
+          <span>Operator:</span>
+          <a href="/companies/{{ company.slug }}" class="flex flex-wrap items-center ml-1">
+            <span class="link">{{ company.name }}</span>
+            {% if company.logoFileName %}
+              <img src="/img/company_logos/{{ company.logoFileName }}" class="ml-3 h-12" />
+            {% endif %}
+          </a>
+        </p>
+        <p>
+          Capacity:
+          {% if capacityPax %}
+            {{ capacityPax }} persons
+          {% else %}
+            N/A
+          {% endif %}
+        </p>
+        <p>
+          IMO number:
+          <span class="font-mono">{{ imo }}</span>
+        </p>
+        {% if wikipediaUrl %}
+          <p>
+            <a class="link" href="{{ wikipediaUrl }}">
+              Wikipedia ship page ↗
+            </a>
+          </p>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="flex items-center mb-3">
+      <img
+        src="/img/score_{{ ecoscore.score }}_150.png"
+        alt="Ecoscore {{ ecoscore.score }}"
+        class="h-10 mr-2"
+      />
+      <div>
+        {{ ecoscore.hint }}
+        (on average kg·CO₂/passenger/km)
+      </div>
+    </div>
+
+    <h4 class="font-ml font-semibold mb-2">
+      Often travels on {{ shipRoutes | length }} routes
+    </h4>
+    <ul class="ml-4 list-disc">
+      {% for shipRoute in shipRoutes %}
+        <li>
+          <a class="link" href="/routes/{{ shipRoute.route.slug }}">
+            {{ shipRoute.route | fullRouteName }}
+          </a>
+          - {{ shipRoute.route.distanceKm }} km
+          - {{ shipRoute.otherShipsCount }} other ship(s)
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="bg-orange-200 mb-3">
+    <div class="container flex items-center mx-auto py-2 px-3 sm:px-0">
+      <div class="text-lg mr-3">
+        ⚠️
+      </div>
+      <div>
+        Do you know of a route that this ship frequently travels but is not listed? Or have you noticed an error?
+        <br />
+        Please help by
+        <a href="mailto:contact@greenferries.org" class="link">letting us know</a>,
+        thank you 🙇🏽‍♀️
+      </div>
+    </div>
+  </div>
+
+  <div class="container mx-auto mb-4 px-3 sm:px-0">
+    <h4 class="font-ml font-semibold mb-2">Ship Statistics</h4>
+
+    {%- set year = '2019' %}
+    {% include "_includes/ship_thetis_stats.njk" %}
+
+    <hr class="my-3" />
+
+    {%- set year = '2018' %}
+    {% include "_includes/ship_thetis_stats.njk" %}
+  </div>
+
+  <div class="bg-blue-200 mb-3">
+    <div class="container flex items-center mx-auto py-2 px-3 sm:px-0">
+      <div class="text-lg mr-3">ℹ️</div>
+      <div>
+        Figures with the icon ⚙️ were computed based on the published data.
+        You can find computation details on
+        <a class="link" href="https://doc.greenferries.org/computed_stats">this page ↗</a>
+      </div>
+    </div>
+  </div>
+{% endblock %}

@@ -18,13 +18,14 @@
             Route
           </label>
           <select name="route" class="mb-2 select" id="js-route-select">
-            {% for route in hydrated.routes %}
+            {% for route in allRoutes %}
               <option
                 value="{{ route.slug }}"
                 data-name="{{ route | fullRouteName }}"
                 data-ships-count="{{ route.shipsCount }}"
                 data-distance-km="{{ route.distanceKm }}"
-                data-coordinates-json="{{ route | routeCoordinates | jsonify | safe }}">
+                data-coordinates-json="{{ route | routeCoordinates | jsonify | safe }}"
+              >
                 {{ route | fullRouteName }}
                 -
                 {{ route.shipsCount }} ships

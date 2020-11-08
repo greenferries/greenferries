@@ -1,0 +1,16 @@
+---
+capacityPax: null
+company: dfds-seaways-dk
+imo: 9211511
+layout: ship
+name: MS Dieppe Seaways
+outOfScope: null
+routes:
+- cherbourg-fr-rosslare-ie
+slug: ms-dieppe-seaways-9211511
+tags:
+- ship
+thumbFileName: 300px-SeaFrance_Moli%C3%A8re_light_cropped.jpg
+unknownRoutes: null
+wikipediaUrl: https://en.wikipedia.org/wiki/MS_Stena_Superfast_X
+---

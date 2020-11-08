@@ -1,0 +1,8 @@
+{% set cityA = citiesBySlug[route.cityA] %}
+{% set cityB = citiesBySlug[route.cityB] %}
+
+{{ route.cityA }}
+
+{{ cityA.name }} [{{ cityA.country }}]
+↔
+{{ cityB.name }} [{{ cityB.country }}]

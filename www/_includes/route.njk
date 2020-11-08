@@ -1,0 +1,21 @@
+{% extends "_includes/layout.njk" %}
+
+{% block title %}
+  GreenFerries - {{ cityA.name }} ↔ {{ cityB.name }}
+{% endblock %}
+
+{% block content %}
+  <div class="container mx-auto mb-4 py-2 px-3 sm:px-0">
+    <h2 class="text-xl mb-4">
+      <span class="font-bold">
+        {% include "_includes/route_name.njk" %}
+      </span>
+      ({{ distanceKm }} km)
+    </h2>
+
+    <p>{{ shipRoutes | length }} ships often travel on this route</p>
+
+    {% set ships = shipRoutes | extractShips %}
+    {% include "_includes/ship_cards.njk" %}
+  </div>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "_includes/layout.njk" %}
+
+{% block title %}
+  GreenFerries - {{ name }}
+{% endblock %}
+
+{% block content %}
+  <div class="container mx-auto mb-4 p-2">
+    <h2 class="text-xl font-bold mb-4 flex items-center">
+      <div>
+        {{ name }}
+        -
+        {{ country | countryCodeToFlag }}
+      </div>
+      {% if logoFileName %}
+        <div class="ml-4">
+          <img src="/img/company_logos/{{ logoFileName }}" class="h-12 w-64" />
+        </div>
+      {% endif %}
+    </h2>
+
+    {% if wikipediaUrl %}
+      <p class="mb-4">
+        <a href="{{ wikipediaUrl }}" class="link">
+          See on Wikipedia ↗
+        </a>
+      </p>
+    {% endif %}
+
+    <h4 class="text-l font-bold mb-3">{{ ships | length }} ships</h4>
+    {% include "_includes/ship_cards.njk" %}
+  </div>
+{% endblock %}
