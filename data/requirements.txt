@@ -10,3 +10,4 @@ xlrd
 matplotlib
 awesome-slugify
 db-to-sqlite[postgresql]
+python-frontmatter
