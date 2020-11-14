@@ -11,7 +11,7 @@ routes:
 slug: mv-sorolla-9217125
 tags:
 - ship
-thumbFileName: 300px-Ferri_MV_Sorolla.jpg
+photo: /img/300px-Ferri_MV_Sorolla.jpg
 unknownRoutes: false
 wikipediaUrl: https://es.wikipedia.org/wiki/MV_Sorolla
 ---

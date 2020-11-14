@@ -2,7 +2,7 @@
 country: DE
 imo: null
 layout: company
-logoFileName: 1b8v1i1jbabmf8keoc2jbl075u9c.png
+logo: /img/1b8v1i1jbabmf8keoc2jbl075u9c.png
 name: TT-Line
 officialUrl: http://www.ttline.com/
 slug: tt-line-de

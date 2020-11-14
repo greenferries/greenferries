@@ -9,7 +9,7 @@ routes: []
 slug: msc-opera-9250464
 tags:
 - ship
-thumbFileName: 300px-MSCOperain_Argostoli.jpg
+photo: /img/300px-MSCOperain_Argostoli.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MSC_Opera
 ---

@@ -10,7 +10,7 @@ routes:
 slug: pont-aven-9268708
 tags:
 - ship
-thumbFileName: 300px-Pont_aven_plymouth.jpg
+photo: /img/300px-Pont_aven_plymouth.jpg
 unknownRoutes: null
 wikipediaUrl: https://fr.wikipedia.org/wiki/MV_Pont-Aven
 ---

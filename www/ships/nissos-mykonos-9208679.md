@@ -11,7 +11,7 @@ routes:
 slug: nissos-mykonos-9208679
 tags:
 - ship
-thumbFileName: 300px-Nissos_Mykonos_Piraeus_20110706.jpg
+photo: /img/300px-Nissos_Mykonos_Piraeus_20110706.jpg
 unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/Nissos_Mykonos
 ---

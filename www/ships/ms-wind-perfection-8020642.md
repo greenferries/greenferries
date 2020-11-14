@@ -10,7 +10,7 @@ routes:
 slug: ms-wind-perfection-8020642
 tags:
 - ship
-thumbFileName: 300px-Ferry_Christian_IV_in_Kristansand_Norway_2004_ubt.jpeg
+photo: /img/300px-Ferry_Christian_IV_in_Kristansand_Norway_2004_ubt.jpeg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Moby_Zaz%C3%A0
 ---

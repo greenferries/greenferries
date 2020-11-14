@@ -2,7 +2,7 @@
 country: FI
 imo: null
 layout: company
-logoFileName: r1vaesmdmdei27km42or9id33dku.png
+logo: /img/r1vaesmdmdei27km42or9id33dku.png
 name: Eckerö Line
 officialUrl: https://www.eckeroline.fi/en/
 slug: eckero-line-fi

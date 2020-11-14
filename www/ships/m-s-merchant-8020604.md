@@ -9,7 +9,7 @@ routes: []
 slug: m-s-merchant-8020604
 tags:
 - ship
-thumbFileName: ''
+photo: /img/''
 unknownRoutes: true
 wikipediaUrl: https://fi.wikipedia.org/wiki/M/S_Merchant
 ---

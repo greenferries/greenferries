@@ -9,7 +9,7 @@ routes: []
 slug: ms-asuka-ii-8806204
 tags:
 - ship
-thumbFileName: 300px-Aska2_Kobe01s3200.jpg
+photo: /img/300px-Aska2_Kobe01s3200.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Asuka_II
 ---

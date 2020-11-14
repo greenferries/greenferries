@@ -2,7 +2,7 @@
 country: US
 imo: null
 layout: company
-logoFileName: 93b39iiqhcvoy546lrulrt45oh6x.png
+logo: /img/93b39iiqhcvoy546lrulrt45oh6x.png
 name: Regent Seven Seas Cruises
 officialUrl: http://www.rssc.com/
 slug: regent-seven-seas-cruises-us

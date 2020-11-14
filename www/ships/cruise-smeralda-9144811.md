@@ -12,7 +12,7 @@ routes:
 slug: cruise-smeralda-9144811
 tags:
 - ship
-thumbFileName: 300px-20081115-Patras-IkarusPalace.JPG
+photo: /img/300px-20081115-Patras-IkarusPalace.JPG
 unknownRoutes: false
 wikipediaUrl: https://it.wikipedia.org/wiki/Cruise_Smeralda
 ---

@@ -9,7 +9,7 @@ routes: []
 slug: ms-color-viking-8317942
 tags:
 - ship
-thumbFileName: 300px-Color_viking_1985_6.jpg
+photo: /img/300px-Color_viking_1985_6.jpg
 unknownRoutes: true
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Color_Viking
 ---

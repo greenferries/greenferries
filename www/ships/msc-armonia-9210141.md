@@ -9,7 +9,7 @@ routes: []
 slug: msc-armonia-9210141
 tags:
 - ship
-thumbFileName: 300px-MSC_Armonia_%28ship%2C_2001%29_IMO_9210141%3B_in_Split%2C_2011-10-25_%282%29.jpg
+photo: /img/300px-MSC_Armonia_%28ship%2C_2001%29_IMO_9210141%3B_in_Split%2C_2011-10-25_%282%29.jpg
 unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/MSC_Armonia
 ---

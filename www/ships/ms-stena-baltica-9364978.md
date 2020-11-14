@@ -10,7 +10,7 @@ routes:
 slug: ms-stena-baltica-9364978
 tags:
 - ship
-thumbFileName: 300px-Cotentin_Ferry_20100912_Santander.jpg
+photo: /img/300px-Cotentin_Ferry_20100912_Santander.jpg
 unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Stena_Baltica_(2007)
 ---

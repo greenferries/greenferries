@@ -2,7 +2,7 @@
 country: IT
 imo: null
 layout: company
-logoFileName: 0a6nzdkbhm48f323scpvmrm3duu1.png
+logo: /img/0a6nzdkbhm48f323scpvmrm3duu1.png
 name: SNAV
 officialUrl: null
 slug: snav-it

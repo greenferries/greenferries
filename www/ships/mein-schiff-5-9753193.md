@@ -9,7 +9,7 @@ routes: []
 slug: mein-schiff-5-9753193
 tags:
 - ship
-thumbFileName: 300px-Mein_Schiff_5_leaving_Kiel_I_%28cropped%29.jpg
+photo: /img/300px-Mein_Schiff_5_leaving_Kiel_I_%28cropped%29.jpg
 unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/Mein_Schiff_5
 ---

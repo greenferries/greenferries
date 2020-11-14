@@ -10,7 +10,7 @@ routes:
 slug: sassnitz-8705383
 tags:
 - ship
-thumbFileName: 300px-FSSn1.JPG
+photo: /img/300px-FSSn1.JPG
 unknownRoutes: false
 wikipediaUrl: https://de.wikipedia.org/wiki/Sassnitz_(Schiff,_1988)
 ---

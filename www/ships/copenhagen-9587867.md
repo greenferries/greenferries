@@ -9,7 +9,7 @@ routes: []
 slug: copenhagen-9587867
 tags:
 - ship
-thumbFileName: null
+photo: /img/null
 unknownRoutes: null
 wikipediaUrl: https://da.wikipedia.org/wiki/M/F_Copenhagen
 ---

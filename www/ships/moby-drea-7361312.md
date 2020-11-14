@@ -10,7 +10,7 @@ routes:
 slug: moby-drea-7361312
 tags:
 - ship
-thumbFileName: 300px-Moby_Drea%2C_Livorno.jpg
+photo: /img/300px-Moby_Drea%2C_Livorno.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Moby_Drea
 ---

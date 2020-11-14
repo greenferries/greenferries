@@ -9,7 +9,7 @@ routes: []
 slug: euroferry-olympia-9010175
 tags:
 - ship
-thumbFileName: 300px-Finnlines_Transeuropa_Baltic_Sea_20100917.JPG
+photo: /img/300px-Finnlines_Transeuropa_Baltic_Sea_20100917.JPG
 unknownRoutes: true
 wikipediaUrl: https://de.wikipedia.org/wiki/Euroferry_Olympia
 ---

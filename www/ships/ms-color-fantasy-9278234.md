@@ -10,7 +10,7 @@ routes:
 slug: ms-color-fantasy-9278234
 tags:
 - ship
-thumbFileName: 300px-Color_Fantasy_02.jpg
+photo: /img/300px-Color_Fantasy_02.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Color_Fantasy
 ---

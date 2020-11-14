@@ -2,7 +2,7 @@
 country: 'NO'
 imo: null
 layout: company
-logoFileName: pz7r3c0uoyqlvt0yao4ybknasbzj.png
+logo: /img/pz7r3c0uoyqlvt0yao4ybknasbzj.png
 name: Hurtigruten Group
 officialUrl: http://www.hurtigruten.com/en/
 slug: hurtigruten-group-no

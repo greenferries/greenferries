@@ -2,7 +2,7 @@
 country: GR
 imo: null
 layout: company
-logoFileName: qvu39ul68vfwco0yv6wplfozkz1n.png
+logo: /img/qvu39ul68vfwco0yv6wplfozkz1n.png
 name: Superfast Ferries
 officialUrl: null
 slug: superfast-ferries-gr

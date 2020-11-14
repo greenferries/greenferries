@@ -10,7 +10,7 @@ routes:
 slug: m-s-finnstar-9319442
 tags:
 - ship
-thumbFileName: ''
+photo: /img/''
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Finnstar
 ---

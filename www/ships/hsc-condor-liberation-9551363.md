@@ -11,7 +11,7 @@ routes:
 slug: hsc-condor-liberation-9551363
 tags:
 - ship
-thumbFileName: 300px-Condor_Liberation_entering_Saint_Helier_Harbour.jpg
+photo: /img/300px-Condor_Liberation_entering_Saint_Helier_Harbour.jpg
 unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/HSC_Condor_Liberation
 ---

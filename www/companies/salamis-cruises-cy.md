@@ -2,7 +2,7 @@
 country: CY
 imo: null
 layout: company
-logoFileName: .png
+logo: /img/.png
 name: Salamis Cruises
 officialUrl: null
 slug: salamis-cruises-cy

@@ -9,7 +9,7 @@ routes: []
 slug: norway-explorer-9434060
 tags:
 - ship
-thumbFileName: 300px-MS_Spitsbergen_Molde_2016.jpg
+photo: /img/300px-MS_Spitsbergen_Molde_2016.jpg
 unknownRoutes: null
 wikipediaUrl: https://de.wikipedia.org/wiki/Spitsbergen_(Schiff)
 ---

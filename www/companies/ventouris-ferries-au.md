@@ -2,7 +2,7 @@
 country: AU
 imo: null
 layout: company
-logoFileName: ko6wnzem5h9i5lrlbve6cl0t68q8.png
+logo: /img/ko6wnzem5h9i5lrlbve6cl0t68q8.png
 name: Ventouris Ferries
 officialUrl: null
 slug: ventouris-ferries-au

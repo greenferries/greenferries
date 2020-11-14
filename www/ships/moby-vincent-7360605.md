@@ -10,7 +10,7 @@ routes:
 slug: moby-vincent-7360605
 tags:
 - ship
-thumbFileName: 300px-MobyVincent1.jpg
+photo: /img/300px-MobyVincent1.jpg
 unknownRoutes: false
 wikipediaUrl: https://fr.wikipedia.org/wiki/Moby_Vincent
 ---

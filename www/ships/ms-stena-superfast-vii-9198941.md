@@ -10,7 +10,7 @@ routes:
 slug: ms-stena-superfast-vii-9198941
 tags:
 - ship
-thumbFileName: null
+photo: /img/null
 unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Stena_Superfast_VII
 ---

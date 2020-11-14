@@ -12,7 +12,7 @@ routes:
 slug: cruise-bonaria-9220330
 tags:
 - ship
-thumbFileName: 300px-TIRRENIA.BONARIA.jpg
+photo: /img/300px-TIRRENIA.BONARIA.jpg
 unknownRoutes: false
 wikipediaUrl: https://it.wikipedia.org/wiki/Cruise_Bonaria
 ---

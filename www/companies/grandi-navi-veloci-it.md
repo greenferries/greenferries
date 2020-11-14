@@ -2,7 +2,7 @@
 country: IT
 imo: null
 layout: company
-logoFileName: lo448j6lrvvcsw4rysgc1z8yxffp.png
+logo: /img/lo448j6lrvvcsw4rysgc1z8yxffp.png
 name: Grandi Navi Veloci
 officialUrl: http://www.gnv.it/
 slug: grandi-navi-veloci-it

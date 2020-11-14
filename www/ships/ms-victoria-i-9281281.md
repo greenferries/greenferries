@@ -12,7 +12,7 @@ routes:
 slug: ms-victoria-i-9281281
 tags:
 - ship
-thumbFileName: 300px-Victoria_I_Tallinn.jpg
+photo: /img/300px-Victoria_I_Tallinn.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Victoria_I
 ---

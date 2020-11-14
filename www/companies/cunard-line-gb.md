@@ -2,7 +2,7 @@
 country: GB
 imo: null
 layout: company
-logoFileName: kbjtnljw1y0rqg4h34g9fcf69b1f.png
+logo: /img/kbjtnljw1y0rqg4h34g9fcf69b1f.png
 name: Cunard Line
 officialUrl: http://www.cunard.com/
 slug: cunard-line-gb

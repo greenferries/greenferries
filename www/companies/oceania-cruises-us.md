@@ -2,7 +2,7 @@
 country: US
 imo: null
 layout: company
-logoFileName: 410jucj090vrhdcui9liaktjd5to.png
+logo: /img/410jucj090vrhdcui9liaktjd5to.png
 name: Oceania Cruises
 officialUrl: http://www.oceaniacruises.com
 slug: oceania-cruises-us

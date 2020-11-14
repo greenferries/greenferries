@@ -9,7 +9,7 @@ routes: []
 slug: ms-queen-elizabeth-9477438
 tags:
 - ship
-thumbFileName: 300px-Queen_Elizabeth_in_Tallinn_7_July_2011.JPG
+photo: /img/300px-Queen_Elizabeth_in_Tallinn_7_July_2011.JPG
 unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Queen_Elizabeth
 ---

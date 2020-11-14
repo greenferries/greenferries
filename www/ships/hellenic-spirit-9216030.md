@@ -11,7 +11,7 @@ routes:
 slug: hellenic-spirit-9216030
 tags:
 - ship
-thumbFileName: 300px-Hellenic_Spirit_%28ANEK-Lines%29_2011.jpg
+photo: /img/300px-Hellenic_Spirit_%28ANEK-Lines%29_2011.jpg
 unknownRoutes: false
 wikipediaUrl: https://fr.wikipedia.org/wiki/Hellenic_Spirit
 ---

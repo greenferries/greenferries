@@ -14,7 +14,7 @@ routes:
 slug: blue-star-patmos-9565041
 tags:
 - ship
-thumbFileName: 300px-Blue_Star_Patmos_3.JPG
+photo: /img/300px-Blue_Star_Patmos_3.JPG
 unknownRoutes: false
 wikipediaUrl: https://de.wikipedia.org/wiki/Blue_Star_Patmos
 ---

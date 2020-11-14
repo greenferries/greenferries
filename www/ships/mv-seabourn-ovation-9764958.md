@@ -9,7 +9,7 @@ routes: []
 slug: mv-seabourn-ovation-9764958
 tags:
 - ship
-thumbFileName: null
+photo: /img/null
 unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/MV_Seabourn_Ovation
 ---

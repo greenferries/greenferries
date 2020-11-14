@@ -2,7 +2,7 @@
 country: ES
 imo: null
 layout: company
-logoFileName: u97ptotom7sppqnnm369fswukm17.png
+logo: /img/u97ptotom7sppqnnm369fswukm17.png
 name: Naviera Armas
 officialUrl: http://www.navieraarmas.com
 slug: naviera-armas-es

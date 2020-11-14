@@ -9,7 +9,7 @@ routes: []
 slug: ms-serenade-of-the-seas-9228344
 tags:
 - ship
-thumbFileName: 300px-RCI_Serenade_of_the_Seas.JPG
+photo: /img/300px-RCI_Serenade_of_the_Seas.JPG
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/Serenade_of_the_Seas
 ---

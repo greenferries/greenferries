@@ -11,7 +11,7 @@ routes:
 slug: mediterranee-8705395
 tags:
 - ship
-thumbFileName: 300px-M%C3%A9diterran%C3%A9e_-_Corsica_Linea.png
+photo: /img/300px-M%C3%A9diterran%C3%A9e_-_Corsica_Linea.png
 unknownRoutes: false
 wikipediaUrl: https://fr.wikipedia.org/wiki/M%C3%A9diterran%C3%A9e_(ferry)
 ---

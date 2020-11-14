@@ -10,7 +10,7 @@ routes:
 slug: ms-la-superba-9214276
 tags:
 - ship
-thumbFileName: 300px-La_Superba.JPG
+photo: /img/300px-La_Superba.JPG
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_La_Superba
 ---

@@ -10,7 +10,7 @@ routes:
 slug: midnatsol-9247728
 tags:
 - ship
-thumbFileName: 300px-MS_Midnatsol_forfra.jpg
+photo: /img/300px-MS_Midnatsol_forfra.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Midnatsol_(2002)
 ---

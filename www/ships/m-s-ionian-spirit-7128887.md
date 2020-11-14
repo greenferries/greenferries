@@ -10,7 +10,7 @@ routes:
 slug: m-s-ionian-spirit-7128887
 tags:
 - ship
-thumbFileName: 300px-MS_Roslagen_in_2003.jpg
+photo: /img/300px-MS_Roslagen_in_2003.jpg
 unknownRoutes: null
 wikipediaUrl: https://de.wikipedia.org/wiki/St._Damian_(Schiff)
 ---

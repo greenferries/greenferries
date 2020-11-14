@@ -11,7 +11,7 @@ routes:
 slug: normandie-express-9221358
 tags:
 - ship
-thumbFileName: 300px-HSC_Normandie_Express_2009.jpg
+photo: /img/300px-HSC_Normandie_Express_2009.jpg
 unknownRoutes: null
 wikipediaUrl: https://fr.wikipedia.org/wiki/Normandie_Express
 ---

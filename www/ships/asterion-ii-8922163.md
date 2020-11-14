@@ -10,7 +10,7 @@ routes:
 slug: asterion-ii-8922163
 tags:
 - ship
-thumbFileName: 300px-Asterion_II.png
+photo: /img/300px-Asterion_II.png
 unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/Asterion_II
 ---

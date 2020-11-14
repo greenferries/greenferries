@@ -10,7 +10,7 @@ routes:
 slug: mv-isle-of-lewis-9085974
 tags:
 - ship
-thumbFileName: 300px-MV_Isle_of_Lewis_2019.jpg
+photo: /img/300px-MV_Isle_of_Lewis_2019.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MV_Isle_of_Lewis
 ---

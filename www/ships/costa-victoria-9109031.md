@@ -9,7 +9,7 @@ routes: []
 slug: costa-victoria-9109031
 tags:
 - ship
-thumbFileName: 300px-CostaVictoriaArgostoli.jpg
+photo: /img/300px-CostaVictoriaArgostoli.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/Costa_Victoria
 ---

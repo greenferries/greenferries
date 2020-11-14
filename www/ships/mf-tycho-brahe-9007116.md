@@ -10,7 +10,7 @@ routes:
 slug: mf-tycho-brahe-9007116
 tags:
 - ship
-thumbFileName: 300px-Scandlines.jpg
+photo: /img/300px-Scandlines.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MF_Tycho_Brahe
 ---

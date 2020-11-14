@@ -11,7 +11,7 @@ routes:
 slug: mv-hebrides-9211975
 tags:
 - ship
-thumbFileName: 300px-MV_Hebrides_2019.jpg
+photo: /img/300px-MV_Hebrides_2019.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MV_Hebrides
 ---

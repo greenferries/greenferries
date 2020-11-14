@@ -9,7 +9,7 @@ routes: []
 slug: ms-oceana-9169550
 tags:
 - ship
-thumbFileName: 300px-MV_Oceana_passing_Calshot_Spit_light.JPG
+photo: /img/300px-MV_Oceana_passing_Calshot_Spit_light.JPG
 unknownRoutes: true
 wikipediaUrl: https://no.wikipedia.org/wiki/MS_%C2%ABOceana%C2%BB
 ---

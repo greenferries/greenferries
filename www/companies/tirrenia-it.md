@@ -2,7 +2,7 @@
 country: IT
 imo: null
 layout: company
-logoFileName: 76ko55wwdc8sjwx97qtna95towbs.png
+logo: /img/76ko55wwdc8sjwx97qtna95towbs.png
 name: Tirrenia
 officialUrl: http://www.tirrenia.it/en/pagine/homepage.aspx
 slug: tirrenia-it

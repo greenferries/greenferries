@@ -9,7 +9,7 @@ routes: []
 slug: ms-rhapsody-of-the-seas-9116864
 tags:
 - ship
-thumbFileName: 300px-Rhapsodyoftheseasargostoli.jpg
+photo: /img/300px-Rhapsodyoftheseasargostoli.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/Rhapsody_of_the_Seas
 ---

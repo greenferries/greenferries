@@ -10,7 +10,7 @@ routes:
 slug: fantastic-9100267
 tags:
 - ship
-thumbFileName: 300px-Barcelona_2016_-_Fantastic.jpg
+photo: /img/300px-Barcelona_2016_-_Fantastic.jpg
 unknownRoutes: false
 wikipediaUrl: https://fr.wikipedia.org/wiki/Fantastic_(ferry)
 ---

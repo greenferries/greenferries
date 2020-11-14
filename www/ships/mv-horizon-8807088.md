@@ -9,7 +9,7 @@ routes: []
 slug: mv-horizon-8807088
 tags:
 - ship
-thumbFileName: 300px-MV_Horizon.JPG
+photo: /img/300px-MV_Horizon.JPG
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MV_Horizon
 ---

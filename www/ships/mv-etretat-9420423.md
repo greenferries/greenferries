@@ -10,7 +10,7 @@ routes:
 slug: mv-etretat-9420423
 tags:
 - ship
-thumbFileName: 300px-MV_%C3%89tretat_%28Le_Havre%2C_2015%29.jpg
+photo: /img/300px-MV_%C3%89tretat_%28Le_Havre%2C_2015%29.jpg
 unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/MV_Etretat
 ---

@@ -9,7 +9,7 @@ routes: []
 slug: mv-adonia-9210220
 tags:
 - ship
-thumbFileName: 300px-Azamara_pursuit.jpg
+photo: /img/300px-Azamara_pursuit.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/Azamara_Pursuit
 ---

@@ -10,7 +10,7 @@ routes:
 slug: m-s-sea-wind-7128332
 tags:
 - ship
-thumbFileName: 300px-MS_Sea_Wind_Tallink.jpg
+photo: /img/300px-MS_Sea_Wind_Tallink.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Sea_Wind
 ---

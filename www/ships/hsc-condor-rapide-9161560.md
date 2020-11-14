@@ -10,7 +10,7 @@ routes:
 slug: hsc-condor-rapide-9161560
 tags:
 - ship
-thumbFileName: 300px-Condor_Rapide02.JPG
+photo: /img/300px-Condor_Rapide02.JPG
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/HSC_Condor_Rapide
 ---

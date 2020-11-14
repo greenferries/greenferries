@@ -2,7 +2,7 @@
 country: DK
 imo: null
 layout: company
-logoFileName: tf0b5930q1r00j4l1j8nrdgz1ejx.png
+logo: /img/tf0b5930q1r00j4l1j8nrdgz1ejx.png
 name: BornholmerFærgen
 officialUrl: http://www.bornholmerfærgen.dk
 slug: bornholmerfaergen-dk

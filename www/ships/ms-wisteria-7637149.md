@@ -10,7 +10,7 @@ routes:
 slug: ms-wisteria-7637149
 tags:
 - ship
-thumbFileName: 300px-Princess_Beatrix.jpg
+photo: /img/300px-Princess_Beatrix.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Vronskiy
 ---

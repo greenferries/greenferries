@@ -12,7 +12,7 @@ routes:
 slug: olympic-champion-9216028
 tags:
 - ship
-thumbFileName: 300px-Port_of_Ancona_Anek_Lines.jpg
+photo: /img/300px-Port_of_Ancona_Anek_Lines.jpg
 unknownRoutes: false
 wikipediaUrl: https://fr.wikipedia.org/wiki/Olympic_Champion
 ---

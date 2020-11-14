@@ -10,7 +10,7 @@ routes:
 slug: ms-cote-des-dunes-9232527
 tags:
 - ship
-thumbFileName: 300px-SeaFrance_Rodin.jpg
+photo: /img/300px-SeaFrance_Rodin.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_C%C3%B4te_des_Dunes
 ---

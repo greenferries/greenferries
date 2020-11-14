@@ -10,7 +10,7 @@ routes:
 slug: ms-stena-europe-7901760
 tags:
 - ship
-thumbFileName: 300px-Stena_Europe_Strapline.jpg
+photo: /img/300px-Stena_Europe_Strapline.jpg
 unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Stena_Europe
 ---

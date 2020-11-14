@@ -10,7 +10,7 @@ routes:
 slug: ms-king-seaways-8502406
 tags:
 - ship
-thumbFileName: 300px-King_Seaways_%28ship%2C_1987%29_001.jpg
+photo: /img/300px-King_Seaways_%28ship%2C_1987%29_001.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_King_Seaways
 ---

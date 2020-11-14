@@ -2,7 +2,7 @@
 country: 'NO'
 imo: null
 layout: company
-logoFileName: jmqotm70p9acnswic7xktqaylll2.png
+logo: /img/jmqotm70p9acnswic7xktqaylll2.png
 name: Fjord Line
 officialUrl: http://www.fjordline.com/
 slug: fjord-line-no

@@ -9,7 +9,7 @@ routes: []
 slug: marella-discovery-9070632
 tags:
 - ship
-thumbFileName: 300px-MarellaDiscoveryArgostoli.jpg
+photo: /img/300px-MarellaDiscoveryArgostoli.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/Marella_Discovery
 ---

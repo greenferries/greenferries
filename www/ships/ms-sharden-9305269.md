@@ -10,7 +10,7 @@ routes:
 slug: ms-sharden-9305269
 tags:
 - ship
-thumbFileName: 300px-SHARDEN_OLBIA_014.jpg
+photo: /img/300px-SHARDEN_OLBIA_014.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Sharden
 ---

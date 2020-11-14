@@ -10,7 +10,7 @@ routes:
 slug: mega-express-five-9035101
 tags:
 - ship
-thumbFileName: 300px-Maga_Express_Five_IMO_9035101_01_%40chesi.JPG
+photo: /img/300px-Maga_Express_Five_IMO_9035101_01_%40chesi.JPG
 unknownRoutes: null
 wikipediaUrl: https://fr.wikipedia.org/wiki/Mega_Express_Five
 ---

@@ -2,7 +2,7 @@
 country: CA
 imo: null
 layout: company
-logoFileName: .png
+logo: /img/.png
 name: G Adventures
 officialUrl: null
 slug: g-adventures-ca

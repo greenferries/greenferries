@@ -12,7 +12,7 @@ routes:
 slug: carthage-9185396
 tags:
 - ship
-thumbFileName: 300px-Ferry_Carthage_%28CTN%29_entrant_au_Port_La_Goulette_%28Tunisie%29.jpg
+photo: /img/300px-Ferry_Carthage_%28CTN%29_entrant_au_Port_La_Goulette_%28Tunisie%29.jpg
 unknownRoutes: false
 wikipediaUrl: https://fr.wikipedia.org/wiki/Carthage_(ferry)
 ---

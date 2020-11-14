@@ -10,7 +10,7 @@ routes:
 slug: mega-smeralda-8306486
 tags:
 - ship
-thumbFileName: 300px-Mega_smeralda_bastia.JPG
+photo: /img/300px-Mega_smeralda_bastia.JPG
 unknownRoutes: null
 wikipediaUrl: https://fr.wikipedia.org/wiki/Mega_Smeralda
 ---

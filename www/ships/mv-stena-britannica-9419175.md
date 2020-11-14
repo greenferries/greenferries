@@ -10,7 +10,7 @@ routes:
 slug: mv-stena-britannica-9419175
 tags:
 - ship
-thumbFileName: 300px-Stena_Britannica_at_Nieuwe_Waterweg%2C_16.11.2016.jpg
+photo: /img/300px-Stena_Britannica_at_Nieuwe_Waterweg%2C_16.11.2016.jpg
 unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/MV_Stena_Britannica
 ---

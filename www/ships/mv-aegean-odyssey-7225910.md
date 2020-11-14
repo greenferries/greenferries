@@ -9,7 +9,7 @@ routes: []
 slug: mv-aegean-odyssey-7225910
 tags:
 - ship
-thumbFileName: 300px-Aegean-odyssey-split.jpg
+photo: /img/300px-Aegean-odyssey-split.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MV_Aegean_Odyssey
 ---

@@ -12,7 +12,7 @@ routes:
 slug: armorique-9364980
 tags:
 - ship
-thumbFileName: 300px-MV_Armorique_berthed_at_Saint_Malo.jpg
+photo: /img/300px-MV_Armorique_berthed_at_Saint_Malo.jpg
 unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/MV_Armorique_(2008)
 ---

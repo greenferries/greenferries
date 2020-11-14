@@ -9,7 +9,7 @@ routes: []
 slug: costa-pacifica-9378498
 tags:
 - ship
-thumbFileName: 300px-Costa_Pacifica_in_Katakolo_3.jpg
+photo: /img/300px-Costa_Pacifica_in_Katakolo_3.jpg
 unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/Costa_Pacifica
 ---

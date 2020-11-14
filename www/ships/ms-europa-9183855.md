@@ -9,7 +9,7 @@ routes: []
 slug: ms-europa-9183855
 tags:
 - ship
-thumbFileName: 300px-German_cruiser_Europa_in_Stockholm_harbour.jpg
+photo: /img/300px-German_cruiser_Europa_in_Stockholm_harbour.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Europa_(1999)
 ---

@@ -9,7 +9,7 @@ routes: []
 slug: seven-seas-navigator-9064126
 tags:
 - ship
-thumbFileName: 300px-Seven_Seas_Navigator%2C_Fremantle%2C_2018_%2806%29.jpg
+photo: /img/300px-Seven_Seas_Navigator%2C_Fremantle%2C_2018_%2806%29.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/Seven_Seas_Navigator
 ---

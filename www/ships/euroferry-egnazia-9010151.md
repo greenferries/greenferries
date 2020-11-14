@@ -10,7 +10,7 @@ routes:
 slug: euroferry-egnazia-9010151
 tags:
 - ship
-thumbFileName: 300px-Finnhansa_Travem%C3%BCnde_%282008%29.JPG
+photo: /img/300px-Finnhansa_Travem%C3%BCnde_%282008%29.JPG
 unknownRoutes: false
 wikipediaUrl: https://de.wikipedia.org/wiki/Euroferry_Egnazia
 ---

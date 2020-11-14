@@ -17,7 +17,7 @@ routes:
 slug: pascal-lota-9365398
 tags:
 - ship
-thumbFileName: 300px-PLota19%282%29.jpg
+photo: /img/300px-PLota19%282%29.jpg
 unknownRoutes: false
 wikipediaUrl: https://fr.wikipedia.org/wiki/Pascal_Lota
 ---

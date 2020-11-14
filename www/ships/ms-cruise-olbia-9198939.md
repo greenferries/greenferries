@@ -10,7 +10,7 @@ routes:
 slug: ms-cruise-olbia-9198939
 tags:
 - ship
-thumbFileName: 300px-Grimaldi_Ferries%2C_nave_Cruise_Olbia_%2801%29.jpg
+photo: /img/300px-Grimaldi_Ferries%2C_nave_Cruise_Olbia_%2801%29.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Cruise_Olbia
 ---

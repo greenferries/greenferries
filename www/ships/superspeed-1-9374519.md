@@ -9,7 +9,7 @@ routes: []
 slug: superspeed-1-9374519
 tags:
 - ship
-thumbFileName: 300px-SuperSpeed_1_%281%29.jpg
+photo: /img/300px-SuperSpeed_1_%281%29.jpg
 unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Superspeed_1
 ---

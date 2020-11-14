@@ -9,7 +9,7 @@ routes: []
 slug: aidavita-9221554
 tags:
 - ship
-thumbFileName: 300px-AIDAvitaArgostoli.jpg
+photo: /img/300px-AIDAvitaArgostoli.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/AIDAvita
 ---

@@ -9,7 +9,7 @@ routes: []
 slug: ms-hanseatic-9000168
 tags:
 - ship
-thumbFileName: 300px-RCGS_Resolute.jpg
+photo: /img/300px-RCGS_Resolute.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/RCGS_Resolute
 ---

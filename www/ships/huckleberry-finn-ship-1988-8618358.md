@@ -9,7 +9,7 @@ routes: []
 slug: huckleberry-finn-ship-1988-8618358
 tags:
 - ship
-thumbFileName: 300px-12-06-09-warnemuende-by-ralfr-40.jpg
+photo: /img/300px-12-06-09-warnemuende-by-ralfr-40.jpg
 unknownRoutes: true
 wikipediaUrl: https://de.wikipedia.org/wiki/Huckleberry_Finn_(Schiff)
 ---

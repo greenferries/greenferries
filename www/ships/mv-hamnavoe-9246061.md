@@ -10,7 +10,7 @@ routes:
 slug: mv-hamnavoe-9246061
 tags:
 - ship
-thumbFileName: 300px-Ham29.JPG
+photo: /img/300px-Ham29.JPG
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MV_Hamnavoe
 ---

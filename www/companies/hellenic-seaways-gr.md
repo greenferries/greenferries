@@ -2,7 +2,7 @@
 country: GR
 imo: null
 layout: company
-logoFileName: .png
+logo: /img/.png
 name: Hellenic Seaways
 officialUrl: null
 slug: hellenic-seaways-gr

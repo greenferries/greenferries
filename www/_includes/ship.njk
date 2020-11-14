@@ -10,10 +10,10 @@
       {{ name }}
     </h2>
     <div class="flex flex-col sm:flex-row mb-3">
-      {% if thumbFileName %}
+      {% if photo %}
         <div class="mr-3">
           <img
-            src="/img/ship_thumbs/{{ thumbFileName }}"
+            src="{{ photo }}"
             alt="Ferry {{ name }}"
             style="max-height: 300px"
             class="w-full sm:w-auto"
@@ -25,8 +25,8 @@
           <span>Operator:</span>
           <a href="/companies/{{ company.slug }}" class="flex flex-wrap items-center ml-1">
             <span class="link">{{ company.name }}</span>
-            {% if company.logoFileName %}
-              <img src="/img/company_logos/{{ company.logoFileName }}" class="ml-3 h-12" />
+            {% if company.logo %}
+              <img src="{{ company.logo }}" class="ml-3 h-12" />
             {% endif %}
           </a>
         </p>

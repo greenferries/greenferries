@@ -9,7 +9,7 @@ routes: []
 slug: msc-magnifica-9387085
 tags:
 - ship
-thumbFileName: 300px-MSC_Magnifica_in_Turkey.jpg
+photo: /img/300px-MSC_Magnifica_in_Turkey.jpg
 unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/MSC_Magnifica
 ---

@@ -10,7 +10,7 @@ routes:
 slug: moby-corse-7615414
 tags:
 - ship
-thumbFileName: 300px-Moby_Corse_01.JPG
+photo: /img/300px-Moby_Corse_01.JPG
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MV_Moby_Corse
 ---

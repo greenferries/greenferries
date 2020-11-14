@@ -11,7 +11,7 @@ routes:
 slug: cap-finistere-9198927
 tags:
 - ship
-thumbFileName: 300px-Cap_Finist%C3%A8re.jpg
+photo: /img/300px-Cap_Finist%C3%A8re.jpg
 unknownRoutes: false
 wikipediaUrl: https://fr.wikipedia.org/wiki/MV_Cap_Finist%C3%A8re
 ---

@@ -9,7 +9,7 @@ routes: []
 slug: ms-marco-polo-6417097
 tags:
 - ship
-thumbFileName: 300px-Marco_Polo_Bergen_2010.JPG
+photo: /img/300px-Marco_Polo_Bergen_2010.JPG
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Marco_Polo
 ---

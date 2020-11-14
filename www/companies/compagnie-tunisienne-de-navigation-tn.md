@@ -2,7 +2,7 @@
 country: TN
 imo: null
 layout: company
-logoFileName: xvtlpzlw30q64q77x4cvf7dttjmc.png
+logo: /img/xvtlpzlw30q64q77x4cvf7dttjmc.png
 name: Compagnie tunisienne de navigation
 officialUrl: null
 slug: compagnie-tunisienne-de-navigation-tn

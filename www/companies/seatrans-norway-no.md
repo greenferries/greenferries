@@ -2,7 +2,7 @@
 country: 'NO'
 imo: null
 layout: company
-logoFileName: .png
+logo: /img/.png
 name: Seatrans (Norway)
 officialUrl: http://www.seatrans.no/
 slug: seatrans-norway-no

@@ -10,7 +10,7 @@ routes:
 slug: ms-stena-lagan-9329849
 tags:
 - ship
-thumbFileName: 300px-STENALAGAN.jpg
+photo: /img/300px-STENALAGAN.jpg
 unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Stena_Lagan
 ---

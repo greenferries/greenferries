@@ -9,7 +9,7 @@ routes: []
 slug: hsc-condor-vitesse-9151008
 tags:
 - ship
-thumbFileName: 300px-Champion_Jet_1_-_Seajets_-_Heraklion_-_Portside.jpg
+photo: /img/300px-Champion_Jet_1_-_Seajets_-_Heraklion_-_Portside.jpg
 unknownRoutes: true
 wikipediaUrl: https://en.wikipedia.org/wiki/HSC_Champion_Jet_1
 ---

@@ -2,7 +2,7 @@
 country: FR
 imo: null
 layout: company
-logoFileName: yb8cn062kuwgbau1kzbwcs89mhcj.png
+logo: /img/yb8cn062kuwgbau1kzbwcs89mhcj.png
 name: La Méridionale
 officialUrl: null
 slug: la-meridionale-fr

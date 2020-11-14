@@ -10,7 +10,7 @@ routes:
 slug: ms-almariya-7928811
 tags:
 - ship
-thumbFileName: 300px-Nordlandia_arriving_in_Tallinn_13_August_2012.JPG
+photo: /img/300px-Nordlandia_arriving_in_Tallinn_13_August_2012.JPG
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Almariya
 ---

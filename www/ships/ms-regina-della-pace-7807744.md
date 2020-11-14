@@ -10,7 +10,7 @@ routes:
 slug: ms-regina-della-pace-7807744
 tags:
 - ship
-thumbFileName: 300px-Albania-Rigel-III.jpg
+photo: /img/300px-Albania-Rigel-III.jpg
 unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Rigel_III
 ---

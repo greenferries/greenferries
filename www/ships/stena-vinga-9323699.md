@@ -9,7 +9,7 @@ routes: []
 slug: stena-vinga-9323699
 tags:
 - ship
-thumbFileName: ''
+photo: /img/''
 unknownRoutes: true
 wikipediaUrl: https://da.wikipedia.org/wiki/M/S_Hammerodde
 ---

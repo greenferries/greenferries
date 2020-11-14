@@ -10,7 +10,7 @@ routes:
 slug: ms-nordkapp-9107772
 tags:
 - ship
-thumbFileName: 300px-18-04-08_NORDKAPP_IMO_9107772_11-06-03.jpg
+photo: /img/300px-18-04-08_NORDKAPP_IMO_9107772_11-06-03.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Nordkapp
 ---

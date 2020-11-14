@@ -9,7 +9,7 @@ routes: []
 slug: m-s-finnpartner-9010163
 tags:
 - ship
-thumbFileName: ''
+photo: /img/''
 unknownRoutes: true
 wikipediaUrl: https://fi.wikipedia.org/wiki/M/S_Finnpartner
 ---

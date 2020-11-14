@@ -13,7 +13,7 @@ routes:
 slug: mv-clansman-9158953
 tags:
 - ship
-thumbFileName: 300px-MV_Clansman_2019.jpg
+photo: /img/300px-MV_Clansman_2019.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MV_Clansman
 ---

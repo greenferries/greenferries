@@ -10,7 +10,7 @@ routes:
 slug: ms-snav-adriatico-8416308
 tags:
 - ship
-thumbFileName: 300px-SNAV_Adriatico.jpg
+photo: /img/300px-SNAV_Adriatico.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_SNAV_Adriatico
 ---

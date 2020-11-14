@@ -10,7 +10,7 @@ routes:
 slug: ms-cruise-ausonia-9227429
 tags:
 - ship
-thumbFileName: 300px-20100412_egine27.jpg
+photo: /img/300px-20100412_egine27.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Cruise_Ausonia
 ---

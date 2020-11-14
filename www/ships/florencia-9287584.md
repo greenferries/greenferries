@@ -11,7 +11,7 @@ routes:
 slug: florencia-9287584
 tags:
 - ship
-thumbFileName: 300px-8_Florencia_Catania_090917.jpg
+photo: /img/300px-8_Florencia_Catania_090917.jpg
 unknownRoutes: false
 wikipediaUrl: https://de.wikipedia.org/wiki/Florencia_(Schiff)
 ---

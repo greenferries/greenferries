@@ -9,7 +9,7 @@ routes: []
 slug: regina-seaways-9458535
 tags:
 - ship
-thumbFileName: null
+photo: /img/null
 unknownRoutes: null
 wikipediaUrl: https://de.wikipedia.org/wiki/Regina_Seaways
 ---

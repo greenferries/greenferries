@@ -11,7 +11,7 @@ routes:
 slug: ms-viking-cinderella-8719188
 tags:
 - ship
-thumbFileName: 300px-Viking_Line_Cinderella.jpg
+photo: /img/300px-Viking_Line_Cinderella.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Viking_Cinderella
 ---

@@ -10,7 +10,7 @@ routes:
 slug: moby-kiss-7358755
 tags:
 - ship
-thumbFileName: 300px-Comarit_banasa.jpg
+photo: /img/300px-Comarit_banasa.jpg
 unknownRoutes: false
 wikipediaUrl: https://fr.wikipedia.org/wiki/Moby_Kiss
 ---

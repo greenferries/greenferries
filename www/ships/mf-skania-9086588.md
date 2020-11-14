@@ -10,7 +10,7 @@ routes:
 slug: mf-skania-9086588
 tags:
 - ship
-thumbFileName: 300px-MF_Skania_2.jpg
+photo: /img/300px-MF_Skania_2.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Skania
 ---

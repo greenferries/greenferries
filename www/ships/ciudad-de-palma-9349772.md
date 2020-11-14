@@ -13,7 +13,7 @@ routes:
 slug: ciudad-de-palma-9349772
 tags:
 - ship
-thumbFileName: 300px-Tirrenia_Dimonios_02.JPG
+photo: /img/300px-Tirrenia_Dimonios_02.JPG
 unknownRoutes: null
 wikipediaUrl: https://it.wikipedia.org/wiki/Ciudad_de_Palma
 ---

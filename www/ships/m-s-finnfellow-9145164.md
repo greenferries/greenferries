@@ -10,7 +10,7 @@ routes:
 slug: m-s-finnfellow-9145164
 tags:
 - ship
-thumbFileName: 300px-Finnfellow.jpg
+photo: /img/300px-Finnfellow.jpg
 unknownRoutes: false
 wikipediaUrl: https://de.wikipedia.org/wiki/Finnfellow
 ---

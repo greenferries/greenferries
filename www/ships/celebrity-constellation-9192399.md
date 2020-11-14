@@ -9,7 +9,7 @@ routes: []
 slug: celebrity-constellation-9192399
 tags:
 - ship
-thumbFileName: 300px-Constellation.jpg
+photo: /img/300px-Constellation.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/Celebrity_Constellation
 ---

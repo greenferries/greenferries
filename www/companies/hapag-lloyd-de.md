@@ -2,7 +2,7 @@
 country: DE
 imo: null
 layout: company
-logoFileName: yfg3o8dzogvucbe8bqoevhqe1bt9.png
+logo: /img/yfg3o8dzogvucbe8bqoevhqe1bt9.png
 name: Hapag-Lloyd
 officialUrl: http://www.hlkf.de
 slug: hapag-lloyd-de

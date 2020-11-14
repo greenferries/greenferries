@@ -13,7 +13,7 @@ routes:
 slug: nissos-samos-8712635
 tags:
 - ship
-thumbFileName: 300px-20090803_hellenic_spirit24.jpg
+photo: /img/300px-20090803_hellenic_spirit24.jpg
 unknownRoutes: false
 wikipediaUrl: https://de.wikipedia.org/wiki/Nissos_Samos
 ---

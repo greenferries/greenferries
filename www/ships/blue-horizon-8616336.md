@@ -10,7 +10,7 @@ routes:
 slug: blue-horizon-8616336
 tags:
 - ship
-thumbFileName: 300px-Blue_Horizon_5327.jpg
+photo: /img/300px-Blue_Horizon_5327.jpg
 unknownRoutes: false
 wikipediaUrl: https://de.wikipedia.org/wiki/Blue_Horizon_(Schiff)
 ---

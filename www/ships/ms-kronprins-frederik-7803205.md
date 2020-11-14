@@ -10,7 +10,7 @@ routes:
 slug: ms-kronprins-frederik-7803205
 tags:
 - ship
-thumbFileName: 300px-Scandlines_FS_Kronprins_Frederik_Warnem%C3%BCnde_%2807%29.JPG
+photo: /img/300px-Scandlines_FS_Kronprins_Frederik_Warnem%C3%BCnde_%2807%29.JPG
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Kronprins_Frederik
 ---

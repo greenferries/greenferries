@@ -9,7 +9,7 @@ routes: []
 slug: ms-gnv-allegra-8506311
 tags:
 - ship
-thumbFileName: 300px-MS_Oscar_Wilde.jpg
+photo: /img/300px-MS_Oscar_Wilde.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_GNV_Allegra
 ---

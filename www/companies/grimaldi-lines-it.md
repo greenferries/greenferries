@@ -2,7 +2,7 @@
 country: IT
 imo: null
 layout: company
-logoFileName: .png
+logo: /img/.png
 name: Grimaldi Lines
 officialUrl: http://www.grimaldi-lines.com/
 slug: grimaldi-lines-it

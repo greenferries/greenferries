@@ -10,7 +10,7 @@ routes:
 slug: mf-prevelis-8020927
 tags:
 - ship
-thumbFileName: 300px-Prevelis_Piraeus.jpg
+photo: /img/300px-Prevelis_Piraeus.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MF_Prevelis
 ---

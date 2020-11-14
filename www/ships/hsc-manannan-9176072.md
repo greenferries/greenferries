@@ -10,7 +10,7 @@ routes:
 slug: hsc-manannan-9176072
 tags:
 - ship
-thumbFileName: 300px-Hsc_manannan.png
+photo: /img/300px-Hsc_manannan.png
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/HSC_Manannan
 ---

@@ -12,7 +12,7 @@ routes:
 slug: finntrader-9017769
 tags:
 - ship
-thumbFileName: 300px-MS_Finntrader_Travem%C3%BCnde.JPG
+photo: /img/300px-MS_Finntrader_Travem%C3%BCnde.JPG
 unknownRoutes: false
 wikipediaUrl: https://de.wikipedia.org/wiki/Finntrader
 ---

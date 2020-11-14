@@ -2,7 +2,7 @@
 country: FR
 imo: 523782
 layout: company
-logoFileName: k9lpufzlobmafmfix3rivikiyo7w.png
+logo: /img/k9lpufzlobmafmfix3rivikiyo7w.png
 name: Corsica Ferries - Sardinia Ferries
 officialUrl: null
 slug: corsica-ferries-sardinia-ferries-fr

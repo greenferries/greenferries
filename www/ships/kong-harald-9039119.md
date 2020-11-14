@@ -9,7 +9,7 @@ routes: []
 slug: kong-harald-9039119
 tags:
 - ship
-thumbFileName: 300px-MS_Kong_Harald_in_Trondheim_2008.jpg
+photo: /img/300px-MS_Kong_Harald_in_Trondheim_2008.jpg
 unknownRoutes: true
 wikipediaUrl: https://de.wikipedia.org/wiki/Kong_Harald_(Schiff,_1993)
 ---

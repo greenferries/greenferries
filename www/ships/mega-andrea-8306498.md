@@ -17,7 +17,7 @@ routes:
 slug: mega-andrea-8306498
 tags:
 - ship
-thumbFileName: 300px-MEGA_ANDREA.jpg
+photo: /img/300px-MEGA_ANDREA.jpg
 unknownRoutes: false
 wikipediaUrl: https://fr.wikipedia.org/wiki/Mega_Andrea
 ---

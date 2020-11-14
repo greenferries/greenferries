@@ -9,7 +9,7 @@ routes: []
 slug: hsc-highspeed-4-9216183
 tags:
 - ship
-thumbFileName: 300px-Paros_Hellenic_Seaways_Highspeed_4_01.jpg
+photo: /img/300px-Paros_Hellenic_Seaways_Highspeed_4_01.jpg
 unknownRoutes: true
 wikipediaUrl: https://en.wikipedia.org/wiki/HSC_Highspeed_4
 ---

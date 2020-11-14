@@ -10,7 +10,7 @@ routes:
 slug: ms-ulysses-9214991
 tags:
 - ship
-thumbFileName: 300px-Ulysses_Arriving_In_Dublin.jpg
+photo: /img/300px-Ulysses_Arriving_In_Dublin.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MV_Ulysses_(2000)
 ---

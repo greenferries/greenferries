@@ -10,7 +10,7 @@ routes:
 slug: m-s-aurora-9007128
 tags:
 - ship
-thumbFileName: ''
+photo: /img/''
 unknownRoutes: false
 wikipediaUrl: https://fi.wikipedia.org/wiki/M/S_Aurora_af_Helsingborg
 ---

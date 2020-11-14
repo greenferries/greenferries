@@ -2,7 +2,7 @@
 country: GB
 imo: null
 layout: company
-logoFileName: 73ny6j68pynzyfzsdddyymxoiwzm.png
+logo: /img/73ny6j68pynzyfzsdddyymxoiwzm.png
 name: Isle of Man Steam Packet Company
 officialUrl: http://www.steam-packet.com/
 slug: isle-of-man-steam-packet-company-gb

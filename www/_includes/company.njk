@@ -12,9 +12,9 @@
         -
         {{ country | countryCodeToFlag }}
       </div>
-      {% if logoFileName %}
+      {% if logo %}
         <div class="ml-4">
-          <img src="/img/company_logos/{{ logoFileName }}" class="h-12 w-64" />
+          <img src="{{ logo }}" class="h-12 w-64" />
         </div>
       {% endif %}
     </h2>

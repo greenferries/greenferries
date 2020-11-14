@@ -9,7 +9,7 @@ routes: []
 slug: ms-cruise-barcelona-9351488
 tags:
 - ship
-thumbFileName: 300px-Barcelona_Cruise.jpg
+photo: /img/300px-Barcelona_Cruise.jpg
 unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Cruise_Barcelona
 ---

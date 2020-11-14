@@ -10,7 +10,7 @@ routes:
 slug: ms-nuraghes-9293404
 tags:
 - ship
-thumbFileName: 300px-Nuraghes%2C_18-08-2012_%282%29.JPG
+photo: /img/300px-Nuraghes%2C_18-08-2012_%282%29.JPG
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Nuraghes
 ---

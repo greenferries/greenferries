@@ -2,7 +2,7 @@
 country: ES
 imo: null
 layout: company
-logoFileName: .png
+logo: /img/.png
 name: Isabella Cruises
 officialUrl: null
 slug: isabella-cruises-es

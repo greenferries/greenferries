@@ -2,7 +2,7 @@
 country: DZ
 imo: null
 layout: company
-logoFileName: .png
+logo: /img/.png
 name: FRS Iberia/Maroc
 officialUrl: null
 slug: frs-iberia-maroc-dz

@@ -9,7 +9,7 @@ routes: []
 slug: m-s-prinsesse-benedikte-9144421
 tags:
 - ship
-thumbFileName: 300px-Fehmarn_Puttgarden_Scandlines_Prinsesse_Benedikte.jpg
+photo: /img/300px-Fehmarn_Puttgarden_Scandlines_Prinsesse_Benedikte.jpg
 unknownRoutes: true
 wikipediaUrl: https://de.wikipedia.org/wiki/Prinsesse_Benedikte_(Schiff)
 ---

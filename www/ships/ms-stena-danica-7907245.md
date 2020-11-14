@@ -10,7 +10,7 @@ routes:
 slug: ms-stena-danica-7907245
 tags:
 - ship
-thumbFileName: 300px-Stena_Danica.jpg
+photo: /img/300px-Stena_Danica.jpg
 unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Stena_Danica
 ---

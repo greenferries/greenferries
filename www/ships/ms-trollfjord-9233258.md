@@ -10,7 +10,7 @@ routes:
 slug: ms-trollfjord-9233258
 tags:
 - ship
-thumbFileName: 300px-MS_Trollfjord_snur.jpg
+photo: /img/300px-MS_Trollfjord_snur.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Trollfjord
 ---

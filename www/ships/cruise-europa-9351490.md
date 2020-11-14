@@ -12,7 +12,7 @@ routes:
 slug: cruise-europa-9351490
 tags:
 - ship
-thumbFileName: 300px-Cruise_Europa.jpg
+photo: /img/300px-Cruise_Europa.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Cruise_Europa
 ---

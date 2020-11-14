@@ -10,7 +10,7 @@ routes:
 slug: ms-isle-of-inishmore-9142605
 tags:
 - ship
-thumbFileName: 300px-MS_Isle_of_Inishmore.jpg
+photo: /img/300px-MS_Isle_of_Inishmore.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Isle_of_Inishmore
 ---

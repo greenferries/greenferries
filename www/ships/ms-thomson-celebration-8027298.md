@@ -9,7 +9,7 @@ routes: []
 slug: ms-thomson-celebration-8027298
 tags:
 - ship
-thumbFileName: 300px-MarellaCelebrationArgostoli.jpg
+photo: /img/300px-MarellaCelebrationArgostoli.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Marella_Celebration
 ---

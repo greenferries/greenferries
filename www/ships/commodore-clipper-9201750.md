@@ -10,7 +10,7 @@ routes:
 slug: commodore-clipper-9201750
 tags:
 - ship
-thumbFileName: null
+photo: /img/null
 unknownRoutes: null
 wikipediaUrl: null
 ---

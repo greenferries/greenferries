@@ -9,7 +9,7 @@ routes: []
 slug: ms-bremen-8907424
 tags:
 - ship
-thumbFileName: 300px-MS_Bremen_-_Ushuaia.JPG
+photo: /img/300px-MS_Bremen_-_Ushuaia.JPG
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Bremen
 ---

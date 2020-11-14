@@ -9,7 +9,7 @@ routes: []
 slug: mv-viking-sky-9650420
 tags:
 - ship
-thumbFileName: 300px-Viking_Sky_%28ship%2C_2017%29_-_S%C3%A8te_-_December_2018.jpg
+photo: /img/300px-Viking_Sky_%28ship%2C_2017%29_-_S%C3%A8te_-_December_2018.jpg
 unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/MV_Viking_Sky
 ---

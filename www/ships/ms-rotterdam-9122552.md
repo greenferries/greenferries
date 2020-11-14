@@ -9,7 +9,7 @@ routes: []
 slug: ms-rotterdam-9122552
 tags:
 - ship
-thumbFileName: 300px-Rostock_asv2018-05_img67_Warnemuende_port.jpg
+photo: /img/300px-Rostock_asv2018-05_img67_Warnemuende_port.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Rotterdam
 ---

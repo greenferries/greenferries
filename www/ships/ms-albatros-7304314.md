@@ -9,7 +9,7 @@ routes: []
 slug: ms-albatros-7304314
 tags:
 - ship
-thumbFileName: 300px-MS_Albatros.jpg
+photo: /img/300px-MS_Albatros.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Albatros
 ---

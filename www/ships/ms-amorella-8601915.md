@@ -11,7 +11,7 @@ routes:
 slug: ms-amorella-8601915
 tags:
 - ship
-thumbFileName: 300px-Ferry_viking_line_amorella_20050823_001.jpg
+photo: /img/300px-Ferry_viking_line_amorella_20050823_001.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Amorella
 ---

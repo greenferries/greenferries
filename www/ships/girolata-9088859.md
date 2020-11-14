@@ -11,7 +11,7 @@ routes:
 slug: girolata-9088859
 tags:
 - ship
-thumbFileName: 300px-Giro22072018AJ.jpg
+photo: /img/300px-Giro22072018AJ.jpg
 unknownRoutes: null
 wikipediaUrl: https://fr.wikipedia.org/wiki/Girolata_(navire)
 ---

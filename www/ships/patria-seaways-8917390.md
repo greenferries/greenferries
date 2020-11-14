@@ -9,7 +9,7 @@ routes: []
 slug: patria-seaways-8917390
 tags:
 - ship
-thumbFileName: ''
+photo: /img/''
 unknownRoutes: true
 wikipediaUrl: https://de.wikipedia.org/wiki/Patria_Seaways
 ---

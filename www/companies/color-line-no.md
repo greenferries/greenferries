@@ -2,7 +2,7 @@
 country: 'NO'
 imo: null
 layout: company
-logoFileName: utydxlrhksecn5qgnligm2vfxbwb.png
+logo: /img/utydxlrhksecn5qgnligm2vfxbwb.png
 name: Color Line
 officialUrl: http://www.colorline.no
 slug: color-line-no

@@ -10,7 +10,7 @@ routes:
 slug: mykonos-palace-9220342
 tags:
 - ship
-thumbFileName: 300px-Amsicora_%2828-01-2013%29_%282%29.JPG
+photo: /img/300px-Amsicora_%2828-01-2013%29_%282%29.JPG
 unknownRoutes: null
 wikipediaUrl: https://it.wikipedia.org/wiki/Mykonos_Palace
 ---

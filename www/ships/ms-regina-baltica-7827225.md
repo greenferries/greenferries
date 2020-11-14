@@ -9,7 +9,7 @@ routes: []
 slug: ms-regina-baltica-7827225
 tags:
 - ship
-thumbFileName: 300px-MS_Regina_Baltica-side.jpg
+photo: /img/300px-MS_Regina_Baltica-side.jpg
 unknownRoutes: true
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Regina_Baltica
 ---

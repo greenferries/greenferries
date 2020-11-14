@@ -14,7 +14,7 @@ routes:
 slug: spl-princess-anastasia-8414582
 tags:
 - ship
-thumbFileName: 300px-Princess_anastasia.jpg
+photo: /img/300px-Princess_anastasia.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/SPL_Princess_Anastasia_(1986)
 ---

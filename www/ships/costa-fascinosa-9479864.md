@@ -9,7 +9,7 @@ routes: []
 slug: costa-fascinosa-9479864
 tags:
 - ship
-thumbFileName: 300px-Costa_Fascinosa_close_to_Corfu.jpg
+photo: /img/300px-Costa_Fascinosa_close_to_Corfu.jpg
 unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/Costa_Fascinosa
 ---

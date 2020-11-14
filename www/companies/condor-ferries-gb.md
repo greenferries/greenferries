@@ -2,7 +2,7 @@
 country: GB
 imo: null
 layout: company
-logoFileName: ttx2b3g0ex9hv0t21w2546ta4wbo.png
+logo: /img/ttx2b3g0ex9hv0t21w2546ta4wbo.png
 name: Condor Ferries
 officialUrl: http://www.condorferries.fr/
 slug: condor-ferries-gb

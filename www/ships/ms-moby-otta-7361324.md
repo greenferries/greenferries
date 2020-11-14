@@ -10,7 +10,7 @@ routes:
 slug: ms-moby-otta-7361324
 tags:
 - ship
-thumbFileName: 300px-Princess_of_Scandinavia_Gothenburg.jpg
+photo: /img/300px-Princess_of_Scandinavia_Gothenburg.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Moby_Otta
 ---

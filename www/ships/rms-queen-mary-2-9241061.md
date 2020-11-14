@@ -9,7 +9,7 @@ routes: []
 slug: rms-queen-mary-2-9241061
 tags:
 - ship
-thumbFileName: 300px-RMS_Queen_Mary_2_%286973549904%29.jpg
+photo: /img/300px-RMS_Queen_Mary_2_%286973549904%29.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/RMS_Queen_Mary_2
 ---

@@ -11,7 +11,7 @@ routes:
 slug: moby-wonder-9214367
 tags:
 - ship
-thumbFileName: 300px-Moby_Wonder_07_IMO_9214367_%40chesi.JPG
+photo: /img/300px-Moby_Wonder_07_IMO_9214367_%40chesi.JPG
 unknownRoutes: false
 wikipediaUrl: https://fr.wikipedia.org/wiki/Moby_Wonder
 ---

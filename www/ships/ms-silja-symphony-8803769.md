@@ -12,7 +12,7 @@ routes:
 slug: ms-silja-symphony-8803769
 tags:
 - ship
-thumbFileName: 300px-Silja_Symphony.jpg
+photo: /img/300px-Silja_Symphony.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Silja_Symphony
 ---

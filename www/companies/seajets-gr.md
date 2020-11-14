@@ -2,7 +2,7 @@
 country: GR
 imo: null
 layout: company
-logoFileName: ptkvzzlpkc7vngqgslrayuxb2bop.png
+logo: /img/ptkvzzlpkc7vngqgslrayuxb2bop.png
 name: Seajets
 officialUrl: null
 slug: seajets-gr

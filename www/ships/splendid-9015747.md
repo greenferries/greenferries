@@ -14,7 +14,7 @@ routes:
 slug: splendid-9015747
 tags:
 - ship
-thumbFileName: 300px-Splendid_PB030988.jpg
+photo: /img/300px-Splendid_PB030988.jpg
 unknownRoutes: false
 wikipediaUrl: https://fr.wikipedia.org/wiki/Splendid_(ferry)
 ---

@@ -9,7 +9,7 @@ routes: []
 slug: msc-fantasia-9359791
 tags:
 - ship
-thumbFileName: 300px-MSC_Fantasia_2012_2.jpg
+photo: /img/300px-MSC_Fantasia_2012_2.jpg
 unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/MSC_Fantasia
 ---

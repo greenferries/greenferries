@@ -10,7 +10,7 @@ routes:
 slug: sardinia-vera-7360617
 tags:
 - ship
-thumbFileName: 300px-SARDINIA_VERA.jpg
+photo: /img/300px-SARDINIA_VERA.jpg
 unknownRoutes: null
 wikipediaUrl: https://fr.wikipedia.org/wiki/Sardinia_Vera
 ---

@@ -10,7 +10,7 @@ routes:
 slug: paglia-orba-9050826
 tags:
 - ship
-thumbFileName: 300px-PO2018AJA.jpg
+photo: /img/300px-PO2018AJA.jpg
 unknownRoutes: null
 wikipediaUrl: https://fr.wikipedia.org/wiki/Paglia_Orba_(navire)
 ---

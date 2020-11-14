@@ -10,7 +10,7 @@ routes:
 slug: hsc-fjord-cat-9176060
 tags:
 - ship
-thumbFileName: 300px-Hsc_fjord_cat_hirtshals.jpg
+photo: /img/300px-Hsc_fjord_cat_hirtshals.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/HSC_Fjord_Cat
 ---

@@ -9,7 +9,7 @@ routes: []
 slug: disney-magic-9126807
 tags:
 - ship
-thumbFileName: 300px-Disney_Magic_logo.svg.png
+photo: /img/300px-Disney_Magic_logo.svg.png
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/Disney_Magic
 ---

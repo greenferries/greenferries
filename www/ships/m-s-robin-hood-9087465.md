@@ -10,7 +10,7 @@ routes:
 slug: m-s-robin-hood-9087465
 tags:
 - ship
-thumbFileName: ''
+photo: /img/''
 unknownRoutes: false
 wikipediaUrl: https://fi.wikipedia.org/wiki/M/S_Robin_Hood
 ---

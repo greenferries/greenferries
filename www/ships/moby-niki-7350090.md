@@ -10,7 +10,7 @@ routes:
 slug: moby-niki-7350090
 tags:
 - ship
-thumbFileName: 300px-Corsica_Serena_Seconda_%28actuel_%27European_Voyager%27%29.jpg
+photo: /img/300px-Corsica_Serena_Seconda_%28actuel_%27European_Voyager%27%29.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Moby_Niki
 ---

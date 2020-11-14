@@ -9,7 +9,7 @@ routes: []
 slug: m-s-tom-sawyer-8703232
 tags:
 - ship
-thumbFileName: 300px-TT-Line_FS_Tom_Sawyer_Warnem%C3%BCnde_%2804%29.JPG
+photo: /img/300px-TT-Line_FS_Tom_Sawyer_Warnem%C3%BCnde_%2804%29.JPG
 unknownRoutes: true
 wikipediaUrl: https://de.wikipedia.org/wiki/Tom_Sawyer_(Schiff)
 ---

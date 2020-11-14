@@ -2,7 +2,7 @@
 country: FI
 imo: null
 layout: company
-logoFileName: .png
+logo: /img/.png
 name: Kristina Cruises
 officialUrl: null
 slug: kristina-cruises-fi

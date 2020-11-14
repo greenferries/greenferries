@@ -10,7 +10,7 @@ routes:
 slug: corsica-express-three-9135963
 tags:
 - ship
-thumbFileName: 300px-Corsica_Express_Three_IMO_9135963_01.JPG
+photo: /img/300px-Corsica_Express_Three_IMO_9135963_01.JPG
 unknownRoutes: false
 wikipediaUrl: https://fr.wikipedia.org/wiki/Corsica_Express_Three
 ---

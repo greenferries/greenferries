@@ -9,7 +9,7 @@ routes: []
 slug: nils-holgersson-9217230
 tags:
 - ship
-thumbFileName: 300px-Nils_Holgersson_Travem%C3%BCnde.JPG
+photo: /img/300px-Nils_Holgersson_Travem%C3%BCnde.JPG
 unknownRoutes: true
 wikipediaUrl: https://de.wikipedia.org/wiki/Nils_Holgersson_(Schiff,_2001)
 ---

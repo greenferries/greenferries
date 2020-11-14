@@ -9,7 +9,7 @@ routes: []
 slug: m-s-prins-richard-9144419
 tags:
 - ship
-thumbFileName: 300px-PRINS_RICHARD_1499.jpg
+photo: /img/300px-PRINS_RICHARD_1499.jpg
 unknownRoutes: true
 wikipediaUrl: https://de.wikipedia.org/wiki/Prins_Richard_(Schiff)
 ---

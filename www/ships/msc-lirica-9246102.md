@@ -9,7 +9,7 @@ routes: []
 slug: msc-lirica-9246102
 tags:
 - ship
-thumbFileName: 300px-Mscliricaargostoli.jpg
+photo: /img/300px-Mscliricaargostoli.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MSC_Lirica
 ---

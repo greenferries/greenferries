@@ -28,7 +28,7 @@ routes:
 slug: nissos-chios-9215555
 tags:
 - ship
-thumbFileName: 300px-Nissos_chios.jpg
+photo: /img/300px-Nissos_chios.jpg
 unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/Nissos_Chios
 ---

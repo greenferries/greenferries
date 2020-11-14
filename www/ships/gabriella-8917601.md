@@ -10,7 +10,7 @@ routes:
 slug: gabriella-8917601
 tags:
 - ship
-thumbFileName: null
+photo: /img/null
 unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Gabriella
 ---

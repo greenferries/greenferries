@@ -9,7 +9,7 @@ routes: []
 slug: mein-schiff-1-9106297
 tags:
 - ship
-thumbFileName: 300px-Marella_Explorer%2C_Stockholm%2C_2019_%2801%29.jpg
+photo: /img/300px-Marella_Explorer%2C_Stockholm%2C_2019_%2801%29.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/Marella_Explorer
 ---

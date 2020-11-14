@@ -10,7 +10,7 @@ routes:
 slug: silja-serenade-8715259
 tags:
 - ship
-thumbFileName: 300px-Silja_Serenade_in_Stockholm.jpg
+photo: /img/300px-Silja_Serenade_in_Stockholm.jpg
 unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Silja_Serenade
 ---

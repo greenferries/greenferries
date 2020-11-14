@@ -11,7 +11,7 @@ routes:
 slug: nissos-rodos-8704406
 tags:
 - ship
-thumbFileName: 300px-MV_Nissos_Rodos-_Hellenic_Seaways_Cargo_%2810578108653%29.jpg
+photo: /img/300px-MV_Nissos_Rodos-_Hellenic_Seaways_Cargo_%2810578108653%29.jpg
 unknownRoutes: false
 wikipediaUrl: https://fr.wikipedia.org/wiki/Nissos_Rodos
 ---

@@ -9,7 +9,7 @@ routes: []
 slug: aidacara-9112789
 tags:
 - ship
-thumbFileName: 300px-AIDAcara_Helsinki.jpg
+photo: /img/300px-AIDAcara_Helsinki.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/AIDAcara
 ---

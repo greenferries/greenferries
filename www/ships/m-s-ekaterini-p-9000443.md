@@ -10,7 +10,7 @@ routes:
 slug: m-s-ekaterini-p-9000443
 tags:
 - ship
-thumbFileName: ''
+photo: /img/''
 unknownRoutes: false
 wikipediaUrl: https://fi.wikipedia.org/wiki/M/S_Ekaterini_P
 ---

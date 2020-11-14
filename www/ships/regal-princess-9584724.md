@@ -9,7 +9,7 @@ routes: []
 slug: regal-princess-9584724
 tags:
 - ship
-thumbFileName: 300px-2018-07-05_Regal_Princess_%281%29.jpg
+photo: /img/300px-2018-07-05_Regal_Princess_%281%29.jpg
 unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/Regal_Princess_(2013)
 ---

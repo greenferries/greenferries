@@ -10,7 +10,7 @@ routes:
 slug: stena-nautica-8317954
 tags:
 - ship
-thumbFileName: 300px-Stena_Nautica_p%C3%A5_v%C3%A4g_in_i_Varbergs_hamn.jpg
+photo: /img/300px-Stena_Nautica_p%C3%A5_v%C3%A4g_in_i_Varbergs_hamn.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Stena_Nautica
 ---

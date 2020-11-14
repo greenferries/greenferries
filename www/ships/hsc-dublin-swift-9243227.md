@@ -10,7 +10,7 @@ routes:
 slug: hsc-dublin-swift-9243227
 tags:
 - ship
-thumbFileName: 300px-MV_Dublin_Swift.jpg
+photo: /img/300px-MV_Dublin_Swift.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/HSC_Dublin_Swift
 ---

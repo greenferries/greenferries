@@ -10,7 +10,7 @@ routes:
 slug: ms-silja-europa-8919805
 tags:
 - ship
-thumbFileName: 300px-Silja_Europa_departing_Tallinn_Estonia_3_August_2013.JPG
+photo: /img/300px-Silja_Europa_departing_Tallinn_Estonia_3_August_2013.JPG
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Silja_Europa
 ---

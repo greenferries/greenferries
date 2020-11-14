@@ -10,7 +10,7 @@ routes:
 slug: mv-european-causeway-9208394
 tags:
 - ship
-thumbFileName: 300px-The_%22European_Causeway%22_at_Larne_-_geograph.org.uk_-_1196641.jpg
+photo: /img/300px-The_%22European_Causeway%22_at_Larne_-_geograph.org.uk_-_1196641.jpg
 unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/MV_European_Causeway
 ---

@@ -9,7 +9,7 @@ routes: []
 slug: ms-birka-paradise-9273727
 tags:
 - ship
-thumbFileName: 300px-Birka_June_2013.jpg
+photo: /img/300px-Birka_June_2013.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Birka_Stockholm
 ---

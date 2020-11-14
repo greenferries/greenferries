@@ -9,7 +9,7 @@ routes: []
 slug: seven-seas-mariner-9210139
 tags:
 - ship
-thumbFileName: 300px-Osaka_Seven-Seas-Mariner04s3200.jpg
+photo: /img/300px-Osaka_Seven-Seas-Mariner04s3200.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/Seven_Seas_Mariner
 ---

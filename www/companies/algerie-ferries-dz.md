@@ -2,7 +2,7 @@
 country: DZ
 imo: null
 layout: company
-logoFileName: ic5jb3mcheopa13nzisx3alkagbp.png
+logo: /img/ic5jb3mcheopa13nzisx3alkagbp.png
 name: Algérie Ferries
 officialUrl: http://www.algerieferries.com/index.php
 slug: algerie-ferries-dz

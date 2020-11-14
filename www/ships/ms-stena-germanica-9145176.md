@@ -10,7 +10,7 @@ routes:
 slug: ms-stena-germanica-9145176
 tags:
 - ship
-thumbFileName: 300px-GS001962.jpg
+photo: /img/300px-GS001962.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Stena_Germanica_(2001)
 ---

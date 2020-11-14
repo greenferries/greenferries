@@ -2,7 +2,7 @@
 country: DE
 imo: null
 layout: company
-logoFileName: f1tapki9drof65jcsuk4q6eqsmio.png
+logo: /img/f1tapki9drof65jcsuk4q6eqsmio.png
 name: TUI Cruises
 officialUrl: http://www.tuicruises.com/
 slug: tui-cruises-de

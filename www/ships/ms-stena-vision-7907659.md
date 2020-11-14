@@ -10,7 +10,7 @@ routes:
 slug: ms-stena-vision-7907659
 tags:
 - ship
-thumbFileName: 300px-Stena_vision.jpg
+photo: /img/300px-Stena_vision.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Stena_Vision
 ---

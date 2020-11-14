@@ -2,7 +2,7 @@
 country: GR
 imo: null
 layout: company
-logoFileName: bhizbob8tsatmsla3fl10j15qww4.png
+logo: /img/bhizbob8tsatmsla3fl10j15qww4.png
 name: Minoan Lines
 officialUrl: http://www.minoan.gr/
 slug: minoan-lines-gr

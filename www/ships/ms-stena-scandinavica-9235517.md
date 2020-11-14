@@ -10,7 +10,7 @@ routes:
 slug: ms-stena-scandinavica-9235517
 tags:
 - ship
-thumbFileName: 300px-Stena_Scandinavica_2015-06-15_001.jpg
+photo: /img/300px-Stena_Scandinavica_2015-06-15_001.jpg
 unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Stena_Scandinavica_(2003)
 ---

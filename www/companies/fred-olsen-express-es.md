@@ -2,7 +2,7 @@
 country: ES
 imo: null
 layout: company
-logoFileName: 9n3u21qham5dr4vlzirtxp9abs59.png
+logo: /img/9n3u21qham5dr4vlzirtxp9abs59.png
 name: Fred. Olsen Express
 officialUrl: http://www.fredolsen.es
 slug: fred-olsen-express-es

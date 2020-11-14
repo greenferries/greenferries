@@ -13,7 +13,7 @@ routes:
 slug: mega-express-three-9208083
 tags:
 - ship
-thumbFileName: 300px-MEGA_EXPRESS_THREE.jpg
+photo: /img/300px-MEGA_EXPRESS_THREE.jpg
 unknownRoutes: null
 wikipediaUrl: https://fr.wikipedia.org/wiki/Mega_Express_Three
 ---

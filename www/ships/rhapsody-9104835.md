@@ -10,7 +10,7 @@ routes:
 slug: rhapsody-9104835
 tags:
 - ship
-thumbFileName: 300px-Rhapsody_%28ship%2C_1996%29%2C_S%C3%A8te_cf01.jpg
+photo: /img/300px-Rhapsody_%28ship%2C_1996%29%2C_S%C3%A8te_cf01.jpg
 unknownRoutes: false
 wikipediaUrl: https://fr.wikipedia.org/wiki/Rhapsody_(cruise-ferry)
 ---

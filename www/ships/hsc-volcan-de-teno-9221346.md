@@ -10,7 +10,7 @@ routes:
 slug: hsc-volcan-de-teno-9221346
 tags:
 - ship
-thumbFileName: 300px-Highspeed_6_-_HSW_-_Heraklion_-_Portside.jpg
+photo: /img/300px-Highspeed_6_-_HSW_-_Heraklion_-_Portside.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/HSC_Volcan_de_Teno
 ---

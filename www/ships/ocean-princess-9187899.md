@@ -9,7 +9,7 @@ routes: []
 slug: ocean-princess-9187899
 tags:
 - ship
-thumbFileName: 300px-Sirenaargostoli.jpg
+photo: /img/300px-Sirenaargostoli.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Sirena
 ---

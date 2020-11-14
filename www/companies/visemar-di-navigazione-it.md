@@ -2,7 +2,7 @@
 country: IT
 imo: null
 layout: company
-logoFileName: .png
+logo: /img/.png
 name: Visemar di Navigazione
 officialUrl: null
 slug: visemar-di-navigazione-it

@@ -10,7 +10,7 @@ routes:
 slug: el-venizelos-7907673
 tags:
 - ship
-thumbFileName: 300px-Suda_F6D-16.jpg
+photo: /img/300px-Suda_F6D-16.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/El._Venizelos_(ship)
 ---

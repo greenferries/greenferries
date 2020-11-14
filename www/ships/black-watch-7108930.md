@@ -9,7 +9,7 @@ routes: []
 slug: black-watch-7108930
 tags:
 - ship
-thumbFileName: 300px-Black_Watch_in_Funchal_July_2nd_2016_%28cropped%29.jpg
+photo: /img/300px-Black_Watch_in_Funchal_July_2nd_2016_%28cropped%29.jpg
 unknownRoutes: true
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Black_Watch_(1971)
 ---

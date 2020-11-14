@@ -9,7 +9,7 @@ routes: []
 slug: volcan-de-taburiente-9348558
 tags:
 - ship
-thumbFileName: 300px-MS_Volcan_de_Taburiente_R01.jpg
+photo: /img/300px-MS_Volcan_de_Taburiente_R01.jpg
 unknownRoutes: true
 wikipediaUrl: https://de.wikipedia.org/wiki/Volc%C3%A1n_de_Taburiente
 ---
