@@ -1,16 +1,29 @@
 publish_mode: editorial_workflow
-media_folder: "www/assets/img"
-public_folder: "/img"
+media_folder: www/assets/img
+public_folder: /img
+site_url: https://www.greenferries.org
+display_url: https://www.greenferries.org
+logo_url: https://www.greenferries.org/img/logo-greenferries.png
 backend:
   name: git-gateway
   branch: master
+  squash_merges: true
 collections:
   - name: ships
     label: Ships
+    label_singular: Ship
     folder: www/ships
     identifierField: slug
     create: true
     slug: "{{slug}}-{{imo}}"
+    summary: "{{name}} - {{company}} - {{routes}}"
+    view_filters:
+      - label: In scope
+        field: outOfScope
+        pattern: false|null
+      - label: Out of scope
+        field: outOfScope
+        pattern: true
     fields:
       - {name: "layout", label: "Layout", widget: "hidden", default: "company"}
       - {name: "tags", label: "Tags", widget: "hidden", default: ["ship"]}
@@ -38,6 +51,7 @@ collections:
       - {name: "outOfScope", label: "Out of scope (not a passenger ferry)", widget: "boolean", required: false}
   - name: companies
     label: Companies
+    label_singular: Company
     folder: www/companies
     create: true
     identifierField: slug
@@ -46,13 +60,14 @@ collections:
       - {name: "layout", label: "Layout", widget: "hidden", default: "company"}
       - {name: "tags", label: "Tags", widget: "hidden", default: ["company"]}
       - {name: "name", label: "Name", widget: "string"}
-      - {name: "imo", label: "IMO", widget: "string"}
+      - {name: "imo", label: "IMO", widget: "string", required: false}
       - {name: "slug", label: "Slug", widget: "string"}
       - {name: "country", label: "Country Code", widget: "string"}
       - {name: "officialUrl", label: "Website URL", widget: "string"}
       - {name: "wikipediaUrl", label: "Wikipedia URL", widget: "string"}
   - name: routes
     label: Routes
+    label_singular: Route
     folder: www/routes
     create: true
     identifierField: slug
@@ -60,13 +75,31 @@ collections:
       - {name: "layout", label: "Layout", widget: "hidden", default: "route"}
       - {name: "tags", label: "Tags", widget: "hidden", default: ["route"]}
       - {name: "slug", label: "Slug", widget: "string"}
-      - {name: "cityA", label: "City A", widget: "string"}
-      - {name: "cityB", label: "City B", widget: "string"}
+      - name: cityA
+        label: City A
+        widget: relation
+        collection: cities
+        search_fields: ["name"]
+        value_field: "slug"
+        display_fields: ["name", "country"]
+      - name: cityB
+        label: City B
+        widget: relation
+        collection: cities
+        search_fields: ["name"]
+        value_field: "slug"
+        display_fields: ["name", "country"]
+      - {name: "distanceKm", label: "Distance KM", widget: "number"}
   - name: cities
     label: Cities
+    label_singular: City
     folder: www/cities
     create: true
     identifierField: slug
+    summary: "{{name}} - {{country}}"
+    view_groups:
+      - {label: "Country", field: country}
+    sortable_fields: ["name"]
     fields:
       - {name: "layout", label: "Layout", widget: "hidden", default: "city"}
       - {name: "tags", label: "Tags", widget: "hidden", default: ["city"]}
