@@ -4,7 +4,6 @@ company: dfds-seaways-dk
 imo: 9211511
 layout: ship
 name: MS Dieppe Seaways
-outOfScope: null
 routes:
 - cherbourg-fr-rosslare-ie
 slug: ms-dieppe-seaways-9211511

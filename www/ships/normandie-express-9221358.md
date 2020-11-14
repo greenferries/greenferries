@@ -4,7 +4,6 @@ company: brittany-ferries-fr
 imo: 9221358
 layout: ship
 name: Normandie Express
-outOfScope: null
 routes:
 - caen-ouistreham-fr-portsmouth-gb
 - cherbourg-fr-portsmouth-gb

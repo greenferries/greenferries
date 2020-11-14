@@ -4,7 +4,6 @@ company: costa-cruises-it
 imo: 9398917
 layout: ship
 name: Costa Deliziosa
-outOfScope: null
 routes: []
 slug: costa-deliziosa-9398917
 tags:

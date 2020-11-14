@@ -4,7 +4,6 @@ company: msc-cruises-it
 imo: 9359806
 layout: ship
 name: MSC Splendida
-outOfScope: null
 routes: []
 slug: msc-splendida-9359806
 tags:

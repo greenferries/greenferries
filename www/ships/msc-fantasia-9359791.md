@@ -4,7 +4,6 @@ company: msc-cruises-it
 imo: 9359791
 layout: ship
 name: MSC Fantasia
-outOfScope: null
 routes: []
 slug: msc-fantasia-9359791
 tags:

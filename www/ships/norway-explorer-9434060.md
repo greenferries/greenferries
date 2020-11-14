@@ -4,7 +4,6 @@ company: hurtigruten-group-no
 imo: 9434060
 layout: ship
 name: Norway Explorer
-outOfScope: null
 routes: []
 slug: norway-explorer-9434060
 tags:

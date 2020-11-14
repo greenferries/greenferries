@@ -4,7 +4,6 @@ company: corsica-ferries-sardinia-ferries-fr
 imo: 9203186
 layout: ship
 name: Mega Express Two
-outOfScope: null
 routes:
 - livorno-it-bastia-fr
 - savona-it-ile-rousse-fr

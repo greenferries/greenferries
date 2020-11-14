@@ -4,7 +4,6 @@ company: balearia-es
 imo: 9188881
 layout: ship
 name: HSC Jonathan Swift
-outOfScope: null
 routes:
 - formentera-es-palma-es
 - denia-es-palma-es

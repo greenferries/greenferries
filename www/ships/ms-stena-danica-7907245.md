@@ -4,7 +4,6 @@ company: stena-line-se
 imo: 7907245
 layout: ship
 name: MS Stena Danica
-outOfScope: null
 routes:
 - frederikshavn-dk-goteborg-se
 slug: ms-stena-danica-7907245

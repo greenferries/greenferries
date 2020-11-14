@@ -4,7 +4,6 @@ company: scandlines-dk
 imo: 9587867
 layout: ship
 name: Copenhagen
-outOfScope: null
 routes: []
 slug: copenhagen-9587867
 tags:

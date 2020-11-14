@@ -4,7 +4,6 @@ company: corsica-ferries-sardinia-ferries-fr
 imo: 7360617
 layout: ship
 name: Sardinia Vera
-outOfScope: null
 routes:
 - nice-fr-ile-rousse-fr
 slug: sardinia-vera-7360617

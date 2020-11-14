@@ -4,7 +4,6 @@ company: msc-cruises-it
 imo: 9387085
 layout: ship
 name: MSC Magnifica
-outOfScope: null
 routes: []
 slug: msc-magnifica-9387085
 tags:

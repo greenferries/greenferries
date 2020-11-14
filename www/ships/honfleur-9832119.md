@@ -4,7 +4,6 @@ company: brittany-ferries-fr
 imo: 9832119
 layout: ship
 name: Honfleur
-outOfScope: null
 routes:
 - caen-ouistreham-fr-portsmouth-gb
 slug: honfleur-9832119

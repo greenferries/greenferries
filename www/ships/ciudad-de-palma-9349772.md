@@ -4,7 +4,6 @@ company: visemar-di-navigazione-it
 imo: 9349772
 layout: ship
 name: Ciudad de Palma
-outOfScope: null
 routes:
 - arrecife-es-cadiz-es
 - arrecife-es-santa-cruz-de-la-palma-es

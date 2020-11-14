@@ -4,7 +4,6 @@ company: viking-line-fi
 imo: 7901265
 layout: ship
 name: MS Rosella
-outOfScope: null
 routes:
 - helsinki-fi-tallinn-ee
 slug: ms-rosella-7901265

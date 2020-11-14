@@ -4,7 +4,6 @@ company: princess-cruises-us
 imo: 9584724
 layout: ship
 name: Regal Princess
-outOfScope: null
 routes: []
 slug: regal-princess-9584724
 tags:

@@ -4,7 +4,6 @@ company: celebrity-cruises-us
 imo: 9451094
 layout: ship
 name: Celebrity Silhouette
-outOfScope: null
 routes: []
 slug: celebrity-silhouette-9451094
 tags:

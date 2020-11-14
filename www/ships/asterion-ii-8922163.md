@@ -4,7 +4,6 @@ company: anek-lines-gr
 imo: 8922163
 layout: ship
 name: Asterion II
-outOfScope: null
 routes:
 - igoumenitsa-gr-venise-it
 slug: asterion-ii-8922163

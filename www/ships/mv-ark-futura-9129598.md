@@ -4,7 +4,6 @@ company: dfds-seaways-dk
 imo: 9129598
 layout: ship
 name: MV Ark Futura
-outOfScope: null
 routes: []
 slug: mv-ark-futura-9129598
 tags:

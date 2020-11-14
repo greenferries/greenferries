@@ -4,7 +4,6 @@ company: corsica-ferries-sardinia-ferries-fr
 imo: 8306486
 layout: ship
 name: Mega Smeralda
-outOfScope: null
 routes:
 - toulon-fr-ajaccio-fr
 slug: mega-smeralda-8306486

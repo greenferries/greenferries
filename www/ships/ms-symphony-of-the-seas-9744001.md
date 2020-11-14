@@ -4,7 +4,6 @@ company: royal-caribbean-international-us
 imo: 9744001
 layout: ship
 name: MS Symphony of the Seas
-outOfScope: null
 routes: []
 slug: ms-symphony-of-the-seas-9744001
 tags:

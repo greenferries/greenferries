@@ -4,7 +4,6 @@ company: grimaldi-lines-it
 imo: 9351505
 layout: ship
 name: Cruise Olympia
-outOfScope: null
 routes:
 - ancona-it-igoumenitsa-gr
 - ancona-it-durres-al

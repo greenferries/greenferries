@@ -4,7 +4,6 @@ company: celebrity-cruises-us
 imo: 9506459
 layout: ship
 name: Celebrity Reflection
-outOfScope: null
 routes: []
 slug: celebrity-reflection-9506459
 tags:

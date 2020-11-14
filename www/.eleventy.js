@@ -3,9 +3,11 @@ const smartRound = (i) => i > 1 ? Math.round(i) : i
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "./assets/img": "./img" });
   eleventyConfig.addPassthroughCopy({ "./assets/js": "./js" });
+  eleventyConfig.addPassthroughCopy({ "./admin/config.yml": "./admin/config.yml" });
   eleventyConfig.addPassthroughCopy({ "./assets/css/leaflet_1.7.1.css": "./css/leaflet_1.7.1.css" });
 
   eleventyConfig.addWatchTarget("./assets/css/*.css")
+  eleventyConfig.addWatchTarget("./admin/config.yml")
 
   eleventyConfig.addShortcode("version", function () {
     return String(Date.now());

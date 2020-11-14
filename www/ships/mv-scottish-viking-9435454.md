@@ -4,7 +4,6 @@ company: stena-line-se
 imo: 9435454
 layout: ship
 name: MV Scottish Viking
-outOfScope: null
 routes: []
 slug: mv-scottish-viking-9435454
 tags:

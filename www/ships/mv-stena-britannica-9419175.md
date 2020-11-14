@@ -4,7 +4,6 @@ company: stena-line-se
 imo: 9419175
 layout: ship
 name: MV Stena Britannica
-outOfScope: null
 routes:
 - harwich-gb-hoek-van-holland-nl
 slug: mv-stena-britannica-9419175

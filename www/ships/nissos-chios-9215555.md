@@ -4,7 +4,6 @@ company: hellenic-seaways-gr
 imo: 9215555
 layout: ship
 name: Nissos Chios
-outOfScope: null
 routes:
 - astypalea-gr-le-piree-gr
 - agios-kirikos-gr-mytilene-gr

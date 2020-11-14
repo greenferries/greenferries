@@ -4,7 +4,6 @@ company: aida-cruises-de
 imo: 9362542
 layout: ship
 name: AIDAbella
-outOfScope: null
 routes: []
 slug: aidabella-9362542
 tags:

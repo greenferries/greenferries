@@ -4,7 +4,6 @@ company: condor-ferries-gb
 imo: 9551363
 layout: ship
 name: HSC Condor Liberation
-outOfScope: null
 routes:
 - guernesey-gg-saint-malo-fr
 - guernesey-gg-jersey-st-helier-je

@@ -4,7 +4,6 @@ company: brittany-ferries-fr
 imo: 9364980
 layout: ship
 name: Armorique
-outOfScope: null
 routes:
 - le-havre-fr-portsmouth-gb
 - caen-ouistreham-fr-portsmouth-gb

@@ -4,7 +4,6 @@ company: corsica-ferries-sardinia-ferries-fr
 imo: 7349039
 layout: ship
 name: Corsica Marina Seconda
-outOfScope: null
 routes:
 - livorno-it-bastia-fr
 slug: corsica-marina-seconda-7349039

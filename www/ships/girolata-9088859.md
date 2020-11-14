@@ -4,7 +4,6 @@ company: la-meridionale-fr
 imo: 9088859
 layout: ship
 name: Girolata
-outOfScope: null
 routes:
 - marseille-fr-ajaccio-fr
 - civitavecchia-it-palerme-it

@@ -4,7 +4,6 @@ company: msc-cruises-it
 imo: 9595321
 layout: ship
 name: MSC Preziosa
-outOfScope: null
 routes: []
 slug: msc-preziosa-9595321
 tags:

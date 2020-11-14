@@ -4,7 +4,6 @@ company: corsica-ferries-sardinia-ferries-fr
 imo: 7205910
 layout: ship
 name: Sardinia Regina
-outOfScope: null
 routes:
 - livorno-it-bastia-fr
 - savona-it-bastia-fr

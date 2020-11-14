@@ -4,7 +4,6 @@ company: aida-cruises-de
 imo: 9636967
 layout: ship
 name: AIDAperla
-outOfScope: null
 routes: []
 slug: aidaperla-9636967
 tags:

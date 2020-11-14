@@ -4,7 +4,6 @@ company: celebrity-cruises-us
 imo: 9404314
 layout: ship
 name: Celebrity Eclipse
-outOfScope: null
 routes: []
 slug: celebrity-eclipse-9404314
 tags:

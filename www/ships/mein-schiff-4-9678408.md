@@ -4,7 +4,6 @@ company: tui-cruises-de
 imo: 9678408
 layout: ship
 name: Mein Schiff 4
-outOfScope: null
 routes: []
 slug: mein-schiff-4-9678408
 tags:

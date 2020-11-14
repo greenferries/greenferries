@@ -4,7 +4,6 @@ company: viking-ocean-cruises-us
 imo: 9725433
 layout: ship
 name: MV Viking Sun
-outOfScope: null
 routes: []
 slug: mv-viking-sun-9725433
 tags:

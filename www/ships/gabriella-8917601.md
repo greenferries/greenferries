@@ -4,7 +4,6 @@ company: viking-line-fi
 imo: 8917601
 layout: ship
 name: Gabriella
-outOfScope: null
 routes:
 - helsinki-fi-stockholm-se
 slug: gabriella-8917601

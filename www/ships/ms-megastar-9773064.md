@@ -4,7 +4,6 @@ company: tallink-ee
 imo: 9773064
 layout: ship
 name: MS Megastar
-outOfScope: null
 routes:
 - helsinki-fi-tallinn-ee
 slug: ms-megastar-9773064

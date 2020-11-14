@@ -4,7 +4,6 @@ company: msc-cruises-it
 imo: 9760512
 layout: ship
 name: MSC Meraviglia
-outOfScope: null
 routes: []
 slug: msc-meraviglia-9760512
 tags:

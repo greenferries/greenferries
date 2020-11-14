@@ -4,7 +4,6 @@ company: scandlines-dk
 imo: 9587855
 layout: ship
 name: M/S Berlin
-outOfScope: null
 routes: []
 slug: m-s-berlin-9587855
 tags:

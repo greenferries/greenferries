@@ -4,7 +4,6 @@ company: cunard-line-gb
 imo: 9477438
 layout: ship
 name: MS Queen Elizabeth
-outOfScope: null
 routes: []
 slug: ms-queen-elizabeth-9477438
 tags:

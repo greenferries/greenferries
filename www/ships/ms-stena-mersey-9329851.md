@@ -4,7 +4,6 @@ company: stena-line-se
 imo: 9329851
 layout: ship
 name: MS Stena Mersey
-outOfScope: null
 routes:
 - belfast-gb-liverpool-birkenhead-gb
 slug: ms-stena-mersey-9329851

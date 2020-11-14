@@ -4,7 +4,6 @@ company: corsica-ferries-sardinia-ferries-fr
 imo: 9208083
 layout: ship
 name: Mega Express Three
-outOfScope: null
 routes:
 - toulon-fr-bastia-fr
 - toulon-fr-ajaccio-fr

@@ -4,7 +4,6 @@ company: msc-cruises-it
 imo: 9745366
 layout: ship
 name: MSC Seaside
-outOfScope: null
 routes: []
 slug: msc-seaside-9745366
 tags:

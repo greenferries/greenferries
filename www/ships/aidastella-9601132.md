@@ -4,7 +4,6 @@ company: aida-cruises-de
 imo: 9601132
 layout: ship
 name: AIDAstella
-outOfScope: null
 routes: []
 slug: aidastella-9601132
 tags:

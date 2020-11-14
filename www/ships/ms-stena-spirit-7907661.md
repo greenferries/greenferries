@@ -4,7 +4,6 @@ company: stena-line-se
 imo: 7907661
 layout: ship
 name: MS Stena Spirit
-outOfScope: null
 routes:
 - gdynia-pl-karlskrona-se
 slug: ms-stena-spirit-7907661

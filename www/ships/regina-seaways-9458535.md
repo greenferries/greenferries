@@ -4,7 +4,6 @@ company: grimaldi-lines-it
 imo: 9458535
 layout: ship
 name: Regina Seaways
-outOfScope: null
 routes: []
 slug: regina-seaways-9458535
 tags:

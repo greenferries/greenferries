@@ -4,7 +4,6 @@ company: balearia-es
 imo: 9441130
 layout: ship
 name: Abel Matutes
-outOfScope: null
 routes:
 - barcelone-es-palma-es
 slug: abel-matutes-9441130

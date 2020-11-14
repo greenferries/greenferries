@@ -4,7 +4,6 @@ company: balearia-es
 imo: 8208763
 layout: ship
 name: MS Daniya
-outOfScope: null
 routes:
 - algiers-dz-tanger-med-ma
 slug: ms-daniya-8208763

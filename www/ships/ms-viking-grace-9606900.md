@@ -4,7 +4,6 @@ company: viking-line-fi
 imo: 9606900
 layout: ship
 name: MS Viking Grace
-outOfScope: null
 routes: []
 slug: ms-viking-grace-9606900
 tags:

@@ -4,7 +4,6 @@ company: stena-line-se
 imo: 7901760
 layout: ship
 name: MS Stena Europe
-outOfScope: null
 routes:
 - fishguard-gb-rosslare-ie
 slug: ms-stena-europe-7901760

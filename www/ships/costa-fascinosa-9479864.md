@@ -4,7 +4,6 @@ company: costa-cruises-it
 imo: 9479864
 layout: ship
 name: Costa Fascinosa
-outOfScope: null
 routes: []
 slug: costa-fascinosa-9479864
 tags:

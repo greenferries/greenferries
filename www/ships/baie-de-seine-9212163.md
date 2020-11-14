@@ -4,7 +4,6 @@ company: brittany-ferries-fr
 imo: 9212163
 layout: ship
 name: Baie de Seine
-outOfScope: null
 routes:
 - le-havre-fr-portsmouth-gb
 slug: baie-de-seine-9212163

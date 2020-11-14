@@ -4,7 +4,6 @@ company: frs-iberia-maroc-dz
 imo: 8512152
 layout: ship
 name: MS Al Andalus Express
-outOfScope: null
 routes:
 - algiers-dz-tanger-med-ma
 slug: ms-al-andalus-express-8512152

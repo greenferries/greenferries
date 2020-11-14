@@ -4,7 +4,6 @@ company: brittany-ferries-fr
 imo: 9268708
 layout: ship
 name: Pont-Aven
-outOfScope: null
 routes:
 - saint-malo-fr-portsmouth-gb
 slug: pont-aven-9268708

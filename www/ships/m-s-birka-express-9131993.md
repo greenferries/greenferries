@@ -4,7 +4,6 @@ company: seatrans-norway-no
 imo: 9131993
 layout: ship
 name: M/S Birka Express
-outOfScope: null
 routes: []
 slug: m-s-birka-express-9131993
 tags:

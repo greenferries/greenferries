@@ -4,7 +4,6 @@ company: viking-ocean-cruises-us
 imo: 9650420
 layout: ship
 name: MV Viking Sky
-outOfScope: null
 routes: []
 slug: mv-viking-sky-9650420
 tags:

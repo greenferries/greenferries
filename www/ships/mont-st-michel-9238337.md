@@ -4,7 +4,6 @@ company: brittany-ferries-fr
 imo: 9238337
 layout: ship
 name: Mont St Michel
-outOfScope: null
 routes:
 - caen-ouistreham-fr-portsmouth-gb
 slug: mont-st-michel-9238337

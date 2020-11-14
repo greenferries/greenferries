@@ -4,7 +4,6 @@ company: corsica-linea-fr
 imo: 9161948
 layout: ship
 name: Jean Nicoli
-outOfScope: null
 routes:
 - marseille-fr-ajaccio-fr
 slug: jean-nicoli-9161948

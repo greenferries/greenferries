@@ -4,7 +4,6 @@ company: stena-line-se
 imo: 9235517
 layout: ship
 name: MS Stena Scandinavica
-outOfScope: null
 routes:
 - goteborg-se-kiel-de
 slug: ms-stena-scandinavica-9235517

@@ -4,7 +4,6 @@ company: brittany-ferries-fr
 imo: 9006253
 layout: ship
 name: Normandie
-outOfScope: null
 routes:
 - caen-ouistreham-fr-portsmouth-gb
 slug: normandie-9006253

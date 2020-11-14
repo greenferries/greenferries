@@ -4,7 +4,6 @@ company: fjord-line-no
 imo: 9586605
 layout: ship
 name: MS Stavangerfjord
-outOfScope: null
 routes: []
 slug: ms-stavangerfjord-9586605
 tags:

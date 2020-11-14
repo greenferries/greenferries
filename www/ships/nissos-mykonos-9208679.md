@@ -4,7 +4,6 @@ company: hellenic-seaways-gr
 imo: 9208679
 layout: ship
 name: Nissos Mykonos
-outOfScope: null
 routes:
 - fournoi-gr-syros-gr
 - chios-gr-limnos-myrina-gr

@@ -4,7 +4,6 @@ company: viking-ocean-cruises-us
 imo: 9650418
 layout: ship
 name: Viking Star
-outOfScope: null
 routes: []
 slug: viking-star-9650418
 tags:

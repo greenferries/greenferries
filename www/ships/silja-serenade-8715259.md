@@ -4,7 +4,6 @@ company: silja-line-fi
 imo: 8715259
 layout: ship
 name: Silja Serenade
-outOfScope: null
 routes:
 - helsinki-fi-stockholm-se
 slug: silja-serenade-8715259

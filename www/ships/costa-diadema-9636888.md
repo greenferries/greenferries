@@ -4,7 +4,6 @@ company: costa-cruises-it
 imo: 9636888
 layout: ship
 name: Costa Diadema
-outOfScope: null
 routes: []
 slug: costa-diadema-9636888
 tags:

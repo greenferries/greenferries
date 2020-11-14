@@ -4,7 +4,6 @@ company: oceania-cruises-us
 imo: 9438078
 layout: ship
 name: MS Riviera
-outOfScope: null
 routes: []
 slug: ms-riviera-9438078
 tags:

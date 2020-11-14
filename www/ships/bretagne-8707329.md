@@ -4,7 +4,6 @@ company: brittany-ferries-fr
 imo: 8707329
 layout: ship
 name: Bretagne
-outOfScope: null
 routes:
 - saint-malo-fr-portsmouth-gb
 slug: bretagne-8707329

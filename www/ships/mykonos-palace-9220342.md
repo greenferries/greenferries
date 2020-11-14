@@ -4,7 +4,6 @@ company: tirrenia-it
 imo: 9220342
 layout: ship
 name: Mykonos Palace
-outOfScope: null
 routes:
 - ancona-it-patras-gr
 slug: mykonos-palace-9220342

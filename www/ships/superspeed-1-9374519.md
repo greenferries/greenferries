@@ -4,7 +4,6 @@ company: color-line-no
 imo: 9374519
 layout: ship
 name: Superspeed 1
-outOfScope: null
 routes: []
 slug: superspeed-1-9374519
 tags:

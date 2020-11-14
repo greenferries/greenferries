@@ -4,7 +4,6 @@ company: p-o-ferries-gb
 imo: 9208394
 layout: ship
 name: MV European Causeway
-outOfScope: null
 routes:
 - cairnryan-gb-larne-gb
 slug: mv-european-causeway-9208394

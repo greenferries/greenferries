@@ -4,7 +4,6 @@ company: tallink-ee
 imo: 9443255
 layout: ship
 name: Baltic Queen
-outOfScope: null
 routes: []
 slug: baltic-queen-9443255
 tags:

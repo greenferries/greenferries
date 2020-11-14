@@ -4,7 +4,6 @@ company: viking-line-fi
 imo: 9375654
 layout: ship
 name: MS Viking XPRS
-outOfScope: null
 routes: []
 slug: ms-viking-xprs-9375654
 tags:

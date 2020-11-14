@@ -4,7 +4,6 @@ company: color-line-no
 imo: 9349863
 layout: ship
 name: Color Magic
-outOfScope: null
 routes: []
 slug: color-magic-9349863
 tags:

@@ -4,7 +4,6 @@ company: p-o-ferries-gb
 imo: 7128887
 layout: ship
 name: M/S Ionian Spirit
-outOfScope: null
 routes:
 - brindisi-it-vlora-al
 slug: m-s-ionian-spirit-7128887

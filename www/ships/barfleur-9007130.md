@@ -4,7 +4,6 @@ company: brittany-ferries-fr
 imo: 9007130
 layout: ship
 name: Barfleur
-outOfScope: null
 routes:
 - cherbourg-fr-poole-gb
 slug: barfleur-9007130

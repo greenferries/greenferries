@@ -4,7 +4,6 @@ company: grandi-navi-veloci-it
 imo: 9184419
 layout: ship
 name: Excelsior
-outOfScope: null
 routes:
 - genes-it-tunis-tn
 slug: excelsior-9184419

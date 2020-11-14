@@ -4,7 +4,6 @@ company: corsica-ferries-sardinia-ferries-fr
 imo: 7305253
 layout: ship
 name: Corsica Victoria
-outOfScope: null
 routes:
 - nice-fr-bastia-fr
 - savona-it-bastia-fr

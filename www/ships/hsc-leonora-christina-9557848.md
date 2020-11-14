@@ -4,7 +4,6 @@ company: bornholmerfaergen-dk
 imo: 9557848
 layout: ship
 name: HSC Leonora Christina
-outOfScope: null
 routes: []
 slug: hsc-leonora-christina-9557848
 tags:

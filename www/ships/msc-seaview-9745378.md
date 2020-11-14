@@ -4,7 +4,6 @@ company: msc-cruises-it
 imo: 9745378
 layout: ship
 name: MSC Seaview
-outOfScope: null
 routes: []
 slug: msc-seaview-9745378
 tags:

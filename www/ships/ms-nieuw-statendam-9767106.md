@@ -4,7 +4,6 @@ company: holland-america-line-us
 imo: 9767106
 layout: ship
 name: MS Nieuw Statendam
-outOfScope: null
 routes: []
 slug: ms-nieuw-statendam-9767106
 tags:

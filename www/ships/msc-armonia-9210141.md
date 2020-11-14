@@ -4,7 +4,6 @@ company: msc-cruises-it
 imo: 9210141
 layout: ship
 name: MSC Armonia
-outOfScope: null
 routes: []
 slug: msc-armonia-9210141
 tags:

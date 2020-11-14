@@ -4,7 +4,6 @@ company: color-line-no
 imo: 9132002
 layout: ship
 name: Color Carrier
-outOfScope: null
 routes: []
 slug: color-carrier-9132002
 tags:

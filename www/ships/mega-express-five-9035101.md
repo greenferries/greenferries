@@ -4,7 +4,6 @@ company: corsica-ferries-sardinia-ferries-fr
 imo: 9035101
 layout: ship
 name: Mega Express Five
-outOfScope: null
 routes:
 - toulon-fr-ajaccio-fr
 slug: mega-express-five-9035101

@@ -4,7 +4,6 @@ company: costa-cruises-it
 imo: 9378498
 layout: ship
 name: Costa Pacifica
-outOfScope: null
 routes: []
 slug: costa-pacifica-9378498
 tags:

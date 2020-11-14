@@ -4,7 +4,6 @@ company: msc-cruises-it
 imo: 9320099
 layout: ship
 name: MSC Orchestra
-outOfScope: null
 routes: []
 slug: msc-orchestra-9320099
 tags:

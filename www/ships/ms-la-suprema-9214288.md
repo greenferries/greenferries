@@ -4,7 +4,6 @@ company: grandi-navi-veloci-it
 imo: 9214288
 layout: ship
 name: MS La Suprema
-outOfScope: null
 routes:
 - genes-it-palerme-it
 slug: ms-la-suprema-9214288

@@ -4,7 +4,6 @@ company: superfast-ferries-gr
 imo: 9227417
 layout: ship
 name: MS Superfast XI
-outOfScope: null
 routes:
 - ancona-it-igoumenitsa-gr
 - ancona-it-patras-gr

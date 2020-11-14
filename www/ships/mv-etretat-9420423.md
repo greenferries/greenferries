@@ -4,7 +4,6 @@ company: brittany-ferries-fr
 imo: 9420423
 layout: ship
 name: MV Étretat
-outOfScope: null
 routes:
 - le-havre-fr-portsmouth-gb
 slug: mv-etretat-9420423

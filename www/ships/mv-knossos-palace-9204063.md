@@ -4,7 +4,6 @@ company: minoan-lines-gr
 imo: 9204063
 layout: ship
 name: MV Knossos Palace
-outOfScope: null
 routes:
 - heraklion-gr-le-piree-gr
 - heraklion-gr-milos-gr

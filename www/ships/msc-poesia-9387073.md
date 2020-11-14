@@ -4,7 +4,6 @@ company: msc-cruises-it
 imo: 9387073
 layout: ship
 name: MSC Poesia
-outOfScope: null
 routes: []
 slug: msc-poesia-9387073
 tags:

@@ -4,7 +4,6 @@ company: corsica-linea-fr
 imo: 9247510
 layout: ship
 name: Pascal Paoli
-outOfScope: null
 routes:
 - marseille-fr-bastia-fr
 slug: pascal-paoli-9247510
