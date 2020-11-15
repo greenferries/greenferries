@@ -69,4 +69,8 @@ module.exports = function (eleventyConfig) {
     'shipsForRoute',
     ({ shipPages, routeSlug }) => shipPages.filter(ship => ship.data.routes.includes(routeSlug))
   )
+
+  eleventyConfig.addFilter('collectionSingularToPlural', singular => {
+    return {"company": "companies"}[singular] || `${singular}s`
+  })
 }

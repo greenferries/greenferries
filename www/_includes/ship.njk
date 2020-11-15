@@ -6,9 +6,12 @@
 
 {% block content %}
   <div class="container mx-auto mb-4 py-2 px-3 sm:px-0">
-    <h2 class="text-xl font-bold mb-4">
-      {{ name }}
-    </h2>
+    <div class="flex justify-between items-center mb-4">
+      <h2 class="text-xl font-bold">
+        {{ name }}
+      </h2>
+      {% include "_includes/admin_edit_link.njk" %}
+    </div>
     <div class="flex flex-col sm:flex-row mb-3">
       {% if photo %}
         <div class="mr-3">
@@ -60,7 +63,7 @@
       />
       <div>
         {{ ecoscore.hint }}
-        (on average kg·CO₂/passenger/km)
+        per person and km
       </div>
     </div>
 
