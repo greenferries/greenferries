@@ -6,7 +6,7 @@ slug: aidamira-9172777
 capacityPax: 1727
 photo: /img/600px-aida_mira.jpg
 routes: []
-outOfScope: false
+outOfScope: true
 unknownRoutes: false
 tags:
   - ship
