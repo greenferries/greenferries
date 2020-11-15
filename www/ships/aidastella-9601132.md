@@ -11,4 +11,5 @@ tags:
 photo: /img/300px-AIDAstella%2C_6.jpg
 unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/AIDAstella
+outOfScope: true
 ---

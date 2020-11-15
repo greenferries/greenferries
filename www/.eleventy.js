@@ -73,4 +73,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter('collectionSingularToPlural', singular => {
     return {"company": "companies"}[singular] || `${singular}s`
   })
+
+  eleventyConfig.addFilter('inScope', collection => Object.values(collection).filter(o => !o.data.outOfScope))
 }

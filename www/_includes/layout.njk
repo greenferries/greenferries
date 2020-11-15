@@ -61,7 +61,7 @@
           </div>
 
           <p class="py-2">
-            <a class="link mx-1" href="/ships">Explore all {{ collections.ship | length }} Ferries 🚢</a>
+            <a class="link mx-1" href="/ships">Explore all {{ collections.ship | inScope | length }} Ferries 🚢</a>
             <a class="link mx-1" href="/companies">Explore all {{ collections.company | length }} Companies 🏢</a>
             <a class="link mx-1" href="/admin">Edit data (open to everyone)</a>
           </p>

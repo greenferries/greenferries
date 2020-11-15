@@ -4,6 +4,9 @@
 
 {% block content %}
   <div class="container mx-auto mb-4 p-2">
+    <h2 class="text-xl font-bold mb-4">
+      All {{ companies | length }} ferry companies
+    </h2>
     <div class="mt-4 grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
       {% for companyPage in collections.company %}
         <a href="/companies/{{ companyPage.data.slug }}" class="flex items-center h-24 mb-3">
