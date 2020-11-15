@@ -9,7 +9,6 @@ routes: []
 slug: volcan-de-tamasite-9281322
 tags:
 - ship
-photo: /img/''
 unknownRoutes: true
 wikipediaUrl: https://de.wikipedia.org/wiki/Volcan_de_Tamasite
 ---

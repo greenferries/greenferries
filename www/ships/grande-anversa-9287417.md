@@ -8,7 +8,6 @@ routes: []
 slug: grande-anversa-9287417
 tags:
 - ship
-photo: /img/null
 unknownRoutes: null
 wikipediaUrl: null
 ---

@@ -9,7 +9,6 @@ routes:
 slug: honfleur-9832119
 tags:
 - ship
-photo: /img/null
 unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/MV_Honfleur
 ---

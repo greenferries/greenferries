@@ -10,7 +10,7 @@ routes:
 slug: express-pegasus-7521651
 tags:
 - ship
-photo: /img/300px-%22Express_Pegasus%22_-_Piraeus.jpg
+photo: /img/300px-Express_Pegasus_-_Piraeus.jpg
 unknownRoutes: false
 wikipediaUrl: https://de.wikipedia.org/wiki/Express_Pegasus
 ---

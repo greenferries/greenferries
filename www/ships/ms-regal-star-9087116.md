@@ -10,7 +10,6 @@ routes:
 slug: ms-regal-star-9087116
 tags:
 - ship
-photo: /img/''
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Regal_Star
 ---

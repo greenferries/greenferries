@@ -13,6 +13,9 @@ const getHint = gCo2PerMilePax => {
 }
 
 const getEcoscore = (gCo2PerMilePax) => {
+  if (gCo2PerMilePax === null || gCo2PerMilePax === undefined) {
+    return { score: 'unknown', hint: '' }
+  }
   const scoreIdx1 = thresholds.findIndex(t => gCo2PerMilePax < t)
   const scoreIdx = scoreIdx1 >= 0 ? scoreIdx1 : 4
   const score = scores[scoreIdx]

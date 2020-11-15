@@ -12,7 +12,7 @@ routes:
 slug: ms-gnv-cristal-8712518
 tags:
 - ship
-photo: /img/300px-%22GNV_Cristal%22_%28vue_avant%29_-_S%C3%A8te%2C_2018.jpg
+photo: /img/300px-GNV_Cristal_(vue_avant)_-_Sète,_2018.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_GNV_Cristal
 ---

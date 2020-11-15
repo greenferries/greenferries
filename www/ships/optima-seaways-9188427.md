@@ -9,7 +9,6 @@ routes: []
 slug: optima-seaways-9188427
 tags:
 - ship
-photo: /img/''
 unknownRoutes: true
 wikipediaUrl: https://sv.wikipedia.org/wiki/M/S_Optima_Seaways
 ---

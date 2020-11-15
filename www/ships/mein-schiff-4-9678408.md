@@ -8,7 +8,7 @@ routes: []
 slug: mein-schiff-4-9678408
 tags:
 - ship
-photo: /img/300px-%22Mein_Schiff_4%22_Kiel.JPG
+photo: /img/300px-Mein_Schiff_4_Kiel.JPG
 unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/Mein_Schiff_4
 ---

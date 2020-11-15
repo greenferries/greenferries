@@ -8,7 +8,6 @@ routes: []
 slug: m-s-birka-express-9131993
 tags:
 - ship
-photo: /img/null
 unknownRoutes: null
 wikipediaUrl: https://fi.wikipedia.org/wiki/M/S_Birka_Express
 ---

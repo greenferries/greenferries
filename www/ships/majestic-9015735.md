@@ -12,7 +12,7 @@ routes:
 slug: majestic-9015735
 tags:
 - ship
-photo: /img/300px-%22Majestic%22_-_S%C3%A8te%2C_2015.JPG
+photo: /img/300px-Majestic_-_Sète,_2015.JPG
 unknownRoutes: false
 wikipediaUrl: https://fr.wikipedia.org/wiki/Majestic_(ferry)
 ---

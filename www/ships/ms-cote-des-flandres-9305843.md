@@ -10,7 +10,6 @@ routes:
 slug: ms-cote-des-flandres-9305843
 tags:
 - ship
-photo: /img/''
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Berlioz
 ---

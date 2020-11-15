@@ -9,7 +9,6 @@ routes: []
 slug: aidamira-9172777
 tags:
 - ship
-photo: /img/''
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/AIDAmira
 ---
