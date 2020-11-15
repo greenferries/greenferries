@@ -8,5 +8,4 @@ name: Lumparland
 slug: ax-lumparland-647455
 tags:
 - city
-targetAirportCode: null
 ---

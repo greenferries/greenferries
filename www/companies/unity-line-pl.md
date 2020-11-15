@@ -1,10 +1,8 @@
 ---
 country: PL
-imo: null
 layout: company
 logo: /img/i8g5yg4sncrxu2j1hpurnu3gpe3h.png
 name: Unity Line
-officialUrl: null
 slug: unity-line-pl
 tags:
 - company

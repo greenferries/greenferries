@@ -1,6 +1,5 @@
 ---
 country: GB
-imo: null
 layout: company
 logo: /img/zhvfu784mqzc2ax1hqp04ixltdh0.png
 name: P&O Ferries

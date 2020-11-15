@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: tallink-ee
 imo: 7128332
 layout: ship

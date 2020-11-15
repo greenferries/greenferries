@@ -1,10 +1,8 @@
 ---
 country: FI
-imo: null
 layout: company
 logo: /img/1fk3guao735nrn6aou86f142gwtp.png
 name: Finnlines
-officialUrl: null
 slug: finnlines-fi
 tags:
 - company

@@ -1,6 +1,5 @@
 ---
 country: DK
-imo: null
 layout: company
 logo: /img/tf0b5930q1r00j4l1j8nrdgz1ejx.png
 name: BornholmerFærgen

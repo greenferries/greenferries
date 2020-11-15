@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: isle-of-man-steam-packet-company-gb
 imo: 9176072
 layout: ship

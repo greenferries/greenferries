@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: finnlines-fi
 imo: 9017769
 layout: ship

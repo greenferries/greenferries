@@ -1,6 +1,5 @@
 ---
 country: ES
-imo: null
 layout: company
 logo: /img/u97ptotom7sppqnnm369fswukm17.png
 name: Naviera Armas

@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: hapag-lloyd-de
 imo: 9183855
 layout: ship

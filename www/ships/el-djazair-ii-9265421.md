@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: algerie-ferries-dz
 imo: 9265421
 layout: ship

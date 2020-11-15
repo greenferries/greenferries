@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: brittany-ferries-fr
 imo: 9349760
 layout: ship

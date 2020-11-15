@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: moby-lines-it
 imo: 9221310
 layout: ship

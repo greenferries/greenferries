@@ -1,6 +1,5 @@
 ---
 country: FI
-imo: null
 layout: company
 logo: /img/b99xgt9dij2jzv5kle13ir6991vg.png
 name: St. Peter Line

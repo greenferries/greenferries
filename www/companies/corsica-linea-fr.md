@@ -4,7 +4,6 @@ imo: 5899324
 layout: company
 logo: /img/1hpehxgt12xq4u25vzu7ml9q6cfz.png
 name: Corsica Linea
-officialUrl: null
 slug: corsica-linea-fr
 tags:
 - company

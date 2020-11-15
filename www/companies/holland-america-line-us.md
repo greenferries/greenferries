@@ -1,6 +1,5 @@
 ---
 country: US
-imo: null
 layout: company
 logo: /img/tftoasjnzis2ufjzeneqedj8e4wr.png
 name: Holland America Line

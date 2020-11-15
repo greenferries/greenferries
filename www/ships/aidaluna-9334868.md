@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: costa-cruises-it
 imo: 9334868
 layout: ship

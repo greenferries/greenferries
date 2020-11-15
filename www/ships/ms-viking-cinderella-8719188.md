@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: viking-line-fi
 imo: 8719188
 layout: ship

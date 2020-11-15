@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: p-o-ferries-gb
 imo: 9169550
 layout: ship

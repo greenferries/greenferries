@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: celebrity-cruises-us
 imo: 8918136
 layout: ship

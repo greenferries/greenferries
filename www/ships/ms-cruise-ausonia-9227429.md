@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: grimaldi-lines-it
 imo: 9227429
 layout: ship

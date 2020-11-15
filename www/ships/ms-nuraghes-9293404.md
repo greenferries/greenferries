@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: tirrenia-it
 imo: 9293404
 layout: ship

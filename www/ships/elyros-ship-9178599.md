@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: anek-lines-gr
 imo: 9178599
 layout: ship

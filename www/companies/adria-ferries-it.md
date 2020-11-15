@@ -1,6 +1,5 @@
 ---
 country: IT
-imo: null
 layout: company
 logo: /img/4g27warpncgd9ofhyh231vo825hs.png
 name: Adria Ferries

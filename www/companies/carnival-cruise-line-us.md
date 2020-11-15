@@ -1,6 +1,5 @@
 ---
 country: US
-imo: null
 layout: company
 logo: /img/a13glogtrjp8swe3gsyy4fx3ioq9.png
 name: Carnival Cruise Line

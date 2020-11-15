@@ -8,5 +8,4 @@ name: Mariehamn
 slug: ax-mariehamn-3041732
 tags:
 - city
-targetAirportCode: null
 ---

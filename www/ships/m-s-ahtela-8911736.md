@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: seatrans-norway-no
 imo: 8911736
 layout: ship

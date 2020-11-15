@@ -1,6 +1,5 @@
 ---
 country: FI
-imo: null
 layout: company
 logo: /img/fwfyz65nr9yge5mxuqalg0y4x8xy.png
 name: Viking Line

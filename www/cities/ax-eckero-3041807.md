@@ -8,5 +8,4 @@ name: Eckerö
 slug: ax-eckero-3041807
 tags:
 - city
-targetAirportCode: null
 ---

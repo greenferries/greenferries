@@ -1,6 +1,5 @@
 ---
 country: DK
-imo: null
 layout: company
 logo: /img/ckltbfqdd7jpsgwiap0wbrudbr9t.png
 name: DFDS Seaways

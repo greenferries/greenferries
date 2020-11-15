@@ -1,6 +1,5 @@
 ---
 country: GB
-imo: null
 layout: company
 logo: /img/73ny6j68pynzyfzsdddyymxoiwzm.png
 name: Isle of Man Steam Packet Company

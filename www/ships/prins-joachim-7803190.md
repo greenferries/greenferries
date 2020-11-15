@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: dsb-dk
 imo: 7803190
 layout: ship

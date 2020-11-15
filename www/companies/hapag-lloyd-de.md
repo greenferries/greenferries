@@ -1,6 +1,5 @@
 ---
 country: DE
-imo: null
 layout: company
 logo: /img/yfg3o8dzogvucbe8bqoevhqe1bt9.png
 name: Hapag-Lloyd

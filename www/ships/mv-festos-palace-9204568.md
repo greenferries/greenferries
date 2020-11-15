@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: minoan-lines-gr
 imo: 9204568
 layout: ship

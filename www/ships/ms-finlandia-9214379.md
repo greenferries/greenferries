@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: eckero-line-fi
 imo: 9214379
 layout: ship

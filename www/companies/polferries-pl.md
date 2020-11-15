@@ -1,6 +1,5 @@
 ---
 country: PL
-imo: null
 layout: company
 logo: /img/yto68gvza55o3fsg7a0ho85nc7ej.png
 name: Polferries

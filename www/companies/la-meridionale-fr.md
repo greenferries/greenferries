@@ -1,10 +1,8 @@
 ---
 country: FR
-imo: null
 layout: company
 logo: /img/yb8cn062kuwgbau1kzbwcs89mhcj.png
 name: La Méridionale
-officialUrl: null
 slug: la-meridionale-fr
 tags:
 - company

@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: cruise-maritime-voyages-gb
 imo: 5383304
 layout: ship

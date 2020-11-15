@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: fred-olsen-cruise-lines-no
 imo: 8506294
 layout: ship

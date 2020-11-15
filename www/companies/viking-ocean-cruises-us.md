@@ -1,6 +1,5 @@
 ---
 country: US
-imo: null
 layout: company
 logo: /img/vaovhvvglmk71jchsay3xw855xoq.png
 name: Viking Ocean Cruises

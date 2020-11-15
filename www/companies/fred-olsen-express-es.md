@@ -1,6 +1,5 @@
 ---
 country: ES
-imo: null
 layout: company
 logo: /img/9n3u21qham5dr4vlzirtxp9abs59.png
 name: Fred. Olsen Express

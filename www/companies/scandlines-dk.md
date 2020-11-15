@@ -1,6 +1,5 @@
 ---
 country: DK
-imo: null
 layout: company
 logo: /img/1qh49k7x175ki21rz1hjjyuq1fit.png
 name: Scandlines

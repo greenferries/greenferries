@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: hurtigruten-group-no
 imo: 9247728
 layout: ship

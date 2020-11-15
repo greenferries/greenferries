@@ -1,6 +1,5 @@
 ---
 country: FI
-imo: null
 layout: company
 logo: /img/r1vaesmdmdei27km42or9id33dku.png
 name: Eckerö Line

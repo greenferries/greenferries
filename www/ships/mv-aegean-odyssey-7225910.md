@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: road-scholar-us
 imo: 7225910
 layout: ship

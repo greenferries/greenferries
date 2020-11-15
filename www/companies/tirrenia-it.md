@@ -1,6 +1,5 @@
 ---
 country: IT
-imo: null
 layout: company
 logo: /img/76ko55wwdc8sjwx97qtna95towbs.png
 name: Tirrenia

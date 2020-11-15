@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: stena-line-se
 imo: 9131797
 layout: ship

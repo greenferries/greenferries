@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: ventouris-ferries-au
 imo: 7826788
 layout: ship

@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: naviera-armas-es
 imo: 9281322
 layout: ship

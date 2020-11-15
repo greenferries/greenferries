@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: seajets-gr
 imo: 9151008
 layout: ship

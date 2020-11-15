@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: dfds-seaways-dk
 imo: 9320128
 layout: ship

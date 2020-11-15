@@ -1,6 +1,5 @@
 ---
 country: EE
-imo: null
 layout: company
 logo: /img/4rwzilfpj0r0t3fskomfzcvqz4rr.png
 name: Tallink

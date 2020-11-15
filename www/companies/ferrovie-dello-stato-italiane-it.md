@@ -1,6 +1,5 @@
 ---
 country: IT
-imo: null
 layout: company
 logo: /img/750zh5l5l46tjnf3l0njetvqs8o2.png
 name: Ferrovie dello Stato Italiane

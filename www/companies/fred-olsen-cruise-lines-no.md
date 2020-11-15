@@ -1,6 +1,5 @@
 ---
 country: 'NO'
-imo: null
 layout: company
 logo: /img/ok87gm64agfwb1dxiyzswgqupxzd.png
 name: Fred. Olsen Cruise Lines

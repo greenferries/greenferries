@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: color-line-no
 imo: 9132002
 layout: ship

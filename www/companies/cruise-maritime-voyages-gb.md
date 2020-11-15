@@ -1,10 +1,8 @@
 ---
 country: GB
-imo: null
 layout: company
 logo: /img/tyq1i1xjgmmc9a4qrmvn196dqlam.png
 name: Cruise & Maritime Voyages
-officialUrl: null
 slug: cruise-maritime-voyages-gb
 tags:
 - company

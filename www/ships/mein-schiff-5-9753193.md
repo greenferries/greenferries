@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: tui-cruises-de
 imo: 9753193
 layout: ship

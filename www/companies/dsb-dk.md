@@ -1,6 +1,5 @@
 ---
 country: DK
-imo: null
 layout: company
 logo: /img/oo8telmolq7mdnqupjyagh1pmn34.png
 name: DSB

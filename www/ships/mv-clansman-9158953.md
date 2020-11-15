@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: caledonian-maritime-assets-gb
 imo: 9158953
 layout: ship

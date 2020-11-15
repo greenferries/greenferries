@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: tt-line-de
 imo: 9087465
 layout: ship

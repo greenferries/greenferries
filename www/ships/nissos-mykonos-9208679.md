@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: hellenic-seaways-gr
 imo: 9208679
 layout: ship

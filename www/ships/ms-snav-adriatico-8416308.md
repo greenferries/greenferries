@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: trasmediterranea-es
 imo: 8416308
 layout: ship

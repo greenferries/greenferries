@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: regent-seven-seas-cruises-us
 imo: 9247144
 layout: ship

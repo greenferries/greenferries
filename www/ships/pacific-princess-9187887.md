@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: princess-cruises-us
 imo: 9187887
 layout: ship

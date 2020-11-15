@@ -1,6 +1,5 @@
 ---
 country: 'NO'
-imo: null
 layout: company
 logo: /img/utydxlrhksecn5qgnligm2vfxbwb.png
 name: Color Line

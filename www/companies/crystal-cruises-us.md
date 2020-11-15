@@ -1,6 +1,5 @@
 ---
 country: US
-imo: null
 layout: company
 logo: /img/iitdosijj9pvysz28z5l4m8qcx9f.png
 name: Crystal Cruises

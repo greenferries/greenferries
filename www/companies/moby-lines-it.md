@@ -1,6 +1,5 @@
 ---
 country: IT
-imo: null
 layout: company
 logo: /img/v79nosys7dlppp4nomgp8ee76dkn.png
 name: Moby Lines

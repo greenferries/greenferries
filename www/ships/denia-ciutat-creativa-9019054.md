@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: balearia-es
 imo: 9019054
 layout: ship

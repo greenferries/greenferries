@@ -8,5 +8,4 @@ name: Stromness
 slug: gb-stromness
 tags:
 - city
-targetAirportCode: null
 ---

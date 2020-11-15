@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: blue-star-ferries-gr
 imo: 8616336
 layout: ship

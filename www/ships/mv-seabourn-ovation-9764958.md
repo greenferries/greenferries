@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: holland-america-line-us
 imo: 9764958
 layout: ship

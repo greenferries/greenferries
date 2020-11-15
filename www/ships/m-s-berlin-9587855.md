@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: scandlines-dk
 imo: 9587855
 layout: ship

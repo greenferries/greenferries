@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: unity-line-pl
 imo: 8604711
 layout: ship

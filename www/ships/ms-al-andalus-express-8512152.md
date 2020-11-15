@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: frs-iberia-maroc-dz
 imo: 8512152
 layout: ship

@@ -1,6 +1,5 @@
 ---
 country: 'NO'
-imo: null
 layout: company
 logo: /img/jmqotm70p9acnswic7xktqaylll2.png
 name: Fjord Line

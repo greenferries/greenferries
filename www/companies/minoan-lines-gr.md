@@ -1,6 +1,5 @@
 ---
 country: GR
-imo: null
 layout: company
 logo: /img/bhizbob8tsatmsla3fl10j15qww4.png
 name: Minoan Lines

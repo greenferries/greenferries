@@ -1,6 +1,5 @@
 ---
 country: 'NO'
-imo: null
 layout: company
 logo: /img/pz7r3c0uoyqlvt0yao4ybknasbzj.png
 name: Hurtigruten Group

@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: wightlink-gb
 imo: 9236949
 layout: ship

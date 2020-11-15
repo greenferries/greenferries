@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: saga-cruises-gb
 imo: 8000214
 layout: ship

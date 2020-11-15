@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: royal-caribbean-international-us
 imo: 9070620
 layout: ship

@@ -1,6 +1,5 @@
 ---
 country: GB
-imo: null
 layout: company
 logo: /img/kbjtnljw1y0rqg4h34g9fcf69b1f.png
 name: Cunard Line

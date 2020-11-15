@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: oceania-cruises-us
 imo: 9438078
 layout: ship

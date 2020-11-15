@@ -1,6 +1,5 @@
 ---
 country: ES
-imo: null
 layout: company
 logo: /img/tzmnu73fthq58kydc8fxk7hy5x01.png
 name: Baleària

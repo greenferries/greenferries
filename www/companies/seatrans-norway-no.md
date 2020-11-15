@@ -1,6 +1,5 @@
 ---
 country: 'NO'
-imo: null
 layout: company
 logo: /img/.png
 name: Seatrans (Norway)

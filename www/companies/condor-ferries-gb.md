@@ -1,6 +1,5 @@
 ---
 country: GB
-imo: null
 layout: company
 logo: /img/ttx2b3g0ex9hv0t21w2546ta4wbo.png
 name: Condor Ferries

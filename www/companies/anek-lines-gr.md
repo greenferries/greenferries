@@ -1,6 +1,5 @@
 ---
 country: GR
-imo: null
 layout: company
 logo: /img/mc2lz591wa8yiuqqm2q1bav7ch11.png
 name: ANEK Lines

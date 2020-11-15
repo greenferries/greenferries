@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: superfast-ferries-gr
 imo: 9227417
 layout: ship

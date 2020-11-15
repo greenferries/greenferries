@@ -1,6 +1,5 @@
 ---
 country: HR
-imo: null
 layout: company
 logo: /img/3mqq5n031bfc99vyw317s2imibib.png
 name: Jadrolinija

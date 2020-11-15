@@ -1,6 +1,5 @@
 ---
 country: ES
-imo: null
 layout: company
 logo: /img/ovsjggcr0cyxvdcao88us8nh6n3a.png
 name: Trasmediterránea

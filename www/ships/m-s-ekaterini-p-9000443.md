@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: fast-ferries-gr
 imo: 9000443
 layout: ship

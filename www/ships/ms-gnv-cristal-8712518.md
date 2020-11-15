@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: grandi-navi-veloci-it
 imo: 8712518
 layout: ship

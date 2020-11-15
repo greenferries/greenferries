@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: northlink-ferries-gb
 imo: 9244960
 layout: ship

@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: compagnie-tunisienne-de-navigation-tn
 imo: 9185396
 layout: ship

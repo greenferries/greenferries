@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: visemar-di-navigazione-it
 imo: 9349772
 layout: ship

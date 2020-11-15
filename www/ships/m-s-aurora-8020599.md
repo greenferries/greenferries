@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: transfennica-fi
 imo: 8020599
 layout: ship

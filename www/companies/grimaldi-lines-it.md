@@ -1,6 +1,5 @@
 ---
 country: IT
-imo: null
 layout: company
 logo: /img/.png
 name: Grimaldi Lines

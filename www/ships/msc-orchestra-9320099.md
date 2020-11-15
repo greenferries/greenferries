@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: msc-cruises-it
 imo: 9320099
 layout: ship

@@ -1,6 +1,5 @@
 ---
 country: SE
-imo: null
 layout: company
 logo: /img/xbcszxvq85rzbapbok60vxembal3.png
 name: Stena Line

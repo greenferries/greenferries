@@ -1,6 +1,5 @@
 ---
 country: JP
-imo: null
 layout: company
 logo: /img/romw13fdjaej1zc9ukcjkw1rpxzk.png
 name: Nippon Yusen

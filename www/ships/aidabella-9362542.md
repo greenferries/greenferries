@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: aida-cruises-de
 imo: 9362542
 layout: ship

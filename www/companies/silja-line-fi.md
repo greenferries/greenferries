@@ -1,6 +1,5 @@
 ---
 country: FI
-imo: null
 layout: company
 logo: /img/1g36ct2cd2r4hwz79b9fxvjfx8d2.png
 name: Silja Line

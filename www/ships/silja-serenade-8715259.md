@@ -1,5 +1,4 @@
 ---
-capacityPax: null
 company: silja-line-fi
 imo: 8715259
 layout: ship
