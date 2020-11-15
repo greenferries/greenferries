@@ -11,4 +11,5 @@ tags:
 - ship
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Finnstar
+photo: /img/finnstar-9319442.png
 ---

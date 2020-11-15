@@ -9,7 +9,7 @@ routes:
 slug: m-s-europalink-9319454
 tags:
 - ship
-photo: /img/300px-M_cursiva.gif
+photo: /img/ms-europalink.jpg
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/M/S_Europalink
 ---

@@ -10,4 +10,5 @@ tags:
 - ship
 unknownRoutes: true
 wikipediaUrl: https://sv.wikipedia.org/wiki/M/S_Optima_Seaways
+photo: /img/optima-seaways.jpg
 ---

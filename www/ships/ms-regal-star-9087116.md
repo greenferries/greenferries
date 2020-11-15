@@ -11,4 +11,5 @@ tags:
 - ship
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Regal_Star
+photo: /img/ms-regal-star-9087116.jpg
 ---

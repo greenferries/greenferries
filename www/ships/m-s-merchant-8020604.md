@@ -10,4 +10,5 @@ tags:
 - ship
 unknownRoutes: true
 wikipediaUrl: https://fi.wikipedia.org/wiki/M/S_Merchant
+photo: /img/ms-merchant-8010604.jpg
 ---

@@ -11,4 +11,5 @@ tags:
 - ship
 unknownRoutes: true
 wikipediaUrl: https://da.wikipedia.org/wiki/M/S_Hammerodde
+photo: /img/stena-vinga-9323699.jpg
 ---

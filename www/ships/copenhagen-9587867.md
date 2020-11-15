@@ -8,4 +8,5 @@ slug: copenhagen-9587867
 tags:
 - ship
 wikipediaUrl: https://da.wikipedia.org/wiki/M/F_Copenhagen
+photo: /img/mf-copenhagen.jpg
 ---

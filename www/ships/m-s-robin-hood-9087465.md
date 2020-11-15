@@ -11,4 +11,5 @@ tags:
 - ship
 unknownRoutes: false
 wikipediaUrl: https://fi.wikipedia.org/wiki/M/S_Robin_Hood
+photo: /img/ms-robin-hood.jpg
 ---

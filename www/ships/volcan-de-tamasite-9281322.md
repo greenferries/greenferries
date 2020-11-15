@@ -10,4 +10,5 @@ tags:
 - ship
 unknownRoutes: true
 wikipediaUrl: https://de.wikipedia.org/wiki/Volcan_de_Tamasite
+photo: /img/volcan-de-tamasite-9281322.jpg
 ---

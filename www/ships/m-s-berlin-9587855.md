@@ -8,4 +8,5 @@ slug: m-s-berlin-9587855
 tags:
 - ship
 wikipediaUrl: https://da.wikipedia.org/wiki/M/F_Berlin
+photo: /img/mf-berlin.jpg
 ---

@@ -11,4 +11,5 @@ tags:
 - ship
 unknownRoutes: false
 wikipediaUrl: https://fi.wikipedia.org/wiki/M/S_Ekaterini_P
+photo: /img/m-s-ekaterini-p-9000443.jpg
 ---

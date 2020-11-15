@@ -10,6 +10,6 @@ routes:
 slug: sardinia-regina-7205910
 tags:
 - ship
-photo: /img/300px-Corsica_Ferries_Sardinia_Regina_04_IMO_7205910_%40chesi.JPG
+photo: /img/sardinia_regina.jpg
 wikipediaUrl: https://fr.wikipedia.org/wiki/Sardinia_Regina
 ---

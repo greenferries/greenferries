@@ -9,4 +9,5 @@ routes:
 slug: commodore-clipper-9201750
 tags:
 - ship
+photo: /img/commodore-clipper-9201750.jpg
 ---

@@ -10,4 +10,5 @@ tags:
 - ship
 unknownRoutes: true
 wikipediaUrl: https://de.wikipedia.org/wiki/Patria_Seaways
+photo: /img/patria-seaways.jpg
 ---

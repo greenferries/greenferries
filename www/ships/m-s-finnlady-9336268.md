@@ -10,4 +10,5 @@ tags:
 - ship
 unknownRoutes: true
 wikipediaUrl: https://de.wikipedia.org/wiki/Finnlady
+photo: /img/finnlady-9336268.png
 ---

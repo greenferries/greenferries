@@ -9,4 +9,5 @@ slug: ms-stena-superfast-vii-9198941
 tags:
 - ship
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Stena_Superfast_VII
+photo: /img/stena-superfast-vii.png
 ---

@@ -8,4 +8,6 @@ slug: trans-carrier-9007879
 tags:
 - ship
 wikipediaUrl: https://fi.wikipedia.org/wiki/M/S_Trans_Carrier
+photo: /img/ms-trans-carrier.jpg
+outOfScope: true
 ---

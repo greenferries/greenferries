@@ -9,7 +9,7 @@ routes:
 slug: m-s-finnswan-9336256
 tags:
 - ship
-photo: /img/300px-M_cursiva.gif
+photo: /img/ms-finnswan.png
 unknownRoutes: false
 wikipediaUrl: https://en.wikipedia.org/wiki/M/S_Nordlink
 ---

@@ -10,4 +10,5 @@ slug: honfleur-9832119
 tags:
 - ship
 wikipediaUrl: https://en.wikipedia.org/wiki/MV_Honfleur
+photo: /img/honfleur-9832119.jpg
 ---

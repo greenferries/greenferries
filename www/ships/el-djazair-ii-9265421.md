@@ -10,4 +10,5 @@ tags:
 - ship
 unknownRoutes: true
 wikipediaUrl: https://fr.wikipedia.org/wiki/El_Djaza%C3%AFr_II
+photo: /img/el-djazair-ii-9265421.jpg
 ---
