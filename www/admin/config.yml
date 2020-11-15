@@ -15,7 +15,7 @@ collections:
     folder: www/ships
     identifierField: slug
     create: true
-    slug: "{{slug}}-{{imo}}"
+    slug: "{{fields.slug}}"
     summary: "{{name}} - {{company}} - {{routes}}"
     view_filters:
       - label: In scope
@@ -37,9 +37,9 @@ collections:
         search_fields: ["name"]
         value_field: "slug"
         display_fields: ["{{name}} ({{country}})"]
-      - {name: "capacityPax", label: "Capacity (persons)", widget: "number"}
-      - {name: "wikipediaUrl", label: "Wikipedia URL", widget: "string"}
-      - {name: "photo", label: "Photo", widget: "image"}
+      - {name: "capacityPax", label: "Capacity (persons)", widget: "number", required: false}
+      - {name: "wikipediaUrl", label: "Wikipedia URL", widget: "string", required: false}
+      - {name: "photo", label: "Photo", widget: "image", required: false}
       - label: Routes
         name: routes
         widget: relation
@@ -48,6 +48,7 @@ collections:
         search_fields: ["slug"]
         value_field: "slug"
         display_fields: ["slug"]
+        required: false
       - {name: "outOfScope", label: "Out of scope (not a passenger ferry)", widget: "boolean", required: false}
   - name: companies
     label: Companies
