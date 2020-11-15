@@ -9,6 +9,4 @@ routes:
 slug: commodore-clipper-9201750
 tags:
 - ship
-unknownRoutes: null
-wikipediaUrl: null
 ---

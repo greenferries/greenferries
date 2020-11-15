@@ -10,6 +10,5 @@ slug: mont-st-michel-9238337
 tags:
 - ship
 photo: /img/300px-Brittany_Ferries_Mont_St._Michel.JPG
-unknownRoutes: null
 wikipediaUrl: https://fr.wikipedia.org/wiki/MV_Mont_St_Michel
 ---

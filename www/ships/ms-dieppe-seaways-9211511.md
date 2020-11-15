@@ -10,6 +10,5 @@ slug: ms-dieppe-seaways-9211511
 tags:
 - ship
 photo: /img/300px-SeaFrance_Moli%C3%A8re_light_cropped.jpg
-unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Stena_Superfast_X
 ---

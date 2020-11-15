@@ -9,6 +9,5 @@ slug: hsc-benchijigua-express-9299056
 tags:
 - ship
 photo: /img/300px-Image-Cruiseferry_Tenerife_2.JPG
-unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/HSC_Benchijigua_Express
 ---

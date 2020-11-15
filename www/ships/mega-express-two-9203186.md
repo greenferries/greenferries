@@ -21,6 +21,5 @@ slug: mega-express-two-9203186
 tags:
 - ship
 photo: /img/300px-Mega_Express_Two.jpg
-unknownRoutes: null
 wikipediaUrl: https://fr.wikipedia.org/wiki/Mega_Express_Two
 ---

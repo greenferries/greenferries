@@ -11,6 +11,5 @@ slug: ms-superfast-xi-9227417
 tags:
 - ship
 photo: /img/300px-Superfast_XI.jpg
-unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Superfast_XI
 ---

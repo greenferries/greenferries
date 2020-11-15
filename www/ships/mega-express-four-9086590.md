@@ -21,6 +21,5 @@ slug: mega-express-four-9086590
 tags:
 - ship
 photo: /img/300px-Corsica_Ferries_Mega_Express_Four_03.JPG
-unknownRoutes: null
 wikipediaUrl: https://fr.wikipedia.org/wiki/Mega_Express_Four
 ---

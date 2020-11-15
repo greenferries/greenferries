@@ -15,6 +15,5 @@ slug: corsica-victoria-7305253
 tags:
 - ship
 photo: /img/300px-Corsica_and_Sardinia_ferries_in_port_Vado_Ligure.jpg
-unknownRoutes: null
 wikipediaUrl: https://fr.wikipedia.org/wiki/Corsica_Victoria
 ---

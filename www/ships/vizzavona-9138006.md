@@ -10,6 +10,5 @@ slug: vizzavona-9138006
 tags:
 - ship
 photo: /img/300px-Finneagle.jpg
-unknownRoutes: null
 wikipediaUrl: https://fr.wikipedia.org/wiki/Vizzavona_(navire)
 ---

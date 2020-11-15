@@ -9,6 +9,5 @@ slug: mein-schiff-1-9783564
 tags:
 - ship
 photo: /img/300px-Mein_Schiff_1_Kiel_III.jpg
-unknownRoutes: null
 wikipediaUrl: https://de.wikipedia.org/wiki/Mein_Schiff_1_(Schiff,_2018)
 ---

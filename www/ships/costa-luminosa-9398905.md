@@ -9,6 +9,5 @@ slug: costa-luminosa-9398905
 tags:
 - ship
 photo: /img/300px-Costaluminosakefalonia.jpg
-unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/Costa_Luminosa
 ---

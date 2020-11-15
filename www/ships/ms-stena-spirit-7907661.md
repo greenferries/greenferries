@@ -10,6 +10,5 @@ slug: ms-stena-spirit-7907661
 tags:
 - ship
 photo: /img/300px-Stena_Spirit_2011-08-05_001.jpg
-unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Stena_Spirit
 ---

@@ -10,6 +10,5 @@ slug: ms-pearl-seaways-8701674
 tags:
 - ship
 photo: /img/300px-Pearl_Seaways_Oslo.jpg
-unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Pearl_Seaways
 ---

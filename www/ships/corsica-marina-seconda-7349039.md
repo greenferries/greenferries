@@ -10,6 +10,5 @@ slug: corsica-marina-seconda-7349039
 tags:
 - ship
 photo: /img/300px-Corsica_Marina_Seconda.jpg
-unknownRoutes: null
 wikipediaUrl: https://fr.wikipedia.org/wiki/Corsica_Marina_Seconda
 ---

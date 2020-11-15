@@ -9,6 +9,5 @@ slug: ms-viking-xprs-9375654
 tags:
 - ship
 photo: /img/300px-MS_Viking_XPRS%2C_Jun2016.jpg
-unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Viking_XPRS
 ---

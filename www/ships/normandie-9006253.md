@@ -10,6 +10,5 @@ slug: normandie-9006253
 tags:
 - ship
 photo: /img/300px-Normandie_edited.jpg
-unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/MV_Normandie
 ---

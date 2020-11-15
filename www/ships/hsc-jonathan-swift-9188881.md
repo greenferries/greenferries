@@ -12,6 +12,5 @@ slug: hsc-jonathan-swift-9188881
 tags:
 - ship
 photo: /img/300px-Jswift2-1-.jpg
-unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/HSC_Cecilia_Payne
 ---

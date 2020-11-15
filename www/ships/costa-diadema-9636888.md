@@ -9,6 +9,5 @@ slug: costa-diadema-9636888
 tags:
 - ship
 photo: /img/300px-Costa_Diadema_Palma_2019-10-29_11.jpg
-unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/Costa_Diadema
 ---

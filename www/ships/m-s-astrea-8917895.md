@@ -8,6 +8,5 @@ routes: []
 slug: m-s-astrea-8917895
 tags:
 - ship
-unknownRoutes: null
 wikipediaUrl: https://fi.wikipedia.org/wiki/M/S_Astrea
 ---

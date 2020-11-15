@@ -21,6 +21,5 @@ slug: mega-express-9203174
 tags:
 - ship
 photo: /img/300px-MExpressOne19.jpg
-unknownRoutes: null
 wikipediaUrl: https://fr.wikipedia.org/wiki/Mega_Express
 ---

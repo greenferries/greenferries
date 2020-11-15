@@ -9,6 +9,5 @@ slug: msc-divina-9585285
 tags:
 - ship
 photo: /img/300px-MSC_Divina_a_Istanbul.JPG
-unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/MSC_Divina
 ---

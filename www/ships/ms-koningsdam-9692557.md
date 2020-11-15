@@ -9,6 +9,5 @@ slug: ms-koningsdam-9692557
 tags:
 - ship
 photo: /img/300px-KoningsdamArgostoli.jpg
-unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Koningsdam
 ---

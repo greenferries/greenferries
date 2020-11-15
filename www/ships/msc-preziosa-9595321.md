@@ -9,6 +9,5 @@ slug: msc-preziosa-9595321
 tags:
 - ship
 photo: /img/300px-IstanbulPort3.JPG
-unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/MSC_Preziosa
 ---

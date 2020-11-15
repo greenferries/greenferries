@@ -9,6 +9,5 @@ slug: color-magic-9349863
 tags:
 - ship
 photo: /img/300px-ColorMagic_Liegeplatz_Taufe_Kiel2007.jpg
-unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Color_Magic
 ---

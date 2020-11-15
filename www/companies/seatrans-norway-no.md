@@ -8,5 +8,4 @@ officialUrl: http://www.seatrans.no/
 slug: seatrans-norway-no
 tags:
 - company
-wikipediaUrl: null
 ---

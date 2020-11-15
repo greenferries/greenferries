@@ -10,6 +10,5 @@ slug: baie-de-seine-9212163
 tags:
 - ship
 photo: /img/300px-Dana_sirena_harwich_2010.jpg
-unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/MV_Baie_de_Seine
 ---

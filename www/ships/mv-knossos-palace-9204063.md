@@ -12,6 +12,5 @@ slug: mv-knossos-palace-9204063
 tags:
 - ship
 photo: /img/300px-Knossos_palace_Piraeus.jpg
-unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/HSF_Knossos_Palace
 ---

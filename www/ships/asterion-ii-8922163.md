@@ -10,6 +10,5 @@ slug: asterion-ii-8922163
 tags:
 - ship
 photo: /img/300px-Asterion_II.png
-unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/Asterion_II
 ---

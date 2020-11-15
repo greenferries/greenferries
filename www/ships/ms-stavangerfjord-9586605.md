@@ -9,6 +9,5 @@ slug: ms-stavangerfjord-9586605
 tags:
 - ship
 photo: /img/300px-MS_Stavangerfjord.jpg
-unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Stavangerfjord_(2013)
 ---

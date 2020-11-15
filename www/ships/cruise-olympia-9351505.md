@@ -11,6 +11,5 @@ slug: cruise-olympia-9351505
 tags:
 - ship
 photo: /img/300px-Cruise_Olympia_1.jpg
-unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/MS_Cruise_Olympia
 ---

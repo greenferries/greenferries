@@ -9,6 +9,5 @@ slug: mein-schiff-6-9753208
 tags:
 - ship
 photo: /img/300px-Meinschiff6argostoli2.jpg
-unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/Mein_Schiff_6
 ---

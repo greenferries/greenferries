@@ -9,6 +9,5 @@ slug: hsc-leonora-christina-9557848
 tags:
 - ship
 photo: /img/300px-Leonora_Christina_IMO_9557848_-_2.JPG
-unknownRoutes: null
 wikipediaUrl: https://en.wikipedia.org/wiki/Betancuria_Express
 ---
