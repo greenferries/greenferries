@@ -1,15 +1,15 @@
 ---
-capacityPax: 1727
-company: costa-cruises-it
-imo: 9172777
 layout: ship
 name: AIDAmira
-outOfScope: true
-routes: []
+imo: 9172777
 slug: aidamira-9172777
-tags:
-- ship
-photo: /img/''
+capacityPax: 1727
+photo: /img/600px-aida_mira.jpg
+routes: []
+outOfScope: true
 unknownRoutes: false
+tags:
+  - ship
+company: costa-cruises-it
 wikipediaUrl: https://en.wikipedia.org/wiki/AIDAmira
 ---
