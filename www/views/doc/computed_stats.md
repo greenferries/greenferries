@@ -1,12 +1,17 @@
+---
+layout: default
+activeLink: computed_stats
+---
+
 # Computed Statistics
 
 ## Raw THETIS data
 
 You can find the officially published data on [THETIS publicly accessible platform](https://mrv.emsa.europa.eu/#public/emission-report).
 
-![](./assets/thetis-stats-1.png)
+![](/img/thetis-stats-1.png)
 
-![](./assets/thetis-stats-2.png)
+![](/img/thetis-stats-2.png)
 
 ## Inferred figures
 
@@ -64,5 +69,3 @@ You can find the officially published data on [THETIS publicly accessible platfo
 ## Code
 
 If you want up-to-date and detailed formulas applied to compute the figures, please refer to [the code on GitHub](https://github.com/greenferries/greenferries).
-
-The [ship.rb model file](https://github.com/greenferries/greenferries/blob/master/admin/app/models/ship.rb#L29) contains the important computations

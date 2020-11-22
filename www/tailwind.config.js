@@ -18,7 +18,9 @@ module.exports = {
     }
   },
   variants: {},
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography')
+  ],
   purge: {
     content: [
       './**/*.js',

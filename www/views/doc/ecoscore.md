@@ -1,6 +1,13 @@
+---
+layout: default
+activeLink: ecoscore
+---
+
+# EcoScore
+
 ## How is the score computed?
 
-![GreenFerries Score B](./assets/score_b_150.png)
+![GreenFerries Score B](/img/score_b_150.png)
 
 These grades are completely unofficial and subject to change. Here is
 the arbitrary non-linear scale I unilaterally:

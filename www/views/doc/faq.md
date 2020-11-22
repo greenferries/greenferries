@@ -1,3 +1,8 @@
+---
+layout: default
+activeLink: faq
+---
+
 # FAQ
 
 ## Are ferries green?
