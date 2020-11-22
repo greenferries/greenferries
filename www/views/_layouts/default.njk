@@ -57,9 +57,12 @@
                   <li class="text-lg ml-3 lg:ml-0 lg:mb-2 border-blue-700 hover:text-blue-500 hover:border-b-2 {{ 'text-blue-500 border-b-2' if activeLink == 'computed_stats' }}">
                     <a href="/doc/computed_stats">Computed Statistics</a>
                   </li>
+                  <li class="text-lg ml-3 lg:ml-0 lg:mb-2 border-blue-700 hover:text-blue-500 hover:border-b-2 {{ 'text-blue-500 border-b-2' if activeLink == 'ship_types' }}">
+                    <a href="/doc/ship_types">Ship Types</a>
+                  </li>
                 </ul>
               </nav>
-              <article class="prose lg:p-3">
+              <article class="prose lg:p-3 flex-grow">
                 {{ content | safe }}
               </article>
             </div>

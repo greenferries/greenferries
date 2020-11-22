@@ -1,0 +1,48 @@
+---
+layout: default
+activeLink: ship_types
+---
+
+<h1>Data: Ship Types</h1>
+
+<p>
+There are about 300+ ships on GreenFerries at the moment. Our unique data source is THETIS for now, these 300+ ships are a subset of the 23.000+ ships in THETIS.
+</p>
+
+<h2>Filter on THETIS types</h2>
+
+<p>
+Most of the ships present in THETIS are not passenger ferries but industrial ships. There is a "Ship Type" column in THETIS that we use to filter ships upon. Here is the distribution of ships based on that type.
+</p>
+
+<canvas id="chart1"></canvas>
+
+<p>
+We only keep "Ro-pax" and "Passenger ship" ships for now. We are voluntarily discarding "Ro-ro" ships because we care only about passenger ferries, not ferries carrying only vehicles (they are not an alternative to planes).
+</p>
+
+<h2>Further filter</h2>
+
+<p>
+Among these ships we identified a few ones that are not passenger ferries. Most are cruise ships, which are out of scope as their main purpose is not to travel, or at least they are not a reasonable option to travel responsibly. Some other are ships incorrectly categorized, for example some Ro-pax ships are converted to Ro-ro. Others are not in action anymore.
+</p>
+
+<script src="/js/chart.js"></script>
+<script>
+const shipTypesValueCounts = {{ shipTypesValueCounts | dump | safe }};
+const ctx = document.getElementById('chart1').getContext('2d');
+Chart.defaults.global.defaultFontSize = 14;
+const bgColors = Object.keys(shipTypesValueCounts)
+  .map(i => ["Ro-pax ship", "Passenger ship"].includes(i) ? "#4299e1" : "#666")
+new Chart(ctx, {
+  type: "horizontalBar",
+  data: {
+    labels: Object.keys(shipTypesValueCounts),
+    datasets: [{ data: Object.values(shipTypesValueCounts), backgroundColor: bgColors }]
+  },
+  options: {
+    legend: { display: false },
+    scales: { xAxes: [{ scaleLabel: { display: true, labelString: "number of ships" } }]}
+  },
+})
+</script>

@@ -1,0 +1,19 @@
+{
+  "shipTypesValueCounts": {
+    "Bulk carrier": 7257,
+    "Oil tanker": 3750,
+    "Container ship": 3491,
+    "Chemical tanker": 2658,
+    "General cargo ship": 2310,
+    "Vehicle carrier": 857,
+    "Ro-pax ship": 723,
+    "Gas carrier": 659,
+    "Ro-ro ship": 523,
+    "LNG carrier": 449,
+    "Passenger ship": 306,
+    "Refrigerated cargo carrier": 276,
+    "Other ship types": 242,
+    "Container/ro-ro cargo ship": 139,
+    "Combination carrier": 21
+  }
+}
