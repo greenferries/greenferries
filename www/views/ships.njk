@@ -1,4 +1,4 @@
-{% extends "_includes/layout.njk" %}
+{% extends "views/_layouts/default.njk" %}
 
 {% block title %}GreenFerries - All {{ ships | length }} ferries {% endblock %}
 
@@ -7,6 +7,6 @@
     <h2 class="text-xl font-bold mb-4">
       All {{ ships | length }} ferries
     </h2>
-    {% include "_includes/ship_cards.njk" %}
+    {% include "views/_includes/ship_cards.njk" %}
   </div>
 {% endblock %}

@@ -1,4 +1,4 @@
-{% extends "_includes/layout.njk" %}
+{% extends "views/_layouts/default.njk" %}
 
 {% block title %}GreenFerries{% endblock %}
 
@@ -46,7 +46,7 @@
       <hr class="mb-4 js-collapse-map" />
 
       <div class="js-collapse-map">
-        {% include "_includes/homepage_all_links.njk" %}
+        {% include "views/_includes/homepage_all_links.njk" %}
       </div>
     </div>
 
@@ -57,7 +57,7 @@
 
   <div class="container mx-auto p-3 sm:p-0 js-collapse-map hidden mt-3">
     <hr class="mb-3" />
-    {% include "_includes/homepage_all_links.njk" %}
+    {% include "views/_includes/homepage_all_links.njk" %}
   </div>
 
   <script src="js/leaflet_1.7.1.js"></script>

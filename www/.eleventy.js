@@ -75,4 +75,11 @@ module.exports = function (eleventyConfig) {
   })
 
   eleventyConfig.addFilter('inScope', collection => Object.values(collection).filter(o => !o.data.outOfScope))
+
+  return {
+    dir: {
+      input: "views",
+      layouts: "_layouts"
+    }
+  }
 }
