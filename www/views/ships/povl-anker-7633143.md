@@ -1,0 +1,10 @@
+---
+company: null
+imo: '7633143'
+layout: ship
+name: POVL ANKER
+slug: povl-anker-7633143
+tags:
+- ship
+wikipediaUrl: https://de.wikipedia.org/wiki/Povl_Anker_(Schiff)
+---
