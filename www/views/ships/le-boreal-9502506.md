@@ -3,6 +3,7 @@ company: null
 imo: '9502506'
 layout: ship
 name: LE BOREAL
+photo: /img/le-boreal-9502506.JPG
 slug: le-boreal-9502506
 tags:
 - ship

@@ -3,6 +3,7 @@ company: null
 imo: '7527887'
 layout: ship
 name: KOPERNIK
+photo: /img/kopernik-7527887.jpg
 slug: kopernik-7527887
 tags:
 - ship

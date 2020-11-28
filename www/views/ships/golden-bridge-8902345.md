@@ -3,6 +3,7 @@ company: null
 imo: '8902345'
 layout: ship
 name: GOLDEN BRIDGE
+photo: /img/golden-bridge-8902345.png
 slug: golden-bridge-8902345
 tags:
 - ship

@@ -3,6 +3,7 @@ company: null
 imo: '9665437'
 layout: ship
 name: LOCH SEAFORTH
+photo: /img/loch-seaforth-9665437.jpg
 slug: loch-seaforth-9665437
 tags:
 - ship

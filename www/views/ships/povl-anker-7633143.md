@@ -3,6 +3,7 @@ company: null
 imo: '7633143'
 layout: ship
 name: POVL ANKER
+photo: /img/povl-anker-7633143.JPG
 slug: povl-anker-7633143
 tags:
 - ship

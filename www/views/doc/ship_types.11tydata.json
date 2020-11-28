@@ -1,22 +1,22 @@
 {
   "shipTypesValueCounts": {
-    "Bulk carrier": 7257,
-    "Oil tanker": 3750,
-    "Container ship": 3491,
-    "Chemical tanker": 2658,
-    "General cargo ship": 2310,
-    "Vehicle carrier": 857,
-    "Ro-pax ship": 723,
-    "Gas carrier": 659,
-    "Ro-ro ship": 523,
-    "LNG carrier": 449,
-    "Passenger ship": 306,
-    "Refrigerated cargo carrier": 276,
-    "Other ship types": 242,
-    "Container/ro-ro cargo ship": 139,
-    "Combination carrier": 21
+    "Bulk carrier": 4871,
+    "Oil tanker": 2333,
+    "Container ship": 2109,
+    "Chemical tanker": 1615,
+    "General cargo ship": 1347,
+    "Vehicle carrier": 488,
+    "Gas carrier": 416,
+    "Ro-pax ship": 384,
+    "Ro-ro ship": 289,
+    "LNG carrier": 282,
+    "Passenger ship": 190,
+    "Refrigerated cargo carrier": 163,
+    "Other ship types": 153,
+    "Container/ro-ro cargo ship": 83,
+    "Combination carrier": 12
   },
-  "thetisPassengerShipsCount": 1029,
+  "thetisPassengerShipsCount": 574,
   "wikidataShipsCount": 6498,
-  "mergedShipsCount": 892
+  "mergedShipsCount": 497
 }

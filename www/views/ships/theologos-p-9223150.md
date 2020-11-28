@@ -3,6 +3,7 @@ company: null
 imo: '9223150'
 layout: ship
 name: THEOLOGOS P.
+photo: /img/theologos-p-9223150.png
 slug: theologos-p-9223150
 tags:
 - ship

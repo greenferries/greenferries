@@ -3,6 +3,7 @@ company: null
 imo: '9584712'
 layout: ship
 name: ROYAL PRINCESS
+photo: /img/royal-princess-9584712.jpg
 slug: royal-princess-9584712
 tags:
 - ship

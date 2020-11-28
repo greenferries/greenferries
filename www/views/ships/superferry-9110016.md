@@ -3,6 +3,7 @@ company: null
 imo: '9110016'
 layout: ship
 name: SUPERFERRY
+photo: /img/superferry-9110016.JPG
 slug: superferry-9110016
 tags:
 - ship

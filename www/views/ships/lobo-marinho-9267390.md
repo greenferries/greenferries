@@ -3,6 +3,7 @@ company: null
 imo: '9267390'
 layout: ship
 name: LOBO MARINHO
+photo: /img/lobo-marinho-9267390.jpg
 slug: lobo-marinho-9267390
 tags:
 - ship

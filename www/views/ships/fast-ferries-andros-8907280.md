@@ -3,6 +3,7 @@ company: null
 imo: '8907280'
 layout: ship
 name: FAST FERRIES ANDROS
+photo: /img/fast-ferries-andros-8907280.png
 slug: fast-ferries-andros-8907280
 tags:
 - ship
