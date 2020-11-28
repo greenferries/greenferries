@@ -18,7 +18,21 @@ Most of the ships present in THETIS are not passenger ferries but industrial shi
 <canvas id="chart1"></canvas>
 
 <p>
-We only keep "Ro-pax" and "Passenger ship" ships for now. We are voluntarily discarding "Ro-ro" ships because we care only about passenger ferries, not ferries carrying only vehicles (they are not an alternative to planes).
+We only keep "Ro-pax" and "Passenger ship" ships for now, which gives us a total of <b>{{ thetisPassengerShipsCount }} ships</b>. We are voluntarily discarding "Ro-ro" ships because we care only about passenger ferries, not ferries carrying only vehicles (they are not an alternative to planes).
+</p>
+
+<h2>Filter ships present in Wikipedia</h2>
+
+<p>
+Wikipedia contains extremely precious info about many ships: operating company, route itineraries, passenger capacity, photos etc... So far, we're only presenting ships that we could link to a Wikipedia page in order to get this qualified data.
+</p>
+
+<p>
+We automated extracting data from Wikipedia through the <a href="https://query.wikidata.org">Wikidata query service</a>. We get data about <b>{{ wikidataShipsCount }} ships</b> with a unique IMO.
+</p>
+
+<p>
+Based on the ships IMO we compute the intersection of the {{ thetisPassengerShipsCount }} passenger ships in THETIS and {{ wikidataShipsCount }} ships in Wikipedia, which gives us a total of <b>{{ mergedShipsCount }} ships</b>.
 </p>
 
 <h2>Further filter</h2>
@@ -26,6 +40,7 @@ We only keep "Ro-pax" and "Passenger ship" ships for now. We are voluntarily dis
 <p>
 Among these ships we identified a few ones that are not passenger ferries. Most are cruise ships, which are out of scope as their main purpose is not to travel, or at least they are not a reasonable option to travel responsibly. Some other are ships incorrectly categorized, for example some Ro-pax ships are converted to Ro-ro. Others are not in action anymore.
 </p>
+
 
 <script src="/js/chart.js"></script>
 <script>

@@ -15,5 +15,8 @@
     "Other ship types": 242,
     "Container/ro-ro cargo ship": 139,
     "Combination carrier": 21
-  }
+  },
+  "thetisPassengerShipsCount": 1029,
+  "wikidataShipsCount": 6498,
+  "mergedShipsCount": 892
 }
