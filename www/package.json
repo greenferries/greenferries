@@ -30,7 +30,7 @@
   },
   "standard": {
     "ignore": [
-      "/assets/js/leaflet_*"
+      "/assets/js/vendor/*"
     ]
   },
   "devDependencies": {
