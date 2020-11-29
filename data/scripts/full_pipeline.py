@@ -1,7 +1,8 @@
 import sys
 import os
 from refresh_original_files import Refresher
-from convert_thetis_xlsx_to_csv import Converter
+from convert_thetis_xlsx_to_csv import ConvertThetisXlsxToCsv
+from thetis.infer_computed_values import InferComputedValues
 
 # python3 scripts/full_pipeline.py
 
@@ -18,11 +19,13 @@ class FullPipeline():
             csv_path = os.path.join(DIRNAME, f"../files_computed/thetis_export_{year}.csv")
             xlsx_path = os.path.join(DIRNAME, f"../files_original/original.thetis.export_{year}.xlsx")
             Refresher(f"thetis_{year}").run()
-            Converter(xlsx_path, csv_path).run()
+            ConvertThetisXlsxToCsv(xlsx_path, csv_path).run()
         csv_glob_path = os.path.join(DIRNAME, f"../files_computed/thetis_export_*.csv")
         csv_all_path = os.path.join(DIRNAME, f"../files_computed/thetis_export_all.csv")
         self.run_sh(f"touch {csv_all_path} && rm {csv_all_path}")
         self.run_sh(f"awk '(NR == 1) || (FNR > 1)' {csv_glob_path} > {csv_all_path}")
+        csv_all_with_computed_path = os.path.join(DIRNAME, f"../files_computed/thetis_all_with_computed.csv")
+        InferComputedValues(csv_all_path, csv_all_with_computed_path).run()
         command = (" ".join([
             "csvs-to-sqlite",
             "--table ships",
