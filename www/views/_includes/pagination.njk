@@ -1,0 +1,12 @@
+<nav aria-labelledby="my-pagination">
+  <ol class="flex flex-wrap justify-center text-lg">
+    <li>Page</li>
+    {% if page.url != pagination.href.first %}<li class="ml-2"><a class="link p-2" href="{{ pagination.href.first }}">First</a></li>{% endif %}
+    {% if pagination.href.previous %}<li class="ml-2"><a class="link p-2" href="{{ pagination.href.previous }}">Previous</a></li>{% endif %}
+    {%- for pageEntry in pagination.pages %}
+      <li class="ml-2"><a class="link p-2" href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>{{ loop.index }}</a></li>
+    {%- endfor %}
+    {% if pagination.href.next %}<li class="ml-2"><a class="link p-2" href="{{ pagination.href.next }}">Next</a></li>{% endif %}
+    {% if page.url != pagination.href.last %}<li class="ml-2"><a class="link p-2" href="{{ pagination.href.last }}">Last</a></li>{% endif %}
+  </ol>
+</nav>

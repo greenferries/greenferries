@@ -65,6 +65,8 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter('getValues', d => Object.values(d))
 
+  eleventyConfig.addFilter('extractData', items => items.map(i => i.data))
+
   eleventyConfig.addFilter(
     'shipsForRoute',
     ({ shipPages, routeSlug }) => shipPages.filter(ship => ship.data.routes.includes(routeSlug))

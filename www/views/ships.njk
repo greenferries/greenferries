@@ -1,12 +1,26 @@
+---js
+{
+  pagination: {
+    data: "collections.ship",
+    size: 60,
+    alias: "ships",
+    before: data => data.map(d => d.data).filter(d => !d.outOfScope)
+  }
+}
+---
+
 {% extends "views/_layouts/default.njk" %}
 
-{% block title %}GreenFerries - All {{ ships | length }} ferries {% endblock %}
+{% block title %}GreenFerries - All {{ collections.ship | inScope | length }} ferries - page {{ pagination.pageNumber + 1 }} / {{ pagination.pages | length }} {% endblock %}
 
 {% block content %}
   <div class="container mx-auto mb-4 p-2">
-    <h2 class="text-xl font-bold mb-4">
-      All {{ ships | length }} ferries
-    </h2>
+    <div class="mt-3 mb-6">
+      {% include "views/_includes/pagination.njk" %}
+    </div>
     {% include "views/_includes/ship_cards.njk" %}
+    <div class="my-6">
+      {% include "views/_includes/pagination.njk" %}
+    </div>
   </div>
 {% endblock %}
