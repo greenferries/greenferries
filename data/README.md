@@ -9,7 +9,7 @@ used by the [GreenFerries project](https://www.greenferries.org)
 
 ## Discuss
 
-Feel free to open issues on this repository or come and discuss on the public chat room `#greenferries-data:matrix.org` : [https://riot.im/app/#/room/!ucRHvaqIzPZzjYnfTo:matrix.org?via=matrix.org](https://riot.im/app/#/room/!ucRHvaqIzPZzjYnfTo:matrix.org?via=matrix.org)
+Feel free to open issues on this repository or come and discuss on the [public gitter chat room #greenferries](https://gitter.im/greenferries/community)
 
 ## Install
 

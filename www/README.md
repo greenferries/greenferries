@@ -25,7 +25,7 @@ deploy the www directory automatically
 
 ## Discuss
 
-Come discuss this project development on the public chat room `#greenferries-dev:matrix.org`: [https://riot.im/app/#/room/!ucRHvaqIzPZzjYnfTo:matrix.org](https://riot.im/app/#/room/!ucRHvaqIzPZzjYnfTo:matrix.org)
+Feel free to open issues on this repository or come and discuss on the [public gitter chat room #greenferries](https://gitter.im/greenferries/community)
 
 ## Resources
 
