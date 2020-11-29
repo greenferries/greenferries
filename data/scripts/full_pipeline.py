@@ -3,6 +3,7 @@ import os
 from refresh_original_files import Refresher
 from convert_thetis_xlsx_to_csv import ConvertThetisXlsxToCsv
 from thetis.infer_computed_values import InferComputedValues
+from thetis.ecoscore import CreateEcoscoreWwwDataFilesAndPlots
 
 # python3 scripts/full_pipeline.py
 
@@ -26,6 +27,7 @@ class FullPipeline():
         self.run_sh(f"awk '(NR == 1) || (FNR > 1)' {csv_glob_path} > {csv_all_path}")
         csv_all_with_computed_path = os.path.join(DIRNAME, f"../files_computed/thetis_all_with_computed.csv")
         InferComputedValues(csv_all_path, csv_all_with_computed_path).run()
+        CreateEcoscoreWwwDataFilesAndPlots(csv_all_with_computed_path).run()
         command = (" ".join([
             "csvs-to-sqlite",
             "--table ships",

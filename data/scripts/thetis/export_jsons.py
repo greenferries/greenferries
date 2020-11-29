@@ -1,4 +1,4 @@
-# python3 data/scripts/export_thetis_jsons.py
+# python3 data/scripts/thetis/export_jsons.py
 
 import os
 import json
@@ -7,9 +7,9 @@ import pandas as pd
 import numpy as np
 
 DIRNAME = os.path.dirname(__file__)
-WWW_SHIPS_DATA_PATH = os.path.join(DIRNAME, '../../www/views/ships')
-WWW_THETIS_DATA_PATH = os.path.join(DIRNAME, '../../www/views/_data/thetis')
-THETIS_CSV_PATH = os.path.join(DIRNAME, "../files_computed/thetis_all_with_computed.csv")
+WWW_SHIPS_DATA_PATH = os.path.join(DIRNAME, '../../../www/views/ships')
+WWW_THETIS_DATA_PATH = os.path.join(DIRNAME, '../../../www/views/_data/thetis')
+THETIS_CSV_PATH = os.path.join(DIRNAME, "../../files_computed/thetis_all_with_computed.csv")
 
 def camelCase(st):
     output = ''.join(x for x in st.title() if x.isalnum())

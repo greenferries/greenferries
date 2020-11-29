@@ -68,6 +68,8 @@
     "annualComputedPax": 45.614298588164615,
     "annualComputedFreight": null,
     "annualComputedAverageSpeed": 20.39279178052092,
-    "annualComputedRatioCo2FromPax": 1.0
+    "annualComputedRatioCo2FromPax": 1.0,
+    "annualComputedAverageCo2EmissionsPerTransportWorkPaxKm": 2876.024364997643,
+    "computedEcoscoreLetter": "D"
   }
 }

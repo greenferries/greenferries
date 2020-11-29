@@ -30,12 +30,12 @@
           </div>
           <div class="flex items-center">
             <img
-              src="/img/score_{{ ship.ecoscore.score }}_letter.png"
-              alt="Ecoscore {{ ship.ecoscore.score }}"
+              src="/img/score_{{ ship.thetisData['2019'].computedEcoscoreLetter | ecoscoreLetterToImgFileKey }}_letter.png"
+              alt="Ecoscore {{ ship.thetisData['2019'].computedEcoscoreLetter | ecoscoreLetterToImgFileKey }}"
               class="h-8 mr-2"
             />
             <div>
-              {{ ship.ecoscore.hint }}
+              {{ ship.thetisData['2019'].computedEcoscoreLetter | ecoscoreLetterToHint }}
             </div>
           </div>
         </div>

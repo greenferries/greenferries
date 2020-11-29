@@ -76,6 +76,19 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter('inScope', collection => Object.values(collection).filter(o => !o.data.outOfScope))
 
+  eleventyConfig.addFilter("ecoscoreLetterToImgFileKey", letter => letter ? letter : "unknown")
+
+
+  eleventyConfig.addFilter("ecoscoreLetterToHint", letter => {
+    return {
+      A: "better than riding a car with two passengers",
+      B: "better than riding a car with a single passenger",
+      C: "1 to 2 times an average plane's emissions",
+      D: "2 to 4 times an average plane's emissions",
+      E: "over 4 times an average plane's emissions",
+    }[letter]
+  })
+
   return {
     dir: {
       input: "views",

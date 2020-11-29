@@ -68,7 +68,9 @@
     "annualComputedPax": 862.7009454847456,
     "annualComputedFreight": 540.5936833851123,
     "annualComputedAverageSpeed": 37.127961785832454,
-    "annualComputedRatioCo2FromPax": 0.9880013135107876
+    "annualComputedRatioCo2FromPax": 0.9880013135107876,
+    "annualComputedAverageCo2EmissionsPerTransportWorkPaxKm": 431.54944300786,
+    "computedEcoscoreLetter": "D"
   },
   "2019": {
     "unnamed0": 12119,
@@ -139,6 +141,8 @@
     "annualComputedPax": 831.9468268460114,
     "annualComputedFreight": 582.8327491374,
     "annualComputedAverageSpeed": 36.17532464414553,
-    "annualComputedRatioCo2FromPax": 0.9799996303806024
+    "annualComputedRatioCo2FromPax": 0.9799996303806024,
+    "annualComputedAverageCo2EmissionsPerTransportWorkPaxKm": 421.6736384051629,
+    "computedEcoscoreLetter": "D"
   }
 }

@@ -3,9 +3,9 @@
 import pandas as pd
 import os
 import sys
+from ecoscore import get_ecoscore_letter
 
 NM_TO_KM = 1.852001
-DIRNAME = os.path.dirname(__file__)
 
 class InferComputedValues():
 
@@ -14,13 +14,7 @@ class InferComputedValues():
         self.output_csv_path = output_csv_path
 
     def run(self):
-        df = pd.read_csv(
-            self.input_csv_path,
-            # dtype=columns_types,
-            # parse_dates=["doc_issue_date", "doc_expiry_date"],
-            # decimal=",",
-            warn_bad_lines=True
-        )
+        df = pd.read_csv(self.input_csv_path,)
         df["annual_computed_distance"] = (
             df["annual_monitoring_total_co2_emissions"] * 1000 /
             df["annual_average_co2_emissions_per_distance"]
@@ -41,6 +35,12 @@ class InferComputedValues():
         df["annual_computed_ratio_co2_from_pax"] = (
             df["annual_monitoring_co2_emissions_assigned_to_passenger_transport"] /
             df["annual_monitoring_total_co2_emissions"]
+        )
+        df["annual_computed_average_co2_emissions_per_transport_work_pax_km"] = (
+            df["annual_average_co2_emissions_per_transport_work_pax"] / NM_TO_KM
+        )
+        df["computed_ecoscore_letter"] = (
+            df["annual_computed_average_co2_emissions_per_transport_work_pax_km"].apply(lambda x: get_ecoscore_letter(x))
         )
         df.to_csv(self.output_csv_path)
 
