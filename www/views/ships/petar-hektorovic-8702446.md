@@ -2,11 +2,11 @@
 company: jadrolinija-hr
 imo: 8702446
 layout: ship
-name: Q3900777
+name: Petar Hektorović
 outOfScope: false
 routes:
 - split-hr-vis-hr
-slug: q3900777-8702446
+slug: petar-hektorovic-8702446
 tags:
 - ship
 photo: /img/300px-Petar_Hektorovic.jpg

@@ -3,10 +3,10 @@ capacityPax: 1500
 company: jadrolinija-hr
 imo: 7230599
 layout: ship
-name: IMO 7230599
+name: Marko Polo
 outOfScope: false
 routes: []
-slug: imo-7230599-7230599
+slug: marko-polo-7230599
 tags:
 - ship
 photo: /img/300px-Marko_Polo_Rijeka_1_040408.jpg

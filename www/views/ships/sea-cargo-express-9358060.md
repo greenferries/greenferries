@@ -4,7 +4,7 @@ imo: 9358060
 layout: ship
 name: Sea Cargo Express
 routes: []
-slug: q47147392-9358060
+slug: sea-cargo-express-9358060
 tags:
 - ship
 photo: /img/sea-cargo-9358060.png

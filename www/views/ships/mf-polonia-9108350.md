@@ -2,11 +2,11 @@
 company: unity-line-pl
 imo: 9108350
 layout: ship
-name: Q11764893
+name: MF Polonia
 outOfScope: false
 routes:
 - ystad-se-swinoujscie-pl
-slug: q11764893-9108350
+slug: mf-polonia-9108350
 tags:
 - ship
 photo: /img/300px-Polonia_3_by_jakub_bogucki.jpg

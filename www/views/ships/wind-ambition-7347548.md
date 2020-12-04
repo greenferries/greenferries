@@ -3,10 +3,10 @@ capacityPax: 350
 company: stena-line-se
 imo: 7347548
 layout: ship
-name: Q15526197
+name: Wind Ambition
 outOfScope: false
 routes: []
-slug: q15526197-7347548
+slug: wind-ambition-7347548
 tags:
 - ship
 photo: /img/300px-Wind_ambition.jpg

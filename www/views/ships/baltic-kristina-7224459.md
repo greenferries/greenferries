@@ -5,7 +5,7 @@ layout: ship
 name: Baltic Kristina
 outOfScope: false
 routes: []
-slug: q7481828-7224459
+slug: baltic-kristina-7224459
 tags:
 - ship
 unknownRoutes: true
