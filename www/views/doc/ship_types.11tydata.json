@@ -1,4 +1,5 @@
 {
+  "thetisShipsCount": 14735,
   "shipTypesValueCounts": {
     "Bulk carrier": 4871,
     "Oil tanker": 2333,
@@ -18,5 +19,7 @@
   },
   "thetisPassengerShipsCount": 574,
   "wikidataShipsCount": 6498,
-  "mergedShipsCount": 497
+  "mergedShipsCount": 497,
+  "outOfScopeShipsCount": 115,
+  "totalShipsCount": 397
 }
