@@ -1,27 +1,50 @@
+---js
+{
+  pagination: {
+    data: "collections.company",
+    size: 60,
+    alias: "companies",
+    before: data => data.
+      map(d => d.data).
+      sort((companyA, companyB) => {
+        if (companyA.slug < companyB.slug) return -1
+        else if (companyA.slug > companyB.slug) return 1
+        else return 0
+      })
+  }
+}
+---
+
 {% extends "views/_layouts/default.njk" %}
 
-{% block title %}GreenFerries - All {{ companies | length }} companies {% endblock %}
+{% block title %}GreenFerries - {{ collections.company | length }} companies {% endblock %}
 
 {% block content %}
   <div class="container mx-auto mb-4 p-2">
-    <h2 class="text-xl font-bold mb-4">
-      All {{ companies | length }} ferry companies
+    <h2 class="text-lg mb-4 text-center">
+      {{ collections.company | length }} operators sorted by name
     </h2>
+    <div class="mt-3 mb-6">
+      {% include "views/_includes/pagination.njk" %}
+    </div>
     <div class="mt-4 grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
-      {% for companyPage in collections.company %}
-        <a href="/companies/{{ companyPage.data.slug }}" class="flex items-center h-24 mb-3">
+      {% for company in companies %}
+        <a href="/companies/{{ company.slug }}" class="flex items-center h-24 mb-3">
           <div
             class="w-24 h-full flex-shrink-0 bg-contain bg-no-repeat bg-center bg-gray-200"
-            style="background-image: url('{{ companyPage.data.logo }}')">
+            style="background-image: url('{{ company.logo }}')">
           </div>
           <div class="p-3 border border-gray-300 h-full flex flex-col justify-center">
             <div>
-              <span class="link">{{ companyPage.data.name }}</span>
-              - {{ { word: "ship", count: companyPage.data.ships | length } | countPlural }}
+              <span class="link">{{ company.name }}</span>
+              - {{ { word: "ship", count: company.ships | length } | countPlural }}
             </div>
           </div>
         </a>
       {% endfor %}
-    </ul>
+    </div>
+    <div class="mt-3 mb-6">
+      {% include "views/_includes/pagination.njk" %}
+    </div>
   </div>
 {% endblock %}
