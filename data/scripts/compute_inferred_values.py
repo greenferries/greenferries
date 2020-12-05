@@ -1,6 +1,7 @@
 # python3 scripts/compute_inferred_values.py
 
 import pandas as pd
+import numpy as np
 import os
 import sys
 from ecoscore import get_ecoscore_letter
@@ -39,7 +40,7 @@ class ComputeInferredValues():
             df["annual_average_co2_emissions_per_transport_work_pax"] / NM_TO_KM
         )
         df["computed_ecoscore_letter"] = (
-            df["annual_computed_average_co2_emissions_per_transport_work_pax_km"].apply(lambda x: get_ecoscore_letter(x))
+            df["annual_computed_average_co2_emissions_per_transport_work_pax_km"].replace({np.nan: None}).apply(lambda x: get_ecoscore_letter(x))
         )
         df.to_csv(OUTPUT_PATH, index=False)
 

@@ -69,7 +69,7 @@
     "annualComputedAverageSpeed": 22.51627944164316,
     "annualComputedRatioCo2FromPax": 0.24999923780720185,
     "annualComputedAverageCo2EmissionsPerTransportWorkPaxKm": 1050.4421973854226,
-    "computedEcoscoreLetter": "D"
+    "computedEcoscoreLetter": "E"
   },
   "2019": {
     "imo": 8420842,
@@ -141,6 +141,6 @@
     "annualComputedAverageSpeed": 23.34676014946823,
     "annualComputedRatioCo2FromPax": 0.2500001087556569,
     "annualComputedAverageCo2EmissionsPerTransportWorkPaxKm": 1057.3158437819418,
-    "computedEcoscoreLetter": "D"
+    "computedEcoscoreLetter": "E"
   }
 }

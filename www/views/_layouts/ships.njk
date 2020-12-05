@@ -1,0 +1,22 @@
+{% extends "views/_layouts/default.njk" %}
+
+{% block title %}GreenFerries - All {{ collections.ship | inScope | length }} ferries - page {{ pagination.pageNumber + 1 }} / {{ pagination.pages | length }} {% endblock %}
+
+{% block content %}
+  <div class="container mx-auto mb-4 p-2">
+    <div class="mt-3 mb-6">
+      <ul class="flex justify-center text-lg">
+        <li>Sorted by:</li>
+        <li><a class="link ml-2" href="/ships">Name</a></li>
+        <li><a class="link ml-2" href="/ships_sorted_ecoscore">EcoScore</a></li>
+      </ul>
+    </div>
+    <div class="mt-3 mb-6">
+      {% include "views/_includes/pagination.njk" %}
+    </div>
+    {% include "views/_includes/ship_cards.njk" %}
+    <div class="my-6">
+      {% include "views/_includes/pagination.njk" %}
+    </div>
+  </div>
+{% endblock %}
