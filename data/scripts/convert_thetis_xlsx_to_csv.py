@@ -11,7 +11,7 @@ MAPPING_CSV_PATH = os.path.join(
     '../files_original/original.greenferries.thetis_columns_mapping.csv'
 )
 
-class Converter():
+class ConvertThetisXlsxToCsv():
 
     def __init__(self, xlsx_path, csv_path):
         self.xlsx_path = xlsx_path
@@ -41,7 +41,7 @@ class Converter():
                         continue
                     reformatted_row = []
                     for col_idx, cell in enumerate(row):
-                        if cell.value in ['Missing source values!', 'N/A', None]:
+                        if cell.value in ['Missing source values!', 'N/A', 'Division by zero!', None]:
                             cell_value = None
                         elif self.get_reformatted_columns()[col_idx]['data_type'] == 'float':
                             cell_value = float(cell.value)
@@ -52,4 +52,4 @@ class Converter():
 
 
 if __name__ == "__main__":
-    Converter(sys.argv[1], sys.argv[2]).run()
+    ConvertThetisXlsxToCsv(sys.argv[1], sys.argv[2]).run()

@@ -1,33 +1,49 @@
 import sys
 import os
-from refresh_original_files import Refresher
+from download import Download
 from convert_thetis_xlsx_to_csv import ConvertThetisXlsxToCsv
-from thetis.infer_computed_values import InferComputedValues
-from thetis.ecoscore import CreateEcoscoreWwwDataFilesAndPlots
+from compute_inferred_values import ComputeInferredValues
+from ecoscore import CreateEcoscoreWwwDataFilesAndPlots
+from www import write_thetis_jsons
 
 # python3 scripts/full_pipeline.py
 
 DIRNAME = os.path.dirname(__file__)
+THETIS_ALL_PATH = os.path.join(DIRNAME, "../files_computed/thetis_export_all.csv")
+THETIS_XLSX_PATH_YEAR_TEMPLATE = os.path.join(DIRNAME, "../files_original/original.thetis.export_%s.xlsx")
+THETIS_CSV_PATH_YEAR_TEMPLATE = os.path.join(DIRNAME, "../files_computed/thetis_export_%s.csv")
+THETIS_DATASETTE_DB_PATH = os.path.join(DIRNAME, "../datasette/dbs/thetis.db")
+WIKIDATA_SHIPS_CSV_PATH = os.path.join(DIRNAME, f"../files_original/original.wikidata.ships.csv")
+WIKIDATA_URLS_CSV_PATH = os.path.join(DIRNAME, f"../files_original/original.wikidata.urls.csv")
+WIKIDATA_DATASETTE_DB_PATH = os.path.join(DIRNAME, "../datasette/dbs/wikidata.db")
+
+def run_sh(command):
+    res = os.system(command)
+    if res != 0:
+        print(f"Error while running `{command}`, aborting!")
+        exit(1)
+
+def clean_file(filepath):
+    run_sh(f"touch {filepath} && rm {filepath}")
+
 
 class FullPipeline():
-    def __init__(self):
-        pass
+    def run(self):
+        self.prepare_thetis_files()
+        self.prepare_wikidata_files()
+        self.prepare_www_files()
 
     def prepare_thetis_files(self):
-        db_path = os.path.join(DIRNAME, f"../datasette/dbs/thetis.db")
-        self.run_sh(f"touch {db_path} && rm {db_path}")
         for year in ["2018", "2019"]:
-            csv_path = os.path.join(DIRNAME, f"../files_computed/thetis_export_{year}.csv")
-            xlsx_path = os.path.join(DIRNAME, f"../files_original/original.thetis.export_{year}.xlsx")
-            Refresher(f"thetis_{year}").run()
-            ConvertThetisXlsxToCsv(xlsx_path, csv_path).run()
-        csv_glob_path = os.path.join(DIRNAME, f"../files_computed/thetis_export_*.csv")
-        csv_all_path = os.path.join(DIRNAME, f"../files_computed/thetis_export_all.csv")
-        self.run_sh(f"touch {csv_all_path} && rm {csv_all_path}")
-        self.run_sh(f"awk '(NR == 1) || (FNR > 1)' {csv_glob_path} > {csv_all_path}")
-        csv_all_with_computed_path = os.path.join(DIRNAME, f"../files_computed/thetis_all_with_computed.csv")
-        InferComputedValues(csv_all_path, csv_all_with_computed_path).run()
-        CreateEcoscoreWwwDataFilesAndPlots(csv_all_with_computed_path).run()
+            Download(f"thetis_{year}").run()
+            ConvertThetisXlsxToCsv(THETIS_XLSX_PATH_YEAR_TEMPLATE % year, THETIS_CSV_PATH_YEAR_TEMPLATE % year).run()
+        self.join_thetis_csvs()
+        ComputeInferredValues().run()
+
+        self.create_thetis_datasette_sqlite_db()
+
+    def create_thetis_datasette_sqlite_db(self):
+        clean_file(THETIS_DATASETTE_DB_PATH)
         command = (" ".join([
             "csvs-to-sqlite",
             "--table ships",
@@ -36,44 +52,41 @@ class FullPipeline():
             "--index imo",
             "--index reporting_period",
             "--index ship_type",
-            csv_all_path,
-            db_path
+            THETIS_ALL_PATH,
+            THETIS_DATASETTE_DB_PATH
         ]))
-        self.run_sh(command)
+        run_sh(command)
+
+    def join_thetis_csvs(self):
+        glob_path = os.path.join(DIRNAME, f"../files_computed/thetis_export_*.csv")
+        clean_file(THETIS_ALL_PATH)
+        run_sh(f"awk '(NR == 1) || (FNR > 1)' {glob_path} > {THETIS_ALL_PATH}")
 
     def prepare_wikidata_files(self):
-        db_path = os.path.join(DIRNAME, f"../datasette/dbs/wikidata.db")
-        Refresher("wikidata_ships").run()
-        Refresher("wikidata_urls").run()
-        self.run_sh(f"touch {db_path} && rm {db_path}")
-        self.run_sh((" ".join([
+        clean_file(WIKIDATA_DATASETTE_DB_PATH)
+        Download("wikidata_ships").run()
+        Download("wikidata_urls").run()
+        run_sh(" ".join([
             "csvs-to-sqlite",
             "--table ships",
             "--primary-key wikidataUrl",
             "--index imo",
             "--index wikidataUrl",
-            os.path.join(DIRNAME, f"../files_original/original.wikidata.ships.csv"),
-            db_path
-        ])))
-        self.run_sh((" ".join([
+            WIKIDATA_SHIPS_CSV_PATH,
+            WIKIDATA_DATASETTE_DB_PATH
+        ]))
+        run_sh(" ".join([
             "csvs-to-sqlite",
             "--table wikipedia_urls",
             "--primary-key wikidataUrl",
             "--index imo",
-            os.path.join(DIRNAME, f"../files_original/original.wikidata.urls.csv"),
-            db_path
-        ])))
+            WIKIDATA_URLS_CSV_PATH,
+            WIKIDATA_DATASETTE_DB_PATH
+        ]))
 
-    def run_sh(self, command):
-        res = os.system(command)
-        if res != 0:
-            print(f"Error while running `{command}`, aborting!")
-            exit(1)
-
-    def run(self):
-        self.prepare_thetis_files()
-        self.prepare_wikidata_files()
-
+    def prepare_www_files(self):
+        write_thetis_jsons()
+        CreateEcoscoreWwwDataFilesAndPlots().run()
 
 if __name__ == "__main__":
     FullPipeline().run()
