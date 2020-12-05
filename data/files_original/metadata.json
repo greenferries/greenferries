@@ -1,13 +1,13 @@
 {
   "thetis.export_2018": {
-    "date": "2020-12-03",
+    "date": "2020-12-05",
     "filename": "original.thetis.export_2018.xlsx",
-    "version": "v241"
+    "version": "v242"
   },
   "thetis.export_2019": {
-    "date": "2020-12-04",
+    "date": "2020-12-05",
     "filename": "original.thetis.export_2019.xlsx",
-    "version": "v107"
+    "version": "v108"
   },
   "wikidata.ships": {
     "date": "2020-12-05",
