@@ -45,4 +45,5 @@ def write_thetis_jsons():
             json.dump(data, f, indent=2)
 
 if __name__ == "__main__":
-    print(get_frontmatter_df().head())
+    # print(get_frontmatter_df().head())
+    write_thetis_jsons()

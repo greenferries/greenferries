@@ -1,6 +1,5 @@
 {
   "2018": {
-    "unnamed0": 5,
     "imo": 7037806,
     "name": "BOHUS",
     "shipType": "Ro-pax ship",
@@ -73,7 +72,6 @@
     "computedEcoscoreLetter": "D"
   },
   "2019": {
-    "unnamed0": 12173,
     "imo": 7037806,
     "name": "IONIAN STAR",
     "shipType": "Ro-pax ship",

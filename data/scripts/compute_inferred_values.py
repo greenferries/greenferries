@@ -41,7 +41,7 @@ class ComputeInferredValues():
         df["computed_ecoscore_letter"] = (
             df["annual_computed_average_co2_emissions_per_transport_work_pax_km"].apply(lambda x: get_ecoscore_letter(x))
         )
-        df.to_csv(OUTPUT_PATH)
+        df.to_csv(OUTPUT_PATH, index=False)
 
 
 if __name__ == "__main__":

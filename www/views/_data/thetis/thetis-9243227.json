@@ -1,6 +1,5 @@
 {
   "2018": {
-    "unnamed0": 2059,
     "imo": 9243227,
     "name": "DUBLIN SWIFT",
     "shipType": "Ro-pax ship",
@@ -73,7 +72,6 @@
     "computedEcoscoreLetter": "A"
   },
   "2019": {
-    "unnamed0": 14075,
     "imo": 9243227,
     "name": "DUBLIN SWIFT",
     "shipType": "Ro-pax ship",

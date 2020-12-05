@@ -1,6 +1,5 @@
 {
   "2018": {
-    "unnamed0": 384,
     "imo": 9007130,
     "name": "BARFLEUR",
     "shipType": "Ro-pax ship",
@@ -73,7 +72,6 @@
     "computedEcoscoreLetter": "C"
   },
   "2019": {
-    "unnamed0": 12534,
     "imo": 9007130,
     "name": "BARFLEUR",
     "shipType": "Ro-pax ship",

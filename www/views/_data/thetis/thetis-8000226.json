@@ -1,6 +1,5 @@
 {
   "2018": {
-    "unnamed0": 89,
     "imo": 8000226,
     "name": "WASA EXPRESS",
     "shipType": "Ro-pax ship",
@@ -73,7 +72,6 @@
     "computedEcoscoreLetter": "D"
   },
   "2019": {
-    "unnamed0": 12249,
     "imo": 8000226,
     "name": "WASA EXPRESS",
     "shipType": "Ro-pax ship",
