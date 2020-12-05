@@ -29,7 +29,7 @@ def get_ecoscore_index(g_co2_per_km_pax):
     for index, threshold in enumerate(THRESHOLDS):
         if g_co2_per_km_pax < threshold:
             return index
-    return 3
+    return 4
 
 def get_ecoscore_letter(g_co2_per_km_pax):
     if not g_co2_per_km_pax:
@@ -44,11 +44,11 @@ class CreateEcoscoreWwwDataFilesAndPlots(object):
         self.export_global_data()
 
     def prepare_df(self):
-        df_all = pd.read_csv(THETIS_CSV_PATH, dtype={"imo": str})
-        df_ferries = df_all[df_all.ship_type.isin(["Ro-pax ship", "Passenger ship"])]
-        out_of_scope_imos = list(get_frontmatter_df(only_out_of_scope=True).imo)
-        df_in_scope = df_ferries[~df_ferries.imo.isin(out_of_scope_imos)]
-        self.df = df_in_scope[df_in_scope.reporting_period == 2019]
+        df = pd.read_csv(THETIS_CSV_PATH, dtype={"imo": str})
+        df = df[df.reporting_period == 2019]
+        imos_list = [str(s) for s in get_frontmatter_df(exclude_out_of_scope=True).imo]
+        df = df[df.imo.isin(imos_list)]
+        self.df = df
 
     def export_emissions_distribution_graph(self):
         co2 = self.df['annual_computed_average_co2_emissions_per_transport_work_pax_km']
