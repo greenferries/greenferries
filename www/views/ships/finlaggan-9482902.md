@@ -1,8 +1,8 @@
 ---
-company: null
+company: caledonian-macbrayne-gb
 imo: '9482902'
 layout: ship
-name: FINLAGGAN
+name: MV Finlaggan
 photo: /img/finlaggan-9482902.jpg
 slug: finlaggan-9482902
 tags:

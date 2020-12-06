@@ -1,8 +1,9 @@
 ---
-company: null
+company: compagnie-du-ponant-fr
 imo: '9814040'
 layout: ship
 name: Le Bougainville
+outOfScope: true
 slug: le-bougainville-9814040
 tags:
 - ship

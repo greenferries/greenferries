@@ -1,5 +1,5 @@
 ---
-company: null
+company: fast-ferries-gr
 imo: '9223150'
 layout: ship
 name: THEOLOGOS P.

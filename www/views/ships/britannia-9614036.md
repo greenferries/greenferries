@@ -1,8 +1,9 @@
 ---
-company: null
+company: p-o-cruises-gb
 imo: '9614036'
 layout: ship
 name: BRITANNIA
+outOfScope: true
 photo: /img/britannia-9614036.jpg
 slug: britannia-9614036
 tags:

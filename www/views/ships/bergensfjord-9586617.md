@@ -1,8 +1,8 @@
 ---
-company: null
+company: fjord-line-no
 imo: '9586617'
 layout: ship
-name: BERGENSFJORD
+name: MS Bergensfjord
 photo: /img/bergensfjord-9586617.jpg
 slug: bergensfjord-9586617
 tags:

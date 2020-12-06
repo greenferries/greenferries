@@ -4,6 +4,7 @@ layout: company
 logo: /img/6myml8clw28zfo2w2yk5xwfyr757.png
 name: Seabourn Cruise Line
 officialUrl: http://www.seabourn.com/
+outOfScope: true
 slug: seabourn-cruise-line-us
 tags:
 - company

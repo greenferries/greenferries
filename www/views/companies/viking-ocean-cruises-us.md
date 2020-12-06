@@ -3,6 +3,7 @@ country: US
 layout: company
 logo: /img/vaovhvvglmk71jchsay3xw855xoq.png
 name: Viking Ocean Cruises
+outOfScope: true
 officialUrl: http://www.vikingcruises.com/Oceans
 slug: viking-ocean-cruises-us
 tags:

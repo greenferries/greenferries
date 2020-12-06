@@ -4,6 +4,7 @@ company: seabourn-cruise-line-us
 imo: 9417086
 layout: ship
 name: Seabourn Odyssey
+outOfScope: true
 routes: []
 slug: seabourn-odyssey-9417086
 tags:

@@ -1,8 +1,8 @@
 ---
-company: null
+company: stena-line-se
 imo: '9419163'
 layout: ship
-name: STENA HOLLANDICA
+name: MV Stena Hollandica
 photo: /img/stena-hollandica-9419163.jpg
 slug: stena-hollandica-9419163
 tags:

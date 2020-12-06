@@ -1,8 +1,8 @@
 ---
-company: null
+company: blue-star-ferries-gr
 imo: '8916126'
 layout: ship
-name: DIAGORAS
+name: Diagoras
 photo: /img/diagoras-8916126.jpg
 slug: diagoras-8916126
 tags:

@@ -1,8 +1,8 @@
 ---
-company: null
+company: caledonian-macbrayne-gb
 imo: '9665437'
 layout: ship
-name: LOCH SEAFORTH
+name: MV Loch Seaforth
 photo: /img/loch-seaforth-9665437.jpg
 slug: loch-seaforth-9665437
 tags:

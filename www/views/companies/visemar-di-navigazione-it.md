@@ -1,7 +1,6 @@
 ---
 country: IT
 layout: company
-logo: /img/.png
 name: Visemar di Navigazione
 slug: visemar-di-navigazione-it
 tags:

@@ -1,8 +1,8 @@
 ---
 country: IT
 layout: company
-logo: /img/.png
 name: MSC Cruises
+outOfScope: true
 officialUrl: http://www.msc-kreuzfahrten.de/
 slug: msc-cruises-it
 tags:

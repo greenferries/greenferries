@@ -1,8 +1,8 @@
 ---
-company: null
+company: wightlink-gb
 imo: '9791028'
 layout: ship
-name: VICTORIA OF WIGHT
+name: MV Victoria of Wight
 photo: /img/victoria-of-wight-9791028.jpeg
 slug: victoria-of-wight-9791028
 tags:

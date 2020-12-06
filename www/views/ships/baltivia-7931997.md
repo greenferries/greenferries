@@ -1,8 +1,8 @@
 ---
-company: null
+company: polferries-pl
 imo: '7931997'
 layout: ship
-name: BALTIVIA
+name: MF Baltivia
 photo: /img/baltivia-7931997.jpg
 slug: baltivia-7931997
 tags:

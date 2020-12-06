@@ -1,0 +1,29 @@
+---js
+{
+  pagination: {
+    data: "collections.company",
+    size: 60,
+    alias: "companies",
+    before: data => data.
+      map(d => d.data).
+      filter(o => o.outOfScope).
+      sort((companyA, companyB) => {
+        if (companyA.slug < companyB.slug) return -1
+        else if (companyA.slug > companyB.slug) return 1
+        else return 0
+      })
+  }
+}
+---
+
+{% extends "views/_layouts/companies.njk" %}
+
+{% block page_title %}
+  {{ collections.company | outOfScope | length }} out of scope operators sorted by name
+{% endblock %}
+
+{% block page_links %}
+  <a href="/companies" class="link ml-2">
+    Show {{ collections.company | inScope | length }} actual ferry operators
+  </a>
+{% endblock %}

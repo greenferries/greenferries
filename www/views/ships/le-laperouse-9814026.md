@@ -1,8 +1,9 @@
 ---
-company: null
+company: compagnie-du-ponant-fr
 imo: '9814026'
 layout: ship
 name: LE LAPEROUSE
+outOfScope: true
 photo: /img/le-laperouse-9814026.jpg
 slug: le-laperouse-9814026
 tags:

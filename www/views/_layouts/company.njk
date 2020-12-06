@@ -29,7 +29,22 @@
         </a>
       </p>
     {% endif %}
+  </div>
 
+  {% if outOfScope %}
+    <div class="bg-red-400 mb-3">
+      <div class="container flex items-center mx-auto py-2 px-3 sm:px-0">
+        <div class="text-lg mr-3">
+          ⚠️
+        </div>
+        <div>
+          This operator does not seem to be operating passenger ferries, it is considered out of scope.
+        </div>
+      </div>
+    </div>
+  {% endif %}
+
+  <div class="container mx-auto mb-4 p-2">
     <h4 class="text-l font-bold mb-3">{{ ships | length }} ships</h4>
     {% include "views/_includes/ship_cards.njk" %}
   </div>

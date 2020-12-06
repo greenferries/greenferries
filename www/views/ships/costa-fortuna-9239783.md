@@ -1,8 +1,9 @@
 ---
-company: null
+company: costa-cruises-it
 imo: '9239783'
 layout: ship
 name: COSTA FORTUNA
+outOfScope: true
 photo: /img/costa-fortuna-9239783.JPG
 slug: costa-fortuna-9239783
 tags:

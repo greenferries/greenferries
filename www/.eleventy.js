@@ -77,6 +77,7 @@ module.exports = function (eleventyConfig) {
   })
 
   eleventyConfig.addFilter('inScope', collection => Object.values(collection).filter(o => !o.data.outOfScope))
+  eleventyConfig.addFilter('outOfScope', collection => Object.values(collection).filter(o => o.data.outOfScope))
 
   eleventyConfig.addFilter("ecoscoreLetterToImgFileKey", letter => letter ? letter : "unknown")
 

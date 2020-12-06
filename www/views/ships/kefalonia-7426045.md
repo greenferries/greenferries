@@ -1,8 +1,8 @@
 ---
-company: null
+company: levante-ferries-gr
 imo: '7426045'
 layout: ship
-name: KEFALONIA
+name: Nissos Kefalonia
 photo: /img/kefalonia-7426045.png
 slug: kefalonia-7426045
 tags:

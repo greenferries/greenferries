@@ -3,6 +3,7 @@ company: holland-america-line-us
 imo: 9764958
 layout: ship
 name: MV Seabourn Ovation
+outOfScope: true
 routes: []
 slug: mv-seabourn-ovation-9764958
 photo: /img/seabourn-ovation.jpg

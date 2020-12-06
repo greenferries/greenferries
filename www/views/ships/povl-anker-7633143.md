@@ -1,8 +1,8 @@
 ---
-company: null
+company: molslinjen-dk
 imo: '7633143'
 layout: ship
-name: POVL ANKER
+name: Povl Anker
 photo: /img/povl-anker-7633143.JPG
 slug: povl-anker-7633143
 tags:

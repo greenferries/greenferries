@@ -4,6 +4,7 @@ company: seabourn-cruise-line-us
 imo: 9731171
 layout: ship
 name: Seabourn Encore
+outOfScope: true
 routes: []
 slug: seabourn-encore-9731171
 tags:

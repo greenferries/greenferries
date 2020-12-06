@@ -1,7 +1,6 @@
 ---
 country: IT
 layout: company
-logo: /img/.png
 name: Grimaldi Lines
 officialUrl: http://www.grimaldi-lines.com/
 slug: grimaldi-lines-it

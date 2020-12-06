@@ -1,8 +1,8 @@
 ---
-company: null
+company: virtu-ferries-mt
 imo: '9817274'
 layout: ship
-name: SAINT JOHN PAUL II
+name: MV Saint John Paul II
 photo: /img/saint-john-paul-ii-9817274.jpg
 slug: saint-john-paul-ii-9817274
 tags:

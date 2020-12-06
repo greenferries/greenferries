@@ -3,6 +3,7 @@ company: royal-caribbean-international-us
 imo: '9195200'
 layout: ship
 name: BRILLIANCE OF THE SEAS
+outOfScope: true
 photo: /img/brilliance-of-the-seas-9195200.JPG
 slug: brilliance-of-the-seas-9195200
 tags:

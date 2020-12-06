@@ -1,7 +1,6 @@
 ---
 country: GR
 layout: company
-logo: /img/.png
 name: Hellenic Seaways
 slug: hellenic-seaways-gr
 tags:

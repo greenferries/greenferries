@@ -4,6 +4,7 @@ company: seabourn-cruise-line-us
 imo: 9483126
 layout: ship
 name: MV Seabourn Quest
+outOfScope: true
 routes: []
 slug: mv-seabourn-quest-9483126
 tags:

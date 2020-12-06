@@ -1,8 +1,9 @@
 ---
-company: null
+company: compagnie-du-ponant-fr
 imo: '9502506'
 layout: ship
 name: LE BOREAL
+outOfScope: true
 photo: /img/le-boreal-9502506.JPG
 slug: le-boreal-9502506
 tags:

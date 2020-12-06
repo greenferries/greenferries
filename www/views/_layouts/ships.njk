@@ -6,9 +6,8 @@
   <div class="container mx-auto mb-4 p-2">
     <div class="mt-3 mb-6">
       <ul class="flex justify-center text-lg">
-        <li>{{ collections.ship | inScope | length }} ferries sorted by:</li>
-        <li><a class="link ml-2" href="/ships">Name</a></li>
-        <li><a class="link ml-2" href="/ships_sorted_ecoscore">EcoScore</a></li>
+        <li>{% block page_title %}{% endblock %}</li>
+        {% block sort_links %}{% endblock %}
       </ul>
     </div>
     <div class="mt-3 mb-6">
@@ -17,6 +16,9 @@
     {% include "views/_includes/ship_cards.njk" %}
     <div class="my-6">
       {% include "views/_includes/pagination.njk" %}
+    </div>
+    <div class="flex justify-center mb-4">
+      {% block page_links %}page_links{% endblock %}
     </div>
   </div>
 {% endblock %}

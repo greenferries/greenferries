@@ -1,8 +1,8 @@
 ---
-company: null
+company: silja-line-fi
 imo: '9354284'
 layout: ship
-name: BALTIC PRINCESS
+name: Baltic Princess
 slug: baltic-princess-9354284
 tags:
 - ship

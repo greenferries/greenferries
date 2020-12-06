@@ -2,6 +2,7 @@
 country: DE
 layout: company
 name: Peter Deilmann Cruises
+outOfScope: true
 slug: peter-deilmann-cruises-de
 tags:
 - company

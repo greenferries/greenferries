@@ -12,7 +12,22 @@
         else if (shipA.slug > shipB.slug) return 1
         else return 0
       })
-  },
-  layout: "ships"
+  }
 }
 ---
+
+{% extends "views/_layouts/ships.njk" %}
+
+{% block page_title %}
+  {{ collections.ship | inScope | length }} ferries sorted by name
+{% endblock %}
+
+{% block sort_links %}
+  <li><a class="link ml-2" href="/ships_sorted_ecoscore">Sort by EcoScore</a></li>
+{% endblock %}
+
+{% block page_links %}
+  <a href="/ships_out_of_scope" class="link ml-2">
+    Show {{ collections.ship | outOfScope | length }} out of scope ships
+  </a>
+{% endblock %}

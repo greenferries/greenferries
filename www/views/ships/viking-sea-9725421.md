@@ -4,6 +4,7 @@ company: viking-ocean-cruises-us
 imo: 9725421
 layout: ship
 name: Viking Sea
+outOfScope: true
 routes: []
 slug: viking-sea-9725421
 tags:

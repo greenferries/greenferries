@@ -1,8 +1,8 @@
 ---
-company: null
+company: adria-ferries-it
 imo: '7602089'
 layout: ship
-name: AF FRANCESCA
+name: AF Francesca
 photo: /img/af-francesca-7602089.jpg
 slug: af-francesca-7602089
 tags:

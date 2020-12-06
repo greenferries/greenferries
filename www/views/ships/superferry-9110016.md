@@ -1,8 +1,8 @@
 ---
-company: null
+company: golden-star-ferries-gr
 imo: '9110016'
 layout: ship
-name: SUPERFERRY
+name: Superferry
 photo: /img/superferry-9110016.JPG
 slug: superferry-9110016
 tags:

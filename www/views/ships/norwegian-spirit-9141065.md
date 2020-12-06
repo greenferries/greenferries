@@ -1,5 +1,5 @@
 ---
-company: null
+company: norwegian-cruise-lines-us
 imo: '9141065'
 layout: ship
 name: NORWEGIAN SPIRIT

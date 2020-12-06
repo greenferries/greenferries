@@ -1,8 +1,8 @@
 ---
-company: null
+company: hapag-lloyd-de
 imo: '9817145'
 layout: ship
-name: HANSEATIC INSPIRATION
+name: Hanseatic inspiration
 photo: /img/hanseatic-inspiration-9817145.jpg
 slug: hanseatic-inspiration-9817145
 tags:

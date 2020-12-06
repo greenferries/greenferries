@@ -1,8 +1,8 @@
 ---
-company: null
+company: stena-line-se
 imo: '9417919'
 layout: ship
-name: STENA FLAVIA
+name: Stena Flavia
 photo: /img/stena-flavia-9417919.JPG
 slug: stena-flavia-9417919
 tags:

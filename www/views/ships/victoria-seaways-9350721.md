@@ -1,8 +1,8 @@
 ---
-company: null
+company: dfds-seaways-dk
 imo: '9350721'
 layout: ship
-name: VICTORIA SEAWAYS
+name: Victoria Seaways
 slug: victoria-seaways-9350721
 tags:
 - ship
