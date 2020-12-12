@@ -79,6 +79,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter('inScope', collection => Object.values(collection).filter(o => !o.data.outOfScope))
   eleventyConfig.addFilter('outOfScope', collection => Object.values(collection).filter(o => o.data.outOfScope))
 
+  eleventyConfig.addFilter('withoutRoutes', collection => Object.values(collection).filter(o => (o.data.routes || []).length == 0))
+
   eleventyConfig.addFilter("ecoscoreLetterToImgFileKey", letter => letter ? letter : "unknown")
 
 
@@ -96,6 +98,7 @@ module.exports = function (eleventyConfig) {
     dir: {
       input: "views",
       layouts: "_layouts"
-    }
+    },
+    markdownTemplateEngine: "njk"
   }
 }

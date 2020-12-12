@@ -29,44 +29,19 @@
               <a class="link mx-1 hover:text-blue-500" href="/">Routes</a>
               <a class="link mx-1 hover:text-blue-500" href="/ships">Ferries</a>
               <a class="link mx-1 hover:text-blue-500" href="/companies">Operators</a>
-              <a class="link mx-1 hover:text-blue-500" href="/doc/faq">
-                <svg class="fill-current w-4 h-4 inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
-                </svg>
-                Doc
-              </a>
+              <a class="link mx-1 hover:text-blue-500" href="/doc/faq">Help</a>
             </div>
           </div>
         </div>
       </div>
 
       <div class="flex-grow flex flex-col">
-        {% block content %}{% endblock %}
         {% if content %}
-          <div class="container mx-auto">
-            <div class="flex flex-col lg:flex-row">
-              <nav class="w-auto lg:w-64 mb-4 lg:mb-0 pr-3 py-3 border-b lg:border-b-0 lg:border-r border-blue-700 flex lg:block">
-                <div class="text-lg lg:text-2xl lg:mb-8">Documentation</div>
-                <ul class="flex lg:block ml-4 lg:ml-0">
-                  <li class="text-lg lg:ml-0 lg:mb-2 border-blue-700 hover:text-blue-500 hover:border-b-2 {{ 'text-blue-500 border-b-2' if activeLink == 'faq' }}">
-                    <a href="/doc/faq">FAQ</a>
-                  </li>
-                  <li class="text-lg ml-3 lg:ml-0 lg:mb-2 border-blue-700 hover:text-blue-500 hover:border-b-2 {{ 'text-blue-500 border-b-2' if activeLink == 'ecoscore' }}">
-                    <a href="/doc/ecoscore">EcoScore</a>
-                  </li>
-                  <li class="text-lg ml-3 lg:ml-0 lg:mb-2 border-blue-700 hover:text-blue-500 hover:border-b-2 {{ 'text-blue-500 border-b-2' if activeLink == 'computed_stats' }}">
-                    <a href="/doc/computed_stats">Computed Statistics</a>
-                  </li>
-                  <li class="text-lg ml-3 lg:ml-0 lg:mb-2 border-blue-700 hover:text-blue-500 hover:border-b-2 {{ 'text-blue-500 border-b-2' if activeLink == 'ship_types' }}">
-                    <a href="/doc/ship_types">Ship Types</a>
-                  </li>
-                </ul>
-              </nav>
-              <article class="prose lg:p-3 flex-grow">
-                {{ content | safe }}
-              </article>
-            </div>
-          </div>
+          {# when using 11ty layout feature with frontmatter layout #}
+          {{ content | safe }}
+        {% else %}
+          {# when using nunjucks layout feature with extends #}
+          {% block content %}{% endblock %}
         {% endif %}
       </div>
 
@@ -109,7 +84,7 @@
           <p class="py-2">
             Community:
               <a class="link mx-1" href="https://github.com/greenferries/greenferries">GitHub ↗</a>
-              <a class="link mx-1" href="mailto:admin@greenferries.org">Contact ✉️</a>
+              <a class="link mx-1" href="/contact">Contact</a>
               <a class="link mx-1" href="https://gitter.im/greenferries/community">Discuss on gitter #greenferries ↗</a>
           </p>
         </div>
