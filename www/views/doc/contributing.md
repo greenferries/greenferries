@@ -5,7 +5,7 @@ activeLink: contributing
 
 # How to contribute?
 
-If you too are interested in passenger ferries pollution, we would love to have a chat with you, please [say hi from the contact page!](/contact).
+If you too are interested in passenger ferries pollution, we would love to have a chat with you, please [say hi from the contact page!](/doc/contact).
 
 If you wish to help, here are a few areas where we think Greenferries could be improved. We welcome new ideas too!
 
