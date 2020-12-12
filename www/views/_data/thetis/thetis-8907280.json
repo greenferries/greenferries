@@ -17,10 +17,6 @@
     "verifierCity": "Piraeus",
     "verifierAccreditationNumber": "1101",
     "verifierCountry": "Greece",
-    "monitoringMethodA": "Yes",
-    "monitoringMethodB": null,
-    "monitoringMethodC": null,
-    "monitoringMethodD": null,
     "annualMonitoringTotalFuelConsumption": 5168.15,
     "annualMonitoringFuelConsumptionAssignedToOnLaden": null,
     "annualMonitoringTotalCo2Emissions": 16105.25,
@@ -69,7 +65,10 @@
     "annualComputedAverageSpeed": 34.17133286628865,
     "annualComputedRatioCo2FromPax": 1.0,
     "annualComputedAverageCo2EmissionsPerTransportWorkPaxKm": 1480.4419652041227,
-    "computedEcoscoreLetter": "E"
+    "computedEcoscoreLetter": "E",
+    "monitoringMethods": [
+      "a"
+    ]
   },
   "2019": {
     "imo": 8907280,
@@ -89,10 +88,6 @@
     "verifierCity": "Piraeus",
     "verifierAccreditationNumber": "1101",
     "verifierCountry": "Greece",
-    "monitoringMethodA": "Yes",
-    "monitoringMethodB": null,
-    "monitoringMethodC": null,
-    "monitoringMethodD": null,
     "annualMonitoringTotalFuelConsumption": 4238.2,
     "annualMonitoringFuelConsumptionAssignedToOnLaden": null,
     "annualMonitoringTotalCo2Emissions": 13206.0,
@@ -141,6 +136,9 @@
     "annualComputedAverageSpeed": 31.648951345677986,
     "annualComputedRatioCo2FromPax": 1.0,
     "annualComputedAverageCo2EmissionsPerTransportWorkPaxKm": 549.8971112866569,
-    "computedEcoscoreLetter": "D"
+    "computedEcoscoreLetter": "D",
+    "monitoringMethods": [
+      "a"
+    ]
   }
 }

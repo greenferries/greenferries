@@ -17,10 +17,6 @@
     "verifierCity": "20457 Hamburg",
     "verifierAccreditationNumber": "D-VS-16026-01-00",
     "verifierCountry": "Germany",
-    "monitoringMethodA": null,
-    "monitoringMethodB": null,
-    "monitoringMethodC": "Yes",
-    "monitoringMethodD": null,
     "annualMonitoringTotalFuelConsumption": 21188.19,
     "annualMonitoringFuelConsumptionAssignedToOnLaden": null,
     "annualMonitoringTotalCo2Emissions": 66929.28,
@@ -69,7 +65,10 @@
     "annualComputedAverageSpeed": 35.265821626980426,
     "annualComputedRatioCo2FromPax": 0.20000005976457536,
     "annualComputedAverageCo2EmissionsPerTransportWorkPaxKm": 87.98591361451749,
-    "computedEcoscoreLetter": "A"
+    "computedEcoscoreLetter": "A",
+    "monitoringMethods": [
+      "c"
+    ]
   },
   "2019": {
     "imo": 9214379,
@@ -89,10 +88,6 @@
     "verifierCity": "London",
     "verifierAccreditationNumber": "4599",
     "verifierCountry": "United Kingdom",
-    "monitoringMethodA": null,
-    "monitoringMethodB": null,
-    "monitoringMethodC": "Yes",
-    "monitoringMethodD": null,
     "annualMonitoringTotalFuelConsumption": 20699.6,
     "annualMonitoringFuelConsumptionAssignedToOnLaden": null,
     "annualMonitoringTotalCo2Emissions": 65224.44,
@@ -141,6 +136,9 @@
     "annualComputedAverageSpeed": 33.77021632104843,
     "annualComputedRatioCo2FromPax": 0.2100002698375026,
     "annualComputedAverageCo2EmissionsPerTransportWorkPaxKm": 89.65977880141534,
-    "computedEcoscoreLetter": "A"
+    "computedEcoscoreLetter": "A",
+    "monitoringMethods": [
+      "c"
+    ]
   }
 }

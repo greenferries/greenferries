@@ -17,10 +17,6 @@
     "verifierCity": "London",
     "verifierAccreditationNumber": "4599",
     "verifierCountry": "United Kingdom",
-    "monitoringMethodA": null,
-    "monitoringMethodB": null,
-    "monitoringMethodC": "Yes",
-    "monitoringMethodD": null,
     "annualMonitoringTotalFuelConsumption": 14680.62,
     "annualMonitoringFuelConsumptionAssignedToOnLaden": null,
     "annualMonitoringTotalCo2Emissions": 46258.84,
@@ -69,7 +65,10 @@
     "annualComputedAverageSpeed": 27.7733309575593,
     "annualComputedRatioCo2FromPax": 0.8176110771476328,
     "annualComputedAverageCo2EmissionsPerTransportWorkPaxKm": 179.74072368211463,
-    "computedEcoscoreLetter": "B"
+    "computedEcoscoreLetter": "B",
+    "monitoringMethods": [
+      "c"
+    ]
   },
   "2019": {
     "imo": 9281281,
@@ -89,10 +88,6 @@
     "verifierCity": "London",
     "verifierAccreditationNumber": "4599",
     "verifierCountry": "United Kingdom",
-    "monitoringMethodA": null,
-    "monitoringMethodB": null,
-    "monitoringMethodC": "Yes",
-    "monitoringMethodD": null,
     "annualMonitoringTotalFuelConsumption": 13927.03,
     "annualMonitoringFuelConsumptionAssignedToOnLaden": null,
     "annualMonitoringTotalCo2Emissions": 43884.54,
@@ -141,6 +136,9 @@
     "annualComputedAverageSpeed": 27.719351831290613,
     "annualComputedRatioCo2FromPax": 0.8218944530351691,
     "annualComputedAverageCo2EmissionsPerTransportWorkPaxKm": 180.21588541258888,
-    "computedEcoscoreLetter": "B"
+    "computedEcoscoreLetter": "B",
+    "monitoringMethods": [
+      "c"
+    ]
   }
 }

@@ -17,10 +17,6 @@
     "verifierCity": "BIRMINGHAM",
     "verifierAccreditationNumber": "0001",
     "verifierCountry": "United Kingdom",
-    "monitoringMethodA": null,
-    "monitoringMethodB": null,
-    "monitoringMethodC": "Yes",
-    "monitoringMethodD": null,
     "annualMonitoringTotalFuelConsumption": 15755.0,
     "annualMonitoringFuelConsumptionAssignedToOnLaden": null,
     "annualMonitoringTotalCo2Emissions": 44270.48,
@@ -69,7 +65,10 @@
     "annualComputedAverageSpeed": 28.775385481274125,
     "annualComputedRatioCo2FromPax": 0.6608568508857369,
     "annualComputedAverageCo2EmissionsPerTransportWorkPaxKm": 290.74498339903704,
-    "computedEcoscoreLetter": "D"
+    "computedEcoscoreLetter": "D",
+    "monitoringMethods": [
+      "c"
+    ]
   },
   "2019": {
     "imo": 9145176,
@@ -89,10 +88,6 @@
     "verifierCity": "BIRMINGHAM",
     "verifierAccreditationNumber": "0001",
     "verifierCountry": "United Kingdom",
-    "monitoringMethodA": null,
-    "monitoringMethodB": null,
-    "monitoringMethodC": null,
-    "monitoringMethodD": null,
     "annualMonitoringTotalFuelConsumption": 15629.39,
     "annualMonitoringFuelConsumptionAssignedToOnLaden": null,
     "annualMonitoringTotalCo2Emissions": 44112.42,
@@ -141,6 +136,7 @@
     "annualComputedAverageSpeed": 29.073462318588124,
     "annualComputedRatioCo2FromPax": 0.5717822780976424,
     "annualComputedAverageCo2EmissionsPerTransportWorkPaxKm": 248.5905785148064,
-    "computedEcoscoreLetter": "C"
+    "computedEcoscoreLetter": "C",
+    "monitoringMethods": []
   }
 }

@@ -17,10 +17,6 @@
     "verifierCity": "92937 PARIS LA DEFENSE",
     "verifierAccreditationNumber": "4-0076",
     "verifierCountry": "France",
-    "monitoringMethodA": "Yes",
-    "monitoringMethodB": null,
-    "monitoringMethodC": null,
-    "monitoringMethodD": null,
     "annualMonitoringTotalFuelConsumption": 11747.0,
     "annualMonitoringFuelConsumptionAssignedToOnLaden": null,
     "annualMonitoringTotalCo2Emissions": 36649.07,
@@ -69,7 +65,10 @@
     "annualComputedAverageSpeed": 27.325695663445487,
     "annualComputedRatioCo2FromPax": 0.4049535226951189,
     "annualComputedAverageCo2EmissionsPerTransportWorkPaxKm": 215.43184911887198,
-    "computedEcoscoreLetter": "C"
+    "computedEcoscoreLetter": "C",
+    "monitoringMethods": [
+      "a"
+    ]
   },
   "2019": {
     "imo": 9364980,
@@ -89,10 +88,6 @@
     "verifierCity": "92937 PARIS LA DEFENSE",
     "verifierAccreditationNumber": "4-0076",
     "verifierCountry": "France",
-    "monitoringMethodA": "Yes",
-    "monitoringMethodB": null,
-    "monitoringMethodC": null,
-    "monitoringMethodD": null,
     "annualMonitoringTotalFuelConsumption": 12160.34,
     "annualMonitoringFuelConsumptionAssignedToOnLaden": null,
     "annualMonitoringTotalCo2Emissions": 37940.04,
@@ -141,6 +136,9 @@
     "annualComputedAverageSpeed": 25.466074158492123,
     "annualComputedRatioCo2FromPax": 0.4369737090419514,
     "annualComputedAverageCo2EmissionsPerTransportWorkPaxKm": 244.34652033125252,
-    "computedEcoscoreLetter": "C"
+    "computedEcoscoreLetter": "C",
+    "monitoringMethods": [
+      "a"
+    ]
   }
 }

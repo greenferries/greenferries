@@ -28,8 +28,18 @@ def camelCase(st):
     output = ''.join(x for x in st.title() if x.isalnum())
     return output[0].lower() + output[1:]
 
+def monitoring_methods(row):
+    monitoring_methods = []
+    for letter in ["a", "b", "c", "d"]:
+        if not pd.isna(row[f"monitoring_method_{letter}"]):
+            monitoring_methods.append(letter)
+    return monitoring_methods
+
 def write_thetis_jsons():
     df_thetis = pd.read_csv(THETIS_CSV_PATH).replace({np.nan: None})
+    df_thetis["monitoring_methods"] = df_thetis.apply(lambda row: monitoring_methods(row), axis=1)
+    for letter in ["a", "b", "c", "d"]:
+        del df_thetis[f"monitoring_method_{letter}"]
     df_thetis.columns = df_thetis.columns.map(lambda x: camelCase(x))
     filenames = os.listdir(WWW_SHIPS_PATH)
     matching_filenames = [fn for fn in filenames if re.match(r".*-(\d+)\.md", fn)]

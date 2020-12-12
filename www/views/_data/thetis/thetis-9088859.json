@@ -17,10 +17,6 @@
     "verifierCity": "Paris",
     "verifierAccreditationNumber": "4-0596",
     "verifierCountry": "France",
-    "monitoringMethodA": null,
-    "monitoringMethodB": "Yes",
-    "monitoringMethodC": null,
-    "monitoringMethodD": null,
     "annualMonitoringTotalFuelConsumption": 9883.34,
     "annualMonitoringFuelConsumptionAssignedToOnLaden": null,
     "annualMonitoringTotalCo2Emissions": 30869.47,
@@ -69,7 +65,10 @@
     "annualComputedAverageSpeed": 28.77208176119136,
     "annualComputedRatioCo2FromPax": 0.08488127590140031,
     "annualComputedAverageCo2EmissionsPerTransportWorkPaxKm": 83.66626151929722,
-    "computedEcoscoreLetter": "A"
+    "computedEcoscoreLetter": "A",
+    "monitoringMethods": [
+      "b"
+    ]
   },
   "2019": {
     "imo": 9088859,
@@ -89,10 +88,6 @@
     "verifierCity": "Paris",
     "verifierAccreditationNumber": "4-0596",
     "verifierCountry": "France",
-    "monitoringMethodA": null,
-    "monitoringMethodB": "Yes",
-    "monitoringMethodC": null,
-    "monitoringMethodD": null,
     "annualMonitoringTotalFuelConsumption": 9406.85,
     "annualMonitoringFuelConsumptionAssignedToOnLaden": null,
     "annualMonitoringTotalCo2Emissions": 29381.66,
@@ -141,6 +136,9 @@
     "annualComputedAverageSpeed": 29.149480274767924,
     "annualComputedRatioCo2FromPax": 0.1937735989048951,
     "annualComputedAverageCo2EmissionsPerTransportWorkPaxKm": 235.46423571045585,
-    "computedEcoscoreLetter": "C"
+    "computedEcoscoreLetter": "C",
+    "monitoringMethods": [
+      "b"
+    ]
   }
 }

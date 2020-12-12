@@ -73,3 +73,12 @@
     </tbody>
   </table>
 </div>
+
+<div class="md:flex mt-2">
+  <div>{{ year }} monitoring methods :</div>
+  <ul class="list-disc ml-5">
+    {% for letter in thetisData[year].monitoringMethods %}
+      <li>{{ letter | monitoringMethodLetterToDescription }}</li>
+    {% endfor %}
+  </ul>
+</div>

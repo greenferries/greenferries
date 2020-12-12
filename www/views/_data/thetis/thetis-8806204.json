@@ -17,10 +17,6 @@
     "verifierCity": "Tokyo",
     "verifierAccreditationNumber": "VS-21325-01",
     "verifierCountry": "Japan",
-    "monitoringMethodA": null,
-    "monitoringMethodB": null,
-    "monitoringMethodC": "Yes",
-    "monitoringMethodD": null,
     "annualMonitoringTotalFuelConsumption": 2196.2,
     "annualMonitoringFuelConsumptionAssignedToOnLaden": null,
     "annualMonitoringTotalCo2Emissions": 6897.85,
@@ -69,6 +65,9 @@
     "annualComputedAverageSpeed": 26.80869801795472,
     "annualComputedRatioCo2FromPax": null,
     "annualComputedAverageCo2EmissionsPerTransportWorkPaxKm": 571.7221534977573,
-    "computedEcoscoreLetter": "D"
+    "computedEcoscoreLetter": "D",
+    "monitoringMethods": [
+      "c"
+    ]
   }
 }

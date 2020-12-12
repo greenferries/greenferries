@@ -17,10 +17,6 @@
     "verifierCity": "47492 Ell\u00f6s",
     "verifierAccreditationNumber": "10296",
     "verifierCountry": "Sweden",
-    "monitoringMethodA": null,
-    "monitoringMethodB": null,
-    "monitoringMethodC": null,
-    "monitoringMethodD": null,
     "annualMonitoringTotalFuelConsumption": 14162.0,
     "annualMonitoringFuelConsumptionAssignedToOnLaden": null,
     "annualMonitoringTotalCo2Emissions": 40634.98,
@@ -69,6 +65,7 @@
     "annualComputedAverageSpeed": 44.32807225380446,
     "annualComputedRatioCo2FromPax": 0.4740890730104948,
     "annualComputedAverageCo2EmissionsPerTransportWorkPaxKm": 227.6132680273931,
-    "computedEcoscoreLetter": "C"
+    "computedEcoscoreLetter": "C",
+    "monitoringMethods": []
   }
 }

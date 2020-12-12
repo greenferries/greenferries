@@ -17,10 +17,6 @@
     "verifierCity": "Genova",
     "verifierAccreditationNumber": "002O",
     "verifierCountry": "Italy",
-    "monitoringMethodA": null,
-    "monitoringMethodB": null,
-    "monitoringMethodC": null,
-    "monitoringMethodD": null,
     "annualMonitoringTotalFuelConsumption": 23353.09,
     "annualMonitoringFuelConsumptionAssignedToOnLaden": null,
     "annualMonitoringTotalCo2Emissions": 73292.73,
@@ -69,7 +65,8 @@
     "annualComputedAverageSpeed": 29.34479584144821,
     "annualComputedRatioCo2FromPax": 0.047293503734954334,
     "annualComputedAverageCo2EmissionsPerTransportWorkPaxKm": 47.98053564765894,
-    "computedEcoscoreLetter": "A"
+    "computedEcoscoreLetter": "A",
+    "monitoringMethods": []
   },
   "2019": {
     "imo": 9220342,
@@ -89,10 +86,6 @@
     "verifierCity": "Genova",
     "verifierAccreditationNumber": "002O",
     "verifierCountry": "Italy",
-    "monitoringMethodA": "Yes",
-    "monitoringMethodB": null,
-    "monitoringMethodC": null,
-    "monitoringMethodD": null,
     "annualMonitoringTotalFuelConsumption": 25995.55,
     "annualMonitoringFuelConsumptionAssignedToOnLaden": null,
     "annualMonitoringTotalCo2Emissions": 81205.91,
@@ -141,6 +134,9 @@
     "annualComputedAverageSpeed": 43.16728744625488,
     "annualComputedRatioCo2FromPax": 0.03780882450550705,
     "annualComputedAverageCo2EmissionsPerTransportWorkPaxKm": 29.908191194281212,
-    "computedEcoscoreLetter": "A"
+    "computedEcoscoreLetter": "A",
+    "monitoringMethods": [
+      "a"
+    ]
   }
 }

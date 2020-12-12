@@ -17,10 +17,6 @@
     "verifierCity": "ATHENS",
     "verifierAccreditationNumber": "874-4",
     "verifierCountry": "Greece",
-    "monitoringMethodA": "Yes",
-    "monitoringMethodB": null,
-    "monitoringMethodC": null,
-    "monitoringMethodD": null,
     "annualMonitoringTotalFuelConsumption": 6092.13,
     "annualMonitoringFuelConsumptionAssignedToOnLaden": null,
     "annualMonitoringTotalCo2Emissions": 19120.14,
@@ -69,7 +65,10 @@
     "annualComputedAverageSpeed": 53.058151884262635,
     "annualComputedRatioCo2FromPax": 0.9880110710486428,
     "annualComputedAverageCo2EmissionsPerTransportWorkPaxKm": 3.2559377667722638,
-    "computedEcoscoreLetter": "A"
+    "computedEcoscoreLetter": "A",
+    "monitoringMethods": [
+      "a"
+    ]
   },
   "2019": {
     "imo": 7807744,
@@ -89,10 +88,6 @@
     "verifierCity": "ATHENS",
     "verifierAccreditationNumber": "874-4",
     "verifierCountry": "Greece",
-    "monitoringMethodA": "Yes",
-    "monitoringMethodB": null,
-    "monitoringMethodC": null,
-    "monitoringMethodD": null,
     "annualMonitoringTotalFuelConsumption": 6851.9,
     "annualMonitoringFuelConsumptionAssignedToOnLaden": null,
     "annualMonitoringTotalCo2Emissions": 21485.59,
@@ -141,6 +136,9 @@
     "annualComputedAverageSpeed": 26.631465163279504,
     "annualComputedRatioCo2FromPax": 0.4951751383136325,
     "annualComputedAverageCo2EmissionsPerTransportWorkPaxKm": 231.07438926868832,
-    "computedEcoscoreLetter": "C"
+    "computedEcoscoreLetter": "C",
+    "monitoringMethods": [
+      "a"
+    ]
   }
 }

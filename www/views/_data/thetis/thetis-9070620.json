@@ -17,10 +17,6 @@
     "verifierCity": "Kallithea",
     "verifierAccreditationNumber": "1083",
     "verifierCountry": "Greece",
-    "monitoringMethodA": null,
-    "monitoringMethodB": "Yes",
-    "monitoringMethodC": null,
-    "monitoringMethodD": null,
     "annualMonitoringTotalFuelConsumption": 13537.01,
     "annualMonitoringFuelConsumptionAssignedToOnLaden": null,
     "annualMonitoringTotalCo2Emissions": 42417.62,
@@ -69,7 +65,10 @@
     "annualComputedAverageSpeed": 26.462700740018807,
     "annualComputedRatioCo2FromPax": null,
     "annualComputedAverageCo2EmissionsPerTransportWorkPaxKm": 312.8130060404935,
-    "computedEcoscoreLetter": "D"
+    "computedEcoscoreLetter": "D",
+    "monitoringMethods": [
+      "b"
+    ]
   },
   "2019": {
     "imo": 9070620,
@@ -89,10 +88,6 @@
     "verifierCity": "Kallithea",
     "verifierAccreditationNumber": "1083",
     "verifierCountry": "Greece",
-    "monitoringMethodA": null,
-    "monitoringMethodB": "Yes",
-    "monitoringMethodC": null,
-    "monitoringMethodD": null,
     "annualMonitoringTotalFuelConsumption": 15701.35,
     "annualMonitoringFuelConsumptionAssignedToOnLaden": null,
     "annualMonitoringTotalCo2Emissions": 49174.15,
@@ -141,6 +136,9 @@
     "annualComputedAverageSpeed": 25.63183293135565,
     "annualComputedRatioCo2FromPax": null,
     "annualComputedAverageCo2EmissionsPerTransportWorkPaxKm": 341.31731030382815,
-    "computedEcoscoreLetter": "D"
+    "computedEcoscoreLetter": "D",
+    "monitoringMethods": [
+      "b"
+    ]
   }
 }

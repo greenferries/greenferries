@@ -17,10 +17,6 @@
     "verifierCity": "47492 Ell\u00f6s",
     "verifierAccreditationNumber": "10296",
     "verifierCountry": "Sweden",
-    "monitoringMethodA": null,
-    "monitoringMethodB": null,
-    "monitoringMethodC": "Yes",
-    "monitoringMethodD": null,
     "annualMonitoringTotalFuelConsumption": 23160.0,
     "annualMonitoringFuelConsumptionAssignedToOnLaden": null,
     "annualMonitoringTotalCo2Emissions": 72977.16,
@@ -69,7 +65,10 @@
     "annualComputedAverageSpeed": 43.17745964311208,
     "annualComputedRatioCo2FromPax": 0.35189982728842834,
     "annualComputedAverageCo2EmissionsPerTransportWorkPaxKm": 234.2277352981991,
-    "computedEcoscoreLetter": "C"
+    "computedEcoscoreLetter": "C",
+    "monitoringMethods": [
+      "c"
+    ]
   },
   "2019": {
     "imo": 9223784,
@@ -89,10 +88,6 @@
     "verifierCity": "47492 Ell\u00f6s",
     "verifierAccreditationNumber": "10296",
     "verifierCountry": "Sweden",
-    "monitoringMethodA": null,
-    "monitoringMethodB": null,
-    "monitoringMethodC": null,
-    "monitoringMethodD": null,
     "annualMonitoringTotalFuelConsumption": 18800.0,
     "annualMonitoringFuelConsumptionAssignedToOnLaden": null,
     "annualMonitoringTotalCo2Emissions": 59238.8,
@@ -141,6 +136,7 @@
     "annualComputedAverageSpeed": 42.416169613742326,
     "annualComputedRatioCo2FromPax": 0.348936170212766,
     "annualComputedAverageCo2EmissionsPerTransportWorkPaxKm": 243.164015570186,
-    "computedEcoscoreLetter": "C"
+    "computedEcoscoreLetter": "C",
+    "monitoringMethods": []
   }
 }

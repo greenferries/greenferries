@@ -17,10 +17,6 @@
     "verifierCity": "Athens",
     "verifierAccreditationNumber": "1190",
     "verifierCountry": "Greece",
-    "monitoringMethodA": null,
-    "monitoringMethodB": "Yes",
-    "monitoringMethodC": "Yes",
-    "monitoringMethodD": null,
     "annualMonitoringTotalFuelConsumption": 12857.53,
     "annualMonitoringFuelConsumptionAssignedToOnLaden": null,
     "annualMonitoringTotalCo2Emissions": 40324.73,
@@ -69,6 +65,10 @@
     "annualComputedAverageSpeed": 26.304731940084558,
     "annualComputedRatioCo2FromPax": null,
     "annualComputedAverageCo2EmissionsPerTransportWorkPaxKm": 286.5549208666734,
-    "computedEcoscoreLetter": "C"
+    "computedEcoscoreLetter": "C",
+    "monitoringMethods": [
+      "b",
+      "c"
+    ]
   }
 }

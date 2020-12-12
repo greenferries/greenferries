@@ -94,6 +94,15 @@ module.exports = function (eleventyConfig) {
     }[letter]
   })
 
+  eleventyConfig.addFilter("monitoringMethodLetterToDescription", letter => {
+    return {
+      a: "BDN and period stock takes of fuel tanks",
+      b: "Bunker fuel tank monitoring on-board",
+      c: "Flow meters for applicable combustion processes",
+      d: "Direct CO2 emissions measurement"
+    }[letter]
+  })
+
   return {
     dir: {
       input: "views",

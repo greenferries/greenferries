@@ -17,10 +17,6 @@
     "verifierCity": "21000 SPLIT",
     "verifierAccreditationNumber": "9568",
     "verifierCountry": "Croatia",
-    "monitoringMethodA": null,
-    "monitoringMethodB": "Yes",
-    "monitoringMethodC": null,
-    "monitoringMethodD": null,
     "annualMonitoringTotalFuelConsumption": 2749.79,
     "annualMonitoringFuelConsumptionAssignedToOnLaden": null,
     "annualMonitoringTotalCo2Emissions": 8815.83,
@@ -69,7 +65,10 @@
     "annualComputedAverageSpeed": 22.463873307514138,
     "annualComputedRatioCo2FromPax": 1.0,
     "annualComputedAverageCo2EmissionsPerTransportWorkPaxKm": 0.637148684044987,
-    "computedEcoscoreLetter": "A"
+    "computedEcoscoreLetter": "A",
+    "monitoringMethods": [
+      "b"
+    ]
   },
   "2019": {
     "imo": 9021485,
@@ -89,10 +88,6 @@
     "verifierCity": "21000 SPLIT",
     "verifierAccreditationNumber": "9568",
     "verifierCountry": "Croatia",
-    "monitoringMethodA": null,
-    "monitoringMethodB": "Yes",
-    "monitoringMethodC": null,
-    "monitoringMethodD": null,
     "annualMonitoringTotalFuelConsumption": 2713.02,
     "annualMonitoringFuelConsumptionAssignedToOnLaden": null,
     "annualMonitoringTotalCo2Emissions": 8697.94,
@@ -141,6 +136,9 @@
     "annualComputedAverageSpeed": 23.167253884776503,
     "annualComputedRatioCo2FromPax": 1.0,
     "annualComputedAverageCo2EmissionsPerTransportWorkPaxKm": 0.7721378120206198,
-    "computedEcoscoreLetter": "A"
+    "computedEcoscoreLetter": "A",
+    "monitoringMethods": [
+      "b"
+    ]
   }
 }
