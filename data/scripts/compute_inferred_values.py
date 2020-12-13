@@ -5,6 +5,7 @@ import numpy as np
 import os
 import sys
 from ecoscore import get_ecoscore_letter
+import re
 
 NM_TO_KM = 1.852001
 
@@ -42,7 +43,26 @@ class ComputeInferredValues():
         df["computed_ecoscore_letter"] = (
             df["annual_computed_average_co2_emissions_per_transport_work_pax_km"].replace({np.nan: None}).apply(lambda x: get_ecoscore_letter(x))
         )
+        df["technical_efficiency_eiv"] = df["technical_efficiency"].apply(lambda te: self.eiv_value(te))
+        df["technical_efficiency_eedi"] = df["technical_efficiency"].apply(lambda te: self.eedi_value(te))
+
         df.to_csv(OUTPUT_PATH, index=False)
+
+    def eiv_value(self, technical_efficiency):
+        if not isinstance(technical_efficiency, str):
+            return None
+        match_data = re.match(r"EIV \((.*) gCO₂/t·nm\)", technical_efficiency)
+        if not match_data:
+            return None
+        return float(match_data.groups()[0])
+
+    def eedi_value(self, technical_efficiency):
+        if not isinstance(technical_efficiency, str):
+            return None
+        match_data = re.match(r"EEDI \((.*) gCO₂/t·nm\)", technical_efficiency)
+        if not match_data:
+            return None
+        return float(match_data.groups()[0])
 
 
 if __name__ == "__main__":

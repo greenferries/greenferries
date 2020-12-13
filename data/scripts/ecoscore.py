@@ -27,7 +27,6 @@ WWW_DATA_PATH = os.path.join(DIRNAME, "../../www/views/_data")
 WWW_SHIPS_DATA_PATH = os.path.join(DIRNAME, "../../www/views/ships")
 
 def get_ecoscore_index(g_co2_per_km_pax):
-    print("g_co2_per_km_pax is '%s'" % g_co2_per_km_pax)
     for index, threshold in enumerate(THRESHOLDS):
         if g_co2_per_km_pax < threshold:
             return index

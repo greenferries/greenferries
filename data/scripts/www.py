@@ -45,7 +45,7 @@ def get_thetis_df():
     return df_thetis
 
 def write_thetis_jsons():
-    df_thetis = get_thetis_df()
+    df_thetis = pd.read_csv(THETIS_CSV_PATH).replace({np.nan: None})
     df_thetis.columns = df_thetis.columns.map(lambda x: camelCase(x))
     filenames = os.listdir(WWW_SHIPS_PATH)
     matching_filenames = [fn for fn in filenames if re.match(r".*-(\d+)\.md", fn)]
@@ -75,5 +75,5 @@ def export_monitoring_methods_graph():
 
 if __name__ == "__main__":
     # print(get_frontmatter_df().head())
-    # write_thetis_jsons()
+    write_thetis_jsons()
     export_monitoring_methods_graph()
