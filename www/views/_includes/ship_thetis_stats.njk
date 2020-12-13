@@ -79,7 +79,10 @@
   {% if thetisData[year].monitoringMethods | length > 0 %}
     <ul class="list-disc ml-5">
       {% for letter in thetisData[year].monitoringMethods %}
-        <li>{{ letter | monitoringMethodLetterToDescription }}</li>
+        <li>
+          {{ letter | monitoringMethodLetterToDescription }}
+          <a href="/doc/monitoring_methods" class="link text-sm">﹖ <span class="italic">details</span></a>
+        </li>
       {% endfor %}
     </ul>
   {% else %}
@@ -96,4 +99,5 @@
   {% else %}
     N/A
   {% endif %}
+  <a href="/doc/technical_efficiency" class="link text-sm">﹖ <span class="italic">details</span></a>
 </div>

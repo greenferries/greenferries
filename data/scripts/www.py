@@ -10,6 +10,7 @@ DIRNAME = os.path.dirname(__file__)
 WWW_SHIPS_PATH = os.path.join(DIRNAME, "../../www/views/ships")
 WWW_IMG_PATH = os.path.join(DIRNAME, "../../www/assets/img")
 WWW_THETIS_DATA_PATH = os.path.join(DIRNAME, '../../www/views/_data/thetis')
+WWW_DOC_PATH = os.path.join(DIRNAME, '../../www/views/doc/')
 THETIS_CSV_PATH = os.path.join(DIRNAME, "../files_computed/thetis_all_with_computed.csv")
 
 def get_frontmatter_df(only_out_of_scope=False, exclude_out_of_scope=True):
@@ -57,6 +58,7 @@ def write_thetis_jsons():
             json.dump(data, f, indent=2)
 
 def export_monitoring_methods_graph():
+    plt.clf()
     df_thetis = pd.read_csv(THETIS_CSV_PATH, dtype={"imo": str}).replace({np.nan: None})
     df_thetis["monitoring_methods"] = df_thetis.apply(lambda row: monitoring_methods(row), axis=1)
     for letter in ["a", "b", "c", "d"]:
@@ -72,7 +74,32 @@ def export_monitoring_methods_graph():
     plot.figure.savefig(path, format="svg")
     print(f"rewrote {path}")
 
+def export_technical_efficiency_graph_and_json():
+    df = pd.read_csv(THETIS_CSV_PATH, dtype={"imo": str})
+    df = df[df.reporting_period == 2019]
+    df = df[df.imo.isin(list(get_frontmatter_df().imo.apply(lambda x: str(x))))]
+    plt.clf()
+    plot = df.plot.scatter(
+        x="annual_computed_average_co2_emissions_per_transport_work_pax_km",
+        y="technical_efficiency_eiv",
+        xlim=(0,1000),
+        ylim=(0,200)
+    )
+    plot.set_ylabel("EIV - gCO₂/ton/n.mile")
+    plot.set_xlabel("Average emissions reported - gCO₂/km/person")
+    path = os.path.join(WWW_IMG_PATH, "doc_technical_efficiency_correlation.svg")
+    plot.figure.savefig(path, format="svg")
+    path = os.path.join(WWW_DOC_PATH, f"technical_efficiency.11tydata.json")
+    with open(path, 'w') as f:
+        json.dump({
+            "shipsWithEivCount": df[~df.technical_efficiency_eiv.isnull()].shape[0],
+            "shipsWithEediCount": df[~df.technical_efficiency_eedi.isnull()].shape[0],
+            "shipsWithoutTechnicalEfficiencyCount": df[df.technical_efficiency_eiv.isnull() & df.technical_efficiency_eedi.isnull()].shape[0]
+        }, f, indent=2)
+    print(f"rewrote {path}")
+
 if __name__ == "__main__":
     # print(get_frontmatter_df().head())
-    write_thetis_jsons()
-    export_monitoring_methods_graph()
+    # write_thetis_jsons()
+    # export_monitoring_methods_graph()
+    export_technical_efficiency_graph_and_json()
