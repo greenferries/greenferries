@@ -75,10 +75,25 @@
 </div>
 
 <div class="md:flex mt-2">
-  <div>{{ year }} monitoring methods :</div>
-  <ul class="list-disc ml-5">
-    {% for letter in thetisData[year].monitoringMethods %}
-      <li>{{ letter | monitoringMethodLetterToDescription }}</li>
-    {% endfor %}
-  </ul>
+  <div>{{ year }} monitoring methods:</div>
+  {% if thetisData[year].monitoringMethods | length > 0 %}
+    <ul class="list-disc ml-5">
+      {% for letter in thetisData[year].monitoringMethods %}
+        <li>{{ letter | monitoringMethodLetterToDescription }}</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <div>N/A</div>
+  {% endif %}
+</div>
+
+<div class="my-2">
+  {{ year }} Theoretical
+  {% if thetisData[year].technicalEfficiencyEiv %}
+    EIV (Efficiency Indicator Values): {{ thetisData[year].technicalEfficiencyEiv }} gCO₂/ton/nautical mile
+  {% elif thetisData[year].technicalEfficiencyEedi %}
+    EEDI (Energy Efficiency Design Index): {{ thetisData[year].technicalEfficiencyEedi }} gCO₂/ton/nautical mile
+  {% else %}
+    N/A
+  {% endif %}
 </div>

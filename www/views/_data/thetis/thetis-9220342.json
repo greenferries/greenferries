@@ -66,6 +66,8 @@
     "annualComputedRatioCo2FromPax": 0.047293503734954334,
     "annualComputedAverageCo2EmissionsPerTransportWorkPaxKm": 47.98053564765894,
     "computedEcoscoreLetter": "A",
+    "technicalEfficiencyEiv": 20.09,
+    "technicalEfficiencyEedi": null,
     "monitoringMethods": []
   },
   "2019": {
@@ -135,6 +137,8 @@
     "annualComputedRatioCo2FromPax": 0.03780882450550705,
     "annualComputedAverageCo2EmissionsPerTransportWorkPaxKm": 29.908191194281212,
     "computedEcoscoreLetter": "A",
+    "technicalEfficiencyEiv": 20.09,
+    "technicalEfficiencyEedi": null,
     "monitoringMethods": [
       "a"
     ]
