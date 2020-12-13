@@ -4,7 +4,7 @@ from download import Download
 from convert_thetis_xlsx_to_csv import ConvertThetisXlsxToCsv
 from compute_inferred_values import ComputeInferredValues
 from ecoscore import CreateEcoscoreWwwDataFilesAndPlots
-from www import write_thetis_jsons
+from www import write_thetis_jsons, export_monitoring_methods_graph
 
 # python3 scripts/full_pipeline.py
 
@@ -86,6 +86,7 @@ class FullPipeline():
 
     def prepare_www_files(self):
         write_thetis_jsons()
+        export_monitoring_methods_graph()
         CreateEcoscoreWwwDataFilesAndPlots().run()
 
 if __name__ == "__main__":
