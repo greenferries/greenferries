@@ -1,6 +1,6 @@
 {
   "2018": {
-    "imo": 8503797,
+    "imo": "8503797",
     "name": "PRIDE OF BRUGES",
     "shipType": "Ro-pax ship",
     "reportingPeriod": 2018.0,
@@ -74,7 +74,7 @@
     ]
   },
   "2019": {
-    "imo": 8503797,
+    "imo": "8503797",
     "name": "PRIDE OF BRUGES",
     "shipType": "Ro-pax ship",
     "reportingPeriod": 2019.0,

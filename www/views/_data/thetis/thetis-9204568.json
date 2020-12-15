@@ -1,6 +1,6 @@
 {
   "2018": {
-    "imo": 9204568,
+    "imo": "9204568",
     "name": "FESTOS PALACE",
     "shipType": "Ro-pax ship",
     "reportingPeriod": 2018.0,
@@ -71,7 +71,7 @@
     "monitoringMethods": []
   },
   "2019": {
-    "imo": 9204568,
+    "imo": "9204568",
     "name": "KYDON PALACE",
     "shipType": "Ro-pax ship",
     "reportingPeriod": 2019.0,

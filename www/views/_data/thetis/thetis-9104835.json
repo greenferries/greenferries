@@ -1,6 +1,6 @@
 {
   "2018": {
-    "imo": 9104835,
+    "imo": "9104835",
     "name": "RHAPSODY",
     "shipType": "Ro-pax ship",
     "reportingPeriod": 2018.0,
@@ -74,7 +74,7 @@
     ]
   },
   "2019": {
-    "imo": 9104835,
+    "imo": "9104835",
     "name": "RHAPSODY",
     "shipType": "Ro-pax ship",
     "reportingPeriod": 2019.0,

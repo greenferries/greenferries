@@ -1,6 +1,6 @@
 {
   "2018": {
-    "imo": 9119414,
+    "imo": "9119414",
     "name": "ARROW",
     "shipType": "Ro-ro ship",
     "reportingPeriod": 2018.0,
@@ -74,7 +74,7 @@
     ]
   },
   "2019": {
-    "imo": 9119414,
+    "imo": "9119414",
     "name": "ARROW",
     "shipType": "Ro-ro ship",
     "reportingPeriod": 2019.0,

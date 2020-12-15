@@ -1,6 +1,6 @@
 {
   "2018": {
-    "imo": 7305253,
+    "imo": "7305253",
     "name": "CORSICA VICTORIA",
     "shipType": "Ro-pax ship",
     "reportingPeriod": 2018.0,
@@ -73,7 +73,7 @@
     ]
   },
   "2019": {
-    "imo": 7305253,
+    "imo": "7305253",
     "name": "CORSICA VICTORIA",
     "shipType": "Ro-pax ship",
     "reportingPeriod": 2019.0,

@@ -1,6 +1,6 @@
 {
   "2018": {
-    "imo": 8922163,
+    "imo": "8922163",
     "name": "ASTERION II",
     "shipType": "Ro-pax ship",
     "reportingPeriod": 2018.0,
@@ -71,7 +71,7 @@
     "monitoringMethods": []
   },
   "2019": {
-    "imo": 8922163,
+    "imo": "8922163",
     "name": "ASTERION II",
     "shipType": "Ro-pax ship",
     "reportingPeriod": 2019.0,

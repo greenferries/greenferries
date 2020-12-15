@@ -1,6 +1,6 @@
 {
   "2018": {
-    "imo": 7826867,
+    "imo": "7826867",
     "name": "STENA GOTHICA",
     "shipType": "Ro-pax ship",
     "reportingPeriod": 2018.0,
@@ -73,7 +73,7 @@
     ]
   },
   "2019": {
-    "imo": 7826867,
+    "imo": "7826867",
     "name": "STENA GOTHICA",
     "shipType": "Ro-pax ship",
     "reportingPeriod": 2019.0,

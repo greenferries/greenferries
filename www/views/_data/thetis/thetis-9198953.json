@@ -1,6 +1,6 @@
 {
   "2018": {
-    "imo": 9198953,
+    "imo": "9198953",
     "name": "STENA SUPERFAST VIII",
     "shipType": "Ro-pax ship",
     "reportingPeriod": 2018.0,
@@ -73,7 +73,7 @@
     ]
   },
   "2019": {
-    "imo": 9198953,
+    "imo": "9198953",
     "name": "STENA SUPERFAST VIII",
     "shipType": "Ro-pax ship",
     "reportingPeriod": 2019.0,

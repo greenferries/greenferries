@@ -1,6 +1,6 @@
 {
   "2018": {
-    "imo": 8707343,
+    "imo": "8707343",
     "name": "STAR PRIDE",
     "shipType": "Passenger ship",
     "reportingPeriod": 2018.0,
@@ -73,7 +73,7 @@
     ]
   },
   "2019": {
-    "imo": 8707343,
+    "imo": "8707343",
     "name": "STAR PRIDE",
     "shipType": "Passenger ship",
     "reportingPeriod": 2019.0,

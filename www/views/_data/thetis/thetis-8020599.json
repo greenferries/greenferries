@@ -1,6 +1,6 @@
 {
   "2018": {
-    "imo": 8020599,
+    "imo": "8020599",
     "name": "AKRITAS",
     "shipType": "Ro-ro ship",
     "reportingPeriod": 2018.0,
@@ -73,7 +73,7 @@
     ]
   },
   "2019": {
-    "imo": 8020599,
+    "imo": "8020599",
     "name": "AKRITAS",
     "shipType": "Ro-ro ship",
     "reportingPeriod": 2019.0,

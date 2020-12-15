@@ -1,6 +1,6 @@
 {
   "2018": {
-    "imo": 9145164,
+    "imo": "9145164",
     "name": "FINNFELLOW",
     "shipType": "Ro-pax ship",
     "reportingPeriod": 2018.0,
@@ -74,7 +74,7 @@
     ]
   },
   "2019": {
-    "imo": 9145164,
+    "imo": "9145164",
     "name": "FINNFELLOW",
     "shipType": "Ro-pax ship",
     "reportingPeriod": 2019.0,

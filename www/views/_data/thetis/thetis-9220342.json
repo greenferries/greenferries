@@ -1,6 +1,6 @@
 {
   "2018": {
-    "imo": 9220342,
+    "imo": "9220342",
     "name": "MYKONOS PALACE",
     "shipType": "Ro-pax ship",
     "reportingPeriod": 2018.0,
@@ -71,7 +71,7 @@
     "monitoringMethods": []
   },
   "2019": {
-    "imo": 9220342,
+    "imo": "9220342",
     "name": "FESTOS PALACE",
     "shipType": "Ro-pax ship",
     "reportingPeriod": 2019.0,

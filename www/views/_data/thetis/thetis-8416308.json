@@ -1,6 +1,6 @@
 {
   "2018": {
-    "imo": 8416308,
+    "imo": "8416308",
     "name": "SNAV ADRIATICO",
     "shipType": "Ro-pax ship",
     "reportingPeriod": 2018.0,
@@ -74,7 +74,7 @@
     ]
   },
   "2019": {
-    "imo": 8416308,
+    "imo": "8416308",
     "name": "SNAV ADRIATICO",
     "shipType": "Ro-pax ship",
     "reportingPeriod": 2019.0,

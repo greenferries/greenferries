@@ -1,6 +1,6 @@
 {
   "2018": {
-    "imo": 9232527,
+    "imo": "9232527",
     "name": "COTE DES DUNES",
     "shipType": "Ro-pax ship",
     "reportingPeriod": 2018.0,
@@ -74,7 +74,7 @@
     ]
   },
   "2019": {
-    "imo": 9232527,
+    "imo": "9232527",
     "name": "COTE DES DUNES",
     "shipType": "Ro-pax ship",
     "reportingPeriod": 2019.0,

@@ -1,6 +1,6 @@
 {
   "2018": {
-    "imo": 8700785,
+    "imo": "8700785",
     "name": "WIND SURF",
     "shipType": "Passenger ship",
     "reportingPeriod": 2018.0,
@@ -73,7 +73,7 @@
     ]
   },
   "2019": {
-    "imo": 8700785,
+    "imo": "8700785",
     "name": "WIND SURF",
     "shipType": "Passenger ship",
     "reportingPeriod": 2019.0,

@@ -1,6 +1,6 @@
 {
   "2018": {
-    "imo": 9247144,
+    "imo": "9247144",
     "name": "SEVEN SEAS VOYAGER",
     "shipType": "Passenger ship",
     "reportingPeriod": 2018.0,
@@ -73,7 +73,7 @@
     ]
   },
   "2019": {
-    "imo": 9247144,
+    "imo": "9247144",
     "name": "SEVEN SEAS VOYAGER",
     "shipType": "Passenger ship",
     "reportingPeriod": 2019.0,

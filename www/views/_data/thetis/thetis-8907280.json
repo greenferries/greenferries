@@ -1,6 +1,6 @@
 {
   "2018": {
-    "imo": 8907280,
+    "imo": "8907280",
     "name": "FAST FERRIES ANDROS",
     "shipType": "Ro-pax ship",
     "reportingPeriod": 2018.0,
@@ -73,7 +73,7 @@
     ]
   },
   "2019": {
-    "imo": 8907280,
+    "imo": "8907280",
     "name": "FAST FERRIES ANDROS",
     "shipType": "Ro-pax ship",
     "reportingPeriod": 2019.0,

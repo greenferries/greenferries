@@ -1,6 +1,6 @@
 {
   "2018": {
-    "imo": 9350721,
+    "imo": "9350721",
     "name": "VICTORIA SEAWAYS",
     "shipType": "Ro-pax ship",
     "reportingPeriod": 2018.0,
@@ -74,7 +74,7 @@
     ]
   },
   "2019": {
-    "imo": 9350721,
+    "imo": "9350721",
     "name": "VICTORIA SEAWAYS",
     "shipType": "Ro-pax ship",
     "reportingPeriod": 2019.0,

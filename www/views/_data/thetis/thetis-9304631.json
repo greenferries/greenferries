@@ -1,6 +1,6 @@
 {
   "2018": {
-    "imo": 9304631,
+    "imo": "9304631",
     "name": "ALBAYZIN",
     "shipType": "Ro-pax ship",
     "reportingPeriod": 2018.0,
@@ -71,7 +71,7 @@
     "monitoringMethods": []
   },
   "2019": {
-    "imo": 9304631,
+    "imo": "9304631",
     "name": "VENEZIA",
     "shipType": "Ro-pax ship",
     "reportingPeriod": 2019.0,

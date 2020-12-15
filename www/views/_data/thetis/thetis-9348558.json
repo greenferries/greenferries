@@ -1,6 +1,6 @@
 {
   "2018": {
-    "imo": 9348558,
+    "imo": "9348558",
     "name": "VOLCAN DE TABURIENTE",
     "shipType": "Ro-pax ship",
     "reportingPeriod": 2018.0,
@@ -74,7 +74,7 @@
     ]
   },
   "2019": {
-    "imo": 9348558,
+    "imo": "9348558",
     "name": "VOLCAN DE TABURIENTE",
     "shipType": "Ro-pax ship",
     "reportingPeriod": 2019.0,

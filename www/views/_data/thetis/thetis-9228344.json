@@ -1,6 +1,6 @@
 {
   "2018": {
-    "imo": 9228344,
+    "imo": "9228344",
     "name": "SERENADE OF THE SEAS",
     "shipType": "Passenger ship",
     "reportingPeriod": 2018.0,
@@ -73,7 +73,7 @@
     ]
   },
   "2019": {
-    "imo": 9228344,
+    "imo": "9228344",
     "name": "SERENADE OF THE SEAS",
     "shipType": "Passenger ship",
     "reportingPeriod": 2019.0,

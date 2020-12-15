@@ -1,6 +1,6 @@
 {
   "2018": {
-    "imo": 9250464,
+    "imo": "9250464",
     "name": "MSC OPERA",
     "shipType": "Passenger ship",
     "reportingPeriod": 2018.0,
@@ -73,7 +73,7 @@
     ]
   },
   "2019": {
-    "imo": 9250464,
+    "imo": "9250464",
     "name": "MSC OPERA",
     "shipType": "Passenger ship",
     "reportingPeriod": 2019.0,

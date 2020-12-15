@@ -1,6 +1,6 @@
 {
   "2018": {
-    "imo": 8201480,
+    "imo": "8201480",
     "name": "ARTANIA",
     "shipType": "Passenger ship",
     "reportingPeriod": 2018.0,
@@ -74,7 +74,7 @@
     ]
   },
   "2019": {
-    "imo": 8201480,
+    "imo": "8201480",
     "name": "ARTANIA",
     "shipType": "Passenger ship",
     "reportingPeriod": 2019.0,

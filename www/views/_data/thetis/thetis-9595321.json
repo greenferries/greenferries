@@ -1,6 +1,6 @@
 {
   "2018": {
-    "imo": 9595321,
+    "imo": "9595321",
     "name": "MSC PREZIOSA",
     "shipType": "Passenger ship",
     "reportingPeriod": 2018.0,
@@ -73,7 +73,7 @@
     ]
   },
   "2019": {
-    "imo": 9595321,
+    "imo": "9595321",
     "name": "MSC PREZIOSA",
     "shipType": "Passenger ship",
     "reportingPeriod": 2019.0,

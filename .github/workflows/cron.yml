@@ -23,11 +23,9 @@ jobs:
           ${{ runner.os }}-pip-
           ${{ runner.os }}-
     - name: Install dependencies
-      run: pip install -r requirements.txt
-      working-directory: data
+      run: pip install -r greenferries/requirements.txt
     - name: Run data pipeline
-      run: python scripts/full_pipeline.py
-      working-directory: data
+      run: python -m greenferries.full_pipeline
       env:
         WIKIDATA_USERNAME: ${{ secrets.WIKIDATA_USERNAME }}
         WIKIDATA_PASSWORD: ${{ secrets.WIKIDATA_PASSWORD }}

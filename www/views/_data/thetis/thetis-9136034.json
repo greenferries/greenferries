@@ -1,6 +1,6 @@
 {
   "2018": {
-    "imo": 9136034,
+    "imo": "9136034",
     "name": "LIVERPOOL SEAWAYS",
     "shipType": "Ro-pax ship",
     "reportingPeriod": 2018.0,
@@ -74,7 +74,7 @@
     ]
   },
   "2019": {
-    "imo": 9136034,
+    "imo": "9136034",
     "name": "LIVERPOOL SEAWAYS",
     "shipType": "Ro-pax ship",
     "reportingPeriod": 2019.0,

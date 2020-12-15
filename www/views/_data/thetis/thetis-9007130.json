@@ -1,6 +1,6 @@
 {
   "2018": {
-    "imo": 9007130,
+    "imo": "9007130",
     "name": "BARFLEUR",
     "shipType": "Ro-pax ship",
     "reportingPeriod": 2018.0,
@@ -73,7 +73,7 @@
     ]
   },
   "2019": {
-    "imo": 9007130,
+    "imo": "9007130",
     "name": "BARFLEUR",
     "shipType": "Ro-pax ship",
     "reportingPeriod": 2019.0,

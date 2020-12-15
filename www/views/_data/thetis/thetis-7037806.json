@@ -1,6 +1,6 @@
 {
   "2018": {
-    "imo": 7037806,
+    "imo": "7037806",
     "name": "BOHUS",
     "shipType": "Ro-pax ship",
     "reportingPeriod": 2018.0,
@@ -73,7 +73,7 @@
     ]
   },
   "2019": {
-    "imo": 7037806,
+    "imo": "7037806",
     "name": "IONIAN STAR",
     "shipType": "Ro-pax ship",
     "reportingPeriod": 2019.0,

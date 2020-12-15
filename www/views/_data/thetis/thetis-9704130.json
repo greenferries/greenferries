@@ -1,6 +1,6 @@
 {
   "2018": {
-    "imo": 9704130,
+    "imo": "9704130",
     "name": "LE LYRIAL",
     "shipType": "Passenger ship",
     "reportingPeriod": 2018.0,
@@ -73,7 +73,7 @@
     ]
   },
   "2019": {
-    "imo": 9704130,
+    "imo": "9704130",
     "name": "LE LYRIAL",
     "shipType": "Passenger ship",
     "reportingPeriod": 2019.0,

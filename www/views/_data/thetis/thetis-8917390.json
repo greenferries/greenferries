@@ -1,6 +1,6 @@
 {
   "2018": {
-    "imo": 8917390,
+    "imo": "8917390",
     "name": "PATRIA SEAWAYS",
     "shipType": "Ro-pax ship",
     "reportingPeriod": 2018.0,
@@ -74,7 +74,7 @@
     ]
   },
   "2019": {
-    "imo": 8917390,
+    "imo": "8917390",
     "name": "PATRIA SEAWAYS",
     "shipType": "Ro-pax ship",
     "reportingPeriod": 2019.0,

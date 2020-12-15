@@ -1,6 +1,6 @@
 {
   "2018": {
-    "imo": 9458535,
+    "imo": "9458535",
     "name": "REGINA SEAWAYS",
     "shipType": "Ro-pax ship",
     "reportingPeriod": 2018.0,
@@ -74,7 +74,7 @@
     ]
   },
   "2019": {
-    "imo": 9458535,
+    "imo": "9458535",
     "name": "REGINA SEAWAYS",
     "shipType": "Ro-pax ship",
     "reportingPeriod": 2019.0,

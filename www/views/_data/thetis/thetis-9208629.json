@@ -1,6 +1,6 @@
 {
   "2018": {
-    "imo": 9208629,
+    "imo": "9208629",
     "name": "PRIDE OF HULL",
     "shipType": "Ro-pax ship",
     "reportingPeriod": 2018.0,
@@ -73,7 +73,7 @@
     ]
   },
   "2019": {
-    "imo": 9208629,
+    "imo": "9208629",
     "name": "PRIDE OF HULL",
     "shipType": "Ro-pax ship",
     "reportingPeriod": 2019.0,
