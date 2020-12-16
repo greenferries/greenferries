@@ -1,6 +1,6 @@
 ---
 layout: doc
-activeLink: contact
+activeDocPageTitle: Contact
 ---
 
 # Contact

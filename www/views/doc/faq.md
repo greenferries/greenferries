@@ -1,6 +1,6 @@
 ---
 layout: doc
-activeLink: faq
+activeDocPageTitle: FAQ
 ---
 
 # FAQ

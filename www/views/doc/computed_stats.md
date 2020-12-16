@@ -1,6 +1,6 @@
 ---
 layout: doc
-activeLink: computed_stats
+activeDocPageTitle: Computed Statistics
 ---
 
 # Computed Statistics

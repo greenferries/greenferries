@@ -1,6 +1,6 @@
 ---
 layout: doc
-activeLink: technical_efficiency
+activeDocPageTitle: Technical Efficiency
 ---
 
 # Theoretical Technical Efficiency Indexes

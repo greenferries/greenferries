@@ -1,6 +1,6 @@
 ---
 layout: doc
-activeLink: litterature
+activeDocPageTitle: References
 ---
 
 # Litterature - References

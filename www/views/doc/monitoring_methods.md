@@ -1,6 +1,6 @@
 ---
 layout: doc
-activeLink: monitoring_methods
+activeDocPageTitle: Monitoring Methods
 ---
 
 # Monitoring Methods

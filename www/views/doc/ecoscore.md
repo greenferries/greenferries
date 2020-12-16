@@ -1,6 +1,6 @@
 ---
 layout: doc
-activeLink: ecoscore
+activeDocPageTitle: EcoScore
 ---
 
 # EcoScore

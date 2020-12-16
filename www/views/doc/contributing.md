@@ -1,6 +1,6 @@
 ---
 layout: doc
-activeLink: contributing
+activeDocPageTitle: Contribute
 ---
 
 # How to contribute?

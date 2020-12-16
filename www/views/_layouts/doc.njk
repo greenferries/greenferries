@@ -4,40 +4,30 @@ layout: default
 
 <div class="container mx-auto">
   <div class="flex flex-col lg:flex-row">
-    <nav class="w-auto lg:w-64 mb-4 lg:mb-0 pr-3 py-3 border-b lg:border-b-0 lg:border-r border-blue-700 flex lg:block">
-      <div class="text-lg lg:text-2xl lg:mb-8">Help</div>
-      <ul class="flex lg:block ml-4 lg:ml-0">
-        <li class="text-lg lg:ml-0 lg:mb-2 border-blue-700 hover:text-blue-500 hover:border-b-2 {{ 'text-blue-500 border-b-2' if activeLink == 'faq' }}">
-          <a href="/doc/faq">FAQ</a>
-        </li>
-        <li class="text-lg lg:ml-0 lg:mb-2 border-blue-700 hover:text-blue-500 hover:border-b-2 {{ 'text-blue-500 border-b-2' if activeLink == 'contact' }}">
-          <a href="/doc/contact">Contact</a>
-        </li>
-        <li class="text-lg ml-3 lg:ml-0 lg:mb-2 border-blue-700 hover:text-blue-500 hover:border-b-2 {{ 'text-blue-500 border-b-2' if activeLink == 'ecoscore' }}">
-          <a href="/doc/ecoscore">EcoScore</a>
-        </li>
-        <li class="text-lg ml-3 lg:ml-0 lg:mb-2 border-blue-700 hover:text-blue-500 hover:border-b-2 {{ 'text-blue-500 border-b-2' if activeLink == 'computed_stats' }}">
-          <a href="/doc/computed_stats">Computed Statistics</a>
-        </li>
-        <li class="text-lg ml-3 lg:ml-0 lg:mb-2 border-blue-700 hover:text-blue-500 hover:border-b-2 {{ 'text-blue-500 border-b-2' if activeLink == 'ship_types' }}">
-          <a href="/doc/ship_types">Ship Types</a>
-        </li>
-        <li class="text-lg ml-3 lg:ml-0 lg:mb-2 border-blue-700 hover:text-blue-500 hover:border-b-2 {{ 'text-blue-500 border-b-2' if activeLink == 'monitoring_methods' }}">
-          <a href="/doc/monitoring_methods">Monitoring methods</a>
-        </li>
-        <li class="text-lg ml-3 lg:ml-0 lg:mb-2 border-blue-700 hover:text-blue-500 hover:border-b-2 {{ 'text-blue-500 border-b-2' if activeLink == 'technical_efficiency' }}">
-          <a href="/doc/technical_efficiency">Technical Efficiency</a>
-        </li>
-        <li class="text-lg ml-3 lg:ml-0 lg:mb-2 border-blue-700 hover:text-blue-500 hover:border-b-2 {{ 'text-blue-500 border-b-2' if activeLink == 'litterature' }}">
-          <a href="/doc/litterature">References</a>
-        </li>
-        <li class="text-lg ml-3 lg:ml-0 lg:mb-2 border-blue-700 hover:text-blue-500 hover:border-b-2 {{ 'text-blue-500 border-b-2' if activeLink == 'contributing' }}">
-          <a href="/doc/contributing">Contribute</a>
-        </li>
-      </ul>
+    <nav class="w-auto lg:w-64 mb-4 lg:mb-0 pr-3 py-3 border-b lg:border-b-0 lg:border-r border-blue-700">
+      <div class="hidden lg:block text-2xl mb-8 px-3">Help</div>
+      <div class="text-lg flex lg:hidden px-3">
+        <div>
+          <a href="#" class='link' onClick="document.querySelector('#help-menu').classList.toggle('hidden')">
+            Help…
+          </a>
+        </div>
+        <div class="ml-2">
+          > {{ activeDocPageTitle }}
+        </div>
+      </div>
+      <div class="hidden lg:block text-lg" id="help-menu">
+        {% include "views/_includes/doc_menu.njk" %}
+      </div>
     </nav>
-    <article class="prose lg:p-3 flex-grow">
-      {{ content | safe }}
-    </article>
+    <div class="pb-10">
+      <article class="prose p-3 flex-grow">
+        {{ content | safe }}
+      </article>
+      <div class="mt-5 px-3">
+        Read other help pages:
+        {% include "views/_includes/doc_menu.njk" %}
+      </div>
+    </div>
   </div>
 </div>
