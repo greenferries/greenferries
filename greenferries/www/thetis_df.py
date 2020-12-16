@@ -3,7 +3,7 @@ import pandas as pd
 from greenferries.www.frontmatter_df import get_df as get_frontmatter_df
 
 PACKAGE_ROOT = os.path.join(os.path.dirname(__file__), "..")
-THETIS_CSV_PATH = os.path.join(PACKAGE_ROOT, "files_computed", "thetis_all_with_computed.csv")
+THETIS_CSV_PATH = os.path.join(PACKAGE_ROOT, "..", "data_files", "thetis_all_with_computed.csv")
 
 
 def monitoring_methods(row):

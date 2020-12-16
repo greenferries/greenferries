@@ -7,7 +7,7 @@ from greenferries.utils import run_sh, clean_file
 PACKAGE_ROOT = os.path.join(os.path.dirname(__file__), "..")
 MAPPING_CSV_PATH = os.path.join(
     PACKAGE_ROOT,
-    'files_original/original.greenferries.thetis_columns_mapping.csv'
+    '../data_files/original.greenferries.thetis_columns_mapping.csv'
 )
 
 
@@ -27,14 +27,14 @@ class Convert():
         return self.reformatted_columns
 
     def run(self):
-        for filename in os.listdir(os.path.join(PACKAGE_ROOT, "files_original")):
+        for filename in os.listdir(os.path.join(PACKAGE_ROOT, "..", "data_files")):
             match_data = re.match(r"original\.thetis\.export_(\d+)\.xlsx", filename)
             if not match_data:
                 continue
             year = match_data.groups()[0]
             csv_filename = "thetis_export_%s.csv" % year
-            xlsx_path = os.path.join(PACKAGE_ROOT, "files_original", filename)
-            csv_path = os.path.join(PACKAGE_ROOT, "files_computed", csv_filename)
+            xlsx_path = os.path.join(PACKAGE_ROOT, "..", "data_files", filename)
+            csv_path = os.path.join(PACKAGE_ROOT, "..", "data_files", csv_filename)
             self.convert(xlsx_path, csv_path)
         self.join_csvs()
 
@@ -61,8 +61,8 @@ class Convert():
             print("rewrote %s" % csv_path)
 
     def join_csvs(self):
-        glob_path = os.path.join(PACKAGE_ROOT, "files_computed", "thetis_export_*.csv")
-        joined_path = os.path.join(PACKAGE_ROOT, "files_computed", "thetis_export_all.csv")
+        glob_path = os.path.join(PACKAGE_ROOT, "..", "data_files", "thetis_export_*.csv")
+        joined_path = os.path.join(PACKAGE_ROOT, "..", "data_files", "thetis_export_all.csv")
         clean_file(joined_path)
         run_sh(f"awk '(NR == 1) || (FNR > 1)' {glob_path} > {joined_path}")
 

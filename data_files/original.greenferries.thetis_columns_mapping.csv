@@ -1,0 +1,63 @@
+original_column_1,original_column_2,original_column_3,reformatted_column,data_type,unit
+Ship,,IMO Number,imo,,
+,,Name,name,,
+,,Ship type,ship_type,,
+,,Reporting Period,reporting_period,,
+,,Technical efficiency,technical_efficiency,,
+,,Port of Registry,port_of_registry,,
+,,Home Port,home_port,,
+,,Ice Class,ice_class,,
+DoC,,DoC issue date,doc_issue_date,,
+,,DoC expiry date,doc_expiry_date,,
+Verifier,,Verifier Number,verifier_number,,
+,,Verifier Name,verifier_name,,
+,,Verifier NAB,verifier_nab,,
+,,Verifier Address,verifier_address,,
+,,Verifier City,verifier_city,,
+,,Verifier Accreditation number,verifier_accreditation_number,,
+,,Verifier Country,verifier_country,,
+Monitoring methods,,A,monitoring_method_a,,
+,,B,monitoring_method_b,,
+,,C,monitoring_method_c,,
+,,D,monitoring_method_d,,
+Annual monitoring results,Totals,Total fuel consumption [m tonnes],annual_monitoring_total_fuel_consumption,float,m tonnes
+,,Fuel consumptions assigned to On laden [m tonnes],annual_monitoring_fuel_consumption_assigned_to_on_laden,float,m tonnes
+,,Total CO₂ emissions [m tonnes],annual_monitoring_total_co2_emissions,float,m tonnes
+,,CO₂ emissions from all voyages between ports under a MS jurisdiction [m tonnes],annual_monitoring_co2_emissions_from_all_voyages_between_ports_under_a_ms_juridiction,float,m tonnes
+,,CO₂ emissions from all voyages which departed from ports under a MS jurisdiction [m tonnes],annual_monitoring_co2_emissions_from_all_voyages_which_departed_from_ports_under_a_ms_juridiction,float,m tonnes
+,,CO₂ emissions from all voyages to ports under a MS jurisdiction [m tonnes],annual_monitoring_co2_emissions_from_all_voyages_to_ports_under_a_ms_juridiction,float,m tonnes
+,,CO₂ emissions which occurred within ports under a MS jurisdiction at berth [m tonnes],annual_monitoring_co2_emissions_which_occured_within_ports_under_a_ms_jurisdiction_at_berth,float,m tonnes
+,,CO₂ emissions assigned to Passenger transport [m tonnes],annual_monitoring_co2_emissions_assigned_to_passenger_transport,float,m tonnes
+,,CO₂ emissions assigned to Freight transport [m tonnes],annual_monitoring_co2_emissions_assigned_to_freight_transport,float,m tonnes
+,,CO₂ emissions assigned to On laden [m tonnes],annual_monitoring_co2_emissions_assigned_to_on_laden,float,m tonnes
+,,Annual Total time spent at sea [hours],annual_monitoring_total_time_spent_at_sea,float,hours
+,Average energy efficiency,Annual average Fuel consumption per distance [kg / n mile],annual_average_fuel_consumption_per_distance,float,kg / n mile
+,,Annual average Fuel consumption per transport work (mass) [g / m tonnes · n miles],annual_average_fuel_consumption_per_transport_work_mass,float,g / m tonnes · n miles
+,,Annual average Fuel consumption per transport work (volume) [g / m³ · n miles],annual_average_fuel_consumption_per_transport_work_volume,float,g / m³ · n miles
+,,Annual average Fuel consumption per transport work (dwt) [g / dwt carried · n miles],annual_average_fuel_consumption_per_transport_work_dwt,float,g / dwt carried · n miles
+,,Annual average Fuel consumption per transport work (pax) [g / pax · n miles],annual_average_fuel_consumption_per_transport_work_pax,float,g / pax · n miles
+,,Annual average Fuel consumption per transport work (freight) [g / m tonnes · n miles],annual_average_fuel_consumption_per_transport_work_freight,float,g / m tonnes · n miles
+,,Annual average CO₂ emissions per distance [kg CO₂ / n mile],annual_average_co2_emissions_per_distance,float,kg CO₂ / n mile
+,,Annual average CO₂ emissions per transport work (mass) [g CO₂ / m tonnes · n miles],annual_average_co2_emissions_per_transport_work_mass,float,g CO₂ / m tonnes · n miles
+,,Annual average CO₂ emissions per transport work (volume) [g CO₂ / m³ · n miles],annual_average_co2_emissions_per_transport_work_volume,float,g CO₂ / m³ · n miles
+,,Annual average CO₂ emissions per transport work (dwt) [g CO₂ / dwt carried · n miles],annual_average_co2_emissions_per_transport_work_dwt,float,g CO₂ / dwt carried · n miles
+,,Annual average CO₂ emissions per transport work (pax) [g CO₂ / pax · n miles],annual_average_co2_emissions_per_transport_work_pax,float,g CO₂ / pax · n miles
+,,Annual average CO₂ emissions per transport work (freight) [g CO₂ / m tonnes · n miles],annual_average_co2_emissions_per_transport_work_freight,float,g CO₂ / m tonnes · n miles
+Voluntary reporting,Distance and time,Through ice [n miles],voluntary_reporting_distance_through_ice,float,n miles
+,,Total time spent at sea [hours],voluntary_reporting_total_time_spent_at_sea,float,hours
+,,Total time spent at sea through ice [hours],voluntary_reporting_total_time_spent_at_sea_through_ice,float,hours
+,Direct emissions,,voluntary_reporting_direct_emissions,,
+,Average energy efficiency on Laden Voyages,Fuel consumption per distance on laden voyages [kg / n mile],voluntary_reporting_average_fuel_consumption_per_distance_on_laden_voyages,float,kg / n mile
+,,Fuel consumption per transport work (mass) on laden voyages [g / m tonnes · n miles],voluntary_reporting_average_fuel_consumption_per_transport_work_on_laden_voyages_mass,float,g / m tonnes · n miles
+,,Fuel consumption per transport work (volume) on laden voyages [g / m³ · n miles],voluntary_reporting_average_fuel_consumption_per_transport_work_on_laden_voyages_volume,float,g / m³ · n miles
+,,Fuel consumption per transport work (dwt) on laden voyages [g / dwt carried · n miles],voluntary_reporting_average_fuel_consumption_per_transport_work_on_laden_voyages_dwt,float,g / dwt carried · n miles
+,,Fuel consumption per transport work (pax) on laden voyages [g / pax · n miles],voluntary_reporting_average_fuel_consumption_per_transport_work_on_laden_voyages_pax,float,g / pax · n miles
+,,Fuel consumption per transport work (freight) on laden voyages [g / m tonnes · n miles],voluntary_reporting_average_fuel_consumption_per_transport_work_on_laden_voyages_freight,float,g / m tonnes · n miles
+,,CO₂ emissions per distance on laden voyages [kg CO₂ / n mile],voluntary_reporting_average_co2_emissions_per_distance_on_laden_voyages,float,kg CO₂ / n mile
+,,CO₂ emissions per transport work (mass) on laden voyages [g CO₂ / m tonnes · n miles],voluntary_reporting_average_co2_emissions_per_transport_work_on_laden_voyages_mass,float,g CO₂ / m tonnes · n miles
+,,CO₂ emissions per transport work (volume) on laden voyages [g CO₂ / m³ · n miles],voluntary_reporting_average_co2_emissions_per_transport_work_on_laden_voyages_volume,float,g CO₂ / m³ · n miles
+,,CO₂ emissions per transport work (dwt) on laden voyages [g CO₂ / dwt carried · n miles],voluntary_reporting_average_co2_emissions_per_transport_work_on_laden_voyages_dwt,float,g CO₂ / dwt carried · n miles
+,,CO₂ emissions per transport work (pax) on laden voyages [g CO₂ / pax · n miles],voluntary_reporting_average_co2_emissions_per_transport_work_on_laden_voyages_pax,float,g CO₂ / pax · n miles
+,,CO₂ emissions per transport work (freight) on laden voyages [g CO₂ / m tonnes · n miles],voluntary_reporting_average_co2_emissions_per_transport_work_on_laden_voyages_freight,float,g CO₂ / m tonnes · n miles
+,Additional voluntary reporting,Additional information to facilitate the understanding of the reported average operational energy efficiency indicators,voluntary_reporting_additional_comments,,
+,,Average density of the cargo transported [m tonnes / m³],voluntary_reporting_average_density_of_the_cargo_transported,float,m tonnes / m³

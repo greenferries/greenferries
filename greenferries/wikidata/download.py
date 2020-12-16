@@ -23,7 +23,7 @@ class Download(object):
     def run(self):
         filekey = f"wikidata.{self.data_source}"
         filename = f"original.{filekey}.csv"
-        filepath = os.path.join(PACKAGE_ROOT, "files_original", filename)
+        filepath = os.path.join(PACKAGE_ROOT, "..", "data_files", filename)
         print(f"downloading original {filekey} file...")
         if self.data_source == "ships":
             DownloadShips(filepath).run()

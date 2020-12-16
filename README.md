@@ -93,7 +93,7 @@ the ships infos found on directferries
 
 ## raw data files
 
-You'll find the raw original files data in the `/greenferries/files_original` folder.
+You'll find the raw data files (CSV and XLSX) in the `/data_files` folder.
 
 - `original.geonames.cities500.txt` : from [Geonames](https://download.geonames.org/export/dump/)
 - `original.geonames.countries` : from [Geonames](https://download.geonames.org/export/dump/)

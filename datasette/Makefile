@@ -4,16 +4,16 @@ convert_csvs_to_sqlite:
 	# wikidata
 	touch $(rootdir)/dbs/wikidata.db && rm $(rootdir)/dbs/wikidata.db
 	csvs-to-sqlite --table ships --primary-key wikidataUrl --index imo --index wikidataUrl \
-		$(rootdir)/../greenferries/files_original/original.wikidata.ships.csv \
+		$(rootdir)/../data_files/original.wikidata.ships.csv \
 		$(rootdir)/dbs/wikidata.db
 	csvs-to-sqlite --table wikipedia_urls --primary-key wikidataUrl --index imo \
-		$(rootdir)/../greenferries/files_original/original.wikidata.urls.csv \
+		$(rootdir)/../data_files/original.wikidata.urls.csv \
 		$(rootdir)/dbs/wikidata.db
 	# thetis
 	touch $(rootdir)/dbs/thetis.db && rm $(rootdir)/dbs/thetis.db
 	csvs-to-sqlite --table ships --primary-key imo --primary-key reporting_period \
 		--index imo --index reporting_period --index ship_type \
-    $(rootdir)/../greenferries/files_computed/thetis_export_all.csv \
+    $(rootdir)/../data_files/thetis_export_all.csv \
 		$(rootdir)/dbs/thetis.db
 	# greenferries
 	touch $(rootdir)/dbs/greenferries.db && rm $(rootdir)/dbs/greenferries.db
@@ -87,13 +87,13 @@ convert_csvs_to_sqlite:
 		annual_computed_average_speed:annual_computed_average_speed(REAL), \
 		annual_computed_ratio_co2_from_pax:annual_computed_ratio_co2_from_pax(REAL) \
 	" \
-		$(rootdir)/../greenferries/files_computed/thetis_all_with_computed.csv \
+		$(rootdir)/../data_files/thetis_all_with_computed.csv \
 		$(rootdir)/dbs/greenferries.db
 	csvs-to-sqlite --replace-tables --table scraped_ship_routes \
-		$(rootdir)/../greenferries/files_computed/scraped_ship_routes_cleaned.2020_01_18.csv \
+		$(rootdir)/../data_files/scraped_ship_routes_cleaned.2020_01_18.csv \
 		$(rootdir)/dbs/greenferries.db
 	csvs-to-sqlite --replace-tables --table airports \
-		$(rootdir)/../greenferries/files_computed/airports.csv \
+		$(rootdir)/../data_files/airports.csv \
 		$(rootdir)/dbs/greenferries.db
 
 dev: convert_csvs_to_sqlite

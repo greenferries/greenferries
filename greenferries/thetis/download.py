@@ -34,7 +34,7 @@ class Download(object):
         version, date, month, year = re.match(THETIS_FILENAME_REGEX % report_year, raw_filename).groups()
         filekey = f"thetis.export_{report_year}"
         filename = f"original.{filekey}.xlsx"
-        filepath = os.path.join(PACKAGE_ROOT, "files_original", filename)
+        filepath = os.path.join(PACKAGE_ROOT, "..", "data_files", filename)
         self.metadata[filekey] = {
             "date": f"{year}-{month}-{date}",
             "filename": filename,

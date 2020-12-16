@@ -9,8 +9,8 @@ import re
 
 NM_TO_KM = 1.852001
 PACKAGE_ROOT = os.path.join(os.path.dirname(__file__), "..")
-INPUT_PATH = os.path.join(PACKAGE_ROOT, "files_computed", "thetis_export_all.csv")
-OUTPUT_PATH = os.path.join(PACKAGE_ROOT, "files_computed", "thetis_all_with_computed.csv")
+INPUT_PATH = os.path.join(PACKAGE_ROOT, "..", "data_files", "thetis_export_all.csv")
+OUTPUT_PATH = os.path.join(PACKAGE_ROOT, "..", "data_files", "thetis_all_with_computed.csv")
 
 
 class Augment():
