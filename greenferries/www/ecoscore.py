@@ -25,6 +25,7 @@ class CreateFiles(object):
         self.export_global_data()
 
     def export_emissions_distribution_graph(self):
+        plt.clf()
         co2 = self.df['annual_computed_average_co2_emissions_per_transport_work_pax_km']
         co2.describe()
         co2_cut = co2[co2 < co2.quantile(0.95)]
