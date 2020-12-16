@@ -52,7 +52,7 @@ Simply start `jupyter notebook` from `/notebooks`.
 
 Live website to explore the data from the GreenFerries project: [data.greenferries.org](https://data.greenferries.org). Exposes data processed by the `greenferries` python library mentioned above. Built with the amazing [`datasette`](https://github.com/simonw/datasette) and [csvs-to-sqlite](https://github.com/simonw/csvs-to-sqlite).
 
-You can start the datasette server locally with `make datasette_dev` from `/datasette`.
+To run locally: `make dev` from `/datasette`.
 
 Datasette runs on [data.greenferries.org](https://data.greenferries.org) through
 a dokku host.
