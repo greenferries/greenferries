@@ -106,6 +106,7 @@ class DownloadShips:
             'manufacturerLabel': 'manufacturerName',
             'homeportLabel': 'homeportName'
         }, inplace=True)
+        df.sort_values("wikidataUrl", inplace=True)
         df.to_csv(self.output_path)
         print(f"rewrote {self.output_path}")
 

@@ -26,6 +26,7 @@ class DownloadUrls(object):
         df = self.wikidata_client.execute_query(self.get_query())
         df.dropna(inplace=True)
         df.rename_axis("wikidataUrl", inplace=True)
+        df.sort_values("wikidataUrl", inplace=True)
         df.to_csv(self.output_path)
         print(f"wrote Wikidata URLs to {self.output_path} √")
 
