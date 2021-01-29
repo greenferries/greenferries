@@ -6,16 +6,16 @@
     "version": "v245"
   },
   "thetis.export_2019": {
-    "date": "2021-01-15",
+    "date": "2021-01-28",
     "filename": "original.thetis.export_2019.xlsx",
-    "version": "v122"
+    "version": "v124"
   },
   "wikidata.ships": {
-    "date": "2021-01-22",
+    "date": "2021-01-29",
     "filename": "original.wikidata.ships.csv"
   },
   "wikidata.urls": {
-    "date": "2021-01-22",
+    "date": "2021-01-29",
     "filename": "original.wikidata.urls.csv"
   }
 }
