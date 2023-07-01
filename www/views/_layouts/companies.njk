@@ -1,4 +1,4 @@
-{% extends "views/_layouts/default.njk" %}
+{% extends "./default.njk" %}
 
 {% block title %}GreenFerries - {{ collections.company | inScope | length }} ferry operators {% endblock %}
 
@@ -10,7 +10,7 @@
       </h2>
     </div>
     <div class="mt-3 mb-6">
-      {% include "views/_includes/pagination.njk" %}
+      {% include "pagination.njk" %}
     </div>
     <div class="mt-4 grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
       {% for company in companies %}
@@ -39,7 +39,7 @@
       {% endfor %}
     </div>
     <div class="mt-3 mb-6">
-      {% include "views/_includes/pagination.njk" %}
+      {% include "pagination.njk" %}
     </div>
     <div class="flex justify-center mb-4">
       {% block page_links %}page_links{% endblock %}

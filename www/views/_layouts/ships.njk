@@ -1,4 +1,4 @@
-{% extends "views/_layouts/default.njk" %}
+{% extends "./default.njk" %}
 
 {% block title %}GreenFerries - All {{ collections.ship | inScope | length }} ferries - page {{ pagination.pageNumber + 1 }} / {{ pagination.pages | length }} {% endblock %}
 
@@ -11,11 +11,11 @@
       </ul>
     </div>
     <div class="mt-3 mb-6">
-      {% include "views/_includes/pagination.njk" %}
+      {% include "pagination.njk" %}
     </div>
-    {% include "views/_includes/ship_cards.njk" %}
+    {% include "ship_cards.njk" %}
     <div class="my-6">
-      {% include "views/_includes/pagination.njk" %}
+      {% include "pagination.njk" %}
     </div>
     <div class="flex justify-center mb-4">
       {% block page_links %}page_links{% endblock %}

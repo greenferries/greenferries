@@ -1,4 +1,4 @@
-{% extends "views/_layouts/default.njk" %}
+{% extends "./default.njk" %}
 
 {% block title %}
   GreenFerries - {{ cityA.name }} ↔ {{ cityB.name }}
@@ -18,12 +18,12 @@
         </span>
         ({{ distanceKm }} km)
       </h2>
-      {% include "views/_includes/admin_edit_link.njk" %}
+      {% include "admin_edit_link.njk" %}
     </div>
 
     <p>{{ shipRoutes | length }} ships often travel on this route</p>
 
     {% set ships = shipRoutes | extractShips %}
-    {% include "views/_includes/ship_cards.njk" %}
+    {% include "ship_cards.njk" %}
   </div>
 {% endblock %}

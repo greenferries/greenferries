@@ -21,12 +21,5 @@ module.exports = {
   plugins: [
     require('@tailwindcss/typography')
   ],
-  purge: {
-    content: [
-      './**/*.js',
-      './**/*.11ty.js',
-      './**/*.html',
-      './**/*.njk'
-    ]
-  }
+  content: ['./views/**/*.{md,njk,js}'],
 }

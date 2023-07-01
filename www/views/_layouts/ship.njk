@@ -1,4 +1,4 @@
-{% extends "views/_layouts/default.njk" %}
+{% extends "./default.njk" %}
 
 {% block title %}
   GreenFerries - {{ name }} ({{ company.name }})
@@ -10,7 +10,7 @@
       <h2 class="text-xl font-bold">
         {{ name }}
       </h2>
-      {% include "views/_includes/admin_edit_link.njk" %}
+      {% include "admin_edit_link.njk" %}
     </div>
     <div class="flex flex-col sm:flex-row mb-3">
       {% if photo %}
@@ -116,12 +116,12 @@
     <h4 class="font-ml font-semibold mb-2">Ship Statistics</h4>
 
     {%- set year = '2019' %}
-    {% include "views/_includes/ship_thetis_stats.njk" %}
+    {% include "ship_thetis_stats.njk" %}
 
     <hr class="my-3" />
 
     {%- set year = '2018' %}
-    {% include "views/_includes/ship_thetis_stats.njk" %}
+    {% include "ship_thetis_stats.njk" %}
   </div>
 
   <div class="bg-blue-200 mb-3">

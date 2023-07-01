@@ -1,4 +1,4 @@
-{% extends "views/_layouts/default.njk" %}
+{% extends "./default.njk" %}
 
 {% block title %}
   GreenFerries - {{ name }}
@@ -19,7 +19,7 @@
           </div>
         {% endif %}
       </h2>
-      {% include "views/_includes/admin_edit_link.njk" %}
+      {% include "admin_edit_link.njk" %}
     </div>
 
     {% if wikipediaUrl %}
@@ -46,6 +46,6 @@
 
   <div class="container mx-auto mb-4 p-2">
     <h4 class="text-l font-bold mb-3">{{ ships | length }} ships</h4>
-    {% include "views/_includes/ship_cards.njk" %}
+    {% include "ship_cards.njk" %}
   </div>
 {% endblock %}

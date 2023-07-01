@@ -7,25 +7,21 @@
   "author": "Adrien Di Pasquale",
   "license": "MIT",
   "dependencies": {
-    "@11ty/eleventy": "^0.11.0",
-    "@tailwindcss/typography": "^0.3.1",
-    "postcss-clean": "^1.1.0",
-    "postcss-cli": "^8.0.0",
-    "tailwindcss": "^1.8.10"
+    "@11ty/eleventy": "^2.x",
+    "@tailwindcss/typography": "^0.x",
+    "postcss-clean": "^1.x",
+    "postcss-cli": "^10.x",
+    "tailwindcss": "^3.x"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf _site",
     "start": "npm-run-all clean --parallel dev:*",
-    "dev:postcss": "postcss assets/css/index.css -d _site/css/ --config ./postcss.config.js -w",
-    "dev:eleventy": "ELEVENTY_ENV=development npx @11ty/eleventy --serve",
+    "dev:css": "tailwind --input assets/css/index.css --output _site/css/index.css --postcss --watch",
+    "dev:eleventy": "node --max_old_space_size=8192 node_modules/.bin/eleventy --serve",
     "build": "NODE_ENV=production npm-run-all clean --parallel prod:*",
-    "prod:postcss": "postcss assets/css/index.css -d _site/css/ --config ./postcss.config.js",
-    "prod:eleventy": "ELEVENTY_ENV=production npx @11ty/eleventy --output=./_site",
-    "testProd:postcss": "postcss assets/css/index.css -d _site/css/ --config ./postcss.config.js -w",
-    "testProd:eleventy": "ELEVENTY_ENV=production npx @11ty/eleventy --output=./_site --serve",
-    "setProd": "NODE_ENV=production",
-    "testbuild": "NODE_ENV=production npm-run-all clean --parallel testProd:*",
+    "prod:css": "tailwind --input assets/css/index.css --output _site/css/index.css --postcss",
+    "prod:eleventy": "ELEVENTY_ENV=production node --max_old_space_size=8192 node_modules/.bin/eleventy --output=./_site",
     "lint": "standard"
   },
   "standard": {
@@ -35,8 +31,8 @@
   },
   "devDependencies": {
     "debug": "^4.2.0",
-    "npm-run-all": "^4.1.5",
+    "npm-run-all": "^4.1.2",
     "request": "^2.88.2",
-    "standard": "^14.3.4"
+    "standard": "^17.1.0"
   }
 }
