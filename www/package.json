@@ -19,7 +19,7 @@
     "dev:eleventy": "node --max_old_space_size=8192 node_modules/.bin/eleventy --serve",
     "build": "NODE_ENV=production npm-run-all clean --parallel prod:*",
     "prod:css": "tailwind --input assets/css/index.css --output _site/css/index.css",
-    "prod:eleventy": "ELEVENTY_ENV=production node --max_old_space_size=8192 node_modules/.bin/eleventy --output=./_site",
+    "prod:eleventy": "node --max_old_space_size=8192 node_modules/.bin/eleventy --output=./_site",
     "lint": "standard"
   },
   "standard": {
