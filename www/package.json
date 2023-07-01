@@ -9,18 +9,16 @@
   "dependencies": {
     "@11ty/eleventy": "^2.x",
     "@tailwindcss/typography": "^0.x",
-    "postcss-clean": "^1.x",
-    "postcss-cli": "^10.x",
     "tailwindcss": "^3.x"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf _site",
     "start": "npm-run-all clean --parallel dev:*",
-    "dev:css": "tailwind --input assets/css/index.css --output _site/css/index.css --postcss --watch",
+    "dev:css": "tailwind --input assets/css/index.css --output _site/css/index.css --watch",
     "dev:eleventy": "node --max_old_space_size=8192 node_modules/.bin/eleventy --serve",
     "build": "NODE_ENV=production npm-run-all clean --parallel prod:*",
-    "prod:css": "tailwind --input assets/css/index.css --output _site/css/index.css --postcss",
+    "prod:css": "tailwind --input assets/css/index.css --output _site/css/index.css",
     "prod:eleventy": "ELEVENTY_ENV=production node --max_old_space_size=8192 node_modules/.bin/eleventy --output=./_site",
     "lint": "standard"
   },
