@@ -16,7 +16,7 @@
     "clean": "rm -rf _site",
     "start": "npm-run-all clean --parallel dev:*",
     "dev:css": "tailwind --input assets/css/index.css --output _site/css/index.css --watch",
-    "dev:eleventy": "node --max_old_space_size=8192 node_modules/.bin/eleventy --serve",
+    "dev:eleventy": "node --max_old_space_size=16384 node_modules/.bin/eleventy --serve",
     "build": "NODE_ENV=production npm-run-all clean --parallel prod:*",
     "prod:css": "tailwind --input assets/css/index.css --output _site/css/index.css",
     "prod:eleventy": "node --max_old_space_size=8192 node_modules/.bin/eleventy --output=./_site",

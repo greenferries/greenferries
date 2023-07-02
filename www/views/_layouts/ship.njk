@@ -62,7 +62,8 @@
         class="h-10 mr-2"
       />
       <div>
-        {{ thetisData['2019'].computedEcoscoreLetter | ecoscoreLetterToHint }}
+        {{ thetisData[mostRecentYearDeclared].computedEcoscoreLetter | ecoscoreLetterToHint }}
+        (based on {{ mostRecentYearDeclared }} data)
       </div>
     </div>
 
@@ -115,13 +116,10 @@
   <div class="container mx-auto mb-4 px-3 sm:px-0">
     <h4 class="font-ml font-semibold mb-2">Ship Statistics</h4>
 
-    {%- set year = '2019' %}
-    {% include "ship_thetis_stats.njk" %}
-
-    <hr class="my-3" />
-
-    {%- set year = '2018' %}
-    {% include "ship_thetis_stats.njk" %}
+    {% for year in ['2022', '2021', '2020', '2019', '2018'] %}
+      {% include "ship_thetis_stats.njk" %}
+      <hr class="my-3" />
+    {% endfor %}
   </div>
 
   <div class="bg-blue-200 mb-3">

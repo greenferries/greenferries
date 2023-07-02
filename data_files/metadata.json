@@ -1,21 +1,36 @@
 {
   "test": 1,
   "thetis.export_2018": {
-    "date": "2021-01-20",
+    "date": "2023-05-16",
     "filename": "original.thetis.export_2018.xlsx",
-    "version": "v245"
+    "version": "v269"
   },
   "thetis.export_2019": {
-    "date": "2021-01-28",
+    "date": "2023-06-30",
     "filename": "original.thetis.export_2019.xlsx",
-    "version": "v124"
+    "version": "v215"
+  },
+  "thetis.export_2020": {
+    "date": "2023-06-24",
+    "filename": "original.thetis.export_2020.xlsx",
+    "version": "v189"
+  },
+  "thetis.export_2021": {
+    "date": "2023-06-30",
+    "filename": "original.thetis.export_2021.xlsx",
+    "version": "v163"
+  },
+  "thetis.export_2022": {
+    "date": "2023-07-01",
+    "filename": "original.thetis.export_2022.xlsx",
+    "version": "v2"
   },
   "wikidata.ships": {
-    "date": "2021-01-29",
+    "date": "2023-07-01",
     "filename": "original.wikidata.ships.csv"
   },
   "wikidata.urls": {
-    "date": "2021-01-29",
+    "date": "2023-07-01",
     "filename": "original.wikidata.urls.csv"
   }
 }

@@ -13,7 +13,7 @@ from greenferries.www.technical_efficiency import create_files as www_technical_
 
 def run():
     # thetis
-    for year in ["2018", "2019"]:
+    for year in ["2018", "2019", "2020", "2021", "2022"]:
         ThetisDownload(year).run()
     ThetisConvert().run()
     ThetisAugment().run()

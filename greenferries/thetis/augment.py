@@ -45,6 +45,7 @@ class Augment():
         )
         df["technical_efficiency_eiv"] = df["technical_efficiency"].apply(lambda te: self.eiv_value(te))
         df["technical_efficiency_eedi"] = df["technical_efficiency"].apply(lambda te: self.eedi_value(te))
+        df.replace([np.inf, -np.inf], np.nan, inplace=True) # divisions by 0 seem to produce infinity values
         df.to_csv(OUTPUT_PATH, index=False)
         print(f"rewrote {OUTPUT_PATH}")
 

@@ -1,9 +1,9 @@
-datasette==0.46
+datasette
 requests
 wikidataintegrator
 python-dotenv
-openpyxl==3.0.2
-csvs-to-sqlite==1.0
+openpyxl
+csvs-to-sqlite
 notebook
 pandas
 xlrd

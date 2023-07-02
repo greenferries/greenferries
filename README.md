@@ -38,6 +38,12 @@ The main entry point is `full_pipeline` which will download, convert and process
 
 Run it with `python3 -m greenferries.full_pipeline` from the root of this repository.
 
+You will first need to register on wikidata and add your credentials to `greenferries/.env` :
+
+```sh
+WIKIDATA_USERNAME=jean
+WIKIDATA_PASSWORD=123456
+```
 
 ## `/notebooks`
 
