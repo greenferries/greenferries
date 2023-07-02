@@ -12,7 +12,7 @@ DIRNAME = os.path.dirname(__file__)
 THETIS_CSV_PATH = os.path.join(DIRNAME, "../../data_files/thetis_all_with_computed.csv")
 WIKIDATA_SHIPS_CSV_PATH = os.path.join(DIRNAME, "../../data_files/original.wikidata.ships.csv")
 WIKIDATA_URLS_CSV_PATH = os.path.join(DIRNAME, "../../data_files/original.wikidata.urls.csv")
-WWW_DATA_SHIP_TYPES_PATH = os.path.join(DIRNAME, "../../www/views/doc/ship_types.11tydata.json")
+WWW_DATA_SHIP_TYPES_PATH = os.path.join(DIRNAME, "../../www/11ty_input/doc/ship_types.11tydata.json")
 
 class CreateFiles(object):
     def run(self):

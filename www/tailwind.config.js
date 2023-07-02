@@ -21,5 +21,5 @@ module.exports = {
   plugins: [
     require('@tailwindcss/typography')
   ],
-  content: ['./views/**/*.{md,njk,js}'],
+  content: ['./11ty_input/**/*.{md,njk,js}'],
 }

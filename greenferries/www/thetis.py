@@ -29,7 +29,7 @@ def create_files():
         path = os.path.join(WWW_THETIS_DATA_PATH, f"thetis-{imo}.json")
         with open(path, 'w') as f:
             json.dump(data, f, indent=2)
-    print(f"rewrote {len(imos)} thetis json files in www/views/_data/thetis")
+    print(f"rewrote {len(imos)} thetis json files in www/11ty_input/_data/thetis")
 
 
 if __name__ == "__main__":

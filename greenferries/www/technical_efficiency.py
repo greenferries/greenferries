@@ -8,7 +8,7 @@ from greenferries.www.thetis_df import get_df as get_www_thetis_df
 
 PACKAGE_ROOT = os.path.join(os.path.dirname(__file__), "..")
 WWW_IMG_PATH = os.path.join(PACKAGE_ROOT, "../www/assets/img")
-WWW_DOC_PATH = os.path.join(PACKAGE_ROOT, "../www/views/doc")
+WWW_DOC_PATH = os.path.join(PACKAGE_ROOT, "../www/11ty_input/doc")
 
 def create_files():
     df = get_www_thetis_df(only_in_scope=True, only_last_year=True)

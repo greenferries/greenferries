@@ -13,12 +13,12 @@ Live website: [greenferries.org](https://www.greenferries.org)
 
 ![GreenFerries](https://i.imgur.com/7RVgLVD.jpg)
 
-The code for the main public-facing static website. Built with [Eleventy - Static Site Generator](https://www.11ty.dev/docs/). [TailwindCSS](https://tailwindcss.com/)
+The code for the main public-facing static website. Built with [Eleventy - Static Site Generator](https://www.11ty.dev/docs/) + [TailwindCSS](https://tailwindcss.com/)
 
-To run the server locally, simply run `yarn start` from `/www`
+To run the server locally, simply run `npm i && npm run dev` from `/www`
 
 To deploy, simply push the main monorepository master branch, Netlify is configured to
-deploy the `www` directory automatically
+build and deploy the 11ty website from the `www` subdirectory automatically.
 
 
 ## `/greenferries` Python library to fetch and process the data
