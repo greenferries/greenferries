@@ -1,5 +1,5 @@
 publish_mode: editorial_workflow
-media_folder: www/assets/img
+media_folder: www/img
 public_folder: /img
 site_url: https://www.greenferries.org
 display_url: https://www.greenferries.org
@@ -12,7 +12,7 @@ collections:
   - name: ships
     label: Ships
     label_singular: Ship
-    folder: www/ships
+    folder: www/11ty_input/ships
     identifierField: slug
     create: true
     slug: "{{fields.slug}}"
@@ -53,7 +53,7 @@ collections:
   - name: companies
     label: Companies
     label_singular: Company
-    folder: www/companies
+    folder: www/11ty_input/companies
     create: true
     identifierField: slug
     slug: "{{slug}}-{{imo}}"
@@ -69,7 +69,7 @@ collections:
   - name: routes
     label: Routes
     label_singular: Route
-    folder: www/routes
+    folder: www/11ty_input/routes
     create: true
     identifierField: slug
     fields:
@@ -94,7 +94,7 @@ collections:
   - name: cities
     label: Cities
     label_singular: City
-    folder: www/cities
+    folder: www/11ty_input/cities
     create: true
     identifierField: slug
     summary: "{{name}} - {{country}}"
