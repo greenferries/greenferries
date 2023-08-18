@@ -6,8 +6,8 @@ import pandas as pd
 from greenferries.www.thetis_df import get_df as get_www_thetis_df
 
 PACKAGE_ROOT = os.path.join(os.path.dirname(__file__), "..")
-WWW_SHIPS_PATH = os.path.join(PACKAGE_ROOT, "..", "www", "views", "ships")
-WWW_THETIS_DATA_PATH = os.path.join(PACKAGE_ROOT, "..", "www", "views", "_data", "thetis")
+WWW_SHIPS_PATH = os.path.join(PACKAGE_ROOT, "..", "www", "11ty_input", "ships")
+WWW_THETIS_DATA_PATH = os.path.join(PACKAGE_ROOT, "..", "www", "11ty_input", "_data", "thetis")
 
 
 def camelCase(st):

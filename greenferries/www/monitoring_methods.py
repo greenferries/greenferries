@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 from greenferries.www.thetis_df import get_df as get_www_thetis_df
 
 PACKAGE_ROOT = os.path.join(os.path.dirname(__file__), "..")
-WWW_IMG_PATH = os.path.join(PACKAGE_ROOT, "../www/assets/img")
+WWW_IMG_PATH = os.path.join(PACKAGE_ROOT, "../www/img")
 
 
 def create_files():

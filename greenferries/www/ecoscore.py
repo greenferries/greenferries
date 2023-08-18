@@ -12,7 +12,7 @@ from greenferries.ecoscore import THRESHOLDS
 from greenferries.www.thetis_df import get_df as get_www_thetis_df
 
 PACKAGE_ROOT = os.path.join(os.path.dirname(__file__), "..")
-WWW_IMG_PATH = os.path.join(PACKAGE_ROOT, "../www/assets/img")
+WWW_IMG_PATH = os.path.join(PACKAGE_ROOT, "../www/img")
 WWW_DATA_PATH = os.path.join(PACKAGE_ROOT, "../www/11ty_input/_data")
 WWW_SHIPS_DATA_PATH = os.path.join(PACKAGE_ROOT, "../www/11ty_input/ships")
 

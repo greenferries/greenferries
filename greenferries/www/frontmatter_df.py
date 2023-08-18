@@ -3,7 +3,7 @@ import pandas as pd
 import frontmatter
 
 PACKAGE_ROOT = os.path.join(os.path.dirname(__file__), "..")
-WWW_SHIPS_PATH = os.path.join(PACKAGE_ROOT, "..", "www", "views", "ships")
+WWW_SHIPS_PATH = os.path.join(PACKAGE_ROOT, "..", "www", "11ty_input", "ships")
 
 
 def get_df(only_out_of_scope=False, only_in_scope=False):

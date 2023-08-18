@@ -96,6 +96,11 @@ Scrapers initially used to populate data from the [directferries.fr](http://dire
 - `index.js` iterates over the routes and fills up a MongoDB collection with
 the ships infos found on directferries
 
+## `/aishub`
+
+Fetch, store and process AIS data from [AIShub](https://www.aishub.net/) in order to get up to date ferries journeys.
+
+`bundle exec ruby fetch_data.rb`
 
 ## raw data files
 
