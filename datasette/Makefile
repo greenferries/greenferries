@@ -23,6 +23,8 @@ convert_csvs_to_sqlite:
 		ship_type:ship_type(TEXT), \
 		reporting_period:reporting_period(TEXT), \
 		technical_efficiency:technical_efficiency(TEXT), \
+		technical_efficiency_eiv:technical_efficiency_eiv(REAL), \
+		technical_efficiency_eedi:technical_efficiency_eedi(REAL), \
 		port_of_registry:port_of_registry(TEXT), \
 		home_port:home_port(TEXT), \
 		ice_class:ice_class(TEXT), \
@@ -65,7 +67,6 @@ convert_csvs_to_sqlite:
 		voluntary_reporting_distance_through_ice:voluntary_reporting_distance_through_ice(REAL), \
 		voluntary_reporting_total_time_spent_at_sea:voluntary_reporting_total_time_spent_at_sea(REAL), \
 		voluntary_reporting_total_time_spent_at_sea_through_ice:voluntary_reporting_total_time_spent_at_sea_through_ice(REAL), \
-		voluntary_reporting_direct_emissions:voluntary_reporting_direct_emissions(REAL), \
 		voluntary_reporting_average_fuel_consumption_per_distance_on_laden_voyages:voluntary_reporting_average_fuel_consumption_per_distance_on_laden_voyages(REAL), \
 		voluntary_reporting_average_fuel_consumption_per_transport_work_on_laden_voyages_mass:voluntary_reporting_average_fuel_consumption_per_transport_work_on_laden_voyages_mass(REAL), \
 		voluntary_reporting_average_fuel_consumption_per_transport_work_on_laden_voyages_volume:voluntary_reporting_average_fuel_consumption_per_transport_work_on_laden_voyages_volume(REAL), \
@@ -85,7 +86,8 @@ convert_csvs_to_sqlite:
 		annual_computed_pax:annual_computed_pax(REAL), \
 		annual_computed_freight:annual_computed_freight(REAL), \
 		annual_computed_average_speed:annual_computed_average_speed(REAL), \
-		annual_computed_ratio_co2_from_pax:annual_computed_ratio_co2_from_pax(REAL) \
+		annual_computed_ratio_co2_from_pax:annual_computed_ratio_co2_from_pax(REAL), \
+		computed_ecoscore_letter:computed_ecoscore_letter(TEXT) \
 	" \
 		$(rootdir)/../data_files/thetis_all_with_computed.csv \
 		$(rootdir)/dbs/greenferries.db

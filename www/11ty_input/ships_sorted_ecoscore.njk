@@ -8,8 +8,8 @@
       map(d => d.data).
       filter(d => !d.outOfScope).
       sort((shipA, shipB) => {
-        const a = shipA.thetisData['2019']?.annualComputedAverageCo2EmissionsPerTransportWorkPaxKm
-        const b = shipB.thetisData['2019']?.annualComputedAverageCo2EmissionsPerTransportWorkPaxKm
+        const a = shipA.thetisData['2022']?.annualComputedAverageCo2EmissionsPerTransportWorkPaxKm
+        const b = shipB.thetisData['2022']?.annualComputedAverageCo2EmissionsPerTransportWorkPaxKm
         if (!a && !b)
           return 0
         else if (!a)

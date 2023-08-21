@@ -9,13 +9,15 @@
   "dependencies": {
     "@11ty/eleventy": "^2.x",
     "@tailwindcss/typography": "^0.x",
+    "sqlite": "^5.x",
+    "sqlite3": "^5.x",
     "tailwindcss": "^3.x"
   },
   "scripts": {
     "clean": "rm -rf 11ty_output",
     "dev": "npm-run-all clean --parallel dev:*",
     "dev:css": "tailwind --input tailwind-entrypoint.css --output 11ty_output/css/index.css --watch",
-    "dev:eleventy": "node --max_old_space_size=16384 node_modules/.bin/eleventy --serve",
+    "dev:eleventy": "npx @11ty/eleventy --serve --incremental",
     "build": "NODE_ENV=production npm-run-all clean build:*",
     "build:css": "tailwind --input tailwind-entrypoint.css --output 11ty_output/css/index.css",
     "build:eleventy": "node --max_old_space_size=8192 node_modules/.bin/eleventy"

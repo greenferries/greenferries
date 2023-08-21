@@ -22,20 +22,18 @@
                 </div>
               {% endif %}
             </div>
-            {# TODO: fix company name
-              <p class="text-gray-700 text-base">
-                {{ ship.company.name }}
-              </p>
-            #}
+            <p class="text-gray-700 text-base">
+              {{ ship.company.name }}
+            </p>
           </div>
           <div class="flex items-center">
             <img
-              src="/img/score_{{ ship.thetisData['2019'].computedEcoscoreLetter | ecoscoreLetterToImgFileKey }}_letter.png"
-              alt="Ecoscore {{ ship.thetisData['2019'].computedEcoscoreLetter | ecoscoreLetterToImgFileKey }}"
+              src="/img/score_{{ ship.thetisData['2022'].computedEcoscoreLetter | ecoscoreLetterToImgFileKey }}_letter.png"
+              alt="Ecoscore {{ ship.thetisData['2022'].computedEcoscoreLetter | ecoscoreLetterToImgFileKey }}"
               class="h-8 mr-2"
             />
             <div>
-              {{ ship.thetisData['2019'].computedEcoscoreLetter | ecoscoreLetterToHint }}
+              {{ ship.thetisData['2022'].computedEcoscoreLetter | ecoscoreLetterToHint }}
             </div>
           </div>
         </div>
