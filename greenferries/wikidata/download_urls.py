@@ -1,10 +1,10 @@
-from .wikidata_client import WikidataClient
+# python3 -m greenferries.wikidata.download_urls
 
-# python3 scripts/download_wikidata_urls_file.py
+from .wikidata_client import WikidataClient
+from greenferries.db import get_connection
 
 class DownloadUrls(object):
-    def __init__(self, output_path):
-        self.output_path = output_path
+    def __init__(self):
         self.wikidata_client = WikidataClient()
 
     def get_query(self):
@@ -27,8 +27,9 @@ class DownloadUrls(object):
         df.dropna(inplace=True)
         df.rename_axis("wikidataUrl", inplace=True)
         df.sort_values("wikidataUrl", inplace=True)
-        df.to_csv(self.output_path)
-        print(f"wrote Wikidata URLs to {self.output_path} √")
+        self.db_con = get_connection()
+        df.to_sql("wikidata_urls", self.db_con, if_exists="replace", index=True)
+        print(f"wrote wikidata_urls table in db with {df.shape[0]} rows")
 
 if __name__ == "__main__":
-    DownloadUrls("/tmp/wikidata.urls.csv").run()
+    DownloadUrls().run()

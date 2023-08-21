@@ -1,13 +1,8 @@
 # python3 -m greenferries.www.ecoscore
 
-import pandas as pd
-import numpy as np
 import os
-import sys
 import matplotlib.pyplot as plt
 import json
-import re
-import frontmatter
 from greenferries.ecoscore import THRESHOLDS
 from greenferries.www.thetis_df import get_df as get_www_thetis_df
 
@@ -38,7 +33,7 @@ class CreateFiles(object):
 
     def export_ecoscore_distribution_graph(self):
         plt.clf()
-        ecoscore_freqs = self.df["computed_ecoscore_letter"].value_counts(sort=False)
+        ecoscore_freqs = self.df["computed_ecoscore_letter"].value_counts()
         ecoscore_freqs = ecoscore_freqs.reindex(index = ['A','B','C', 'D', 'E'])
         plot = ecoscore_freqs.plot.bar()
         plot.set_xlabel("Ecoscore")

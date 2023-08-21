@@ -1,21 +1,28 @@
 # python3 -m greenferries.thetis.augment
 
+import os, re, sqlite3, json
 import pandas as pd
 import numpy as np
-import os
-import sys
 from greenferries.ecoscore import get_ecoscore_letter
-import re
+from greenferries.db import get_connection
 
 NM_TO_KM = 1.852001
-PACKAGE_ROOT = os.path.join(os.path.dirname(__file__), "..")
-INPUT_PATH = os.path.join(PACKAGE_ROOT, "..", "data_files", "thetis_export_all.csv")
-OUTPUT_PATH = os.path.join(PACKAGE_ROOT, "..", "data_files", "thetis_all_with_computed.csv")
+
+def get_absolute_path(relative_path):
+    return os.path.join(os.path.dirname(__file__), "..", "..", relative_path)
+
+def monitoring_methods(row):
+    monitoring_methods = []
+    for letter in ["a", "b", "c", "d"]:
+        if not pd.isna(row[f"monitoring_method_{letter}"]):
+            monitoring_methods.append(letter)
+    return json.dumps(monitoring_methods)
 
 
 class Augment():
     def run(self):
-        df = pd.read_csv(INPUT_PATH)
+        self.db_con = get_connection()
+        df = pd.read_sql_query("SELECT * FROM thetis", self.db_con)
         df["annual_computed_distance"] = (
             df["annual_monitoring_total_co2_emissions"] * 1000 /
             df["annual_average_co2_emissions_per_distance"]
@@ -45,9 +52,25 @@ class Augment():
         )
         df["technical_efficiency_eiv"] = df["technical_efficiency"].apply(lambda te: self.eiv_value(te))
         df["technical_efficiency_eedi"] = df["technical_efficiency"].apply(lambda te: self.eedi_value(te))
+        df["monitoring_methods_json"] = df.apply(lambda row: monitoring_methods(row), axis=1)
+        cols = [
+            "imo",
+            "reporting_period",
+            "annual_computed_distance",
+            "annual_computed_distance_km",
+            "annual_computed_pax",
+            "annual_computed_freight",
+            "annual_computed_average_speed",
+            "annual_computed_ratio_co2_from_pax",
+            "annual_computed_average_co2_emissions_per_transport_work_pax_km",
+            "computed_ecoscore_letter",
+            "technical_efficiency_eiv",
+            "technical_efficiency_eedi",
+            "monitoring_methods_json"
+        ]
+        df = df[cols]
         df.replace([np.inf, -np.inf], np.nan, inplace=True) # divisions by 0 seem to produce infinity values
-        df.to_csv(OUTPUT_PATH, index=False)
-        print(f"rewrote {OUTPUT_PATH}")
+        df.to_sql("thetis_computed", self.db_con, if_exists="replace", index=False)
 
     def eiv_value(self, technical_efficiency):
         if not isinstance(technical_efficiency, str):

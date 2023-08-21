@@ -1,0 +1,16 @@
+www-dev:
+	cd www && npm run dev
+
+datasette-dev:
+	./greenferries/venv/bin/datasette dbs/*.db --metadata datasette/metadata.yml --static static:datasette/static/ --reload
+
+full-data-pipeline:
+	./greenferries/venv/bin/python3 -m greenferries.full_pipeline
+
+install-python:
+	cd greenferries && python3 -m venv venv && source venv/bin/activate && pip3 install -r requirements.txt
+
+install-node:
+	cd www && npm install
+
+install: install-python install-node

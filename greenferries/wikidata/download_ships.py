@@ -1,6 +1,8 @@
+# python3 -m greenferries.wikidata.download_ships
+
 from .wikidata_client import WikidataClient
 from functools import reduce
-import pandas as pd
+from greenferries.db import get_connection
 
 class DownloadShips:
     WHERE_BASE = """
@@ -9,8 +11,7 @@ class DownloadShips:
         ?item wdt:P458 ?imo.
     """
 
-    def __init__(self, output_path):
-        self.output_path = output_path
+    def __init__(self):
         self.wikidata_client = WikidataClient()
 
     def build_query(self, query_parts):
@@ -107,12 +108,12 @@ class DownloadShips:
             'homeportLabel': 'homeportName'
         }, inplace=True)
         df.sort_values("wikidataUrl", inplace=True)
-        df.to_csv(self.output_path)
-        print(f"rewrote {self.output_path}")
-
+        db_con = get_connection()
+        df.to_sql("wikidata_ships", db_con, if_exists="replace", index=True)
+        print(f"wrote wikidata_ships table in db with {df.shape[0]} rows")
 
 if __name__ == "__main__":
-    DownloadShips("/tmp/wikidata.ships.csv").run()
+    DownloadShips().run()
 
 
 # query = """

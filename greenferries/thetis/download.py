@@ -1,7 +1,6 @@
 # ex: python3 -m greenferries.thetis.download 2019
 
 import requests, re, os, sys, datetime
-from greenferries.metadata import update_metadata
 
 THETIS_FILENAME_REGEX = r"%s\-(v\d+)\-(\d{2})(\d{2})(\d{4})\-.*"
 # like "2018-v226-05092020-EU MRV Publication of information.xlsx"
@@ -23,7 +22,6 @@ class Download(object):
 
     def run(self):
         self.download_thetis_file(self.year)
-        update_metadata(self.metadata)
         print("done!")
 
     def download_thetis_file(self, report_year):

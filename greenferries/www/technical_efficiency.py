@@ -1,9 +1,7 @@
 # python3 -m greenferries.www.technical_efficiency
 
-import pandas as pd
 import matplotlib.pyplot as plt
 import os, json
-from greenferries.www.frontmatter_df import get_df as get_frontmatter_df
 from greenferries.www.thetis_df import get_df as get_www_thetis_df
 
 PACKAGE_ROOT = os.path.join(os.path.dirname(__file__), "..")
@@ -33,7 +31,6 @@ def create_files():
             "shipsWithoutTechnicalEfficiencyCount": df[df.technical_efficiency_eiv.isnull() & df.technical_efficiency_eedi.isnull()].shape[0]
         }, f, indent=2)
     print(f"rewrote {path}")
-
 
 if __name__ == "__main__":
     create_files()
