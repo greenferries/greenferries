@@ -20,7 +20,7 @@
     "dev:eleventy": "npx @11ty/eleventy --serve --incremental",
     "build": "NODE_ENV=production npm-run-all clean build:*",
     "build:css": "tailwind --input tailwind-entrypoint.css --output 11ty_output/css/index.css",
-    "build:eleventy": "node --max_old_space_size=8192 node_modules/.bin/eleventy"
+    "build:eleventy": "npx @11ty/eleventy"
   },
   "devDependencies": {
     "debug": "^4.2.0",
