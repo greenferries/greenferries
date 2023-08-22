@@ -13,4 +13,7 @@ install-python:
 install-node:
 	cd www && npm install
 
+notebooks-server:
+	sh -c "source greenferries/venv/bin/activate && jupyter notebook --notebook-dir=notebooks"
+
 install: install-python install-node

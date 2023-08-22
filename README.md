@@ -42,7 +42,7 @@ WIKIDATA_PASSWORD=123456
 
 [Jupyter Python notebooks]((https://jupyter-notebook.readthedocs.io/en/stable/)) to play around and explore the different datasets.
 
-Simply start `jupyter notebook` from `/notebooks`.
+run with `make notebooks-server`
 
 
 ## `/datasette` data.greenferries.org platform
