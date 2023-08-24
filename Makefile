@@ -1,3 +1,6 @@
+activate-venv:
+	sh -c "source venv/bin/activate"
+
 www-dev:
 	cd www && npm run dev
 
@@ -8,7 +11,7 @@ full-data-pipeline:
 	./greenferries/venv/bin/python3 -m greenferries.full_pipeline
 
 install-python:
-	cd greenferries && python3 -m venv venv && source venv/bin/activate && pip3 install -r requirements.txt
+	python3 -m venv venv && source venv/bin/activate && pip3 install -r greenferries/requirements.txt
 
 install-node:
 	cd www && npm install

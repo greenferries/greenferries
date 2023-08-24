@@ -4,7 +4,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("img")
   eleventyConfig.addPassthroughCopy("js")
   eleventyConfig.addPassthroughCopy("css")
-  eleventyConfig.addPassthroughCopy("admin")
 
   eleventyConfig.addShortcode("version", function () {
     return String(Date.now());
@@ -13,9 +12,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("jsonify", e => JSON.stringify(e, 2));
 
   eleventyConfig.addFilter("fullRouteName", route => `
-    ${route.cityA.name} [${route.cityA.country}]
+    ${route.cityAName} [${route.cityACountry}]
     ↔
-    ${route.cityB.name} [${route.cityB.country}]
+    ${route.cityBName} [${route.cityBCountry}]
   `)
 
   eleventyConfig.addFilter("figureCell", ({ value, unit, computed = false }) =>
@@ -23,8 +22,8 @@ module.exports = function (eleventyConfig) {
   )
 
   eleventyConfig.addFilter("routeCoordinates", route => [
-    [route.cityA.latitude, route.cityA.longitude],
-    [route.cityB.latitude, route.cityB.longitude]
+    [route.cityALatitude, route.cityALongitude],
+    [route.cityBLatitude, route.cityBLongitude]
   ])
 
   eleventyConfig.addFilter("countPlural", ({ word, count }) =>

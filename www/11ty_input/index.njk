@@ -14,10 +14,10 @@
 
         <form href="#" method="GET" id="js-route-form" class="js-collapse-map">
           <label for="route" class="block text-m font-semibold mb-2">
-            Route
+            Select a route among {{ routes | length }}
           </label>
           <select name="route" class="mb-2 select" id="js-route-select">
-            {% for route in allRoutes %}
+            {% for route in routes %}
               <option
                 value="{{ route.slug }}"
                 data-name="{{ route | fullRouteName }}"
@@ -27,7 +27,7 @@
               >
                 {{ route | fullRouteName }}
                 -
-                {{ route.shipsCount }} ships
+                {{ route.ships | length }} ship(s)
               </option>
             {% endfor %}
           </select>

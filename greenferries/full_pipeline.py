@@ -18,8 +18,8 @@ def run():
     ThetisAugment().run()
 
     # wikidata
-    # WikidataDownloadShips().run()
-    # WikidataDownloadUrls().run()
+    WikidataDownloadShips().run()
+    WikidataDownloadUrls().run()
 
     # www
     www_create_db()

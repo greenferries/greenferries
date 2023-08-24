@@ -2,16 +2,15 @@
 
 import pandas as pd
 from greenferries.db import get_connection
-from greenferries.www.thetis_df import get_df as get_www_thetis_df
-from greenferries.www.frontmatter_df import get_df as get_frontmatter_df
 
 
 class CreateDB(object):
     def run(self):
-        imos = get_frontmatter_df(only_in_scope=True).imo.to_list()
-        db_con_all_ships = get_connection(db_name="all_ships")
         db_www_con = get_connection(db_name="www")
+        db_www_cur = db_www_con.cursor()
+        imos = [r[0] for r in db_www_cur.execute("SELECT imo FROM ships").fetchall()]
 
+        db_con_all_ships = get_connection(db_name="all_ships")
         df = pd.read_sql_query(
             """
                 SELECT
@@ -20,6 +19,7 @@ class CreateDB(object):
                     computed_ecoscore_letter,
                     annual_monitoring_co2_emissions_assigned_to_passenger_transport,
                     annual_average_co2_emissions_per_transport_work_pax,
+                    annual_computed_average_co2_emissions_per_transport_work_pax_km,
                     annual_monitoring_co2_emissions_assigned_to_freight_transport,
                     annual_average_co2_emissions_per_transport_work_freight,
                     annual_computed_ratio_co2_from_pax,
@@ -40,6 +40,33 @@ class CreateDB(object):
             db_con_all_ships
         )
         df.to_sql("thetis", db_www_con, if_exists="replace", index=False)
+        print(f"saved {len(df)} rows to thetis")
+
+        rows = db_www_cur.execute(
+            """
+                SELECT
+                    imo, reporting_period, computed_ecoscore_letter,
+                    annual_computed_average_co2_emissions_per_transport_work_pax_km
+                FROM thetis
+                GROUP BY imo
+                HAVING MAX(reporting_period)
+            """
+        ).fetchall()
+        for row in rows:
+            imo, reporting_period, computed_ecoscore_letter, ecoscore_figure = row
+            db_www_cur.execute(
+                """
+                    UPDATE ships
+                    SET
+                        most_recent_reporting_period = ?,
+                        ecoscore_letter = ?,
+                        ecoscore_figure = ?
+                    WHERE imo = ?
+                """,
+                (reporting_period, computed_ecoscore_letter, ecoscore_figure, imo)
+            )
+            db_www_con.commit()
+        print(f"updated {len(rows)} ecoscores in ships (denormalized)")
 
 
 if __name__ == "__main__":

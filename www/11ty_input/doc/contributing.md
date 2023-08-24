@@ -11,9 +11,7 @@ If you wish to help, here are a few areas where we think Greenferries could be i
 
 ## Fill up missing routes
 
-There are currently **{{ collections.ship | inScope | withoutRoutes | length }} passenger ferries ships with no routes** defined in Greenferries. We believe that for most of these ferries the information should not be too hard to find, just a few queries on Wikipedia or web search engines. This requires no particular knowledge, and the interface to edit a ship's routes can be used by anyone!
-
-Please [head here](/ships_without_routes) to see the list of {{ collections.ship | inScope | withoutRoutes | length }} passenger ferries ships with no routes.
+There are currently **{{ ships_without_routes | length }} passenger ferries ships with no routes** defined in Greenferries. We believe that for most of these ferries the information should not be too hard to find, just a few queries on Wikipedia or web search engines.
 
 ## Help us understand the data
 

@@ -1,6 +1,6 @@
 ---
   pagination:
-    data: ships
+    data: shipsSortedByEcoscore
     size: 30
     alias: shipsPage
 ---
@@ -14,9 +14,9 @@
     <div class="mt-3 mb-6">
       <ul class="flex justify-center text-lg">
         <li>
-          {{ ships | length }} ferries sorted by name
+          {{ ships | length }} ferries sorted by ecoscore
         </li>
-        <li><a class="link ml-2" href="/ships_by_ecoscore">Sort by EcoScore</a><li>
+        <li><a class="link ml-2" href="/ships">Sort by name</a><li>
       </ul>
     </div>
     <div class="mt-3 mb-6">
