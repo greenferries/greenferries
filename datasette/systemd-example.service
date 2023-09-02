@@ -9,7 +9,7 @@ Type=simple
 User=pi
 Environment=DATASETTE_SECRET=vLFVwZnprpfx2x30B11v
 WorkingDirectory=/home/pi/greenferries/datasette
-ExecStart=bash -c "/home/pi/greenferries/greenferries/venv/bin/datasette ./dbs/*.db --metadata ./metadata.yml --static static:./static/ -h 127.0.0.1 -p 8001"
+ExecStart=bash -c "/home/pi/greenferries/venv/bin/datasette . -h 127.0.0.1 -p 8001"
 # Restart=on-failure
 
 [Install]
