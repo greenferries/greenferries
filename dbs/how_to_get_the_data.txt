@@ -1,3 +1,4 @@
+You can download all_ships.db and www.db from https://files.greenferries.org
+
 The `/dbs` repository contains SQLite databases.
 These databases are created thanks to the `greenferries` package, by downloading and processing data from THETIS and Wikidata.
-These databases are exposed through datasette.

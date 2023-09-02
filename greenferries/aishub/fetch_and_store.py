@@ -1,4 +1,4 @@
-# python3 -m greenferries.aishub.fetch_and_store /tmp/aishub.json
+# python3 -m greenferries.aishub.fetch_and_store
 
 import sys, tempfile, os
 from greenferries.aishub.fetch import fetch

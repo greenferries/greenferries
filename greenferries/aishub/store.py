@@ -1,8 +1,7 @@
 # python3 -m greenferries.aishub.store /tmp/aishub.json
 
-import sqlite3, os, sys, json
-
-DB_PATH = os.path.join(os.path.dirname(__file__), "..", "..", "data_files", "aishub.db")
+import sys, json
+from greenferries.db import get_connection
 
 def create_tables(cur):
     cur.execute(
@@ -83,8 +82,7 @@ def read_trackpoints(json_filepath):
     ]
 
 def store(json_filepath):
-    open(DB_PATH, "a").close()
-    con = sqlite3.connect(DB_PATH)
+    con = get_connection("aishub")
     cur = con.cursor()
 
     create_tables(cur)
@@ -125,7 +123,7 @@ def store(json_filepath):
         con.commit()
         print(f"upserted trackpoint {trackpoint['imo']} {trackpoint['time']}")
 
-    print(f"finished upserting {len(trackpoints)} trackpoints into {DB_PATH}")
+    print(f"finished upserting {len(trackpoints)} trackpoints into aishub.db")
     con.close()
 
 if __name__ == "__main__":
