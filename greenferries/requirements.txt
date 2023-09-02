@@ -13,3 +13,5 @@ db-to-sqlite[postgresql]
 python-frontmatter
 folium
 ipywidgets
+awscli
+awscli-plugin-endpoint
