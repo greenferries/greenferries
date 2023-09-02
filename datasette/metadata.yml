@@ -11,6 +11,9 @@ description_html: |-
     </a>
     is the API route to list all the information scraped from Wikidata for ships with a capacity over 300 persons.
   </div>
+  <p>
+    You can download the raw SQLite database files from <a href="https://files.greenferries.org">files.greenferries.org</a>
+  </p>
 license: MIT
 license_url: https://mit-license.org
 about: Greenferries code on GitHub
