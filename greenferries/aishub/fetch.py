@@ -1,13 +1,12 @@
 # python3 -m greenferries.aishub.fetch /tmp/aishub.json
 
-from greenferries.www.frontmatter_df import get_df as get_frontmatter_df
+from greenferries.www.thetis_df import get_df as get_thetis_df
 import requests, json, sys, os
 from dotenv import load_dotenv
 load_dotenv()
 
 def fetch(filepath):
-    ships_imos = get_frontmatter_df(only_in_scope=True).imo.apply(lambda x: str(x)).to_list()
-    print(ships_imos)
+    ships_imos = get_thetis_df(only_in_scope=True).imo.drop_duplicates().apply(lambda x: str(x)).to_list()
 
     res = requests.post(
         "https://data.aishub.net/ws.php",

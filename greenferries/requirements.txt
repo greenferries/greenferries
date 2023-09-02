@@ -12,3 +12,4 @@ awesome-slugify
 db-to-sqlite[postgresql]
 python-frontmatter
 folium
+ipywidgets
