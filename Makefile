@@ -8,7 +8,7 @@ full-data-pipeline:
 	./venv/bin/python3 -m greenferries.full_pipeline
 
 install-python:
-	python3 -m venv venv && source venv/bin/activate && pip3 install -r greenferries/requirements.txt
+	python3 -m venv venv && ./venv/bin/pip3 install -r greenferries/requirements.txt
 
 install-node:
 	cd www && npm install

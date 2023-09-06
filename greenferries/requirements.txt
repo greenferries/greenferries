@@ -15,3 +15,6 @@ folium
 ipywidgets
 awscli
 awscli-plugin-endpoint
+geopy
+geopandas
+tqdm

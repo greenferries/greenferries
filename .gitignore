@@ -5,4 +5,5 @@
 .env
 dbs/aishub.db
 dbs/all_ships.db
-
+notebooks/*.json
+notebooks/*.geojson
