@@ -35,5 +35,5 @@ as computed by the [ADEME](https://www.ademe.fr/expertises/mobilite-transports/c
 
 You can play with [this notebook](https://github.com/greenferries/greenferries/blob/master/data/notebooks/ecoscore_exploration.ipynb) to try and tweak values to find a better definition of this score.
 
-Please [reach out](mailto:contact@greenferries.org) if you think we can do
+Please [reach out](mailto:greenferries@s321.top) if you think we can do
 better.

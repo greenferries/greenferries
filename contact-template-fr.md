@@ -1,6 +1,6 @@
 Bonjour,
 
-Je m'intéresse à titre personnel aux émissions de gazs à effet de serre des ferries de transport de passagers en Europe. J'ai notamment pas mal étudié les données publiées dans THETIS-MRV. J'ai compilé un certain nombre d'informations et de calculs sur la flotte de Brittany Ferries sur cette page : https://www.greenferries.org/companies/brittany-ferries-fr/
+Je m'intéresse à titre personnel aux émissions de gazs à effet de serre des ferries de transport de passagers en Europe. J'ai notamment étudié les données publiées dans THETIS-MRV. J'ai compilé un certain nombre d'informations et de calculs sur la flotte de Brittany Ferries sur cette page : https://greenferries.netlify.app/companies/brittany-ferries-fr/
 
 Je serais très curieux de discuter avec une personne de votre entreprise qui connaît bien la flotte et le processus de mesure et de déclaration des émissions dans THETIS. Mon but n'est en aucun cas de pointer des manquements, mais plutôt de comprendre pourquoi on a tant de disparités entre des bateaux qui semblent similaires.
 

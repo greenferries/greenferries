@@ -21,7 +21,7 @@ You can find the officially published data on [THETIS publicly accessible platfo
 
 *ie.* total emitted CO₂ / average CO₂ emitted per distance
 
-*eg.* for the [Armorique](https://www.greenferries.org/ships/armorique-9364980) ship:
+*eg.* for the [Armorique](https://greenferries.netlify.app/ships/armorique-9364980) ship:
 
 `TotDst = (36649.07 m tonnes * 1000) / (517.37 kg CO₂ / n mile) ~= 70837 n miles ~= 131191 km`
 
@@ -31,7 +31,7 @@ You can find the officially published data on [THETIS publicly accessible platfo
 
 *ie.* total emitted CO₂ assigned to persons transport / (average CO₂ emitted per distance per person * total distance travelled)
 
-*eg.* for the [Armorique](https://www.greenferries.org/ships/armorique-9364980) ship:
+*eg.* for the [Armorique](https://greenferries.netlify.app/ships/armorique-9364980) ship:
 
 `AvgPax = (14841.17 m tonnes * 1000) / ((398.98
   g CO₂ / pax · n miles / 1000) * 70837 n miles) ~= 525 persons`
@@ -42,7 +42,7 @@ You can find the officially published data on [THETIS publicly accessible platfo
 
 *ie.* total emitted CO₂ assigned to freight transport / (average CO₂ emitted per metric ton of freight * total distance travelled)
 
-*eg.* for the [Armorique](https://www.greenferries.org/ships/armorique-9364980) ship:
+*eg.* for the [Armorique](https://greenferries.netlify.app/ships/armorique-9364980) ship:
 
 `AvgFrt = 21807.89 m tonnes * 1000 / ((514.06 g CO₂ / m tonnes · n miles / 1000) * 70837 n miles) ~= 599 m tonnes`
 
@@ -52,7 +52,7 @@ You can find the officially published data on [THETIS publicly accessible platfo
 
 *ie.* total distance travelled / hours at sea
 
-*eg.* for the [Armorique](https://www.greenferries.org/ships/armorique-9364980) ship:
+*eg.* for the [Armorique](https://greenferries.netlify.app/ships/armorique-9364980) ship:
 
 `131191 km / 4801.00 hours ~= 27 km/h`
 
@@ -62,7 +62,7 @@ You can find the officially published data on [THETIS publicly accessible platfo
 
 *ie.* total emitted CO₂ assigned to persons transport / total emitted CO₂
 
-*eg.* for the [Armorique](https://www.greenferries.org/ships/armorique-9364980) ship:
+*eg.* for the [Armorique](https://greenferries.netlify.app/ships/armorique-9364980) ship:
 
 `14841.17 m tonnes / 36649.07 m tonnes ~= 40%`
 

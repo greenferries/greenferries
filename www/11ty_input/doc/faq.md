@@ -26,7 +26,7 @@ than with a plane**.
 
 We are a group (mostly myself, Adrien) of independent citizens (mostly french), and have no links to the transport industry nor to any government.
 
-We are always looking for help, please reach out!(mailto:contact@greenferries.org).
+We are always looking for help, please reach out!(mailto:greenferries@s321.top).
 
 ### Contributors:
 
@@ -79,7 +79,7 @@ transporting people, not cargo, so we only display the 'per person' figure)
 
 ## What to do if you encounter an error or missing data?
 
-Please [let me know](mailto:contact@greenferries.org) if you encounter an error
+Please [let me know](mailto:greenferries@s321.top) if you encounter an error
 on the website. As I have manually filled data, errors are bound to happen, and
 there is also a lot of data I am missing.
 
@@ -91,7 +91,7 @@ The only serious datasource I could find is
 only ships crusing on EU seas.
 
 If you know about Open Data that could be used for other parts of the world,
-[please let us know](mailto:contact@greenferries.org)
+[please let us know](mailto:greenferries@s321.top)
 
 ## What are the approximations made?
 

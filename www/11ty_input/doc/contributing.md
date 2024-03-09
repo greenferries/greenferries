@@ -26,7 +26,6 @@ If you have any knowledge of the sea transport industry or are curious to learn,
 
 If you have some skils with data science, you will find very interesting datasets, already partially cleaned! We believe that some help to understand the previous questions could be reached by digging into the data. It does not necessarily have to be intricate Machine Learning, but some simple analysis could reveal correlation between unsuspected ship characteristics.
 
-- There is a web data platform with an API and exportable CSVs on [data.greenferries.org](https://data.greenferries.org).
 - In the [GitHub repository](https://github.com/greenferries/greenferries/tree/master/data/notebooks) you will find Jupyter notebooks where you can play with pandas dataframes already built
 
 ## Spread the word

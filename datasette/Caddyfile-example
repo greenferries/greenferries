@@ -1,5 +1,0 @@
-# /etc/caddy/Caddyfile
-
-data.greenferries.org {
-  reverse_proxy 127.0.0.1:8001
-}

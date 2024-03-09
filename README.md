@@ -2,15 +2,13 @@
 
 *Improve passenger ships environmental impact transparency*
 
-- Public website: [greenferries.org](https://www.greenferries.org)
-- Datasette (API & data explorer): [data.greenferries.org](https://data.greenferries.org)
-- Download SQLite Files : [files.greenferries.org](https://files.greenferries.org)
+- Public website: [greenferries.netlify.app](https://greenferries.netlify.app)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/214d136b-2a50-41c0-b028-643e8352c1b6/deploy-status)](https://app.netlify.com/sites/greenferries/deploys)
 ![Lint Standard JS](https://github.com/greenferries/greenferries/workflows/Lint%20Standard%20JS/badge.svg)
 
 
-## `/www` greenferries.org frontend Website
+## `/www` greenferries.netlify.app frontend Website
 
 ![GreenFerries](https://i.imgur.com/7RVgLVD.jpg)
 
@@ -46,15 +44,11 @@ WIKIDATA_PASSWORD=123456
 run with `make notebooks-server`
 
 
-## `/datasette` data.greenferries.org platform
+## `/datasette` platform
 
-![https://i.imgur.com/43VjhWJ.png](https://i.imgur.com/43VjhWJ.png)
-
-Live website to explore the data from the GreenFerries project: [data.greenferries.org](https://data.greenferries.org). Exposes data processed by the `greenferries` python library mentioned above. Built with the amazing [`datasette`](https://github.com/simonw/datasette) and [csvs-to-sqlite](https://github.com/simonw/csvs-to-sqlite).
+website & API to explore the data from the GreenFerries project: [data.greenferries.netlify.app](https://data.greenferries.netlify.app). Exposes data processed by the `greenferries` python library mentioned above. Built with the amazing [`datasette`](https://github.com/simonw/datasette) and [csvs-to-sqlite](https://github.com/simonw/csvs-to-sqlite).
 
 To run locally: `make datasette-dev` from the repository root.
-
-In production, datasette is hosted on a Raspberry Pi 3 at [data.greenferries.org](https://data.greenferries.org) through a Caddy reverse proxy.
 
 ## raw data files
 
