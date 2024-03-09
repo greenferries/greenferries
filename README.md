@@ -7,6 +7,10 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/214d136b-2a50-41c0-b028-643e8352c1b6/deploy-status)](https://app.netlify.com/sites/greenferries/deploys)
 ![Lint Standard JS](https://github.com/greenferries/greenferries/workflows/Lint%20Standard%20JS/badge.svg)
 
+> [!WARNING]
+> This project was created in 2020 and last updated in 2023 but it is now idle.
+> The data may be outdated and information presented should be double checked.
+> Please get in touch if you would like to help!
 
 ## `/www` greenferries.netlify.app frontend Website
 
